@@ -96,21 +96,16 @@ public class CSV_To_Data : EditorWindow
     void OnGUI()
     {
         centerX = (Screen.width - buttonWidth) / 2;
-
-        GUILayout.Label("결과물을 저장할 폴더의 경로 입력");
-        streamWriterPath = GUILayout.TextField(streamWriterPath);
-        
-        PlayerPrefs.SetString("StreamWriterPath", streamWriterPath);
-        PlayerPrefs.Save();
         
         GUILayout.Label("CSV 파일의 경로 입력");
-        path = GUILayout.TextField(path, GUILayout.Height(300f));
+        path = GUILayout.TextField(path);
 
-        GUILayout.BeginArea(new Rect(new Vector2(centerX, 450f), new Vector2(buttonWidth, buttonHeight)));
+        GUILayout.BeginArea(new Rect(new Vector2(centerX, 50f), new Vector2(buttonWidth, buttonHeight)));
 
         if (kindOfConvert == KindOfConvert.Structure)
         {
-            if (GUILayout.Button("구조물 데이터로 저장하기", GUILayout.Width(buttonWidth), GUILayout.Height(buttonHeight)))
+            streamWriterPath = Application.persistentDataPath + @"\DataResult\StructureData";
+            if (GUILayout.Button("구조물 데이터로 저장하기"))
             {
                 if (!string.IsNullOrEmpty(path))
                 {
@@ -120,7 +115,8 @@ public class CSV_To_Data : EditorWindow
         }
         else if (kindOfConvert == KindOfConvert.Item)
         {
-            if (GUILayout.Button("아이템 데이터로 저장하기", GUILayout.Width(buttonWidth), GUILayout.Height(buttonHeight)))
+            streamWriterPath = Application.persistentDataPath + @"\DataResult\ItemData";
+            if (GUILayout.Button("아이템 데이터로 저장하기"))
             {
                 if (!string.IsNullOrEmpty(path))
                 {

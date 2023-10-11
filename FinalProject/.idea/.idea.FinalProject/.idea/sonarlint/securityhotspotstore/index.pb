@@ -23,3 +23,5 @@ U
 %Assets/01_Scripts/Utill/CSV_To_Txt.cs,5\f\5f7a7fecef1508fce74f71b5086e03dc3c018cbc
 f
 6Assets/01_Scripts/Data/Table/StructureItemDataTable.cs,8\0\80df87d294bb7901200d7b22d021f280b966261b
+>
+Assets/Test.cs,7\3\733160dfc6f700202f3e99f9f9c02f225946355f

@@ -8,6 +8,8 @@ public static class StructureItemDataTable
 {
     static List<StructureInfo> table = new List<StructureInfo>();
 
+    public static int Size => table.Count;
+    
     public static StructureInfo GetInfo(int level)
     {
         return table[level];
@@ -15,7 +17,7 @@ public static class StructureItemDataTable
 
     static StructureItemDataTable()
     {
-        var path = PlayerPrefs.GetString("StreamWriterPath", string.Empty);
+        var path = Application.persistentDataPath + @"\DataResult\StructureData";
 
         DirectoryInfo directoryInfo = new DirectoryInfo(path);
         var files = directoryInfo.GetFiles();

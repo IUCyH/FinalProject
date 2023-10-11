@@ -7,6 +7,8 @@ public static class ItemDataTable
 {
     static List<ItemInfo> table = new List<ItemInfo>();
     
+    public static int Size => table.Count;
+    
     public static ItemInfo GetInfo(int level)
     {
         return table[level];
@@ -14,7 +16,7 @@ public static class ItemDataTable
 
     static ItemDataTable()
     {
-        var path = PlayerPrefs.GetString("StreamWriterPath", string.Empty);
+        var path = Application.persistentDataPath + @"\DataResult\ItemData";
 
         DirectoryInfo directoryInfo = new DirectoryInfo(path);
         var files = directoryInfo.GetFiles();
