@@ -10,7 +10,7 @@ public class PressButton : MonoBehaviour
 
     public void StartButton()
     {
-        SceneManager.LoadScene("Game");
+        SceneLoadManager.Instance.Load(Scene.Game);
     }
 
     public void LoadButton()
