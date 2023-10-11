@@ -11,3 +11,15 @@ public class PlayerData
     public int diamond;
     public DateTime lastPlayTime;
 }
+
+[Serializable]
+public class StructureInfo
+{
+    int index;
+    string name;
+    int unlockLevel;
+    int price_Solar;
+    int price_Sun;
+    int upgradePrice_Solar;
+    bool[] canCreate;
+}
