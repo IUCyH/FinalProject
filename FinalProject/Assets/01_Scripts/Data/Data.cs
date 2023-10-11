@@ -8,5 +8,6 @@ public class PlayerData
 {
     public int level;
     public int gold;
+    public int diamond;
     public DateTime lastPlayTime;
 }

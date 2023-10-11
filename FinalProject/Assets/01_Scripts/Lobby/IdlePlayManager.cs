@@ -16,7 +16,7 @@ public class IdlePlayManager : Singleton<IdlePlayManager>
         var lastPlayTime = DataManager.Instance.PlayerData.lastPlayTime;
         
         timeSpan = DateTime.Now - lastPlayTime;
-        DataManager.Instance.PlayerData.gold += ((int)timeSpan.TotalSeconds / 60) * 20;
+        PaymentManager.Instance.Sell(KindOfGoods.IdleRewards, (int)timeSpan.TotalSeconds / 60 * 20);
     }
 
     void Update()
@@ -24,7 +24,7 @@ public class IdlePlayManager : Singleton<IdlePlayManager>
         deltaSecond += Time.deltaTime;
         if ((int)deltaSecond >= rewardsPaymentTime)
         {
-            Debug.Log((int)deltaSecond / rewardsPaymentTime * 20);
+            PaymentManager.Instance.Sell(KindOfGoods.IdleRewards);
             deltaSecond = 0f;
         }
     }
