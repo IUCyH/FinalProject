@@ -1,0 +1,9 @@
+
+ocsharpsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(—î•Ã
+Icsharpsquid:S3903",Move 'InvokeManager' into a named namespace.(À·Şø
+?csharpsquid:S2933"Make 'invokeFunc' 'readonly'.(½æ¼Êşÿÿÿÿ
+Acsharpsquid:S2933	"$Make 'repeatingFuncList' 'readonly'.(ƒÔ»°
+=csharpsquid:S2933
+"Make 'funcList' 'readonly'.(ó›°˜ıÿÿÿÿ
+>csharpsquid:S2933"Make 'timerList' 'readonly'.(ù°“øÿÿÿÿ
+Ocsharpsquid:S2190"2Add a way to break out of this method's recursion.(—î•Ã
