@@ -25,3 +25,5 @@ f
 6Assets/01_Scripts/Data/Table/StructureItemDataTable.cs,8\0\80df87d294bb7901200d7b22d021f280b966261b
 >
 Assets/Test.cs,7\3\733160dfc6f700202f3e99f9f9c02f225946355f
+K
+Assets/google-services.json,d\d\ddf7687ff38b2c9eb9ff00faaacc7b5d88c587b2

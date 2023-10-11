@@ -54,14 +54,16 @@ public class CSV_To_Data : EditorWindow
             if (line == null) break;
             
             var result = line.Split(",");
+            
+            
 
-            StreamWriter streamWriter = new StreamWriter(string.Format(@"{0}\{1:00}.txt", streamWriterPath, orderOfData++));
+            /*StreamWriter streamWriter = new StreamWriter(string.Format(@"{0}\{1:00}.txt", streamWriterPath, orderOfData++));
 
             for (int i = 0; i < result.Length; i++)
             {
                 streamWriter.WriteLine(result[i]);
             }
-            streamWriter.Close();
+            streamWriter.Close();*/
         }
 
         streamReader.Close();

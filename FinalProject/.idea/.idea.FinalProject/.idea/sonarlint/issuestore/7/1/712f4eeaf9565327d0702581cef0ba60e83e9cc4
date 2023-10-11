@@ -1,0 +1,4 @@
+
+xcsharpsquid:S6561"OAvoid using "DateTime.Now" for benchmarking or timespan calculation operations.(Ìñæöüÿÿÿÿ8•Š›ˆ²1
+Wcsharpsquid:S3903".Move 'IdlePlayManager' into a named namespace.(ýˆñïýÿÿÿÿ8•Š›ˆ²1
+€csharpsquid:S1450"WRemove the field 'timeSpan' and declare it as a local variable in the relevant methods.(Ší¢‚þÿÿÿÿ8•Š›ˆ²1
