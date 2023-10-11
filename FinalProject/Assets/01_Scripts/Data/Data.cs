@@ -7,4 +7,6 @@ using UnityEngine;
 public class PlayerData
 {
     public int level;
+    public int gold;
+    public DateTime lastPlayTime;
 }
