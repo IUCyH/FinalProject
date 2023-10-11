@@ -16,41 +16,17 @@ public enum Scene
 public class SceneLoadManager : Singleton_DontDestroy<SceneLoadManager>
 {
     AsyncOperation loadingInfo;
-    [SerializeField]
-    Canvas loadingCanvas;
-    [SerializeField]
-    Image loadingBar;
-    
-    Scene currLoadScene = Scene.None;
 
-    protected override void OnStart()
-    {
-        loadingCanvas.enabled = false;
-    }
+    Scene currLoadScene = Scene.None;
 
     public void Load(Scene scene)
     {
         loadingInfo = SceneManager.LoadSceneAsync((int)scene);
         currLoadScene = scene;
-
-        loadingCanvas.enabled = true;
     }
 
     void Update()
     {
-        if (loadingInfo != null && currLoadScene != Scene.None)
-        {
-            if (loadingInfo.isDone)
-            {
-                loadingBar.fillAmount = 1f;
-                currLoadScene = Scene.None;
-                
-                loadingCanvas.enabled = false;
-            }
-            else
-            {
-                loadingBar.fillAmount = loadingInfo.progress;
-            }
-        }
+        //TODO : 로딩 바 업데이트 로직
     }
 }
