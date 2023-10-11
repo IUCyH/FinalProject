@@ -8,7 +8,10 @@ public static class StructureItemDataTable
 {
     static List<StructureInfo> table = new List<StructureInfo>();
 
-    public static List<StructureInfo> Table => table;
+    public static StructureInfo GetInfo(int level)
+    {
+        return table[level];
+    }
 
     static StructureItemDataTable()
     {

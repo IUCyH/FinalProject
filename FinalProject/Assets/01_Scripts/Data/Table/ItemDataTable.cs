@@ -6,8 +6,11 @@ using UnityEngine;
 public static class ItemDataTable
 {
     static List<ItemInfo> table = new List<ItemInfo>();
-
-    public static List<ItemInfo> Table => table;
+    
+    public static ItemInfo GetInfo(int level)
+    {
+        return table[level];
+    }
 
     static ItemDataTable()
     {
