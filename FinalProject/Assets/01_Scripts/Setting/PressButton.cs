@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -7,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class PressButton : MonoBehaviour
 {
     [SerializeField]
-    GameObject settingPopUP;
+    List<GameObject> allPopUP;
 
     public void StartButton()
     {
@@ -21,8 +20,10 @@ public class PressButton : MonoBehaviour
 
     public void SettingButton()
     {
-        settingPopUP.SetActive(true);
-    }
+        PopupActiveFalse();
+
+        allPopUP[1].SetActive(true);
+    }   
 
     public void GameOutButton()
     {
@@ -31,5 +32,20 @@ public class PressButton : MonoBehaviour
 #else
         Application.Quit();
 #endif
+    }
+
+    public void KeySettingButton()
+    {
+        PopupActiveFalse();
+
+        allPopUP[2].SetActive(true);
+    }
+
+    void PopupActiveFalse()
+    {
+        for (int i = 0; i < allPopUP.Count; i++)
+        {
+            allPopUP[i].SetActive(false);
+        }
     }
 }
