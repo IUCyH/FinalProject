@@ -19,6 +19,7 @@ public class CSV_To_Data : EditorWindow
     string path;
     string streamWriterPath;
 
+    int orderOfData;
     float centerX;
     float buttonWidth = 250f;
     float buttonHeight = 30f;
@@ -43,7 +44,7 @@ public class CSV_To_Data : EditorWindow
         kindOfConvert = KindOfConvert.Item;
     }
 
-    void ConvertToStructureData()
+    void ConvertAndSaveFile()
     {
         StreamReader streamReader = new StreamReader(path);
 
@@ -53,10 +54,8 @@ public class CSV_To_Data : EditorWindow
             if (line == null) break;
             
             var result = line.Split(",");
-            
-            string name = result[1].Split(" ")[0];
-            
-            StreamWriter streamWriter = new StreamWriter(string.Format(@"{0}\{1}.txt", streamWriterPath, name));
+
+            StreamWriter streamWriter = new StreamWriter(string.Format(@"{0}\{1:00}.txt", streamWriterPath, orderOfData++));
 
             for (int i = 0; i < result.Length; i++)
             {
@@ -65,36 +64,13 @@ public class CSV_To_Data : EditorWindow
             streamWriter.Close();
         }
 
-        streamReader.Close();
-    }
-
-    void ConvertToItemData()
-    {
-        StreamReader streamReader = new StreamReader(path);
-
-        while (!streamReader.EndOfStream)
-        {
-            var line = streamReader.ReadLine();
-            if (line == null) break;
-
-            var result = line.Split(",");
-            
-            string name = result[1].Split(" ")[0];
-            
-            StreamWriter streamWriter = new StreamWriter(string.Format(@"{0}\{1}.txt", streamWriterPath, name));
-
-            for (int i = 0; i < result.Length; i++)
-            {
-                streamWriter.WriteLine(result[i]);
-            }
-            streamWriter.Close();
-        }
-        
         streamReader.Close();
     }
 
     void OnGUI()
     {
+        orderOfData = 0;
+        
         centerX = (Screen.width - buttonWidth) / 2;
         
         GUILayout.Label("CSV 파일의 경로 입력");
@@ -105,23 +81,17 @@ public class CSV_To_Data : EditorWindow
         if (kindOfConvert == KindOfConvert.Structure)
         {
             streamWriterPath = Application.persistentDataPath + @"\DataResult\StructureData";
-            if (GUILayout.Button("구조물 데이터로 저장하기"))
-            {
-                if (!string.IsNullOrEmpty(path))
-                {
-                    ConvertToStructureData();
-                }
-            }
         }
         else if (kindOfConvert == KindOfConvert.Item)
         {
             streamWriterPath = Application.persistentDataPath + @"\DataResult\ItemData";
-            if (GUILayout.Button("아이템 데이터로 저장하기"))
+        }
+        
+        if (GUILayout.Button("저장하기"))
+        {
+            if (!string.IsNullOrEmpty(path))
             {
-                if (!string.IsNullOrEmpty(path))
-                {
-                    ConvertToItemData();
-                }
+                ConvertAndSaveFile();
             }
         }
 

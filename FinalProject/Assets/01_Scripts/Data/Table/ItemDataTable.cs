@@ -23,7 +23,7 @@ public static class ItemDataTable
 
         for (int i = 0; i < files.Length; i++)
         {
-            StreamReader streamReader = new StreamReader(string.Format(@"{0}/{1:0}단계.txt", path, i + 1));
+            StreamReader streamReader = new StreamReader(string.Format(@"{0}/{1:00}.txt", path, i));
             List<string> dataOfString = new List<string>();
 
             while (!streamReader.EndOfStream)
