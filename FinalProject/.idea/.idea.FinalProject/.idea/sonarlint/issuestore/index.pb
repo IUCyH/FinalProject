@@ -7,7 +7,5 @@ U
 %Assets/01_Scripts/Utill/ObjectPool.cs,e\5\e52e552eb0b6b9302cf22ba920b8274f3e6a0f35
 U
 %Assets/01_Scripts/Etc/SoundManager.cs,8\2\821e407c1664530faf4ef857325c090ae405d282
-Y
-)Assets/01_Scripts/Etc/SceneLoadManager.cs,c\1\c100c01216e3bcbb005c8d44a58549bcfc367859
 V
 &Assets/01_Scripts/Etc/InvokeManager.cs,3\8\38646a9eced35cd3ae2653992f27727bd307dd8f
