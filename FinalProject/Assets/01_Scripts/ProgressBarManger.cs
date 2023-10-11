@@ -1,44 +1,39 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ProgressBarManager : Singleton_DontDestroy<ProgressBarManager>
 {
-    static string nextScene;
-
     [SerializeField]
     Image progressBar;
+    [SerializeField]
+    Image progressBg;
 
-    void Start()
+    Canvas loadCanvas;
+
+    protected override void OnStart()
     {
-        StartCoroutine(LoadSceneProgress());
+        HideLoadingWindow();
     }
 
-    IEnumerator LoadSceneProgress()
+    public void ShowLoadingWindow()
     {
-        AsyncOperation op = SceneManager.LoadSceneAsync(nextScene);
-        op.allowSceneActivation = false;
+        loadCanvas.enabled = true;
+    }
 
-        float timer = 0f;
-        while (!op.isDone)
-        {
-            yield return null;
+    public void HideLoadingWindow()
+    {
+        loadCanvas.enabled = false;
+    }
 
-            if (op.progress < 0.9f)
-            {
-                progressBar.fillAmount = op.progress;
-            }
-            else
-            {
-                timer = Time.unscaledDeltaTime;
-                progressBar.fillAmount = Mathf.Lerp(0.9f, 1f, timer);
-                if (progressBar.fillAmount >= 1f)
-                {
-                    op.allowSceneActivation = true;
-                    yield break;
-                }
-            }
-        }
+    public void UpdateProgressBar(Sprite progressbarBg, Sprite progressbar, float fillAmount)
+    {
+
+        progressBar.sprite = progressbar;
+        progressBg.sprite = progressbarBg;
+
+        progressBar.fillAmount = fillAmount;
     }
 }

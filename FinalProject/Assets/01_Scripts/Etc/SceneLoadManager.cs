@@ -16,6 +16,10 @@ public enum Scene
 public class SceneLoadManager : Singleton_DontDestroy<SceneLoadManager>
 {
     AsyncOperation loadingInfo;
+    [SerializeField]
+    Sprite progressbar;
+    [SerializeField]
+    Sprite progressbarBG;
 
     Scene currLoadScene = Scene.None;
 
@@ -23,10 +27,22 @@ public class SceneLoadManager : Singleton_DontDestroy<SceneLoadManager>
     {
         loadingInfo = SceneManager.LoadSceneAsync((int)scene);
         currLoadScene = scene;
+        ProgressBarManager.Instance.ShowLoadingWindow();
     }
 
     void Update()
     {
-        //TODO : 로딩 바 업데이트 로직
+        if (loadingInfo != null && currLoadScene != Scene.None)
+        {
+            if (loadingInfo.isDone)
+            {
+                ProgressBarManager.Instance.UpdateProgressBar(progressbarBG, progressbar, 1f);
+                ProgressBarManager.Instance.HideLoadingWindow();
+            }
+            else
+            {
+                ProgressBarManager.Instance.UpdateProgressBar(progressbarBG, progressbar, loadingInfo.progress);
+            }
+        }     
     }
 }
