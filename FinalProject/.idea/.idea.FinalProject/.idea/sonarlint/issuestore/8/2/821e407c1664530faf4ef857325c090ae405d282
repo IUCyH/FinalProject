@@ -1,9 +1,0 @@
-
-vcsharpsquid:S37764"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(—î•Ã8áÒ±1
-Hcsharpsquid:S3903"$Move 'Audio' into a named namespace.(’ì¸ê8áÒ±1
-Kcsharpsquid:S3903""Move 'BGM' into a named namespace.(‘´Èõÿÿÿÿÿ8áÒ±1
-Fcsharpsquid:S3903""Move 'SFX' into a named namespace.(—çŞï8áÒ±1
-Ocsharpsquid:S3903"+Move 'SoundManager' into a named namespace.(¸ÜÆ8áÒ±1
-ˆcsharpsquid:S2342"_Rename this enumeration to match the regular expression: '^([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$'.(‘´Èõÿÿÿÿÿ8áÒ±1
-ƒcsharpsquid:S2342"_Rename this enumeration to match the regular expression: '^([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$'.(—çŞï8áÒ±1
-Vcsharpsquid:S21904"2Add a way to break out of this method's recursion.(—î•Ã8áÒ±1

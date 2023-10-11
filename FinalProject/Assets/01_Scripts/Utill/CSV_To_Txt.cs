@@ -78,28 +78,16 @@ public class CSV_To_Data : EditorWindow
             if (line == null) break;
 
             var result = line.Split(",");
-
-            /*
-            int index = int.Parse(result[0]);
-            string name = result[1];
-
-            int exp = 0;
-            int price_Solar = 0;
-            int craftTime = 0;
-            if (result[2] != "-") exp = int.Parse(result[2]);
-            if (result[3] != "-") price_Solar = int.Parse(result[3]);
-            if (result[4] != "-") craftTime = int.Parse(result[4]);
-
-            ItemInfo itemInfo = new ItemInfo(index, name, exp, price_Solar, craftTime);
             
-            ItemDataTable.table.Add(itemInfo);
+            string name = result[1].Split(" ")[0];
             
-            Debug.Log(itemInfo.index);
-            Debug.Log(itemInfo.name);
-            Debug.Log(itemInfo.exp);
-            Debug.Log(itemInfo.price_Solar);
-            Debug.Log(itemInfo.craftTime);
-            Debug.Log("====================================================");*/
+            StreamWriter streamWriter = new StreamWriter(string.Format(@"{0}\{1}.txt", streamWriterPath, name));
+
+            for (int i = 0; i < result.Length; i++)
+            {
+                streamWriter.WriteLine(result[i]);
+            }
+            streamWriter.Close();
         }
         
         streamReader.Close();

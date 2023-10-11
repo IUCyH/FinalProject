@@ -8,8 +8,6 @@ U
 V
 &Assets/01_Scripts/Etc/InvokeManager.cs,3\8\38646a9eced35cd3ae2653992f27727bd307dd8f
 U
-%Assets/01_Scripts/Etc/SoundManager.cs,8\2\821e407c1664530faf4ef857325c090ae405d282
-U
 %Assets/01_Scripts/Data/DataManager.cs,c\3\c3a6cf9d96e064a4072a439ab8a3ca59721b60aa
 Y
 )Assets/01_Scripts/Etc/SceneLoadManager.cs,c\1\c100c01216e3bcbb005c8d44a58549bcfc367859
@@ -21,8 +19,6 @@ Z
 *Assets/01_Scripts/Lobby/IdlePlayManager.cs,7\1\712f4eeaf9565327d0702581cef0ba60e83e9cc4
 W
 'Assets/01_Scripts/Etc/PaymentManager.cs,1\9\19e1f4af9b65b87ad2e8c1754825c101e01db397
->
-Assets/Test.cs,7\3\733160dfc6f700202f3e99f9f9c02f225946355f
 U
 %Assets/01_Scripts/Utill/CSV_To_Txt.cs,5\f\5f7a7fecef1508fce74f71b5086e03dc3c018cbc
 f
