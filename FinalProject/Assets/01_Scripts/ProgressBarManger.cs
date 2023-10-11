@@ -15,12 +15,6 @@ public class ProgressBarManager : Singleton_DontDestroy<ProgressBarManager>
         StartCoroutine(LoadSceneProgress());
     }
 
-    public static void LoadScene(string sceneName)
-    {
-        nextScene = sceneName;
-        SceneManager.LoadScene(sceneName);
-    }
-
     IEnumerator LoadSceneProgress()
     {
         AsyncOperation op = SceneManager.LoadSceneAsync(nextScene);
