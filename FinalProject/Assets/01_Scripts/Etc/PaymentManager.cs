@@ -24,7 +24,6 @@ public class PaymentManager : Singleton_DontDestroy<PaymentManager>
         }
 
         playerData.gold += reward;
-        Debug.Log(reward);
     }
 
     public void Buy(KindOfGoods goods)
