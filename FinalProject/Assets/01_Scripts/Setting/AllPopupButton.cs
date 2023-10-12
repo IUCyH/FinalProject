@@ -19,7 +19,7 @@ public class AllPopupButton : MonoBehaviour
 
             allTitlePopup[0].SetActive(true);
         }
-        else if (SceneManager.GetActiveScene().name == "Game")
+        else if (SceneManager.GetActiveScene().name == "Lobby")
         {
             DisableAllPopups(allGamePopup);
 
