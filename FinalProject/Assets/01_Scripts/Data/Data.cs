@@ -57,3 +57,10 @@ public class ItemInfo
         this.craftTime = craftTime;
     }
 }
+
+[Serializable]
+public class LevelUpCost
+{
+    public uint level;
+    public uint cost;
+}

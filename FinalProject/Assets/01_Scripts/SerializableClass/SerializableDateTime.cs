@@ -34,6 +34,11 @@ public class SerializableDateTime
 
     public static TimeSpan operator -(DateTime dateTime1, SerializableDateTime dateTime2)
     {
+        if (dateTime2 == null)
+        {
+            return TimeSpan.Zero;
+        }
+        
         return dateTime1 - dateTime2.dateTime;
     }
 

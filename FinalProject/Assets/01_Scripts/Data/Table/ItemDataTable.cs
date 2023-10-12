@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using Firebase.Database;
 using UnityEngine;
 
@@ -11,9 +12,9 @@ public static class ItemDataTable
     public static int Size => table.Count;
     public static bool DataLoadCompleted { get; private set; }
 
-    public static ItemInfo GetInfo(int level)
+    public static ItemInfo GetInfo(int index)
     {
-        return table[level];
+        return table[index];
     }
 
     static ItemDataTable()
@@ -48,6 +49,7 @@ public static class ItemDataTable
                     table.Add(itemInfo);
                 }
 
+                table = table.OrderBy(info => info.index).ToList();
                 DataLoadCompleted = true;
             }
         });

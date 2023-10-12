@@ -29,3 +29,7 @@ K
 Assets/google-services.json,d\d\ddf7687ff38b2c9eb9ff00faaacc7b5d88c587b2
 Z
 *Assets/01_Scripts/Chapter/ChapterScroll.cs,1\1\11428023d12442a9689716eca4bf55811f55bf31
+\
+,Assets/01_Scripts/UI/Lobby/LobbyUIManager.cs,a\1\a19a7003914aa3ace52d12555f23d116114f3abe
+k
+;Assets/01_Scripts/SerializableClass/SerializableDateTime.cs,c\c\cc7074b9b6792aa32a5e97ffc5e9b043da71f4fa

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using Firebase.Database;
 using UnityEngine;
 
@@ -12,9 +13,9 @@ public static class StructureItemDataTable
     public static int Size => table.Count;
     public static bool DataLoadCompleted { get; private set; }
     
-    public static StructureInfo GetInfo(int level)
+    public static StructureInfo GetInfo(int index)
     {
-        return table[level];
+        return table[index];
     }
 
     static StructureItemDataTable()
@@ -60,6 +61,7 @@ public static class StructureItemDataTable
                     table.Add(structureInfo);
                 }
 
+                table = table.OrderBy(info => info.index).ToList();
                 DataLoadCompleted = true;
             }
         });

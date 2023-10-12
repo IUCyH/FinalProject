@@ -8,24 +8,36 @@ using UnityEngine;
 
 enum KindOfConvert
 {
+    RemoveData = -1,
     Structure,
-    Item
+    Item,
+    LevelUpCost
 }
 
 public class CSV_To_Data : EditorWindow
 {
+    static GUIContent titleOfRemoveData = new GUIContent("Remove Data");
     static GUIContent titleOfConvertStructure = new GUIContent("Convert To StructureData");
     static GUIContent titleOfConvertItem = new GUIContent("Convert To ItemData");
+    static GUIContent titleOfLevelUpCostData = new GUIContent("Convert To LevelUpCostData");
 
     string path;
     string dbPath;
 
-    int orderOfData;
     float centerX;
     float buttonWidth = 250f;
     float buttonHeight = 30f;
 
     static KindOfConvert kindOfConvert;
+    
+    [MenuItem("Data/RemoveData")]
+    static void OpenRemoveDataWindow()
+    {
+        var window = GetWindow<CSV_To_Data>();
+
+        window.titleContent = titleOfRemoveData;
+        kindOfConvert = KindOfConvert.RemoveData;
+    }
 
     [MenuItem("Data/Convert To StructureData")]
     static void OpenConvertToStructureDataWindow()
@@ -43,6 +55,15 @@ public class CSV_To_Data : EditorWindow
 
         window.titleContent = titleOfConvertItem;
         kindOfConvert = KindOfConvert.Item;
+    }
+    
+    [MenuItem("Data/Convert To LevelUpCostData")]
+    static void OpenConvertToLevelUpCostDataWindow()
+    {
+        var window = GetWindow<CSV_To_Data>();
+
+        window.titleContent = titleOfLevelUpCostData;
+        kindOfConvert = KindOfConvert.LevelUpCost;
     }
 
     void ConvertAndSaveFile()
@@ -68,11 +89,45 @@ public class CSV_To_Data : EditorWindow
         }
 
         streamReader.Close();
+        Debug.Log("데이터 저장 성공");
     }
 
     void OnGUI()
     {
-        orderOfData = 0;
+        if (kindOfConvert == KindOfConvert.RemoveData)
+        {
+            GUILayout.Label("삭제할 데이터 테이블의 루트 이름 입력");
+            path = GUILayout.TextField(path);
+            centerX = (Screen.width - buttonWidth) / 2;
+            
+            GUILayout.BeginArea(new Rect(new Vector2(centerX, 50f), new Vector2(buttonWidth, buttonHeight)));
+            
+            if (GUILayout.Button("삭제하기"))
+            {
+                if (!string.IsNullOrEmpty(path))
+                {
+                    var dbReference = FirebaseDatabase.DefaultInstance.RootReference;
+                    var root = dbReference.Child("DataTable").Child(path);
+
+                    root.RemoveValueAsync().ContinueWith(task =>
+                    {
+                        if (task.IsFaulted)
+                        {
+                            Debug.Log("데이터 삭제 실패");
+                        }
+                        
+                        else if (task.IsCompleted)
+                        {
+                            Debug.Log("데이터 삭제 성공");
+                        }
+                    });
+                }
+            }
+            
+            GUILayout.EndArea();
+            
+            return;
+        }
         
         centerX = (Screen.width - buttonWidth) / 2;
         
@@ -89,7 +144,11 @@ public class CSV_To_Data : EditorWindow
         {
             dbPath = "Item";
         }
-        
+        else if (kindOfConvert == KindOfConvert.LevelUpCost)
+        {
+            dbPath = "LevelUpCost";
+        }
+
         if (GUILayout.Button("저장하기"))
         {
             if (!string.IsNullOrEmpty(path))

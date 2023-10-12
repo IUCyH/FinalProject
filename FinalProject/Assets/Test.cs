@@ -49,5 +49,18 @@ public class Test : MonoBehaviour
             Debug.Log(data.craftTime);
             Debug.Log("///////////////////////////////////////////////////");
         }
+
+        while (!LevelUpCostDataTable.DataLoadCompleted) yield return null;
+        
+        Debug.Log("===========================================");
+
+        for (int i = 0; i < LevelUpCostDataTable.Size; i++)
+        {
+            var data = LevelUpCostDataTable.GetInfo(i);
+            
+            Debug.Log(data.level);
+            Debug.Log(data.cost);
+            Debug.Log("///////////////////////////////////////////////////");
+        }
     }
 }
