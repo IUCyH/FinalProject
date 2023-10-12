@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using Firebase.Database;
 using UnityEngine;
 
 public static class StructureItemDataTable
@@ -9,6 +10,7 @@ public static class StructureItemDataTable
     static List<StructureInfo> table = new List<StructureInfo>();
 
     public static int Size => table.Count;
+    public static bool DataLoadCompleted { get; private set; }
     
     public static StructureInfo GetInfo(int level)
     {
@@ -17,51 +19,49 @@ public static class StructureItemDataTable
 
     static StructureItemDataTable()
     {
-        var path = Application.persistentDataPath + @"\DataResult\StructureData";
-
-        DirectoryInfo directoryInfo = new DirectoryInfo(path);
-        var files = directoryInfo.GetFiles();
-
-        for (int i = 0; i < files.Length; i++)
+        var dbReference = FirebaseDatabase.DefaultInstance.RootReference;
+        var root = dbReference.Child("DataTable").Child("Structure");
+        root.GetValueAsync().ContinueWith(task =>
         {
-            StreamReader streamReader = new StreamReader(string.Format(@"{0}/{1:00}.txt", path, i));
-            List<string> dataOfString = new List<string>();
-            
-            while (!streamReader.EndOfStream)
+            if (task.IsCompleted)
             {
-                var line = streamReader.ReadLine();
+                var snapshot = task.Result;
 
-                if (line == null) break;
-                dataOfString.Add(line);
+                foreach (var data in snapshot.Children)
+                {
+                    string value = (string)data.Value;
+                    var result = value.Split(",");
+                    
+                    int.TryParse(result[0], out int index);
+                    string name = result[1];
+                    string structureSize = result[2];
+                    int.TryParse(result[3], out int unlockLevel);
+                    int.TryParse(result[4], out int priceSolar);
+                    int.TryParse(result[5], out int priceSun);
+                    int.TryParse(result[6], out int upgradePriceSolar);
+                    
+                    List<bool> canCreate = new List<bool>();
+                    for (int j = 7; j < result.Length; j++)
+                    {
+                        canCreate.Add(int.Parse(result[j]) == 1);
+                    }
+                    
+                    StructureInfo structureInfo = new StructureInfo
+                    (
+                        index,
+                        name,
+                        structureSize,
+                        unlockLevel,
+                        priceSolar,
+                        priceSun,
+                        upgradePriceSolar,
+                        canCreate
+                    );
+                    table.Add(structureInfo);
+                }
+
+                DataLoadCompleted = true;
             }
-
-            int.TryParse(dataOfString[0], out int index);
-            string name = dataOfString[1];
-            string structureSize = dataOfString[2];
-            int.TryParse(dataOfString[3], out int unlockLevel);
-            int.TryParse(dataOfString[4], out int priceSolar);
-            int.TryParse(dataOfString[5], out int priceSun);
-            int.TryParse(dataOfString[6], out int upgradePriceSolar);
-
-            List<bool> canCreate = new List<bool>();
-            for (int j = 7; j < dataOfString.Count; j++)
-            {
-                canCreate.Add(int.Parse(dataOfString[j]) == 1);
-            }
-
-            StructureInfo structureInfo = new StructureInfo
-            (
-                index,
-                name,
-                structureSize,
-                unlockLevel,
-                priceSolar,
-                priceSun,
-                upgradePriceSolar,
-                canCreate
-            );
-            
-            table.Add(structureInfo);
-        }
+        });
     }
 }

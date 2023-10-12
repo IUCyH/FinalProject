@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using Firebase.Database;
 using UnityEditor;
 using UnityEngine;
 
@@ -17,7 +18,7 @@ public class CSV_To_Data : EditorWindow
     static GUIContent titleOfConvertItem = new GUIContent("Convert To ItemData");
 
     string path;
-    string streamWriterPath;
+    string dbPath;
 
     int orderOfData;
     float centerX;
@@ -47,23 +48,23 @@ public class CSV_To_Data : EditorWindow
     void ConvertAndSaveFile()
     {
         StreamReader streamReader = new StreamReader(path);
+        var firebaseReference = FirebaseDatabase.DefaultInstance.RootReference;
 
         while (!streamReader.EndOfStream)
         {
             var line = streamReader.ReadLine();
             if (line == null) break;
-            
+
             var result = line.Split(",");
-            
-            
-
-            /*StreamWriter streamWriter = new StreamWriter(string.Format(@"{0}\{1:00}.txt", streamWriterPath, orderOfData++));
-
-            for (int i = 0; i < result.Length; i++)
+            var index = result[0];
+            try
             {
-                streamWriter.WriteLine(result[i]);
+                firebaseReference.Child("DataTable").Child(dbPath).Child(index).SetValueAsync(line);
             }
-            streamWriter.Close();*/
+            catch (Exception e)
+            {
+                Debug.Log(e);
+            }
         }
 
         streamReader.Close();
@@ -82,11 +83,11 @@ public class CSV_To_Data : EditorWindow
 
         if (kindOfConvert == KindOfConvert.Structure)
         {
-            streamWriterPath = Application.persistentDataPath + @"\DataResult\StructureData";
+            dbPath = "Structure";
         }
         else if (kindOfConvert == KindOfConvert.Item)
         {
-            streamWriterPath = Application.persistentDataPath + @"\DataResult\ItemData";
+            dbPath = "Item";
         }
         
         if (GUILayout.Button("저장하기"))

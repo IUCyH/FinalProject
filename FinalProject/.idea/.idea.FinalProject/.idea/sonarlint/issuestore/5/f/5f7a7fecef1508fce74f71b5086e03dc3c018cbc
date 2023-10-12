@@ -1,10 +1,0 @@
-
-|csharpsquid:S101"YRename class 'CSV_To_Data' to match pascal case naming rules, consider using 'CsvToData'.(éïæ’8äÖü±1
-Pcsharpsquid:S3903",Move 'KindOfConvert' into a named namespace.(ºá‡ğ8äÖü±1
-Ncsharpsquid:S3903"*Move 'CSV_To_Data' into a named namespace.(éïæ’8äÖü±1
-Acsharpsquid:S2933"Make 'buttonWidth' 'readonly'.(ú¸‡l8åÖü±1
-Hcsharpsquid:S2933"Make 'buttonHeight' 'readonly'.(€¡³·şÿÿÿÿ8åÖü±1
-Xcsharpsquid:S1066^"/Merge this if statement with the enclosing one.(¿Ä™êıÿÿÿÿ8åÖü±1
-csharpsquid:S1450"VRemove the field 'centerX' and declare it as a local variable in the relevant methods.(ŒßÖÕÿÿÿÿÿ8çÖü±1
-Scsharpsquid:S14818"*Remove the unused local variable 'result'.(”ŒÒ¶üÿÿÿÿ8ÛßŸˆ²1
-Bcsharpsquid:S125<"Remove this commented out code.(œú¬8ÛßŸˆ²1

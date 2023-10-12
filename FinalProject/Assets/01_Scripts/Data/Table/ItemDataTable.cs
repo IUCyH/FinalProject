@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using Firebase.Database;
 using UnityEngine;
 
 public static class ItemDataTable
 {
     static List<ItemInfo> table = new List<ItemInfo>();
-    
+
     public static int Size => table.Count;
-    
+    public static bool DataLoadCompleted { get; private set; }
+
     public static ItemInfo GetInfo(int level)
     {
         return table[level];
@@ -16,32 +18,38 @@ public static class ItemDataTable
 
     static ItemDataTable()
     {
-        var path = Application.persistentDataPath + @"\DataResult\ItemData";
-
-        DirectoryInfo directoryInfo = new DirectoryInfo(path);
-        var files = directoryInfo.GetFiles();
-
-        for (int i = 0; i < files.Length; i++)
+        var dbReference = FirebaseDatabase.DefaultInstance.RootReference;
+        var root = dbReference.Child("DataTable").Child("Item");
+        root.GetValueAsync().ContinueWith(task =>
         {
-            StreamReader streamReader = new StreamReader(string.Format(@"{0}/{1:00}.txt", path, i));
-            List<string> dataOfString = new List<string>();
-
-            while (!streamReader.EndOfStream)
+            if (task.IsCompleted)
             {
-                var line = streamReader.ReadLine();
+                var snapshot = task.Result;
 
-                if (line == null) break;
-                dataOfString.Add(line);
+                foreach (var data in snapshot.Children)
+                {
+                    string value = (string)data.Value;
+                    var result = value.Split(",");
+                    
+                    int.TryParse(result[0], out int index);
+                    string name = result[1];
+                    int.TryParse(result[2], out int exp);
+                    int.TryParse(result[3], out int priceSolar);
+                    int.TryParse(result[4], out int craftTime);
+
+                    ItemInfo itemInfo = new ItemInfo
+                    (
+                        index,
+                        name,
+                        exp,
+                        priceSolar,
+                        craftTime
+                    );
+                    table.Add(itemInfo);
+                }
+
+                DataLoadCompleted = true;
             }
-
-            int.TryParse(dataOfString[0], out int index);
-            string name = dataOfString[1];
-            int.TryParse(dataOfString[2], out int exp);
-            int.TryParse(dataOfString[3], out int priceSolar);
-            int.TryParse(dataOfString[4], out int craftTime);
-
-            ItemInfo itemInfo = new ItemInfo(index, name, exp, priceSolar, craftTime);
-            table.Add(itemInfo);
-        }
+        });
     }
 }
