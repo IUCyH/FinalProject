@@ -23,13 +23,20 @@ public class SerializableDateTime
             
             return dateTime;
         }
+        set
+        {
+            ticks = value.Ticks;
+            dateTime = value;
+
+            initialized = true;
+        }
     }
 
     public static TimeSpan operator -(DateTime dateTime1, SerializableDateTime dateTime2)
     {
         return dateTime1 - dateTime2.dateTime;
     }
-    
+
     public SerializableDateTime(DateTime dateTime)
     {
         ticks = dateTime.Ticks;

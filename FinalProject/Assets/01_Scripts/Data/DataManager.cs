@@ -19,7 +19,7 @@ public class DataManager : Singleton_DontDestroy<DataManager>
         dbReference = FirebaseDatabase.DefaultInstance.RootReference;
         playerData = new PlayerData();
         uuid = SystemInfo.deviceUniqueIdentifier;
-        PlayerPrefs.DeleteAll();
+        
         Load();
     }
 
@@ -60,6 +60,7 @@ public class DataManager : Singleton_DontDestroy<DataManager>
     
     public void Save()
     {
+        playerData.recentPlayDateTime.DateTime = DateTime.Now;
         var json = JsonUtility.ToJson(playerData);
         
         dbReference.Child(PlayerDataRoot).Child(uuid).SetRawJsonValueAsync(json);
