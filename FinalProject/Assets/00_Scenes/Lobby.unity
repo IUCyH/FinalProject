@@ -291,6 +291,7 @@ MonoBehaviour:
   allGamePopup:
   - {fileID: 894435524}
   - {fileID: 2085106409}
+  chapterScroll: {fileID: 0}
 --- !u!4 &75636292
 Transform:
   m_ObjectHideFlags: 0
@@ -3266,6 +3267,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveObject: {fileID: 137261737}
   speed: 100
+  xRange: 400
 --- !u!4 &2007898697
 Transform:
   m_ObjectHideFlags: 0

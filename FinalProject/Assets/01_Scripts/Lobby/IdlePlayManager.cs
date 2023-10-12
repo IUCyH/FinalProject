@@ -10,7 +10,7 @@ public class IdlePlayManager : Singleton<IdlePlayManager>
 
     protected override void OnAwake()
     {
-        var lastPlayTime = DataManager.Instance.PlayerData.lastPlayTime;
+        var lastPlayTime = DataManager.Instance.PlayerData.recentPlayDateTime;
         
         timeSpan = DateTime.Now - lastPlayTime;
         PaymentManager.Instance.Sell(KindOfGoods.IdleRewards, (int)timeSpan.TotalSeconds / 60 * 20);

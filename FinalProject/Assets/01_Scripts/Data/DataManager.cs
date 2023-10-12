@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class DataManager : Singleton_DontDestroy<DataManager>
 {
+    const string PlayerDataRoot = "PlayerData";
+    
     DatabaseReference dbReference;
     PlayerData playerData;
     string uuid;
@@ -17,13 +19,13 @@ public class DataManager : Singleton_DontDestroy<DataManager>
         dbReference = FirebaseDatabase.DefaultInstance.RootReference;
         playerData = new PlayerData();
         uuid = SystemInfo.deviceUniqueIdentifier;
-        
+        PlayerPrefs.DeleteAll();
         Load();
     }
 
     public void Load()
     {
-        dbReference.Child(uuid).GetValueAsync().ContinueWith(task =>
+        dbReference.Child(PlayerDataRoot).Child(uuid).GetValueAsync().ContinueWith(task =>
         {
             if (task.IsFaulted)
             {
@@ -45,7 +47,7 @@ public class DataManager : Singleton_DontDestroy<DataManager>
                         gold = 0,
                         diamond = 0,
                         chapter = 0,
-                        lastPlayTime = DateTime.Now
+                        recentPlayDateTime = new SerializableDateTime(DateTime.Now)
                     };
                     
                     Save();
@@ -60,6 +62,6 @@ public class DataManager : Singleton_DontDestroy<DataManager>
     {
         var json = JsonUtility.ToJson(playerData);
         
-        dbReference.Child(uuid).SetRawJsonValueAsync(json);
+        dbReference.Child(PlayerDataRoot).Child(uuid).SetRawJsonValueAsync(json);
     }
 }

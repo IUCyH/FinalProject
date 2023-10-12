@@ -10,7 +10,7 @@ public class PlayerData
     public int gold;
     public int diamond;
     public int chapter;
-    public DateTime lastPlayTime;
+    public SerializableDateTime recentPlayDateTime;
 }
 
 [Serializable]
