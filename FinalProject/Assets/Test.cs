@@ -7,6 +7,13 @@ public class Test : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        StartCoroutine(Coroutine_DebugData());
+    }
+
+    IEnumerator Coroutine_DebugData()
+    {
+        while (!StructureItemDataTable.DataLoadCompleted) yield return null;
+        
         for (int i = 0; i < StructureItemDataTable.Size; i++)
         {
             var data = StructureItemDataTable.GetInfo(i);
@@ -23,7 +30,11 @@ public class Test : MonoBehaviour
             {
                 Debug.Log(data.canCreate[j]);
             }
+            
+            Debug.Log("///////////////////////////////////////////////////////");
         }
+
+        while (!ItemDataTable.DataLoadCompleted) yield return null;
         
         Debug.Log("===========================================");
 
@@ -36,6 +47,7 @@ public class Test : MonoBehaviour
             Debug.Log(data.exp);
             Debug.Log(data.price_Solar);
             Debug.Log(data.craftTime);
+            Debug.Log("///////////////////////////////////////////////////");
         }
     }
 }
