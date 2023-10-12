@@ -7,26 +7,47 @@ public class ChapterScroll : MonoBehaviour
     [SerializeField]
     GameObject moveObject;
 
-    Vector2 lastMousePosition;
-
     [SerializeField]
     float speed;
 
+    float inplaceSize = 1f;
+
+    [SerializeField] float xRange;
+
+    Vector3 lastMousePosition;
+    bool isDragging = false;
+
     void Update()
     {
-        if (Input.GetKey(KeyCode.Mouse1))
+        if (Input.GetMouseButtonDown(1))
         {
-            Vector2 currentMousePosition = Input.mousePosition;
-            Vector2 mouseDelta = currentMousePosition - lastMousePosition;
-
-            Vector3 newObjPosition = moveObject.transform.position;
-            newObjPosition.x -= mouseDelta.x * Time.deltaTime * speed;
-
-            moveObject.transform.position = newObjPosition; 
+            isDragging = true;
+            lastMousePosition = Input.mousePosition;
         }
 
-        lastMousePosition = Input.mousePosition;
+        if (Input.GetMouseButtonUp(1))
+        {
+            isDragging = false;
+        }
+
+        if (isDragging)
+        {
+            Vector3 currentMousePosition = Input.mousePosition;
+            Vector3 mouseDelta = currentMousePosition - lastMousePosition;
+            if (moveObject.transform.position.x < -xRange)
+            {
+                moveObject.transform.position = new Vector3(-xRange + inplaceSize, moveObject.transform.position.y, moveObject.transform.position.z);
+            }
+            // 오른쪽 경계를 넘어간 경우
+            else if (moveObject.transform.position.x > xRange)
+            {
+                moveObject.transform.position = new Vector3(xRange - inplaceSize, moveObject.transform.position.y, moveObject.transform.position.z);
+            }
+            else
+            {
+                moveObject.transform.Translate(Vector2.right * mouseDelta.x * speed * Time.deltaTime);
+            }
+            lastMousePosition = currentMousePosition;
+        }
     }
-
-
 }

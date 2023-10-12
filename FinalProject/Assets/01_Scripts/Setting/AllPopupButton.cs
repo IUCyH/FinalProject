@@ -11,6 +11,9 @@ public class AllPopupButton : MonoBehaviour
     [SerializeField]
     List<GameObject> allGamePopup; //Main, Chapter
 
+    [SerializeField]
+    ChapterScroll chapterScroll;
+
     void Start()
     {
         if (SceneManager.GetActiveScene().name == "Title")
@@ -60,6 +63,8 @@ public class AllPopupButton : MonoBehaviour
         DisableAllPopups(allGamePopup);
 
         allGamePopup[1].SetActive(true);
+
+        chapterScroll.enabled = true;
     }
 
     public void OutChapterButton()
@@ -67,6 +72,8 @@ public class AllPopupButton : MonoBehaviour
         DisableAllPopups(allGamePopup);
 
         allGamePopup[0].SetActive(true);
+
+        chapterScroll.enabled = false;
     }
 
     void DisableAllPopups(List<GameObject> allPopup)
