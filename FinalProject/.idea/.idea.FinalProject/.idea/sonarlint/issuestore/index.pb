@@ -19,8 +19,6 @@ W
 'Assets/01_Scripts/Etc/PaymentManager.cs,1\9\19e1f4af9b65b87ad2e8c1754825c101e01db397
 ]
 -Assets/01_Scripts/Data/Table/ItemDataTable.cs,9\0\90280011aa451d08beadce4b990bb3bb6317a631
-U
-%Assets/01_Scripts/Utill/CSV_To_Txt.cs,5\f\5f7a7fecef1508fce74f71b5086e03dc3c018cbc
 f
 6Assets/01_Scripts/Data/Table/StructureItemDataTable.cs,8\0\80df87d294bb7901200d7b22d021f280b966261b
 >
@@ -33,3 +31,5 @@ Z
 ,Assets/01_Scripts/UI/Lobby/LobbyUIManager.cs,a\1\a19a7003914aa3ace52d12555f23d116114f3abe
 k
 ;Assets/01_Scripts/SerializableClass/SerializableDateTime.cs,c\c\cc7074b9b6792aa32a5e97ffc5e9b043da71f4fa
+d
+4Assets/01_Scripts/Data/Table/LevelUpCostDataTable.cs,8\4\845515ab9c2d8e5619b5e6ba0c80f14b7d92e0f2

@@ -1,0 +1,28 @@
+
+Rcsharpsquid:S3903")Move 'PlayerData' into a named namespace.(«‚Šûÿÿÿÿ8©¤Ÿ”²1
+Ncsharpsquid:S3903>"*Move 'LevelUpCost' into a named namespace.(ş“¿´8ĞØ•²1
+Pcsharpsquid:S3903+"'Move 'ItemInfo' into a named namespace.(áÂ£‘úÿÿÿÿ8©¤Ÿ”²1
+Ocsharpsquid:S3903",Move 'StructureInfo' into a named namespace.(Ã€!8©¤Ÿ”²1
+hcsharpsquid:S1104	"DMake this field 'private' and encapsulate it in a 'public' property.(Ì–íï8©¤Ÿ”²1
+mcsharpsquid:S1104
+"DMake this field 'private' and encapsulate it in a 'public' property.(ìª¨âüÿÿÿÿ8«¤Ÿ”²1
+mcsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(şá±’ÿÿÿÿÿ8«¤Ÿ”²1
+hcsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(‹»µ¸8«¤Ÿ”²1
+mcsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(ƒÊ­àûÿÿÿÿ8«¤Ÿ”²1
+hcsharpsquid:S1104@"DMake this field 'private' and encapsulate it in a 'public' property.(Œ˜»8Å’ˆ–²1
+mcsharpsquid:S1104A"DMake this field 'private' and encapsulate it in a 'public' property.(Ì§Ï«ıÿÿÿÿ8ÑØ•²1
+mcsharpsquid:S1104-"DMake this field 'private' and encapsulate it in a 'public' property.(×´úÕúÿÿÿÿ8«¤Ÿ”²1
+hcsharpsquid:S1104."DMake this field 'private' and encapsulate it in a 'public' property.(¹£¥í8«¤Ÿ”²1
+hcsharpsquid:S1104/"DMake this field 'private' and encapsulate it in a 'public' property.(ÃÍıû8«¤Ÿ”²1
+mcsharpsquid:S11040"DMake this field 'private' and encapsulate it in a 'public' property.(ÄóÃ¾üÿÿÿÿ8«¤Ÿ”²1
+hcsharpsquid:S11041"DMake this field 'private' and encapsulate it in a 'public' property.(ášğø8«¤Ÿ”²1
+mcsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(×´úÕúÿÿÿÿ8«¤Ÿ”²1
+hcsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(¹£¥í8«¤Ÿ”²1
+hcsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(Îëìì8«¤Ÿ”²1
+hcsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(©øÏá8«¤Ÿ”²1
+mcsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(ÄóÃ¾üÿÿÿÿ8«¤Ÿ”²1
+mcsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(Â›¬ªıÿÿÿÿ8«¤Ÿ”²1
+hcsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(ú’îß8«¤Ÿ”²1
+mcsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(×ˆÿıÿÿÿÿ8«¤Ÿ”²1
+}csharpsquid:S3604"TRemove the member initializer, all constructors set an initial value for the member.(×ˆÿıÿÿÿÿ8¬¤Ÿ”²1
+mcsharpsquid:S107"EConstructor has 8 parameters, which is greater than the 7 authorized.(°şÙ§ùÿÿÿÿ8¬¤Ÿ”²1
