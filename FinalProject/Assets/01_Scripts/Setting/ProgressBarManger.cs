@@ -10,7 +10,7 @@ public class ProgressBarManager : Singleton_DontDestroy<ProgressBarManager>
     Image progressBar;
     [SerializeField]
     Image progressBg;
-
+    [SerializeField]
     Canvas loadCanvas;
 
     protected override void OnStart()
