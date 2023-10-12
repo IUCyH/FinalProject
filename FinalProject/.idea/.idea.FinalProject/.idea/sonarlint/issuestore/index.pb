@@ -27,3 +27,5 @@ f
 Assets/Test.cs,7\3\733160dfc6f700202f3e99f9f9c02f225946355f
 K
 Assets/google-services.json,d\d\ddf7687ff38b2c9eb9ff00faaacc7b5d88c587b2
+Z
+*Assets/01_Scripts/Chapter/ChapterScroll.cs,1\1\11428023d12442a9689716eca4bf55811f55bf31
