@@ -1861,20 +1861,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0f126d4290b7c842a6ca18da11accd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerData:
-    level: 0
-    gold: 0
-    diamond: 0
-    unlockedChapters: 
-    recentPlayDateTime:
-      ticks: 0
   chapters:
   - {fileID: 962641151}
   - {fileID: 580587813}
   - {fileID: 1093051306}
   - {fileID: 2083847099}
-  data:
-    isUnlock: 0000000000
 --- !u!4 &959453882
 Transform:
   m_ObjectHideFlags: 0
@@ -2950,9 +2941,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a31a89407e6d9664ea969478ccbb8667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  progressBar: {fileID: 96924035}
-  progressBg: {fileID: 1309419070}
-  loadCanvas: {fileID: 837547969}
 --- !u!4 &1412619438
 Transform:
   m_ObjectHideFlags: 0
@@ -2967,7 +2955,7 @@ Transform:
   m_Children:
   - {fileID: 837547972}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1431091747
 GameObject:
