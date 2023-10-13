@@ -4,18 +4,33 @@ using UnityEngine;
 
 namespace Demo
 {
-    public class GardenManger : MonoBehaviour
+    public enum KindOfFlower
     {
-        // Start is called before the first frame update
-        void Start()
-        {
+        Red,
+        Blue,
+        Green
+    }
+    
+    public class GardenManger : Singleton<GardenManger>
+    {
+        FlowerPerson[] persons;
 
+        protected override void OnStart()
+        {
+            persons = GetComponentsInChildren<FlowerPerson>();
         }
 
-        // Update is called once per frame
-        void Update()
+        public FlowerPerson GetPerson(KindOfFlower kindOfFlower)
         {
+            for (int i = 0; i < persons.Length; i++)
+            {
+                if (persons[i].CanMove && persons[i].KindOfFlower == kindOfFlower)
+                {
+                    return persons[i];
+                }
+            }
 
+            return null;
         }
     }
 }

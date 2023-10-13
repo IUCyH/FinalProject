@@ -39,3 +39,11 @@ N
 Assets/01_Scripts/Data/Data.cs,d\0\d0332d87100b45876c60fcc09b27c02fbef7f649
 U
 %Assets/01_Scripts/Data/DataManager.cs,c\3\c3a6cf9d96e064a4072a439ab8a3ca59721b60aa
+N
+Assets/Editor/EditDataTable.cs,7\d\7d4a01ea21681193ed756511fd9c7f9ae958701e
+P
+ Assets/Editor/RemoveDataTable.cs,5\2\521af132dd4e2f89d9e13e720bbaa59d6edc6744
+t
+DAssets/01_Scripts/Data/Table/MaxStoreCapacityOfSolarCoinDataTable.cs,1\3\137f754623d50e32888b02261788f98efe3f0805
+u
+EAssets/01_Scripts/Data/Table/SolarCoinProductionPerMinuteDataTable.cs,3\9\39d0fe9f446621bdb0eb303497f80b88150b396a

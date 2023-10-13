@@ -8,13 +8,22 @@ namespace Demo
     public class FlowerPerson : MonoBehaviour
     {
         [SerializeField]
-        int flower;
+        KindOfFlower flower;
         [SerializeField]
-        bool isCanMove;
+        bool isCanMove = true;
+        [SerializeField]
+        float speed;
 
-        void Update()
+        public bool CanMove => isCanMove;
+        public KindOfFlower KindOfFlower => flower;
+
+        public bool MoveToField(Vector3 targetPos)
         {
-            
+            transform.position = Vector3.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
+
+            isCanMove = Vector3.Distance(transform.position, targetPos) > 0f;
+
+            return !isCanMove;
         }
     }
 }
