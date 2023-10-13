@@ -47,6 +47,9 @@ public static class ItemDataTable
                         craftTime
                     );
                     table.Add(itemInfo);
+                    Debug.Log(index);
+                    Debug.Log(name);
+                    Debug.Log(priceSolar);
                 }
 
                 table = table.OrderBy(info => info.index).ToList();
