@@ -9,7 +9,7 @@ public class AllPopupButton : MonoBehaviour
     List<GameObject> allTitlePopup; //Start, Setting, KeySetting
 
     [SerializeField]
-    List<GameObject> allGamePopup; //Main, Chapter
+    List<GameObject> allLobyPopup; //Main, Chapter
 
     [SerializeField]
     ChapterScroll chapterScroll;
@@ -24,15 +24,15 @@ public class AllPopupButton : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name == "Lobby")
         {
-            DisableAllPopups(allGamePopup);
+            DisableAllPopups(allLobyPopup);
 
-            allGamePopup[0].SetActive(true);
+            allLobyPopup[0].SetActive(true);
         }
     }
 
     public void StartButton()
     {
-        SceneLoadManager.Instance.Load(Scene.Game);
+        SceneLoadManager.Instance.Load(Scene.Lobby);
     }  
 
     public void SettingButton()
@@ -60,18 +60,18 @@ public class AllPopupButton : MonoBehaviour
 
     public void InChapterButton()
     {
-        DisableAllPopups(allGamePopup);
+        DisableAllPopups(allLobyPopup);
 
-        allGamePopup[1].SetActive(true);
+        allLobyPopup[1].SetActive(true);
 
         chapterScroll.enabled = true;
     }
 
     public void OutChapterButton()
     {
-        DisableAllPopups(allGamePopup);
+        DisableAllPopups(allLobyPopup);
 
-        allGamePopup[0].SetActive(true);
+        allLobyPopup[0].SetActive(true);
 
         chapterScroll.enabled = false;
     }
