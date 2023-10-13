@@ -7,22 +7,11 @@ using UnityEngine.UI;
 public class ChapterManagement : MonoBehaviour
 {
     [SerializeField]
-    PlayerData playerData;
-
-    [SerializeField]
     List<Button> chapters = new List<Button>();
     
-    [SerializeField]
-    Data data;
 
     int btnLevel;
 
-    [Serializable] 
-    public class Data
-    {
-        // °¢ Ã©ÅÍÀÇ Àá±İ¿©ºÎ¸¦ ÀúÀåÇÒ ¹è¿­
-        public bool[] isUnlock = new bool[5];
-    }
 
     void Start()
     {
@@ -31,19 +20,19 @@ public class ChapterManagement : MonoBehaviour
 
     void ChapterButtonDisable()
     {
-        //Ã©ÅÍ ¹öÆ° ´©¸§ ºñÈ°¼ºÈ­(== ÀÌ¹ÌÁö)
+        //Ã©ï¿½ï¿½ ï¿½ï¿½Æ° ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È°ï¿½ï¿½È­(== ï¿½Ì¹ï¿½ï¿½ï¿½)
         for (int i = 0; i < chapters.Count; i++)
         {
             chapters[i].interactable = false;
         }
 
-        //Ã¹¹øÂ°¸¸ È°¼ºÈ­
+        //Ã¹ï¿½ï¿½Â°ï¿½ï¿½ È°ï¿½ï¿½È­
         chapters[0].interactable = true;
     }
 
     public void ChapterReSetting(Button chapterObject)
     {
-        //ÃÊ±âÈ­ ÈÄ »ı¼ºµÈ Ã©ÅÍ ´Ù½Ã ³Ö±â
+        //ï¿½Ê±ï¿½È­ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã©ï¿½ï¿½ ï¿½Ù½ï¿½ ï¿½Ö±ï¿½
         chapters.Clear();
 
         chapters.Add(chapterObject);
@@ -53,26 +42,26 @@ public class ChapterManagement : MonoBehaviour
 
     public void ChapterClear()
     {
-        //Ã©ÅÍ Å¬¸®¾î °á°ú 
+        //Ã©ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ 
         btnLevel++;
 
         chapters[btnLevel].interactable = true;
 
-        //playerData.chapter++;
+        DataManager.Instance.PlayerData.unlockedChapters[btnLevel] = true;  
 
         //DataManager.Instance.LoadGameData();
     }
 
     public void ChapterUnlock(int chapterNum)
     {
-        //Ã©ÅÍ Å¬¸®¾î ¼º°ø È­¸é È£Ãâ
+        //ï¿½ï¿½ï¿½Ó¾ï¿½ï¿½ï¿½ï¿½ï¿½ Ã©ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È­ï¿½ï¿½ È£ï¿½ï¿½
 
-        data.isUnlock[chapterNum] = true;
+        
     }
 
     public void ChapterDontClear()
     {
-        //Ã©ÅÍ Å¬¸®¾î ½ÇÆĞ È­¸é È£Ãâ
+        //ï¿½ï¿½ï¿½Ó¾ï¿½ï¿½ï¿½ï¿½ï¿½ Ã©ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È­ï¿½ï¿½ È£ï¿½ï¿½
     }
 
     void CallSave()
