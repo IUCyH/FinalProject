@@ -64,3 +64,25 @@ public class LevelUpCost
     public uint level;
     public uint cost;
 }
+
+[Serializable]
+public class SolarCoinProductionPerMinute
+{
+    public int level;
+    public float normal;
+    public float highClass;
+    public float rare;
+    public float hero;
+    public float legend;
+}
+
+[Serializable]
+public class MaxStoreCapacityOfSolarCoin
+{
+    public int level;
+    public float normal;
+    public float highClass;
+    public float rare;
+    public float hero;
+    public float legend;
+}
