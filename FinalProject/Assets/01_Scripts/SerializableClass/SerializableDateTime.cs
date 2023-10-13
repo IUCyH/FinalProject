@@ -49,4 +49,12 @@ public class SerializableDateTime
 
         initialized = true;
     }
+    
+    public SerializableDateTime(long tick)
+    {
+        ticks = tick;
+        dateTime = new DateTime(ticks);
+
+        initialized = true;
+    }
 }
