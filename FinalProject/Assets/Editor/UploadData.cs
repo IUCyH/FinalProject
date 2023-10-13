@@ -6,56 +6,22 @@ using Firebase.Database;
 using UnityEditor;
 using UnityEngine;
 
-enum KindOfConvert
-{
-    Structure,
-    Item,
-    LevelUpCost
-}
-
 public class UploadData : EditorWindow
 {
-    static GUIContent titleOfConvertStructure = new GUIContent("구조물 데이터 파일 업로드");
-    static GUIContent titleOfConvertItem = new GUIContent("아이템 데이터 파일 업로드");
-    static GUIContent titleOfLevelUpCostData = new GUIContent("레벨업 비용 데이터 파일 업로드");
+    static GUIContent titleOfUpload = new GUIContent("데이터 파일 DB Table로 업로드");
 
     string path;
     string dbPath;
 
-    float centerX;
-    float buttonWidth = 250f;
-    float buttonHeight = 30f;
-
-    static KindOfConvert kindOfConvert;
-
-    [MenuItem("Data/구조물 데이터 파일 업로드")]
+    [MenuItem("Data/데이터 파일 DB Table로 업로드")]
     static void OpenUploadStructureDataWindow()
     {
         var window = GetWindow<UploadData>();
 
-        window.titleContent = titleOfConvertStructure;
-        kindOfConvert = KindOfConvert.Structure;
+        window.titleContent = titleOfUpload;
     }
 
-    [MenuItem("Data/아이템 데이터 파일 업로드")]
-    static void OpenUploadItemDataWindow()
-    {
-        var window = GetWindow<UploadData>();
-
-        window.titleContent = titleOfConvertItem;
-        kindOfConvert = KindOfConvert.Item;
-    }
-    
-    [MenuItem("Data/레벨업 비용 데이터 파일 업로드")]
-    static void OpenUploadLevelUpCostDataWindow()
-    {
-        var window = GetWindow<UploadData>();
-
-        window.titleContent = titleOfLevelUpCostData;
-        kindOfConvert = KindOfConvert.LevelUpCost;
-    }
-
-    void ConvertAndSaveFile()
+    void UploadFile()
     {
         StreamReader streamReader = new StreamReader(path);
         var firebaseReference = FirebaseDatabase.DefaultInstance.RootReference;
@@ -85,34 +51,18 @@ public class UploadData : EditorWindow
 
     void OnGUI()
     {
-        centerX = (Screen.width - buttonWidth) / 2;
+        GUILayout.Label("1. 데이터 테이블 이름 입력");
+        dbPath = GUILayout.TextField(dbPath);
         
-        GUILayout.Label("CSV 파일의 경로 입력");
+        GUILayout.Label("2. CSV 파일의 경로 입력");
         path = GUILayout.TextField(path);
-
-        GUILayout.BeginArea(new Rect(new Vector2(centerX, 50f), new Vector2(buttonWidth, buttonHeight)));
-
-        if (kindOfConvert == KindOfConvert.Structure)
-        {
-            dbPath = "Structure";
-        }
-        else if (kindOfConvert == KindOfConvert.Item)
-        {
-            dbPath = "Item";
-        }
-        else if (kindOfConvert == KindOfConvert.LevelUpCost)
-        {
-            dbPath = "LevelUpCost";
-        }
-
+        
         if (GUILayout.Button("저장하기"))
         {
-            if (!string.IsNullOrEmpty(path))
+            if (!string.IsNullOrEmpty(path) && !string.IsNullOrEmpty(dbPath))
             {
-                ConvertAndSaveFile();
+                UploadFile();
             }
         }
-
-        GUILayout.EndArea();
     }
 }
