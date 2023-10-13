@@ -44,11 +44,13 @@ public class AllPopupButton : MonoBehaviour
 
     public void GameExitButton()
     {
+        DataManager.Instance.Save();
 #if UNITY_EDITOR
         EditorApplication.ExitPlaymode();
 #else
         Application.Quit();
 #endif
+
     }
 
     public void KeySettingButton()
@@ -60,6 +62,7 @@ public class AllPopupButton : MonoBehaviour
 
     public void InChapterButton()
     {
+        //챕터 화면
         DisableAllPopups(allLobyPopup);
 
         allLobyPopup[1].SetActive(true);
@@ -69,11 +72,17 @@ public class AllPopupButton : MonoBehaviour
 
     public void OutChapterButton()
     {
+        //로비 화면
         DisableAllPopups(allLobyPopup);
 
         allLobyPopup[0].SetActive(true);
 
         chapterScroll.enabled = false;
+    }
+
+    public void ChapterStartButton()
+    {        
+        SceneLoadManager.Instance.Load(Scene.Game);        
     }
 
     void DisableAllPopups(List<GameObject> allPopup)

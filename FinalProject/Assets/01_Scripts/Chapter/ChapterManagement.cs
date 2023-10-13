@@ -6,10 +6,14 @@ using UnityEngine.UI;
 
 public class ChapterManagement : MonoBehaviour
 {
+    PlayerData playerData;
+
     [SerializeField]
     List<Button> chapters = new List<Button>();
 
-    PlayerData playerData;
+    [SerializeField]
+    AllPopupButton allPopupButton;
+   
     [SerializeField]
     Data data;
 
@@ -24,10 +28,10 @@ public class ChapterManagement : MonoBehaviour
 
     void Start()
     {
-        ButtonDisable();
+        ChapterButtonDisable();
     }
 
-    void ButtonDisable()
+    void ChapterButtonDisable()
     {
         //챕터 버튼 누름 비활성화(== 이미지)
         for (int i = 0; i < chapters.Count; i++)
@@ -35,7 +39,22 @@ public class ChapterManagement : MonoBehaviour
             chapters[i].interactable = false;
         }
 
+        //첫번째만 활성화
         chapters[0].interactable = true;
+    }
+
+    public void ChapterReSetting(Button chapterObject)
+    {
+        //초기화 후 생성된 챕터 다시 넣기
+        chapters.Clear();
+
+        chapters.Add(chapterObject);
+    }
+
+
+    public void ChapterStart()
+    {
+        allPopupButton.ChapterStartButton();
     }
 
     public void ChapterClear()
