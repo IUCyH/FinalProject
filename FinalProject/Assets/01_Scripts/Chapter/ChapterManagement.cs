@@ -58,7 +58,7 @@ public class ChapterManagement : MonoBehaviour
 
         chapters[btnLevel].interactable = true;
 
-        playerData.chapter++;
+        //playerData.chapter++;
 
         //DataManager.Instance.LoadGameData();
     }
