@@ -82,7 +82,7 @@ public class AllPopupButton : MonoBehaviour
 
     public void ChapterStartButton()
     {        
-        SceneLoadManager.Instance.Load(Scene.Game);        
+        SceneLoadManager.Instance.Load(Scene.Game);     
     }
 
     void DisableAllPopups(List<GameObject> allPopup)

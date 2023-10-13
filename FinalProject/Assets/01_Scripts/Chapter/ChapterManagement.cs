@@ -20,19 +20,19 @@ public class ChapterManagement : MonoBehaviour
 
     void ChapterButtonDisable()
     {
-        //Ã©ÅÍ ¹öÆ° ´©¸§ ºñÈ°¼ºÈ­(== ÀÌ¹ÌÁö)
+        //Ã©ï¿½ï¿½ ï¿½ï¿½Æ° ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È°ï¿½ï¿½È­(== ï¿½Ì¹ï¿½ï¿½ï¿½)
         for (int i = 0; i < chapters.Count; i++)
         {
             chapters[i].interactable = false;
         }
 
-        //Ã¹¹øÂ°¸¸ È°¼ºÈ­
+        //Ã¹ï¿½ï¿½Â°ï¿½ï¿½ È°ï¿½ï¿½È­
         chapters[0].interactable = true;
     }
 
     public void ChapterReSetting(Button chapterObject)
     {
-        //ÃÊ±âÈ­ ÈÄ »ý¼ºµÈ Ã©ÅÍ ´Ù½Ã ³Ö±â
+        //ï¿½Ê±ï¿½È­ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã©ï¿½ï¿½ ï¿½Ù½ï¿½ ï¿½Ö±ï¿½
         chapters.Clear();
 
         chapters.Add(chapterObject);
@@ -42,7 +42,7 @@ public class ChapterManagement : MonoBehaviour
 
     public void ChapterClear()
     {
-        //Ã©ÅÍ Å¬¸®¾î °á°ú 
+        //Ã©ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ 
         btnLevel++;
 
         chapters[btnLevel].interactable = true;
@@ -54,14 +54,14 @@ public class ChapterManagement : MonoBehaviour
 
     public void ChapterUnlock(int chapterNum)
     {
-        //°ÔÀÓ¾À¿¡¼­ Ã©ÅÍ Å¬¸®¾î ¼º°ø È­¸é È£Ãâ
+        //ï¿½ï¿½ï¿½Ó¾ï¿½ï¿½ï¿½ï¿½ï¿½ Ã©ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È­ï¿½ï¿½ È£ï¿½ï¿½
 
         
     }
 
     public void ChapterDontClear()
     {
-        //°ÔÀÓ¾À¿¡¼­ Ã©ÅÍ Å¬¸®¾î ½ÇÆÐ È­¸é È£Ãâ
+        //ï¿½ï¿½ï¿½Ó¾ï¿½ï¿½ï¿½ï¿½ï¿½ Ã©ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È­ï¿½ï¿½ È£ï¿½ï¿½
     }
 
     void CallSave()
