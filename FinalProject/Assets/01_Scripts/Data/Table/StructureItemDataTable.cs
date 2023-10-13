@@ -59,6 +59,9 @@ public static class StructureItemDataTable
                         canCreate
                     );
                     table.Add(structureInfo);
+                    Debug.Log(index);
+                    Debug.Log(name);
+                    Debug.Log(priceSolar);
                 }
 
                 table = table.OrderBy(info => info.index).ToList();

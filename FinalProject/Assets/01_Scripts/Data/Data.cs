@@ -9,7 +9,7 @@ public class PlayerData
     public int level;
     public int gold;
     public int diamond;
-    public int chapter;
+    public List<bool> unlockedChapters;
     public SerializableDateTime recentPlayDateTime;
 }
 

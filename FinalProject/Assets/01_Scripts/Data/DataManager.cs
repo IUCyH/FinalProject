@@ -46,7 +46,7 @@ public class DataManager : Singleton_DontDestroy<DataManager>
                         level = 0,
                         gold = 0,
                         diamond = 0,
-                        chapter = 0,
+                        unlockedChapters = new List<bool>(),
                         recentPlayDateTime = new SerializableDateTime(DateTime.Now)
                     };
                     
