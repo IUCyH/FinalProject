@@ -6,7 +6,7 @@ using UnityEngine;
 [Serializable]
 public class SerializableList<T>
 {
-    List<T> list;
+    List<T> list = new List<T>();
     [SerializeField]
     string jsonFile = " ";
 
@@ -42,8 +42,8 @@ public class SerializableList<T>
     {
         if (!string.IsNullOrEmpty(json))
         {
-            jsonFile = json;
-            list = JsonUtility.FromJson<List<T>>(jsonFile);
+            //jsonFile = json;
+            //list = JsonUtility.FromJson<List<T>>(json);
 
             initialized = true;
         }

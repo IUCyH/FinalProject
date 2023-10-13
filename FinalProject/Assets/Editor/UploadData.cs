@@ -33,6 +33,7 @@ public class UploadData : EditorWindow
 
             var result = line.Split(",");
             var index = result[0];
+
             firebaseReference.Child("DataTable").Child(dbPath).Child(index).SetValueAsync(line).ContinueWith(task =>
             {
                 if (task.IsCompleted)

@@ -9,7 +9,8 @@ public class PlayerData
     public int level;
     public int gold;
     public int diamond;
-    public SerializableList<bool> unlockedChapters;
+    public string jsonOfChapters;
+    public List<bool> unlockedChapters;
     public SerializableDateTime recentPlayDateTime;
 }
 
