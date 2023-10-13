@@ -11,10 +11,12 @@ public class AllPopupButton : MonoBehaviour
     [SerializeField]
     List<GameObject> allLobyPopup; //Main, Chapter
 
-    [SerializeField]
-    ChapterScroll chapterScroll;
-
     void Start()
+    {
+        SetPopup();
+    }
+
+    public void SetPopup()
     {
         if (SceneManager.GetActiveScene().name == "Title")
         {
@@ -66,8 +68,6 @@ public class AllPopupButton : MonoBehaviour
         DisableAllPopups(allLobyPopup);
 
         allLobyPopup[1].SetActive(true);
-
-        chapterScroll.enabled = true;
     }
 
     public void OutChapterButton()
@@ -75,9 +75,7 @@ public class AllPopupButton : MonoBehaviour
         //로비 화면
         DisableAllPopups(allLobyPopup);
 
-        allLobyPopup[0].SetActive(true);
-
-        chapterScroll.enabled = false;
+        allLobyPopup[0].SetActive(true);        
     }
 
     public void ChapterStartButton()
