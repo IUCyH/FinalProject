@@ -288,7 +288,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allTitlePopup: []
-  allLobyPopup: []
+  allLobyPopup:
+  - {fileID: 894435524}
+  - {fileID: 2085106409}
+  - {fileID: 392386538}
   chapterScroll: {fileID: 2007898696}
 --- !u!4 &75636292
 Transform:
