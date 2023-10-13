@@ -6,14 +6,12 @@ using UnityEngine.UI;
 
 public class ChapterManagement : MonoBehaviour
 {
+    [SerializeField]
     PlayerData playerData;
 
     [SerializeField]
     List<Button> chapters = new List<Button>();
-
-    [SerializeField]
-    AllPopupButton allPopupButton;
-   
+    
     [SerializeField]
     Data data;
 
@@ -52,10 +50,6 @@ public class ChapterManagement : MonoBehaviour
     }
 
 
-    public void ChapterStart()
-    {
-        allPopupButton.ChapterStartButton();
-    }
 
     public void ChapterClear()
     {
