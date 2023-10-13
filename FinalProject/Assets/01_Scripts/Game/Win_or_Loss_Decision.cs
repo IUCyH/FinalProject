@@ -16,7 +16,7 @@ public class Win_or_Loss_Decision : MonoBehaviour
 
     List<(int InputID, int InputSkillNum)> InputValue = new List<(int, int)>();
 
-    //공격력, 치명타, 방어구 관통력, 생명력 흡수, 생명력, 체력 재생력, 방어력, 회피, 피해 반사, 속도 해야됨
+    //공격력, 치명타, 방어구 관통력, 생명력 흡수, 생명력, 체력 재생력, 방어력, 회피, 피해 반사, 속도 
     float player1health;
     float player2health;
 
@@ -46,22 +46,22 @@ public class Win_or_Loss_Decision : MonoBehaviour
                 {
                     if (player1Property[i].player1SkillNum > player2Property[i].player2SkillNum)
                     {
-                        //sequence.Add(player1Property);
+                        sequence.Add(player1Property[i]);
                     }
                     else
                     {
-                        //sequence.Add(player2Property);
+                        sequence.Add(player2Property[i]);
                     }
                 }
                 else
                 {
                     if (player1attackSpeed > player2attackSpeed)
                     {
-                        //sequence.Add(player1Property);
+                        sequence.Add(player1Property[i]);
                     }
                     else
                     {
-                        //sequence.Add(player2Property);
+                        sequence.Add(player2Property[i]);
                     }
                 }
             }
