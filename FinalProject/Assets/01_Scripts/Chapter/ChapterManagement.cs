@@ -7,22 +7,11 @@ using UnityEngine.UI;
 public class ChapterManagement : MonoBehaviour
 {
     [SerializeField]
-    PlayerData playerData;
-
-    [SerializeField]
     List<Button> chapters = new List<Button>();
     
-    [SerializeField]
-    Data data;
 
     int btnLevel;
 
-    [Serializable] 
-    public class Data
-    {
-        // 각 챕터의 잠금여부를 저장할 배열
-        public bool[] isUnlock = new bool[5];
-    }
 
     void Start()
     {
@@ -58,21 +47,21 @@ public class ChapterManagement : MonoBehaviour
 
         chapters[btnLevel].interactable = true;
 
-        playerData.chapter++;
+        DataManager.Instance.PlayerData.unlockedChapters[btnLevel] = true;  
 
         //DataManager.Instance.LoadGameData();
     }
 
     public void ChapterUnlock(int chapterNum)
     {
-        //챕터 클리어 성공 화면 호출
+        //게임씬에서 챕터 클리어 성공 화면 호출
 
-        data.isUnlock[chapterNum] = true;
+        
     }
 
     public void ChapterDontClear()
     {
-        //챕터 클리어 실패 화면 호출
+        //게임씬에서 챕터 클리어 실패 화면 호출
     }
 
     void CallSave()
