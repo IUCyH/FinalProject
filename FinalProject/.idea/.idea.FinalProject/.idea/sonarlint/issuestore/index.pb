@@ -47,3 +47,9 @@ t
 DAssets/01_Scripts/Data/Table/MaxStoreCapacityOfSolarCoinDataTable.cs,1\3\137f754623d50e32888b02261788f98efe3f0805
 u
 EAssets/01_Scripts/Data/Table/SolarCoinProductionPerMinuteDataTable.cs,3\9\39d0fe9f446621bdb0eb303497f80b88150b396a
+Y
+)Assets/DemoScripts/Garden/GardenManger.cs,8\0\80b6fd7625a097d6e04c041b88a8dfe45a82833c
+Y
+)Assets/DemoScripts/Garden/FlowerPerson.cs,f\0\f06ac1b49dc59550de11046c8e138e8173c73b0e
+X
+(Assets/DemoScripts/Garden/FieldOfLand.cs,1\c\1cc2379ee2ee3ca37bbd35b138449ddf3cda5bf0

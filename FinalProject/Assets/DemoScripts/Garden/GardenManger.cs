@@ -24,7 +24,7 @@ namespace Demo
         {
             for (int i = 0; i < persons.Length; i++)
             {
-                if (persons[i].CanMove && persons[i].KindOfFlower == kindOfFlower)
+                if (!persons[i].FreeAct && persons[i].CanMove && persons[i].KindOfFlower == kindOfFlower)
                 {
                     return persons[i];
                 }

@@ -2,31 +2,92 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 namespace Demo
 {
     public class FieldOfLand : MonoBehaviour
     {
         [SerializeField]
-        KindOfFlower kindOfFlower;
         FlowerPerson person;
+        string[] selectButtonNames = new[] { "Manage Flower Person", "Get Solar Coin"};
+        string[] flowerPersonSelectMenuNames = new[] { "Level Up", "Training", "Upgrade", "Free Action" };
+        UnityAction[] selectButtonActions;
+        UnityAction[] flowerPersonSelectMenuActions;
         
         [SerializeField]
+        KindOfFlower kindOfFlower;
+        [SerializeField]
         bool isFull;
-        bool canClick;
+        bool canCollect;
         int solar;
-        int maxSolar = 5;
+        const int MaxSolar = 10;
+        int collectableAmount = 5;
         float maxTime = 1f;
         float timer;
 
+        void Start()
+        {
+            flowerPersonSelectMenuActions = new UnityAction[]
+            {
+                () =>
+                {
+                    SelectPopup.Instance.HideSelectButtons();
+                    Debug.Log("Level Up");
+                },
+                () =>
+                {
+                    SelectPopup.Instance.HideSelectButtons();
+                    Debug.Log("Training");
+                },
+                () =>
+                {
+                    SelectPopup.Instance.HideSelectButtons();
+                    Debug.Log("Upgrade");
+                },
+                () =>
+                {
+                    SelectPopup.Instance.HideSelectButtons();
+                    FlowerPersonFreeAction();
+                }
+            };
+            
+            selectButtonActions = new UnityAction[]
+            {
+                () =>
+                {
+                    var pos = Camera.main.WorldToScreenPoint(transform.position);
+                    SelectPopup.Instance.ShowSelectButtons(pos, flowerPersonSelectMenuNames, flowerPersonSelectMenuActions);
+                },
+                () =>
+                {
+                    SelectPopup.Instance.HideSelectButtons();
+                    if (canCollect)
+                    {
+                        Debug.Log("Take All Solar : " + solar);
+                        solar = 0;
+                        canCollect = false;
+                    }
+                }
+            };
+        }
+
         void OnMouseDown()
         {
-            if (!canClick) return;
+            if (EventSystem.current.IsPointerOverGameObject()) return;
+            
+            Debug.Log(name);
+            if (canCollect)
+            {
+                Debug.Log("Take All Solar : " + solar);
 
-            Debug.Log("Take All Solar : " + solar);
+                solar = 0;
+                canCollect = false;
+            }
 
-            solar = 0;
-            canClick = false;
+            var pos = Camera.main.WorldToScreenPoint(transform.position);
+            SelectPopup.Instance.ShowSelectButtons(pos, selectButtonNames, selectButtonActions, 2);
         }
 
         void Update()
@@ -40,11 +101,11 @@ namespace Demo
                 {
                     isFull = person.MoveToField(transform.position);
                 }
-
-                if (isFull) person = null;
             }
             else
             {
+                if (solar >= MaxSolar) return;
+                
                 timer += Time.deltaTime;
 
                 if (timer > maxTime)
@@ -53,10 +114,25 @@ namespace Demo
                     Debug.Log(solar++);
                 }
 
-                if (solar >= maxSolar)
+                if (solar >= collectableAmount)
                 {
-                    canClick = true;
+                    canCollect = true;
                 }
+
+                if (solar >= MaxSolar)
+                {
+                    Debug.Log("Sleeping.....");
+                }
+            }
+        }
+
+        void FlowerPersonFreeAction()
+        {
+            if (!ReferenceEquals(person, null))
+            {
+                person.ActFree();
+                person = null;
+                isFull = false;
             }
         }
     }
