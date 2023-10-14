@@ -69,20 +69,7 @@ public class AllPopupButton : MonoBehaviour
 
         allLobyPopup[1].SetActive(true);
     }
-
-    public void OutChapterButton()
-    {
-        //로비 화면
-        DisableAllPopups(allLobyPopup);
-
-        allLobyPopup[0].SetActive(true);        
-    }
-
-    public void ChapterStartButton()
-    {        
-        SceneLoadManager.Instance.Load(Scene.Game);     
-    }
-
+    
     void DisableAllPopups(List<GameObject> allPopup)
     {
         for (int i = 0; i < allPopup.Count; i++)
