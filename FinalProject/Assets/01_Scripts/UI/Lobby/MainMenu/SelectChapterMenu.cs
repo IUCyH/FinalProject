@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SelectChapterMenuController : MonoBehaviour
+public class SelectChapterMenu : MonoBehaviour
 {
     RectTransform thisRectTrans;
 

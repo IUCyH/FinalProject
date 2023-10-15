@@ -6,7 +6,7 @@ using UnityEngine;
 public class ObjectPool<T> where T : class
 {
     Func<T> func;
-    Queue<T> queue;
+    Queue<T> queue = new Queue<T>();
     int count;
 
     public ObjectPool(int generateCount, Func<T> generateFunc)
