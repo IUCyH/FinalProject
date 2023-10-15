@@ -17,17 +17,50 @@ public enum OrderOfButton
 public class LobbyUIManager : Singleton<LobbyUIManager>
 {
     [SerializeField]
+    GameObject exitButtonImg;
+    [SerializeField]
     GameObject selectMenu;
+    [SerializeField]
+    GameObject mainLobbyUI;
+    [SerializeField]
+    GameObject mainLobbyMenuBackgrounds;
     RectTransform selectMenuRectTrans;
+    Image[] lobbyMenuBackgrounds;
+    Button[] mainLobbyButtons;
     Button[] selectButtons;
     TextMeshProUGUI[] selectButtonTexts;
 
     protected override void OnStart()
     {
+        exitButtonImg.SetActive(false);
+        
+        mainLobbyButtons = mainLobbyUI.GetComponentsInChildren<Button>();
+        lobbyMenuBackgrounds = mainLobbyMenuBackgrounds.GetComponentsInChildren<Image>(true);
+            
         selectButtons = selectMenu.GetComponentsInChildren<Button>();
         selectButtonTexts = selectMenu.GetComponentsInChildren<TextMeshProUGUI>();
         selectMenuRectTrans = selectMenu.GetComponent<RectTransform>();
+        
         HideSelectMenu();
+        HideAllLobbyMenuBackgrounds();
+    }
+
+    public void ShowLobbyMenu(int order, GameObject menu)
+    {
+        mainLobbyUI.SetActive(false);
+        lobbyMenuBackgrounds[order].enabled = true;
+        WindowManager.Instance.OpenWindowAndPush(menu);
+
+        exitButtonImg.SetActive(true);
+    }
+
+    public void OnPressExitMenuButton()
+    {
+        HideAllLobbyMenuBackgrounds();
+        WindowManager.Instance.CloseWindowAndPop();
+        mainLobbyUI.SetActive(true);
+
+        exitButtonImg.SetActive(false);
     }
 
     public void SetSelectMenuPosition(Vector3 pos)
@@ -50,6 +83,14 @@ public class LobbyUIManager : Singleton<LobbyUIManager>
         {
             selectButtons[i].onClick.RemoveAllListeners();
             selectButtons[i].gameObject.SetActive(false);
+        }
+    }
+
+    void HideAllLobbyMenuBackgrounds()
+    {
+        for (int i = 0; i < lobbyMenuBackgrounds.Length; i++)
+        {
+            lobbyMenuBackgrounds[i].enabled = false;
         }
     }
 }

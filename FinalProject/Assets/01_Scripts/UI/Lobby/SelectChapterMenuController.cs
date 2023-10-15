@@ -22,9 +22,16 @@ public class SelectChapterMenuController : MonoBehaviour
     float scrollSpeed;
     float timer;
 
-    void Start()
+    void Awake()
     {
         thisRectTrans = GetComponent<RectTransform>();
+    }
+
+    void OnEnable()
+    {
+        thisRectTrans.anchoredPosition = Vector2.zero;
+        canMove = false;
+        additionalMove = false;
     }
 
     public void OnPointerDown()
