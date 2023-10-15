@@ -6,6 +6,14 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
+public enum OrderOfButton
+{
+    First,
+    Second,
+    Third,
+    Fourth
+}
+
 public class LobbyUIManager : Singleton<LobbyUIManager>
 {
     [SerializeField]
@@ -19,21 +27,29 @@ public class LobbyUIManager : Singleton<LobbyUIManager>
         selectButtons = selectMenu.GetComponentsInChildren<Button>();
         selectButtonTexts = selectMenu.GetComponentsInChildren<TextMeshProUGUI>();
         selectMenuRectTrans = selectMenu.GetComponent<RectTransform>();
+        HideSelectMenu();
     }
 
-    public void ShowSelectMenu(Vector3 pos, List<string> texts, List<UnityAction> funcList)
+    public void SetSelectMenuPosition(Vector3 pos)
     {
-        for (int i = 0; i < selectButtonTexts.Length; i++)
-        {
-            selectButtonTexts[i].text = texts[i];
-            selectButtons[i].onClick.AddListener(funcList[i]);
-        }
-        selectMenu.SetActive(true);
         selectMenuRectTrans.position = pos;
+    }
+
+    public void ShowSelectButton(OrderOfButton order, string buttonText, UnityAction onClickAction)
+    {
+        var button = selectButtons[(int)order];
+        
+        button.gameObject.SetActive(true);
+        button.onClick.AddListener(onClickAction);
+        selectButtonTexts[(int)order].text = buttonText;
     }
 
     public void HideSelectMenu()
     {
-        selectMenu.SetActive(false);
+        for (int i = 0; i < selectButtons.Length; i++)
+        {
+            selectButtons[i].onClick.RemoveAllListeners();
+            selectButtons[i].gameObject.SetActive(false);
+        }
     }
 }
