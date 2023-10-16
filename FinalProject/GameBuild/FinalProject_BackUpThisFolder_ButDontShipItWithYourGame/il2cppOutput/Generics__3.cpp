@@ -3590,6 +3590,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Clear_mD615D1BCB2C9DD
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectPool_1_Release_mAABCB33D8DC9815A187412722A4DAA7C85730C47_gshared (ObjectPool_1_t162E79CD09B024014FAEFF7E37D144F60E1F05B9* __this, Il2CppFullySharedGenericAny ___0_element, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_1__ctor_mC73A4FCEBBAB90CB7B7AB16321F3F98FBBF12596_gshared (Func_1_tBB8824FA8746333BFFF3AB3CE4A41B58450AF431* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectPool_1__ctor_m1D01341F5ED3833F3F346F100BF1F5875A28E6D4_gshared (ObjectPool_1_t162E79CD09B024014FAEFF7E37D144F60E1F05B9* __this, Func_1_tBB8824FA8746333BFFF3AB3CE4A41B58450AF431* ___0_CreateFunc, int32_t ___1_maxSize, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Queue_1__ctor_m657BFA58DFD6AB5B1B4B69AA6E963CD569637EAD_gshared (Queue_1_t00794C5F46E3254E713B03F949E6AB3A1AB1FD41* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectPool_1_Allocate_m8F8EE48CA6F50DC021330786C0EFD7FCCF1FB716_gshared (ObjectPool_1_t548CF41BF5F3157291CF0CC8B9836AA675FF475A* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Func_1_Invoke_m35CBC166F464B8A1169583672025E6D64211856C_gshared_inline (Func_1_tBB8824FA8746333BFFF3AB3CE4A41B58450AF431* __this, Il2CppFullySharedGenericAny* il2cppRetVal, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Queue_1_Enqueue_m9159DC6A9BC5528A3444329C408F4101004CF652_gshared (Queue_1_t00794C5F46E3254E713B03F949E6AB3A1AB1FD41* __this, Il2CppFullySharedGenericAny ___0_item, const RuntimeMethod* method) ;
@@ -4189,6 +4190,10 @@ inline void Func_1__ctor_m8E58B6DA26A41C3CFDC24BE263D6C6537B67B458 (Func_1_tA129
 inline void ObjectPool_1__ctor_mFB9CB8489D5A5B8CAEE09E3A64DDB8CB674F77B8 (ObjectPool_1_tEED14FA964D060B93DBEFDF1DADA261930826852* __this, Func_1_tA12938751B5DA230763B004CC36F212187196506* ___0_CreateFunc, int32_t ___1_maxSize, const RuntimeMethod* method)
 {
 	((  void (*) (ObjectPool_1_tEED14FA964D060B93DBEFDF1DADA261930826852*, Func_1_tA12938751B5DA230763B004CC36F212187196506*, int32_t, const RuntimeMethod*))ObjectPool_1__ctor_m1D01341F5ED3833F3F346F100BF1F5875A28E6D4_gshared)(__this, ___0_CreateFunc, ___1_maxSize, method);
+}
+inline void Queue_1__ctor_m6E2A5A8173E0CC524496D5155C737DF8FD10D0EB (Queue_1_tE9EF546915795972C3BFD68FBB8FA859D3BAF3B5* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Queue_1_tE9EF546915795972C3BFD68FBB8FA859D3BAF3B5*, const RuntimeMethod*))Queue_1__ctor_m657BFA58DFD6AB5B1B4B69AA6E963CD569637EAD_gshared)(__this, method);
 }
 inline void ObjectPool_1_Allocate_m8F8EE48CA6F50DC021330786C0EFD7FCCF1FB716 (ObjectPool_1_t548CF41BF5F3157291CF0CC8B9836AA675FF475A* __this, const RuntimeMethod* method)
 {
@@ -8195,13 +8200,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectListPool_1__cctor_m18656C8D3E9361C
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectPool_1__ctor_mAA6FCC6EFF0F55065A435BD9035123A1E4E901EC_gshared (ObjectPool_1_t548CF41BF5F3157291CF0CC8B9836AA675FF475A* __this, int32_t ___0_generateCount, Func_1_tD5C081AE11746B200C711DD48DBEB00E3A9276D4* ___1_generateFunc, const RuntimeMethod* method) 
 {
 	{
+		Queue_1_tE9EF546915795972C3BFD68FBB8FA859D3BAF3B5* L_0 = (Queue_1_tE9EF546915795972C3BFD68FBB8FA859D3BAF3B5*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+		Queue_1__ctor_m6E2A5A8173E0CC524496D5155C737DF8FD10D0EB(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 1));
+		__this->___queue = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___queue), (void*)L_0);
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2((RuntimeObject*)__this, NULL);
-		int32_t L_0 = ___0_generateCount;
-		__this->___count = L_0;
-		Func_1_tD5C081AE11746B200C711DD48DBEB00E3A9276D4* L_1 = ___1_generateFunc;
-		__this->___func = L_1;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___func), (void*)L_1);
-		ObjectPool_1_Allocate_m8F8EE48CA6F50DC021330786C0EFD7FCCF1FB716(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 2));
+		int32_t L_1 = ___0_generateCount;
+		__this->___count = L_1;
+		Func_1_tD5C081AE11746B200C711DD48DBEB00E3A9276D4* L_2 = ___1_generateFunc;
+		__this->___func = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___func), (void*)L_2);
+		ObjectPool_1_Allocate_m8F8EE48CA6F50DC021330786C0EFD7FCCF1FB716(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 		return;
 	}
 }
@@ -8219,9 +8228,9 @@ IL_0004:
 		Func_1_tD5C081AE11746B200C711DD48DBEB00E3A9276D4* L_1 = __this->___func;
 		NullCheck(L_1);
 		RuntimeObject* L_2;
-		L_2 = Func_1_Invoke_m1412272198DFA4066C83206E5B43353AF10A2EEE_inline(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
+		L_2 = Func_1_Invoke_m1412272198DFA4066C83206E5B43353AF10A2EEE_inline(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
 		NullCheck(L_0);
-		Queue_1_Enqueue_m5CB8CF3906F1289F92036F0973EC5BE3450402EF(L_0, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 6));
+		Queue_1_Enqueue_m5CB8CF3906F1289F92036F0973EC5BE3450402EF(L_0, L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
 		int32_t L_3 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_3, 1));
 	}
@@ -8245,7 +8254,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ObjectPool_1_Get_mE8AEDC083757
 		Queue_1_tE9EF546915795972C3BFD68FBB8FA859D3BAF3B5* L_0 = __this->___queue;
 		NullCheck(L_0);
 		int32_t L_1;
-		L_1 = Queue_1_get_Count_m1768ADA9855B7CDA14C9C42E098A287F1A39C3A2_inline(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
+		L_1 = Queue_1_get_Count_m1768ADA9855B7CDA14C9C42E098A287F1A39C3A2_inline(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
 		if ((((int32_t)L_1) >= ((int32_t)1)))
 		{
 			goto IL_001a;
@@ -8255,7 +8264,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ObjectPool_1_Get_mE8AEDC083757
 		Func_1_tD5C081AE11746B200C711DD48DBEB00E3A9276D4* L_2 = __this->___func;
 		NullCheck(L_2);
 		RuntimeObject* L_3;
-		L_3 = Func_1_Invoke_m1412272198DFA4066C83206E5B43353AF10A2EEE_inline(L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
+		L_3 = Func_1_Invoke_m1412272198DFA4066C83206E5B43353AF10A2EEE_inline(L_2, il2cpp_rgctx_method(method->klass->rgctx_data, 5));
 		return L_3;
 	}
 
@@ -8264,7 +8273,7 @@ IL_001a:
 		Queue_1_tE9EF546915795972C3BFD68FBB8FA859D3BAF3B5* L_4 = __this->___queue;
 		NullCheck(L_4);
 		RuntimeObject* L_5;
-		L_5 = Queue_1_Dequeue_m86B243DF9EC238316EC3D27DF3E0AB8DB0987E84(L_4, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
+		L_5 = Queue_1_Dequeue_m86B243DF9EC238316EC3D27DF3E0AB8DB0987E84(L_4, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
 		return L_5;
 	}
 }
@@ -8274,7 +8283,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectPool_1_Set_mA65C5D5CFD2B64747BCBBD
 		Queue_1_tE9EF546915795972C3BFD68FBB8FA859D3BAF3B5* L_0 = __this->___queue;
 		RuntimeObject* L_1 = ___0_obj;
 		NullCheck(L_0);
-		Queue_1_Enqueue_m5CB8CF3906F1289F92036F0973EC5BE3450402EF(L_0, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 6));
+		Queue_1_Enqueue_m5CB8CF3906F1289F92036F0973EC5BE3450402EF(L_0, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 7));
 		return;
 	}
 }

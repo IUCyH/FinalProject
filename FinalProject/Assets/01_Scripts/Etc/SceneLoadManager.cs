@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public enum Scene
+public enum KindOfScene
 {
     None = -1,
     Title,
@@ -21,9 +21,11 @@ public class SceneLoadManager : Singleton_DontDestroy<SceneLoadManager>
     [SerializeField]
     Sprite progressbarBG;
 
-    Scene currLoadScene = Scene.None;
+    KindOfScene currLoadScene = KindOfScene.None;
 
-    public void Load(Scene scene)
+    public KindOfScene CurrentScene => currLoadScene;
+
+    public void Load(KindOfScene scene)
     {
         loadingInfo = SceneManager.LoadSceneAsync((int)scene);
         currLoadScene = scene;
@@ -32,7 +34,7 @@ public class SceneLoadManager : Singleton_DontDestroy<SceneLoadManager>
 
     void Update()
     {
-        if (loadingInfo != null && currLoadScene != Scene.None)
+        if (loadingInfo != null && currLoadScene != KindOfScene.None)
         {
             if (loadingInfo.isDone)
             {

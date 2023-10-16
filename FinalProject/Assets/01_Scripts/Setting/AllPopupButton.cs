@@ -34,7 +34,7 @@ public class AllPopupButton : MonoBehaviour
 
     public void StartButton()
     {
-        SceneLoadManager.Instance.Load(Scene.Lobby);
+        SceneLoadManager.Instance.Load(KindOfScene.Lobby);
     }  
 
     public void SettingButton()

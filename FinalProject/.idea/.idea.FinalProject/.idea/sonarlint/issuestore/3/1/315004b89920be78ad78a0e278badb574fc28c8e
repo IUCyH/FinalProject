@@ -1,0 +1,6 @@
+
+†csharpsquid:S101"jRename class 'GridLayout_Vertical' to match pascal case naming rules, consider using 'GridLayoutVertical'.(‡ë±ì
+Ocsharpsquid:S3903"2Move 'GridLayout_Vertical' into a named namespace.(‡ë±ì
+:csharpsquid:S2933"Make 'items' 'readonly'.(ñ‰ºˆøÿÿÿÿ
+>csharpsquid:S2933
+"!Make 'maxCountInLine' 'readonly'.(Áèñ™
