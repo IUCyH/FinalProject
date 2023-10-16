@@ -1,16 +1,15 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GridLayout_Horizontal
+public class GridLayout_Vertical
 {
     List<RectTransform> items = new List<RectTransform>();
     (float x, float y) firstItemPos;
     (int horizontal, int vertical) distEachButton;
     int maxCountInLine;
-    
-    public GridLayout_Horizontal(int maxCountInLine, (float x, float y) firstItemPos, (int horizontal, int vertical) distEachButton)
+
+    public GridLayout_Vertical(int maxCountInLine, (float x, float y) firstItemPos, (int horizontal, int vertical) distEachButton)
     {
         this.maxCountInLine = maxCountInLine;
         this.firstItemPos = firstItemPos;
@@ -27,16 +26,16 @@ public class GridLayout_Horizontal
         for (int i = 0; i < items.Count; i++)
         {
             var item = items[i];
-            
+
             if (i > 0)
             {
-                var posX = items[i - 1].anchoredPosition.x + distEachButton.horizontal;
-                var posY = items[i - 1].anchoredPosition.y;
+                var posX = items[i - 1].anchoredPosition.x;
+                var posY = items[i - 1].anchoredPosition.y - distEachButton.vertical;
 
                 if (i % maxCountInLine == 0)
                 {
-                    posX = firstItemPos.x;
-                    posY -= distEachButton.vertical;
+                    posX += distEachButton.horizontal;
+                    posY = firstItemPos.y;
                 }
 
                 item.anchoredPosition = new Vector2(posX, posY);

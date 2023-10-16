@@ -7,14 +7,14 @@ public class MailBoxMenu : MonoBehaviour
 {
     [SerializeField]
     GameObject mailSlotPrefab;
-    GridLayout_Horizontal gridLayout;
+    GridLayout_Vertical gridLayout;
     ObjectPool<RectTransform> mailSlotPool;
 
     void Start()
     {
-        gridLayout = new GridLayout_Horizontal
+        gridLayout = new GridLayout_Vertical
         (
-            2,
+            7,
             (-365f, 295f),
             (550, 100)
         );

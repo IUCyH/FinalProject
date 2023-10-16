@@ -65,3 +65,7 @@ h
 8Assets/01_Scripts/UI/Lobby/MainMenu/SelectChapterMenu.cs,4\4\4431c5c730cfa6e3da00bda61e93ed1d9fff8a63
 b
 2Assets/01_Scripts/UI/Lobby/MainMenu/FriendsMenu.cs,6\f\6f849d33180e3b2bbeea907f45452b33d4e4edb6
+`
+0Assets/01_Scripts/Utill/GridLayout_Horizontal.cs,e\7\e7946a4a0468be7ce73e007d3312e3dcb22b2f77
+b
+2Assets/01_Scripts/UI/Lobby/MainMenu/MailBoxMenu.cs,e\3\e3531b8fb703d414a503283198a84425319cdba6

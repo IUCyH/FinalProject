@@ -1,0 +1,5 @@
+
+csharpsquid:S101"nRename class 'GridLayout_Horizontal' to match pascal case naming rules, consider using 'GridLayoutHorizontal'.(¿Á®øùÿÿÿÿ
+Vcsharpsquid:S3903"4Move 'GridLayout_Horizontal' into a named namespace.(¿Á®øùÿÿÿÿ
+Acsharpsquid:S2933"Make 'items' 'readonly'.(ñ‰ºˆøÿÿÿÿ8¥¿¢¸³1
+Ecsharpsquid:S2933"!Make 'maxCountInLine' 'readonly'.(Áèñ™8İİ¸³1
