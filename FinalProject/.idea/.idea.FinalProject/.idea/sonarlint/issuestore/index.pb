@@ -59,8 +59,6 @@ U
 %Assets/01_Scripts/Etc/InputManager.cs,d\f\dfbf690bceb4e7fab72ccbb468b7ddbbbac522da
 V
 &Assets/01_Scripts/Etc/WindowManager.cs,3\a\3a55b1f235e30092a65440954fa175f8103f8e58
-i
-9Assets/01_Scripts/UI/Lobby/SelectChapterMenuController.cs,3\d\3d68eca256eff08036127ab9b073b14805259caa
 ]
 -Assets/01_Scripts/UI/Lobby/MainLobbyButton.cs,3\5\35f1efba5a8540a91e859423e681d97bb5e9cf9b
 h

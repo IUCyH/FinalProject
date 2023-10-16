@@ -1,35 +1,33 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class FriendsMenu : MonoBehaviour
+public class MailBoxMenu : MonoBehaviour
 {
     [SerializeField]
-    GameObject friendProfileBarPrefab;
+    GameObject mailSlotPrefab;
     GridLayout_Horizontal gridLayout;
-    ObjectPool<RectTransform> friendProfileBarPool;
+    ObjectPool<RectTransform> mailSlotPool;
 
     void Start()
     {
         gridLayout = new GridLayout_Horizontal
         (
             2,
-            (300f, -50f),
-            (600, 100)
+            (-365f, 295f),
+            (550, 100)
         );
-        
-        friendProfileBarPool = new ObjectPool<RectTransform>(12, () =>
+
+        mailSlotPool = new ObjectPool<RectTransform>(12, () =>
         {
-            var obj = Instantiate(friendProfileBarPrefab);
+            var obj = Instantiate(mailSlotPrefab);
             var rectTrans = obj.GetComponent<RectTransform>();
             rectTrans.SetParent(transform);
             rectTrans.anchoredPosition = Vector2.zero;
             rectTrans.localScale = Vector3.one;
-            
             gridLayout.AddItem(rectTrans);
+
             return rectTrans;
         });
         

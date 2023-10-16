@@ -61,8 +61,6 @@ V
 &Assets/01_Scripts/Etc/WindowManager.cs,3\a\3a55b1f235e30092a65440954fa175f8103f8e58
 ]
 -Assets/01_Scripts/UI/Lobby/MainLobbyButton.cs,3\5\35f1efba5a8540a91e859423e681d97bb5e9cf9b
-i
-9Assets/01_Scripts/UI/Lobby/SelectChapterMenuController.cs,3\d\3d68eca256eff08036127ab9b073b14805259caa
 h
 8Assets/01_Scripts/UI/Lobby/MainMenu/SelectChapterMenu.cs,4\4\4431c5c730cfa6e3da00bda61e93ed1d9fff8a63
 b
