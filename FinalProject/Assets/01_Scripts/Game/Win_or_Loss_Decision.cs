@@ -1,75 +1,183 @@
-using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class Win_or_Loss_Decision : MonoBehaviour
+public class Win_or_Loss_Decission : MonoBehaviour
 {
-
-    int myTeam;
-    int enemyTeam;
+    int myTeamCount = 1; // 예시로 1로 설정, 실제 값에 따라 변경해주세요.
+    int enemyTeamCount = 1; // 예시로 1로 설정, 실제 값에 따라 변경해주세요.
 
     List<(int ID, int SkillNum)> sequence = new List<(int, int)>();
 
-    List<(int player1ID, int player1SkillNum)> player1Property;
-    List<(int player2ID, int player2SkillNum)> player2Property;
+    List<(int player1ID, int player1SkillNum)> player1Property = new List<(int, int)>(); // 예시로 더미 데이터 추가
+    List<(int player2ID, int player2SkillNum)> player2Property = new List<(int, int)>(); // 예시로 더미 데이터 추가
 
-    List<(int InputID, int InputSkillNum)> InputValue = new List<(int, int)>();
+    List<(int myInputID, int myInputSkillNum)> myInputValue = new List<(int, int)>();
+    List<(int enemyInputID, int enemyInputSkillNum)> enemyInputValue = new List<(int, int)>();
 
-    //공격력, 치명타, 방어구 관통력, 생명력 흡수, 생명력, 체력 재생력, 방어력, 회피, 피해 반사, 속도 
-    float player1health;
-    float player2health;
+    List<(float myATKspeed, float enemyATKspeed)> ATKspeed = new List<(float, float)>();
 
-    float player1ATK;
-    float player2ATK;
+    float player1health = 100; // 예시로 초기값 설정
+    float player2health = 100; // 예시로 초기값 설정
 
-    float player1Defense;
-    float player2Defense;
+    float player1ATK = 10; // 예시로 초기값 설정
+    float player2ATK = 10; // 예시로 초기값 설정
 
-    float player1attackSpeed;
-    float player2attackSpeed;
+    float player1Defense = 5; // 예시로 초기값 설정
+    float player2Defense = 5; // 예시로 초기값 설정
 
+    List<int> player1ATKSpeed = new List<int>(); // 예시로 더미 데이터 추가
+    List<int> player2ATKSpeed = new List<int>(); // 예시로 더미 데이터 추가
 
-    public void SkillSequence((int choiceID, int choiceSkill) choiceSequence)
+    void Start()
     {
-        while (myTeam + enemyTeam > 0)
-        {
-            for (int i = 0; (player1Property.Count + player2Property.Count) < i; i++)
-            {
-                //정한 순서 넣기
-                for (int j = 0; j > myTeam; j++)
-                {
-                    InputValue.Add(choiceSequence);
-                }
+        // 예시로 초기 데이터 추가
+        player1Property.Add((1, 2));
+        player2Property.Add((3, 4));
+        player1ATKSpeed.Add(30);
+        player2ATKSpeed.Add(40);
+    }
 
-                if (player1Property[i].player1SkillNum != player2Property[i].player2SkillNum)
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SkillSequence();
+            SkillCheck();
+            SkillSeqencePlay();
+        }
+    }
+
+    public void SkillSequence()
+    {
+        int allTeamCount = (myTeamCount + enemyTeamCount) - 1;
+
+
+        for (int j = 0; j < myTeamCount; j++)
+        {
+            myInputValue.Add((1, 2)); // 예시로 초기 데이터 추가
+        }
+
+        for (int k = 0; k < allTeamCount; k++)
+        {
+            ATKspeed.Add((player1ATKSpeed[k], player2ATKSpeed[k])); // 예시로 초기 데이터 추가
+        }
+    }
+
+    public void SkillCheck()
+    {
+        //공속 비교
+        for (int i = 0; i < (myInputValue.Count + enemyInputValue.Count); i++)
+        {
+            if (player1Property[i].player1SkillNum != player2Property[i].player2SkillNum)
+            {
+                if (player1Property[i].player1SkillNum > player2Property[i].player2SkillNum)
                 {
-                    if (player1Property[i].player1SkillNum > player2Property[i].player2SkillNum)
+                    sequence.Add(player1Property[i]);
+                }
+                else
+                {
+                    sequence.Add(player2Property[i]);
+                }
+            }
+            else
+            {
+                // 동일한 경우 50% 처리
+                bool halfATK = Dods_ChanceMaker.GetThisChanceResult_Percentage(50);
+                if (halfATK)
+                {
+                    sequence.Add(player1Property[i]);
+                }
+                else
+                {
+                    sequence.Add(player2Property[i]);
+                }
+            }
+        }
+
+        ATKspeed.Sort(); // 속도 정보 정렬
+    }
+
+    public void SkillSeqencePlay()
+    {
+        int i = 0;
+        while (i < sequence.Count)
+        {
+            if (player1ATKSpeed[i] > player2ATKSpeed[i])
+            {
+                if (player1ATKSpeed[i] > player2ATKSpeed[i] * 2)
+                {
+                    int num1 = 1;
+                    while (player2ATKSpeed[i] - (20 * num1) < player1ATKSpeed[i])
                     {
-                        sequence.Add(player1Property[i]);
-                    }
-                    else
-                    {
-                        sequence.Add(player2Property[i]);
+                        Debug.Log(i + "번째 아군이 떄림");
+                        num1++;
                     }
                 }
                 else
                 {
-                    if (player1attackSpeed > player2attackSpeed)
-                    {
-                        sequence.Add(player1Property[i]);
-                    }
-                    else
-                    {
-                        sequence.Add(player2Property[i]);
-                    }
+                    Debug.Log(i + "번째 적군이 떄림");
                 }
             }
+            else
+            {
+                if (player2ATKSpeed[i] > player1ATKSpeed[i] * 2)
+                {
+                    int num2 = 1;
+                    while (player1ATKSpeed[i] - (20 * num2) < player2ATKSpeed[i])
+                    {
+                        Debug.Log(i + "번째 적군이 떄림");
+                        num2++;
+                    }
+                }
+                else
+                {
+                    Debug.Log(i + "번째 아군이 떄림");
+                }
+            }
+
+            i++;
         }
     }
+}
 
-    void Skillexecution()
+//https://dodnet.tistory.com/4484
+public static class Dods_ChanceMaker
+{
+    public static bool GetThisChanceResult(float Chance)
     {
-        //sequence값 순서대로 실행
+        if (Chance < 0.0000001f)
+        {
+            Chance = 0.0000001f;
+        }
+
+        bool Success = false;
+        int RandAccuracy = 10000000;
+        float RandHitRange = Chance * RandAccuracy;
+        int Rand = UnityEngine.Random.Range(1, RandAccuracy + 1);
+        if (Rand <= RandHitRange)
+        {
+            Success = true;
+        }
+        return Success;
+    }
+
+    public static bool GetThisChanceResult_Percentage(float Percentage_Chance)
+    {
+        if (Percentage_Chance < 0.0000001f)
+        {
+            Percentage_Chance = 0.0000001f;
+        }
+
+        Percentage_Chance = Percentage_Chance / 100;
+
+        bool Success = false;
+        int RandAccuracy = 10000000;
+        float RandHitRange = Percentage_Chance * RandAccuracy;
+        int Rand = UnityEngine.Random.Range(1, RandAccuracy + 1);
+        if (Rand <= RandHitRange)
+        {
+            Success = true;
+        }
+        return Success;
     }
 }
