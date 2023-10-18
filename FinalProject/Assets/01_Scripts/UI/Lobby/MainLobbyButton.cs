@@ -6,24 +6,21 @@ using UnityEngine.UI;
 
 public class MainLobbyButton : MonoBehaviour
 {
-    int order;
-    GameObject lobbyMenu;
+    LobbyMainMenu kindOfMenu;
     Button button;
     
     void Start()
     {
         var splitResult = name.Split("_");
-        int.TryParse(splitResult[0], out order);
-        lobbyMenu = GameObject.Find(string.Format("{0}Menu", name));
+        int.TryParse(splitResult[0], out int order);
+        kindOfMenu = (LobbyMainMenu)order;
         button = GetComponent<Button>();
         
         button.onClick.AddListener(OnPressButton);
-        
-        lobbyMenu.SetActive(false);
     }
 
     public void OnPressButton()
     {
-        LobbyUIManager.Instance.ShowLobbyMenu(order, lobbyMenu);
+        LobbyUIManager.Instance.ShowLobbyMenu(kindOfMenu);
     }
 }

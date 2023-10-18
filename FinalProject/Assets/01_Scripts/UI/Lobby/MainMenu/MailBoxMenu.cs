@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MailBoxMenu : MonoBehaviour
+public class MailBoxMenu : MonoBehaviour, IWindow
 {
     [SerializeField]
     GameObject mailSlotPrefab;
@@ -32,5 +32,15 @@ public class MailBoxMenu : MonoBehaviour
         });
         
         gridLayout.SetItems();
+    }
+
+    public void Open()
+    {
+        gameObject.SetActive(true);
+    }
+
+    public void Close()
+    {
+        gameObject.SetActive(false);
     }
 }

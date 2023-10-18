@@ -5,7 +5,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class FriendsMenu : MonoBehaviour
+public class FriendsMenu : MonoBehaviour, IWindow
 {
     [SerializeField]
     GameObject friendProfileBarPrefab;
@@ -34,5 +34,15 @@ public class FriendsMenu : MonoBehaviour
         });
         
         gridLayout.SetItems();
+    }
+
+    public void Open()
+    {
+        gameObject.SetActive(true);
+    }
+
+    public void Close()
+    {
+        gameObject.SetActive(false);
     }
 }

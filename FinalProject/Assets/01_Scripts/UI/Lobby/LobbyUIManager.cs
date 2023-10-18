@@ -14,8 +14,22 @@ public enum OrderOfButton
     Fourth
 }
 
+public enum LobbyMainMenu
+{
+    StoreMenu,
+    FriendsMenu,
+    AchievementsMenu,
+    QuestMenu,
+    SelectChapterMenu,
+    EditGardenMenu,
+    MailBoxMenu,
+    EventsMenu,
+    OptionsMenu
+}
+
 public class LobbyUIManager : Singleton<LobbyUIManager>
 {
+    IWindow[] mainLobbyMenus;
     [SerializeField]
     GameObject exitButtonImg;
     [SerializeField]
@@ -23,40 +37,39 @@ public class LobbyUIManager : Singleton<LobbyUIManager>
     [SerializeField]
     GameObject mainLobbyUI;
     [SerializeField]
-    GameObject mainLobbyMenuBackgrounds;
+    GameObject mainLobbyMenu;
     RectTransform selectMenuRectTrans;
     Image[] lobbyMenuBackgrounds;
-    Button[] mainLobbyButtons;
     Button[] selectButtons;
     TextMeshProUGUI[] selectButtonTexts;
 
     protected override void OnStart()
     {
         exitButtonImg.SetActive(false);
-        
-        mainLobbyButtons = mainLobbyUI.GetComponentsInChildren<Button>();
-        lobbyMenuBackgrounds = mainLobbyMenuBackgrounds.GetComponentsInChildren<Image>(true);
-            
+
+        mainLobbyMenus = mainLobbyMenu.GetComponentsInChildren<IWindow>(true);
         selectButtons = selectMenu.GetComponentsInChildren<Button>();
         selectButtonTexts = selectMenu.GetComponentsInChildren<TextMeshProUGUI>();
         selectMenuRectTrans = selectMenu.GetComponent<RectTransform>();
         
         HideSelectMenu();
-        HideAllLobbyMenuBackgrounds();
+        CloseAllLobbyMenu();
     }
 
-    public void ShowLobbyMenu(int order, GameObject menu)
+    public void ShowLobbyMenu(LobbyMainMenu kindOfMenu)
     {
-        mainLobbyUI.SetActive(false);
-        lobbyMenuBackgrounds[order].enabled = true;
+        var menu = mainLobbyMenus[(int)kindOfMenu];
         WindowManager.Instance.OpenWindowAndPush(menu);
 
-        exitButtonImg.SetActive(true);
+        if (kindOfMenu != LobbyMainMenu.OptionsMenu)
+        {
+            mainLobbyUI.SetActive(false);
+            exitButtonImg.SetActive(true);
+        }
     }
 
     public void OnPressExitMenuButton()
     {
-        HideAllLobbyMenuBackgrounds();
         WindowManager.Instance.CloseWindowAndPop();
         mainLobbyUI.SetActive(true);
 
@@ -86,11 +99,11 @@ public class LobbyUIManager : Singleton<LobbyUIManager>
         }
     }
 
-    void HideAllLobbyMenuBackgrounds()
+    void CloseAllLobbyMenu()
     {
-        for (int i = 0; i < lobbyMenuBackgrounds.Length; i++)
+        for (int i = 0; i < mainLobbyMenus.Length; i++)
         {
-            lobbyMenuBackgrounds[i].enabled = false;
+            mainLobbyMenus[i].Close();
         }
     }
 }

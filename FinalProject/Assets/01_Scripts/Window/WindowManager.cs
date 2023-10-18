@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class WindowManager : Singleton_DontDestroy<WindowManager>
 {
-    Stack<GameObject> windows = new Stack<GameObject>();
+    Stack<IWindow> windows = new Stack<IWindow>();
 
-    public void OpenWindowAndPush(GameObject window)
+    public void OpenWindowAndPush(IWindow window)
     {
         if (windows.Contains(window)) return;
         
         windows.Push(window);
-        window.SetActive(true);
+        window.Open();
     }
 
     public void CloseWindowAndPop()
     {
-        windows.TryPop(out GameObject window);
+        windows.TryPop(out IWindow window);
 
         if (window != null)
         {
-            window.SetActive(false);
+            window.Close();
         }
     }
 }

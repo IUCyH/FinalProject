@@ -25,8 +25,6 @@ f
 .Assets/01_Scripts/Chapter/ChapterManagement.cs,7\1\71c0f5bb3e98f9d4850bb5d401d5b67190b7e0ba
 k
 ;Assets/01_Scripts/SerializableClass/SerializableDateTime.cs,c\c\cc7074b9b6792aa32a5e97ffc5e9b043da71f4fa
-\
-,Assets/01_Scripts/UI/Lobby/LobbyUIManager.cs,a\1\a19a7003914aa3ace52d12555f23d116114f3abe
 Z
 *Assets/01_Scripts/Lobby/IdlePlayManager.cs,7\1\712f4eeaf9565327d0702581cef0ba60e83e9cc4
 N
@@ -45,14 +43,8 @@ X
 (Assets/DemoScripts/Garden/SelectPopup.cs,8\d\8dfc498a506e424f891f7997d75cb4c4616c71e8
 U
 %Assets/01_Scripts/Etc/InputManager.cs,d\f\dfbf690bceb4e7fab72ccbb468b7ddbbbac522da
-V
-&Assets/01_Scripts/Etc/WindowManager.cs,3\a\3a55b1f235e30092a65440954fa175f8103f8e58
-b
-2Assets/01_Scripts/UI/Lobby/MainMenu/FriendsMenu.cs,6\f\6f849d33180e3b2bbeea907f45452b33d4e4edb6
 `
 0Assets/01_Scripts/Utill/GridLayout_Horizontal.cs,e\7\e7946a4a0468be7ce73e007d3312e3dcb22b2f77
-b
-2Assets/01_Scripts/UI/Lobby/MainMenu/MailBoxMenu.cs,e\3\e3531b8fb703d414a503283198a84425319cdba6
 ^
 .Assets/01_Scripts/Utill/GridLayout_Vertical.cs,3\1\315004b89920be78ad78a0e278badb574fc28c8e
 w

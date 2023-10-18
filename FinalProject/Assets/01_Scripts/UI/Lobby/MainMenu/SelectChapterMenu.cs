@@ -3,9 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SelectChapterMenu : MonoBehaviour
+public class SelectChapterMenu : MonoBehaviour, IWindow
 {
-    RectTransform thisRectTrans;
+    [SerializeField]
+    RectTransform chaptersRectTrans;
 
     [SerializeField]
     Vector3 maxRightPos;
@@ -22,23 +23,11 @@ public class SelectChapterMenu : MonoBehaviour
     float scrollSpeed;
     float timer;
 
-    void Awake()
-    {
-        thisRectTrans = GetComponent<RectTransform>();
-    }
-
-    void OnEnable()
-    {
-        thisRectTrans.anchoredPosition = Vector2.zero;
-        canMove = false;
-        additionalMove = false;
-    }
-
     public void OnPointerDown()
     {
         canMove = true;
         additionalMove = false;
-        
+        Debug.Log("Pointer Down");
         deltaMousePos = Input.mousePosition;
     }
 
@@ -64,14 +53,14 @@ public class SelectChapterMenu : MonoBehaviour
             var dir = (currMousePos - deltaMousePos).normalized;
             dir.y = 0f;
 
-            thisRectTrans.Translate(scrollSpeed * Time.deltaTime * dir);
+            chaptersRectTrans.Translate(scrollSpeed * Time.deltaTime * dir);
 
             deltaMousePos = currMousePos;
         }
         
         else if (additionalMove)
         {
-            thisRectTrans.Translate(freeScrollSpeed * Time.deltaTime * additionalMoveDir);
+            chaptersRectTrans.Translate(freeScrollSpeed * Time.deltaTime * additionalMoveDir);
             freeScrollSpeed -= 50f;
 
             if (freeScrollSpeed <= 0f)
@@ -81,10 +70,24 @@ public class SelectChapterMenu : MonoBehaviour
             }
         }
 
-        var clampX = thisRectTrans.anchoredPosition.x;
+        var clampX = chaptersRectTrans.anchoredPosition.x;
         if (clampX > maxRightPos.x) clampX = maxRightPos.x;
         if (clampX < maxLeftPos.x) clampX = maxLeftPos.x;
 
-        thisRectTrans.anchoredPosition = new Vector2(clampX, 0f);
+        chaptersRectTrans.anchoredPosition = new Vector2(clampX, 0f);
+    }
+
+    public void Open()
+    {
+        chaptersRectTrans.anchoredPosition = Vector2.zero;
+        canMove = false;
+        additionalMove = false;
+        
+        gameObject.SetActive(true);
+    }
+
+    public void Close()
+    {
+        gameObject.SetActive(false);
     }
 }
