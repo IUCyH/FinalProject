@@ -5,6 +5,7 @@ using Firebase.Database;
 using Google.MiniJSON;
 using TMPro;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class DataManager : Singleton_DontDestroy<DataManager>
 {
@@ -53,10 +54,9 @@ public class DataManager : Singleton_DontDestroy<DataManager>
                         unlockedChapters = new List<bool>(),
                         recentPlayDateTime = new SerializableDateTime(DateTime.Now)
                     };
-                    
-                    Save();
                 }
 
+                Save();
                 Debug.Log("데이터 로드 성공");
 
                 LoadCompleted = true;
