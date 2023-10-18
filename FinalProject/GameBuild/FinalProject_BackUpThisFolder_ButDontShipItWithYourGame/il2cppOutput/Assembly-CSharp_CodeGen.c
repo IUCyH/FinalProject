@@ -533,8 +533,12 @@ extern void ToggleRunnerVisibility__ctor_m65E4EDAB434F32577034763CFD41E6E0EF3F29
 extern void FusionScalableIMGUI_InitializedGUIStyles_m8116BF6321B19022D14340439790293C5790C21C (void);
 extern void FusionScalableIMGUI_GetScaledSkin_m95A876857EBE4D4A5F6B4049146766B9D8659DD5 (void);
 extern void FusionScalableIMGUI_ScaleGuiSkinToScreenHeight_m3A0C4C15553D63E6A28EFEE5F134328D0F03588C (void);
+extern void TestPlayerSpawner_Awake_m3CD9B06DF36576A25CFCDFDA5C7480D2F8AE56F6 (void);
+extern void TestPlayerSpawner_StartGame_mD6701A393F2A3E139D958CFB2714BCC7A65A7D49 (void);
 extern void TestPlayerSpawner_PlayerJoined_m5AA828953030C53ED324F2CEE9DECDB09937B750 (void);
 extern void TestPlayerSpawner__ctor_m9F852AFC9F8DD8A1EA1F5920C21A2A4C848A97BD (void);
+extern void U3CStartGameU3Ed__3_MoveNext_mA247E98611D5C26D4A07B528062D568794E2A8A3 (void);
+extern void U3CStartGameU3Ed__3_SetStateMachine_m1052697ACEC177F83A8204BE9FD4AF12543E9E45 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
 extern void FusionRuntimeCheck_RuntimeCheck_m6358CB373141B490D879449D97F0E0F0E9256E7C (void);
@@ -675,7 +679,7 @@ extern void SelectPopup_Start_m001DC2A8FA606D403FE5F093FDD80805D692A8C4 (void);
 extern void SelectPopup_ShowSelectButtons_m5728A1FA24ED78EF37236A3AAC4A34071A795704 (void);
 extern void SelectPopup_HideSelectButtons_m9B3039F2FB49045FFB0C5674AAB40E078D5E20E1 (void);
 extern void SelectPopup__ctor_mFA6946089A66005022194157A861BF5B95C50ACE (void);
-static Il2CppMethodPointer s_methodPointers[715] = 
+static Il2CppMethodPointer s_methodPointers[719] = 
 {
 	ChapterManagement_Start_m9E7FCB8D9C17FE5BB8C8F482074604C37DD76A36,
 	ChapterManagement_ChapterButtonDisable_m9E7FBF83F7FA97E000F2643102D5ACAE49E9A11B,
@@ -1242,8 +1246,12 @@ static Il2CppMethodPointer s_methodPointers[715] =
 	FusionScalableIMGUI_InitializedGUIStyles_m8116BF6321B19022D14340439790293C5790C21C,
 	FusionScalableIMGUI_GetScaledSkin_m95A876857EBE4D4A5F6B4049146766B9D8659DD5,
 	FusionScalableIMGUI_ScaleGuiSkinToScreenHeight_m3A0C4C15553D63E6A28EFEE5F134328D0F03588C,
+	TestPlayerSpawner_Awake_m3CD9B06DF36576A25CFCDFDA5C7480D2F8AE56F6,
+	TestPlayerSpawner_StartGame_mD6701A393F2A3E139D958CFB2714BCC7A65A7D49,
 	TestPlayerSpawner_PlayerJoined_m5AA828953030C53ED324F2CEE9DECDB09937B750,
 	TestPlayerSpawner__ctor_m9F852AFC9F8DD8A1EA1F5920C21A2A4C848A97BD,
+	U3CStartGameU3Ed__3_MoveNext_mA247E98611D5C26D4A07B528062D568794E2A8A3,
+	U3CStartGameU3Ed__3_SetStateMachine_m1052697ACEC177F83A8204BE9FD4AF12543E9E45,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 	FusionRuntimeCheck_RuntimeCheck_m6358CB373141B490D879449D97F0E0F0E9256E7C,
@@ -1397,14 +1405,18 @@ extern void U3CStartGameU3Ed__5_MoveNext_mD235E2DC4C5AAC5EA8D67088D19A16303F1364
 extern void U3CStartGameU3Ed__5_SetStateMachine_m6FDEC9925AF2DDA7272D7A5AF64DED6C460F768E_AdjustorThunk (void);
 extern void NetworkInputPrototype_IsUp_mF008689DEAB18BBCDA04AF8E6F2AF67183854B0E_AdjustorThunk (void);
 extern void NetworkInputPrototype_IsDown_mA8DE864999DB7281FE6FAD34492CEC15FB3EBFF0_AdjustorThunk (void);
-static Il2CppTokenAdjustorThunkPair s_adjustorThunks[4] = 
+extern void U3CStartGameU3Ed__3_MoveNext_mA247E98611D5C26D4A07B528062D568794E2A8A3_AdjustorThunk (void);
+extern void U3CStartGameU3Ed__3_SetStateMachine_m1052697ACEC177F83A8204BE9FD4AF12543E9E45_AdjustorThunk (void);
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[6] = 
 {
 	{ 0x060000F9, U3CStartGameU3Ed__5_MoveNext_mD235E2DC4C5AAC5EA8D67088D19A16303F1364EB_AdjustorThunk },
 	{ 0x060000FA, U3CStartGameU3Ed__5_SetStateMachine_m6FDEC9925AF2DDA7272D7A5AF64DED6C460F768E_AdjustorThunk },
 	{ 0x060001BB, NetworkInputPrototype_IsUp_mF008689DEAB18BBCDA04AF8E6F2AF67183854B0E_AdjustorThunk },
 	{ 0x060001BC, NetworkInputPrototype_IsDown_mA8DE864999DB7281FE6FAD34492CEC15FB3EBFF0_AdjustorThunk },
+	{ 0x0600023A, U3CStartGameU3Ed__3_MoveNext_mA247E98611D5C26D4A07B528062D568794E2A8A3_AdjustorThunk },
+	{ 0x0600023B, U3CStartGameU3Ed__3_SetStateMachine_m1052697ACEC177F83A8204BE9FD4AF12543E9E45_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[715] = 
+static const int32_t s_InvokerIndices[719] = 
 {
 	2695,
 	2695,
@@ -1971,8 +1983,12 @@ static const int32_t s_InvokerIndices[715] =
 	6791,
 	2985,
 	7532,
+	2695,
+	2695,
 	2317,
 	2695,
+	2695,
+	2311,
 	7625,
 	2695,
 	7614,
@@ -2130,8 +2146,8 @@ static const Il2CppTokenRangePair s_rgctxIndices[8] =
 	{ 0x0200005D, { 30, 13 } },
 	{ 0x02000060, { 43, 8 } },
 	{ 0x0600020E, { 24, 6 } },
-	{ 0x0600023E, { 51, 3 } },
-	{ 0x0600023F, { 54, 3 } },
+	{ 0x06000242, { 51, 3 } },
+	{ 0x06000243, { 54, 3 } },
 };
 extern const uint32_t g_rgctx_Queue_1_tEB12110A6D35ED0A7A342F0FEA8FC24E69149F66;
 extern const uint32_t g_rgctx_Queue_1__ctor_mC0282777590619593FD16B2E59BA38E783BC2155;
@@ -2254,9 +2270,9 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	715,
+	719,
 	s_methodPointers,
-	4,
+	6,
 	s_adjustorThunks,
 	s_InvokerIndices,
 	0,

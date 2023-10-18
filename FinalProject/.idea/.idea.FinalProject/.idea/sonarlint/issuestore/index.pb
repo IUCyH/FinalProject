@@ -57,7 +57,3 @@ b
 .Assets/01_Scripts/Utill/GridLayout_Vertical.cs,3\1\315004b89920be78ad78a0e278badb574fc28c8e
 w
 GAssets/Photon/Fusion/Scripts/Utilities/FusionEditorUtilitiesExternal.cs,7\9\7920c4f3addefb08b53f35c96addacd394841013
-N
-Assets/01_Scripts/Data/Data.cs,d\0\d0332d87100b45876c60fcc09b27c02fbef7f649
-U
-%Assets/01_Scripts/Data/DataManager.cs,c\3\c3a6cf9d96e064a4072a439ab8a3ca59721b60aa
