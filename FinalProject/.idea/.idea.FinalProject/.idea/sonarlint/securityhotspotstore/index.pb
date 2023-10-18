@@ -19,8 +19,6 @@ f
 6Assets/01_Scripts/Data/Table/StructureItemDataTable.cs,8\0\80df87d294bb7901200d7b22d021f280b966261b
 [
 +Assets/01_Scripts/Setting/AllPopupButton.cs,b\3\b38239e080034a789aafd4f82597d28ec6c426d1
-Y
-)Assets/01_Scripts/Etc/SceneLoadManager.cs,c\1\c100c01216e3bcbb005c8d44a58549bcfc367859
 ]
 -Assets/01_Scripts/Data/Table/ItemDataTable.cs,9\0\90280011aa451d08beadce4b990bb3bb6317a631
 ^
@@ -49,8 +47,6 @@ U
 %Assets/01_Scripts/Etc/InputManager.cs,d\f\dfbf690bceb4e7fab72ccbb468b7ddbbbac522da
 V
 &Assets/01_Scripts/Etc/WindowManager.cs,3\a\3a55b1f235e30092a65440954fa175f8103f8e58
-h
-8Assets/01_Scripts/UI/Lobby/MainMenu/SelectChapterMenu.cs,4\4\4431c5c730cfa6e3da00bda61e93ed1d9fff8a63
 b
 2Assets/01_Scripts/UI/Lobby/MainMenu/FriendsMenu.cs,6\f\6f849d33180e3b2bbeea907f45452b33d4e4edb6
 `
@@ -59,9 +55,9 @@ b
 2Assets/01_Scripts/UI/Lobby/MainMenu/MailBoxMenu.cs,e\3\e3531b8fb703d414a503283198a84425319cdba6
 ^
 .Assets/01_Scripts/Utill/GridLayout_Vertical.cs,3\1\315004b89920be78ad78a0e278badb574fc28c8e
-m
-=Assets/Photon/Fusion/Scripts/Prototyping/NetworkDebugStart.cs,7\4\74fae2e808953f76b6e453ef11f8ffd127629054
 w
 GAssets/Photon/Fusion/Scripts/Utilities/FusionEditorUtilitiesExternal.cs,7\9\7920c4f3addefb08b53f35c96addacd394841013
-W
-'Assets/01_Scripts/Title/TitleManager.cs,4\0\403d28776b47f1c227801b6f0208cd169674b21f
+N
+Assets/01_Scripts/Data/Data.cs,d\0\d0332d87100b45876c60fcc09b27c02fbef7f649
+U
+%Assets/01_Scripts/Data/DataManager.cs,c\3\c3a6cf9d96e064a4072a439ab8a3ca59721b60aa

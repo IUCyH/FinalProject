@@ -149,6 +149,12 @@ struct TaskCompletionSource_1_t486CD8AD64929E5C47B9FE9AD7AE2CB00B5BAB14;
 struct TaskCompletionSource_1_t334979F66DE5C2F333F2975D91AA0EEB6E6B35D7;
 struct TaskCompletionSource_1_tC9FC5C6EACD2138DA270912A14414A2FCA266372;
 struct TaskCompletionSource_1_t8A40BE53A167B6D71D5640881A7A894D8DA94970;
+struct TaskFactory_1_tA1370864EDB73BA30BF7ECF3D38054C6957BC988;
+struct TaskFactory_1_tFAEAC22A1E986463E6956C344A78A7C7197288E0;
+struct TaskFactory_1_tA1BF99B45C5D8E4EBA82339084E38BD2DB72E0C1;
+struct TaskFactory_1_t0BEF06D58E44525B9135AB0B22D016856EE69FF3;
+struct TaskFactory_1_t7ABCD7F9503486A075E0B072E6EB95956CFE3106;
+struct TaskFactory_1_tF4CDC5BDA20AE9BD3F65B6146CDCD3F753003E1D;
 struct Task_1_t3769315417372EBDBD431895C2D9EB5B42C48672;
 struct Task_1_t7003EBCA625EB82970363E476E2ED456FCFF7266;
 struct Task_1_t824317F4B958F7512E8F7300511752937A6C6043;
@@ -1905,6 +1911,30 @@ struct U3CU3Ec_t4E60FA2425A16BB5C3A0357CAC8FCBA8C92D498C_StaticFields
 	Func_2_t9BE3E8B687E18A04BF29999D209D4EEF1B34F7BF* ___U3CU3E9__57_1;
 	Func_2_t5CB4EF138CF2C1A8C937FFA22680521119BE3305* ___U3CU3E9__57_0;
 	Action_1_t5EBB3AEBB9FE27F01C5BD35C3A6AD36CB3AA357A* ___U3CU3E9__60_1;
+};
+struct Task_1_t3769315417372EBDBD431895C2D9EB5B42C48672_StaticFields
+{
+	TaskFactory_1_tA1370864EDB73BA30BF7ECF3D38054C6957BC988* ___s_defaultFactory;
+};
+struct Task_1_t824317F4B958F7512E8F7300511752937A6C6043_StaticFields
+{
+	TaskFactory_1_tFAEAC22A1E986463E6956C344A78A7C7197288E0* ___s_defaultFactory;
+};
+struct Task_1_tCDCA9B2073B1AC4ED4537A6D74742D20B122E1EF_StaticFields
+{
+	TaskFactory_1_tA1BF99B45C5D8E4EBA82339084E38BD2DB72E0C1* ___s_defaultFactory;
+};
+struct Task_1_t4C228DE57804012969575431CFF12D57C875552D_StaticFields
+{
+	TaskFactory_1_t0BEF06D58E44525B9135AB0B22D016856EE69FF3* ___s_defaultFactory;
+};
+struct Task_1_t3D7638C82ED289AF156EDBAE76842D8DF4C4A9E0_StaticFields
+{
+	TaskFactory_1_t7ABCD7F9503486A075E0B072E6EB95956CFE3106* ___s_defaultFactory;
+};
+struct Task_1_tDF1FF540D7D2248A08580387A39717B7FB7A9CF9_StaticFields
+{
+	TaskFactory_1_tF4CDC5BDA20AE9BD3F65B6146CDCD3F753003E1D* ___s_defaultFactory;
 };
 struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
 {
@@ -6293,7 +6323,7 @@ FINALLY_000c:
 		});
 		try
 		{
-			VirtualActionInvoker1< bool >::Invoke(19, __this, (bool)0);
+			VirtualActionInvoker1< bool >::Invoke(21, __this, (bool)0);
 			goto IL_0014;
 		}
 		catch(Il2CppExceptionWrapper& e)
@@ -6316,7 +6346,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StringStringMap_Dispose_mFECCAB7DCE0572D
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		VirtualActionInvoker1< bool >::Invoke(19, __this, (bool)1);
+		VirtualActionInvoker1< bool >::Invoke(21, __this, (bool)1);
 		il2cpp_codegen_runtime_class_init_inline(GC_t920F9CF6EBB7C787E5010A4352E1B587F356DC58_il2cpp_TypeInfo_var);
 		GC_SuppressFinalize_m71815DBD5A0CD2EA1BE43317B08B7A14949EDC65(__this, NULL);
 		return;
@@ -18945,7 +18975,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FirebaseApp_InitializeCrashlyticsIfPrese
 			Assembly_t* L_1 = V_0;
 			NullCheck(L_1);
 			Type_t* L_2;
-			L_2 = VirtualFuncInvoker1< Type_t*, String_t* >::Invoke(16, L_1, _stringLiteralA3A98A8B1C98564A92ABAE5D3EB9AB9D7723903A);
+			L_2 = VirtualFuncInvoker1< Type_t*, String_t* >::Invoke(17, L_1, _stringLiteralA3A98A8B1C98564A92ABAE5D3EB9AB9D7723903A);
 			V_1 = L_2;
 			Type_t* L_3 = V_1;
 			il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
@@ -21976,7 +22006,7 @@ FINALLY_000c:
 		});
 		try
 		{
-			VirtualActionInvoker1< bool >::Invoke(19, __this, (bool)0);
+			VirtualActionInvoker1< bool >::Invoke(21, __this, (bool)0);
 			goto IL_0014;
 		}
 		catch(Il2CppExceptionWrapper& e)
@@ -21999,7 +22029,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VariantVariantMap_Dispose_m2EF5C536EF12E
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		VirtualActionInvoker1< bool >::Invoke(19, __this, (bool)1);
+		VirtualActionInvoker1< bool >::Invoke(21, __this, (bool)1);
 		il2cpp_codegen_runtime_class_init_inline(GC_t920F9CF6EBB7C787E5010A4352E1B587F356DC58_il2cpp_TypeInfo_var);
 		GC_SuppressFinalize_m71815DBD5A0CD2EA1BE43317B08B7A14949EDC65(__this, NULL);
 		return;
@@ -26295,7 +26325,7 @@ IL_012d:
 		RuntimeObject* L_48 = V_15;
 		NullCheck(L_48);
 		RuntimeObject* L_49;
-		L_49 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(4, IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220_il2cpp_TypeInfo_var, L_48);
+		L_49 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(5, IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220_il2cpp_TypeInfo_var, L_48);
 		V_18 = L_49;
 	}
 	{

@@ -717,6 +717,7 @@ struct NonSerializedAttribute_t3E57D1A7E7F31DE192694AB4C8927BAE7D1BE177  : publi
 };
 struct PropertyAttribute_t5E0CB5A6CDA6E24CBD4FF26DE3B0C29D8BB54BF0  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
 {
+	int32_t ___U3CorderU3Ek__BackingField;
 };
 struct PropertyInfo_t  : public MemberInfo_t
 {
@@ -2950,7 +2951,7 @@ IL_0030:
 		Type_t* L_9 = ___0_type;
 		NullCheck(L_9);
 		Type_t* L_10;
-		L_10 = VirtualFuncInvoker0< Type_t* >::Invoke(108, L_9);
+		L_10 = VirtualFuncInvoker0< Type_t* >::Invoke(109, L_9);
 		___0_type = L_10;
 	}
 
@@ -2960,7 +2961,7 @@ IL_003a:
 		Type_t* L_12 = ___0_type;
 		NullCheck(L_12);
 		Type_t* L_13;
-		L_13 = VirtualFuncInvoker0< Type_t* >::Invoke(108, L_12);
+		L_13 = VirtualFuncInvoker0< Type_t* >::Invoke(109, L_12);
 		il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
 		bool L_14;
 		L_14 = Type_op_Inequality_m83209C7BB3C05DFBEA3B6199B0BEFE8037301172(L_11, L_13, NULL);
@@ -5694,7 +5695,7 @@ IL_0248_1:
 				Type_t* L_53 = __this->___type;
 				NullCheck(L_53);
 				Type_t* L_54;
-				L_54 = VirtualFuncInvoker0< Type_t* >::Invoke(108, L_53);
+				L_54 = VirtualFuncInvoker0< Type_t* >::Invoke(109, L_53);
 				__this->___type = L_54;
 				Il2CppCodeGenWriteBarrier((void**)(&__this->___type), (void*)L_54);
 				__this->___U3CmembersU3E5__1 = (RuntimeObject*)NULL;

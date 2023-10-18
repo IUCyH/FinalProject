@@ -72,7 +72,7 @@ public class SelectChapterMenu : MonoBehaviour
         else if (additionalMove)
         {
             thisRectTrans.Translate(freeScrollSpeed * Time.deltaTime * additionalMoveDir);
-            freeScrollSpeed -= 100f;
+            freeScrollSpeed -= 50f;
 
             if (freeScrollSpeed <= 0f)
             {
