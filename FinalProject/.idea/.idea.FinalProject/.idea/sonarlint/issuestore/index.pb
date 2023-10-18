@@ -11,8 +11,6 @@ Z
 *Assets/01_Scripts/Chapter/ChapterScroll.cs,1\1\11428023d12442a9689716eca4bf55811f55bf31
 d
 4Assets/01_Scripts/Data/Table/LevelUpCostDataTable.cs,8\4\845515ab9c2d8e5619b5e6ba0c80f14b7d92e0f2
-[
-+Assets/01_Scripts/Setting/SettingManager.cs,4\0\40e01ff7307a3d98aad3fa550eac1f1d2234e454
 W
 'Assets/01_Scripts/Sound/SoundManager.cs,3\2\32fdf044208058ff73624ce131061edeabfdfb40
 [
@@ -29,20 +27,12 @@ f
 .Assets/01_Scripts/Chapter/ChapterManagement.cs,7\1\71c0f5bb3e98f9d4850bb5d401d5b67190b7e0ba
 k
 ;Assets/01_Scripts/SerializableClass/SerializableDateTime.cs,c\c\cc7074b9b6792aa32a5e97ffc5e9b043da71f4fa
-W
-'Assets/01_Scripts/Etc/PaymentManager.cs,1\9\19e1f4af9b65b87ad2e8c1754825c101e01db397
 Z
 *Assets/01_Scripts/Lobby/IdlePlayManager.cs,7\1\712f4eeaf9565327d0702581cef0ba60e83e9cc4
 \
 ,Assets/01_Scripts/UI/Lobby/LobbyUIManager.cs,a\1\a19a7003914aa3ace52d12555f23d116114f3abe
 N
-Assets/01_Scripts/Data/Data.cs,d\0\d0332d87100b45876c60fcc09b27c02fbef7f649
-U
-%Assets/01_Scripts/Data/DataManager.cs,c\3\c3a6cf9d96e064a4072a439ab8a3ca59721b60aa
-N
 Assets/Editor/EditDataTable.cs,7\d\7d4a01ea21681193ed756511fd9c7f9ae958701e
-P
- Assets/Editor/RemoveDataTable.cs,5\2\521af132dd4e2f89d9e13e720bbaa59d6edc6744
 t
 DAssets/01_Scripts/Data/Table/MaxStoreCapacityOfSolarCoinDataTable.cs,1\3\137f754623d50e32888b02261788f98efe3f0805
 u
@@ -59,8 +49,6 @@ U
 %Assets/01_Scripts/Etc/InputManager.cs,d\f\dfbf690bceb4e7fab72ccbb468b7ddbbbac522da
 V
 &Assets/01_Scripts/Etc/WindowManager.cs,3\a\3a55b1f235e30092a65440954fa175f8103f8e58
-]
--Assets/01_Scripts/UI/Lobby/MainLobbyButton.cs,3\5\35f1efba5a8540a91e859423e681d97bb5e9cf9b
 h
 8Assets/01_Scripts/UI/Lobby/MainMenu/SelectChapterMenu.cs,4\4\4431c5c730cfa6e3da00bda61e93ed1d9fff8a63
 b

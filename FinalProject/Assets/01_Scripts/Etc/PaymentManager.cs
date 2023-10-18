@@ -23,13 +23,13 @@ public class PaymentManager : Singleton_DontDestroy<PaymentManager>
             reward = rewardsList[(int)goods];
         }
 
-        playerData.gold += reward;
+        playerData.solarCoin += reward;
     }
 
     public void Buy(KindOfGoods goods)
     {
         var playerData = DataManager.Instance.PlayerData;
 
-        playerData.gold -= priceList[(int)goods];
+        playerData.solarCoin -= priceList[(int)goods];
     }
 }

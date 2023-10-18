@@ -7,8 +7,8 @@ using UnityEngine;
 public class PlayerData
 {
     public int level;
-    public int gold;
-    public int diamond;
+    public int solarCoin;
+    public int sunCoin;
     public string jsonOfChapters;
     public List<bool> unlockedChapters;
     public SerializableDateTime recentPlayDateTime;

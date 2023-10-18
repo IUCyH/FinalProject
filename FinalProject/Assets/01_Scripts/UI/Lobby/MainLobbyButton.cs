@@ -14,7 +14,7 @@ public class MainLobbyButton : MonoBehaviour
     {
         var splitResult = name.Split("_");
         int.TryParse(splitResult[0], out order);
-        lobbyMenu = GameObject.Find(name + "Menu");
+        lobbyMenu = GameObject.Find(string.Format("{0}Menu", name));
         button = GetComponent<Button>();
         
         button.onClick.AddListener(OnPressButton);
