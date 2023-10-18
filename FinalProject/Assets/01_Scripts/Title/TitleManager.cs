@@ -6,8 +6,12 @@ using UnityEngine;
 
 public class TitleManager : Singleton<TitleManager>
 {
-    protected override void OnAwake()
+    [SerializeField]
+    RectTransform titleCanvas;
+
+    public void SetParentToTitleCanvas(RectTransform rectTrans, Vector2 pos)
     {
-        
+        rectTrans.SetParent(titleCanvas);
+        rectTrans.anchoredPosition = pos;
     }
 }
