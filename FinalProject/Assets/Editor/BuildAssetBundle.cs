@@ -8,6 +8,6 @@ public class BuildAssetBundle : EditorWindow
     [MenuItem("AssetBundle/Build AssetBundles")]
     static void BuildAssetBundles()
     {
-        BuildPipeline.BuildAssetBundles("Assets/05_AssetBundles", BuildAssetBundleOptions.None, BuildTarget.StandaloneWindows);
+        BuildPipeline.BuildAssetBundles("Assets/05_AssetBundles", BuildAssetBundleOptions.ChunkBasedCompression, BuildTarget.StandaloneWindows);
     }
 }

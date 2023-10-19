@@ -23,6 +23,5 @@ dcsharpsquid:S4136¯"AAll 'StartServerPlusClients' method overloads should be
 bcsharpsquid:S4136¸"?All 'StartHostPlusClients' method overloads should be adjacent.(¯ÿùÿÿÿÿ
 Rcsharpsquid:S4136ñ"4All 'AddClient' method overloads should be adjacent.(Š×€ê
 fcsharpsquid:S2696²"HRemove this set, which updates a 'static' field from an instance method.(ÿƒı
-—csharpsquid:S2583Ñ"mChange this condition so that it does not always evaluate to 'false'; some subsequent code is never executed.(•Üòµúÿÿÿÿ8¢ô·„´1
 Ncsharpsquid:S1481¢"0Remove the unused local variable 'currentScene'.(óç‚
 <csharpsquid:S125Û"Remove this commented out code.(Ù»Ù¿

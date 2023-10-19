@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Firebase.Database;
+using Firebase.Storage;
 using Google.MiniJSON;
 using TMPro;
 using UnityEngine;
@@ -10,8 +11,10 @@ using Random = UnityEngine.Random;
 public class DataManager : Singleton_DontDestroy<DataManager>
 {
     const string PlayerDataRoot = "PlayerData";
+    const string SpriteStorageRoot = "Sprites";
     
     DatabaseReference dbReference;
+    StorageReference storageReference;
     PlayerData playerData;
     string uuid;
 
@@ -21,6 +24,7 @@ public class DataManager : Singleton_DontDestroy<DataManager>
     protected override void OnAwake()
     {
         dbReference = FirebaseDatabase.DefaultInstance.RootReference;
+        storageReference = FirebaseStorage.DefaultInstance.GetReferenceFromUrl("gs://garden-c0326.appspot.com/");
         uuid = SystemInfo.deviceUniqueIdentifier;
 
         Load();
@@ -78,8 +82,18 @@ public class DataManager : Singleton_DontDestroy<DataManager>
         });
     }
 
-    void ImageLoad()
+    void LoadSprites()
     {
-        
+        var spritesRef = storageReference.Child(SpriteStorageRoot);
+
+        /*spritesRef.GetStreamAsync().ContinueWith(stream =>
+        {
+            if (stream.IsCompleted)
+            {
+                var result = stream.Result;
+                var assetBundle = AssetBundle.LoadFromStreamAsync(result);
+                
+            }
+        });*/
     }
 }

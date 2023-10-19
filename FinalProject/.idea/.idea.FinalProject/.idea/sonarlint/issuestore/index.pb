@@ -95,3 +95,7 @@ b
 2Assets/01_Scripts/UI/Lobby/MainMenu/OptionsMenu.cs,c\a\ca058a9756ef3d616186901d91de7b13fd9749f8
 U
 %Assets/01_Scripts/Data/DataManager.cs,c\3\c3a6cf9d96e064a4072a439ab8a3ca59721b60aa
+Q
+!Assets/Editor/BuildAssetBundle.cs,5\8\580b264a99c193b5227ba229e170ae4a91cf7c7a
+R
+"Assets/Editor/UploadAssetBundle.cs,6\c\6cd0e725bb5d30a9a77fc18603399baa18fb1414

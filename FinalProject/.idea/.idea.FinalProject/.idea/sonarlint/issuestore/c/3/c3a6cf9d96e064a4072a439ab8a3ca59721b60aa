@@ -1,4 +1,5 @@
 
-Scsharpsquid:S3903
-"*Move 'DataManager' into a named namespace.(‰Ôçÿÿÿÿÿ8˜‰÷¼²1
-œcsharpsquid:S1186T"yAdd a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.(µÄš08ÇË±´1
+Scsharpsquid:S3903"*Move 'DataManager' into a named namespace.(‰Ôçÿÿÿÿÿ8˜‰÷¼²1
+ccsharpsquid:S1075"?Refactor your code not to use hardcoded absolute paths or URIs.(Õ²€8¦è×Æ´1
+Wcsharpsquid:S1481W".Remove the unused local variable 'spritesRef'.(³Ò×àıÿÿÿÿ8–ÇÉ´1
+Gcsharpsquid:S125Z"Remove this commented out code.(ÒÌâ–øÿÿÿÿ8‚–ÇÉ´1
