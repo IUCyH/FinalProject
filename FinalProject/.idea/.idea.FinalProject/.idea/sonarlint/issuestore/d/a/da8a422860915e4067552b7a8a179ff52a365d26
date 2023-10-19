@@ -1,0 +1,138 @@
+
+^csharpsquid:S1121Û";Extract the assignment of 'reference' from this expression.(— ÀŠúÿÿÿÿ
+bcsharpsquid:S1121
+"?Extract the assignment of 'parameters[i]' from this expression.(±¿³‘ùÿÿÿÿ
+Gcsharpsquid:S1125Ú"*Remove the unnecessary Boolean literal(s).(ıô
+Mcsharpsquid:S1125«"*Remove the unnecessary Boolean literal(s).(­šÕÅûÿÿÿÿ
+Mcsharpsquid:S1125º"*Remove the unnecessary Boolean literal(s).(­šÕÅûÿÿÿÿ
+Mcsharpsquid:S1125É"*Remove the unnecessary Boolean literal(s).(­šÕÅûÿÿÿÿ
+Mcsharpsquid:S1125Ø"*Remove the unnecessary Boolean literal(s).(­šÕÅûÿÿÿÿ
+Gcsharpsquid:S1125İ"*Remove the unnecessary Boolean literal(s).(©˜³^
+Hcsharpsquid:S1125á0"*Remove the unnecessary Boolean literal(s).(ï°²ñ
+Mcsharpsquid:S1125ğ"*Remove the unnecessary Boolean literal(s).(Ü†ÍØøÿÿÿÿ
+Hcsharpsquid:S1125‚"*Remove the unnecessary Boolean literal(s).(îÚñÛ
+Mcsharpsquid:S1125•"*Remove the unnecessary Boolean literal(s).(ş¡¦³ÿÿÿÿÿ
+Mcsharpsquid:S1125•"*Remove the unnecessary Boolean literal(s).(ş¡¦³ÿÿÿÿÿ
+Mcsharpsquid:S1125©"*Remove the unnecessary Boolean literal(s).(±¾©Ñıÿÿÿÿ
+Gcsharpsquid:S1125÷"*Remove the unnecessary Boolean literal(s).(ÊØ
+Mcsharpsquid:S1125 "*Remove the unnecessary Boolean literal(s).(„©§üÿÿÿÿ
+Mcsharpsquid:S1125Ú
+"*Remove the unnecessary Boolean literal(s).(ñëİëøÿÿÿÿ
+Hcsharpsquid:S1125¡"*Remove the unnecessary Boolean literal(s).(ÙğÎ¥
+Mcsharpsquid:S1125Œ"*Remove the unnecessary Boolean literal(s).(ëËÀùüÿÿÿÿ
+ucsharpsquid:S3776ô"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(¯ø¾ıÿÿÿÿ
+ucsharpsquid:S3776Ÿ0"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(ÔÓÚÃıÿÿÿÿ
+ucsharpsquid:S3776œ"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(Øº¥ãûÿÿÿÿ
+pcsharpsquid:S3776‘"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(—ÃŒâ
+pcsharpsquid:S3776ù."RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(³åœÁ
+ucsharpsquid:S3776…2"RRefactor this method to reduce its Cognitive Complexity from 41 to the 15 allowed.(ƒ·Œâûÿÿÿÿ
+pcsharpsquid:S3776ñ3"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(ó€¶½
+qcsharpsquid:S3776í"SRefactor this method to reduce its Cognitive Complexity from 138 to the 15 allowed.(ŠÆÎù
+pcsharpsquid:S3776Ÿ"RRefactor this method to reduce its Cognitive Complexity from 39 to the 15 allowed.(ãâ³Ä
+ucsharpsquid:S3776á"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(»¢ŸÅıÿÿÿÿ
+vcsharpsquid:S3776ò"SRefactor this method to reduce its Cognitive Complexity from 193 to the 15 allowed.(â ïûÿÿÿÿ
+pcsharpsquid:S3776ş"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(‹§¨ã
+ucsharpsquid:S3776È"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(’áå¥üÿÿÿÿ
+Xcsharpsquid:S2971î
+"5Drop 'Where' and move the condition into the 'Count'.(Ç³¶¥úÿÿÿÿ
+œcsharpsquid:S1186Î#"yAdd a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.(Ñİâªûÿÿÿÿ
+œcsharpsquid:S1186Ÿ%"yAdd a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.(Ñİâªûÿÿÿÿ
+Fcsharpsquid:S108¦")Either remove or fill this block of code.(ı£êÓ
+@csharpsquid:S3877"Remove this 'throw' statement.(§¤Òœùÿÿÿÿ
+@csharpsquid:S3877!"Remove this 'throw' statement.(ßä¸öøÿÿÿÿ
+Hcsharpsquid:S2933ş"%Make '_lookInDirectories' 'readonly'.(ÈôØøÿÿÿÿ
+Dcsharpsquid:S2933ÿ"&Make '_assemblyNameToPath' 'readonly'.(ŠÒ”º
+Dcsharpsquid:S2933€"&Make '_resolvedAssemblies' 'readonly'.(ÇàÌ
+Kcsharpsquid:S2933"(Make '_compiledAssemblyName' 'readonly'.(ñ¦ŞÍıÿÿÿÿ
+5csharpsquid:S2933‚"Make '_log' 'readonly'.(’÷·º
+8csharpsquid:S2933¢#"Make '_logger' 'readonly'.(„õ»
+Acsharpsquid:S2933Ü"Make '_configPath' 'readonly'.(¨‚ûôøÿÿÿÿ
+=csharpsquid:S2933İ"Make '_config' 'readonly'.(­´¯éıÿÿÿÿ
+5csharpsquid:S2933â"Make '_log' 'readonly'.(’÷·º
+5csharpsquid:S2933î"Make '_log' 'readonly'.(’÷·º
+?csharpsquid:S2933ƒ%"!Make '_addressGetter' 'readonly'.(‡å×¶
+8csharpsquid:S2933„%"Make '_fields' 'readonly'.(‰î
+Ecsharpsquid:S2933…%""Make '_runnerIsLdarg0' 'readonly'.(êÖÃùÿÿÿÿ
+>csharpsquid:S2933ı&"Make '_context' 'readonly'.(¯ÜÉŞÿÿÿÿÿ
+Ecsharpsquid:S2933ş&""Make '_oldValueGetter' 'readonly'.(ÂºøÛúÿÿÿÿ
+>csharpsquid:S2933Œ'"Make '_context' 'readonly'.(¯ÜÉŞÿÿÿÿÿ
+9csharpsquid:S2933'"Make '_wasUsed' 'readonly'.(ÒÚÎ
+?csharpsquid:S2933Ÿ'"Make '_variable' 'readonly'.(–¤Ñ¡ıÿÿÿÿ
+7csharpsquid:S2933 '"Make '_index' 'readonly'.(Êİ¡É
+?csharpsquid:S2933¡'"Make '_elemType' 'readonly'.(ÛÚË³ÿÿÿÿÿ
+7csharpsquid:S2933–"Make '_types' 'readonly'.(¢—ñ¢
+>csharpsquid:S2933³-" Make '_typeByteSize' 'readonly'.(ß“¼è
+Gcsharpsquid:S2933¹-")Make '_unitySerializableType' 'readonly'.(§±´ı
+8csharpsquid:S2933“"Make '_fields' 'readonly'.(±†İœ
+9csharpsquid:S2933”"Make '_methods' 'readonly'.(ÇØ¼
+?csharpsquid:S2933•"!Make '_propertiesGet' 'readonly'.(Äñò÷
+?csharpsquid:S2933–"!Make '_propertiesSet' 'readonly'.(¹ò•ñ
+<csharpsquid:S2933×/"Make '_types' 'readonly'.(ã°ÔÜüÿÿÿÿ
+8csharpsquid:S2933Ø/"Make '_module' 'readonly'.(ÎöÆ¹
+Rcsharpsquid:S2933Ù/"/Make '_calculateValueTypeWordCount' 'readonly'.(›¬ ãøÿÿÿÿ
+:csharpsquid:S2933Ú/"Make '_settings' 'readonly'.(õ¨§ô
+Rcsharpsquid:S1066«&"/Merge this if statement with the enclosing one.(ß»¬½ıÿÿÿÿ
+Mcsharpsquid:S1066‰+"/Merge this if statement with the enclosing one.(…Ó’ı
+Rcsharpsquid:S1066•"/Merge this if statement with the enclosing one.(ş¡¦³ÿÿÿÿÿ
+Rcsharpsquid:S1066"/Merge this if statement with the enclosing one.(‡Ï™¡ûÿÿÿÿ
+Mcsharpsquid:S1066ú4"/Merge this if statement with the enclosing one.(ö¹â€
+Mcsharpsquid:S1066ƒ5"/Merge this if statement with the enclosing one.(ö¹â€
+Mcsharpsquid:S1066Ü"/Merge this if statement with the enclosing one.(˜¥ê†
+Mcsharpsquid:S1066å"/Merge this if statement with the enclosing one.(ËÑØä
+Rcsharpsquid:S1066Ì"/Merge this if statement with the enclosing one.(ıç³“øÿÿÿÿ
+icsharpsquid:S3881ı"KFix this implementation of 'IDisposable' to conform to the dispose pattern.(¸¬±Ş
+icsharpsquid:S3881€%"KFix this implementation of 'IDisposable' to conform to the dispose pattern.(ääÂ’
+icsharpsquid:S3881ú"KFix this implementation of 'IDisposable' to conform to the dispose pattern.(õ›•´
+Ncsharpsquid:S4136¦("0All 'Ldloc' method overloads should be adjacent.(ïœïµ
+Ncsharpsquid:S4136«("0All 'Stloc' method overloads should be adjacent.(Ëº¹
+Tcsharpsquid:S4136É"1All 'Import' method overloads should be adjacent.(¬è«øüÿÿÿÿ
+[csharpsquid:S4136é!"8All 'ThrowIfStatic' method overloads should be adjacent.(ıàö†ıÿÿÿÿ
+Hcsharpsquid:S1172Ú"*Remove this unused method parameter 'asm'.(²…îÕ
+Mcsharpsquid:S1172"*Remove this unused method parameter 'asm'.(°ßâ†ùÿÿÿÿ
+wcsharpsquid:S4144ø!"TUpdate this method so that its implementation is not identical to 'ThrowIfNoGetter'.(şç«úÿÿÿÿ
+Ycsharpsquid:S1199ì&"6Extract this nested code block into a separate method.(ÒÌâ–øÿÿÿÿ
+Ycsharpsquid:S1199Ñ"6Extract this nested code block into a separate method.(ÒÌâ–øÿÿÿÿ
+Ycsharpsquid:S1199Û"6Extract this nested code block into a separate method.(ÒÌâ–øÿÿÿÿ
+Ycsharpsquid:S1199º"6Extract this nested code block into a separate method.(ÒÌâ–øÿÿÿÿ
+Ycsharpsquid:S1199ø"6Extract this nested code block into a separate method.(ÒÌâ–øÿÿÿÿ
+Ycsharpsquid:S1199¨0"6Extract this nested code block into a separate method.(ÒÌâ–øÿÿÿÿ
+Ycsharpsquid:S1199²0"6Extract this nested code block into a separate method.(ÒÌâ–øÿÿÿÿ
+Ycsharpsquid:S1199£"6Extract this nested code block into a separate method.(ÒÌâ–øÿÿÿÿ
+Ycsharpsquid:S1199º"6Extract this nested code block into a separate method.(ÒÌâ–øÿÿÿÿ
+Ycsharpsquid:S1199¿"6Extract this nested code block into a separate method.(ÒÌâ–øÿÿÿÿ
+Ycsharpsquid:S1199Ã"6Extract this nested code block into a separate method.(ÒÌâ–øÿÿÿÿ
+Ycsharpsquid:S1199É"6Extract this nested code block into a separate method.(ÒÌâ–øÿÿÿÿ
+Ycsharpsquid:S1199¤2"6Extract this nested code block into a separate method.(ÒÌâ–øÿÿÿÿ
+Ycsharpsquid:S11993"6Extract this nested code block into a separate method.(ÒÌâ–øÿÿÿÿ
+Ycsharpsquid:S1199Â"6Extract this nested code block into a separate method.(ÒÌâ–øÿÿÿÿ
+Ycsharpsquid:S1199×"6Extract this nested code block into a separate method.(ÒÌâ–øÿÿÿÿ
+Ycsharpsquid:S1199Ù
+"6Extract this nested code block into a separate method.(ÒÌâ–øÿÿÿÿ
+Ycsharpsquid:S1199™"6Extract this nested code block into a separate method.(ÒÌâ–øÿÿÿÿ
+Ycsharpsquid:S1199Ñ"6Extract this nested code block into a separate method.(ÒÌâ–øÿÿÿÿ
+Ycsharpsquid:S1199ô"6Extract this nested code block into a separate method.(ÒÌâ–øÿÿÿÿ
+Ycsharpsquid:S1199®"6Extract this nested code block into a separate method.(ÒÌâ–øÿÿÿÿ
+Ycsharpsquid:S1199è"6Extract this nested code block into a separate method.(ÒÌâ–øÿÿÿÿ
+Ycsharpsquid:S1199í"6Extract this nested code block into a separate method.(ÒÌâ–øÿÿÿÿ
+Ycsharpsquid:S1199"6Extract this nested code block into a separate method.(ÒÌâ–øÿÿÿÿ
+œcsharpsquid:S2436ğ "yReduce the number of generic parameters in the 'ILWeaverExtensions.AddAttribute' method to no more than the 3 authorized.(‹éæÙşÿÿÿÿ
+]csharpsquid:S107İ-"@Method has 8 parameters, which is greater than the 7 authorized.(òø’ı
+]csharpsquid:S107ì"@Method has 8 parameters, which is greater than the 7 authorized.(Ó•Ú¶
+ccsharpsquid:S107ò-"AMethod has 10 parameters, which is greater than the 7 authorized.(·ŠŒûÿÿÿÿ
+\csharpsquid:S107‹"@Method has 8 parameters, which is greater than the 7 authorized.(è´‚]
+Ycsharpsquid:S1751â";Refactor the containing loop to do more than one iteration.(›ûä·
+lcsharpsquid:S4487î"NRemove this unread private field '_log' or refactor the code to use its value.(’÷·º
+Vcsharpsquid:S1144"8Remove the unused private method 'TypeNameToIdentifier'.(©ëÓ 
+Icsharpsquid:S1144‡"+Remove the unused private field 'WordSize'.(¯Ö§
+Ucsharpsquid:S1144‹0"7Remove the unused private field 'DefaultArrayCapacity'.(Úê¸ƒ
+tcsharpsquid:S6608"QIndexing at 0 should be used instead of the "Enumerable" extension method "First"(ˆã´óıÿÿÿÿ
+Jcsharpsquid:S1264ó",Replace this 'for' loop with a 'while' loop.(´ÿÕ™
+Wcsharpsquid:S1481"4Remove the unused local variable 'backingFieldName'.(„ÂÔ«øÿÿÿÿ
+:csharpsquid:S125b"Remove this commented out code.(òˆ$
+Acsharpsquid:S125İ"Remove this commented out code.(·ôÂ®úÿÿÿÿ
+Acsharpsquid:S125ı"Remove this commented out code.(Âõûºûÿÿÿÿ
+Acsharpsquid:S125Ù"Remove this commented out code.(±ºıïÿÿÿÿÿ
+;csharpsquid:S125ï"Remove this commented out code.(ãäœ
+Acsharpsquid:S125…	"Remove this commented out code.(ŒÒ™…ûÿÿÿÿ
+<csharpsquid:S125è,"Remove this commented out code.(Ğò­í
+Qcsharpsquid:S1135Î0"4Complete the task associated to this 'TODO' comment.(Îßşv

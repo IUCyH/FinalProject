@@ -495,7 +495,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* FirebaseDatabase_OnAppDisposed_mD10E03FDEC7
 IL2CPP_EXTERN_C const RuntimeMethod* FirebaseDatabase_get_DefaultInstance_m5D2694D707EAE163776CC0FF92B92537BDD59118_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Future_InternalDataSnapshot_GetResult_m49E679F1272DF0A77AF56930C32ADC5BD4FA940F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Future_InternalDataSnapshot_SWIG_CompletionDispatcher_m207504FA1000EF0BD7832B183D80014021D26A0B_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* Future_InternalDataSnapshot_SWIG_FreeCompletionData_mBFABB246B4475320E815EF1A38869A089F6D256D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Future_InternalDataSnapshot_SWIG_FreeCompletionData_m8CF09E6C9416D1883391E38BD46ACB781DCCDB27_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Future_InternalDataSnapshot_SWIG_OnCompletion_m3D3A3D578D03C34950D4EC51C0F715DFF2A459F6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Future_InternalDataSnapshot_ThrowIfDisposed_m30E2B463AC06313078F644896B453ED1937642ED_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Future_InternalDataSnapshot__ctor_mEC780D0884551EDCA0AABA11F5562C0C85246890_RuntimeMethod_var;
@@ -2041,7 +2041,7 @@ inline void Dictionary_2_set_Item_m005E9A5B663C38227381B4BAFE67FC74CECD1BDA (Dic
 	((  void (*) (Dictionary_2_t5C32AF17A5801FB3109E5B0E622BA8402A04E08E*, Il2CppFullySharedGenericAny, Il2CppFullySharedGenericAny, const RuntimeMethod*))Dictionary_2_set_Item_m4C6841170DD11AED683D2D71919F362A4CFF4A80_gshared)((Dictionary_2_t5C32AF17A5801FB3109E5B0E622BA8402A04E08E*)__this, (Il2CppFullySharedGenericAny)&___0_key, (Il2CppFullySharedGenericAny)___1_value, method);
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t Future_InternalDataSnapshot_SWIG_OnCompletion_m3D3A3D578D03C34950D4EC51C0F715DFF2A459F6 (Future_InternalDataSnapshot_t4FD9C35AAA7BE682060CF99DE0CDC72C083559BD* __this, SWIG_CompletionDelegate_t949FDF41F70E0F081E90389828604556255CF4A9* ___0_cs_callback, int32_t ___1_cs_key, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Future_InternalDataSnapshot_SWIG_FreeCompletionData_mBFABB246B4475320E815EF1A38869A089F6D256D (Future_InternalDataSnapshot_t4FD9C35AAA7BE682060CF99DE0CDC72C083559BD* __this, intptr_t ___0_data, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Future_InternalDataSnapshot_SWIG_FreeCompletionData_m8CF09E6C9416D1883391E38BD46ACB781DCCDB27 (intptr_t ___0_data, const RuntimeMethod* method) ;
 inline bool Dictionary_2_TryGetValue_m194F02B4821ECDF29014865E577588C882B88FB9 (Dictionary_2_t514FB35E858826A5AD56D5DF538EB3BB90EC1BCE* __this, int32_t ___0_key, Action_t33F1097A0A9B25B579B84B2014DDA783CD83A3C8** ___1_value, const RuntimeMethod* method)
 {
 	return ((  bool (*) (Dictionary_2_t5C32AF17A5801FB3109E5B0E622BA8402A04E08E*, Il2CppFullySharedGenericAny, Il2CppFullySharedGenericAny*, const RuntimeMethod*))Dictionary_2_TryGetValue_m7519D765EAF1E8A7D3137C2F1B7B3A01D15A1692_gshared)((Dictionary_2_t5C32AF17A5801FB3109E5B0E622BA8402A04E08E*)__this, (Il2CppFullySharedGenericAny)&___0_key, (Il2CppFullySharedGenericAny*)___1_value, method);
@@ -2056,7 +2056,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Future_InternalDataSnapshot__ctor_m94A6E
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SWIGPendingException_get_Pending_mFF0B94BEAD2C48E3CD3BB7EFB5EB23A0B6CF55EE (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Exception_t* SWIGPendingException_Retrieve_m5AF2B72B0C255B87F0044137B357F55F50101D51 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_Future_InternalDataSnapshot_SWIG_OnCompletion_mB092BCAAE048658527EC96816197C26AD97858BC (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, SWIG_CompletionDelegate_t949FDF41F70E0F081E90389828604556255CF4A9* ___1_jarg2, int32_t ___2_jarg3, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_Future_InternalDataSnapshot_SWIG_FreeCompletionData_m9F3C28735B00145DCAE15E9B6322FEC3C36AF580 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, intptr_t ___1_jarg2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_Future_InternalDataSnapshot_SWIG_FreeCompletionData_mA65246594101DAB3487C5946A4BBAB1BF511945D (intptr_t ___0_jarg1, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_Future_InternalDataSnapshot_GetResult_mFE66424CFF346ADACE64F9B8CD6CCFF1495F989E (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InternalDataSnapshot__ctor_m697E1A225D18E76664CE7B7FCAFFFE9358B7EDF3 (InternalDataSnapshot_t4B57B69537B5BFEC424D4207195BA40F6AE2A79D* __this, intptr_t ___0_cPtr, bool ___1_cMemoryOwn, const RuntimeMethod* method) ;
 inline void TaskCompletionSource_1_SetCanceled_m0411DE933C6264C4DC4ECB4F234DAB9AFC6EFB29 (TaskCompletionSource_1_tC8D6CA926CA6D58EA0EB12C7CDA47CBA8DC0E6CD* __this, const RuntimeMethod* method)
@@ -2425,454 +2425,454 @@ inline Variant_t90BF6FF4942F60EB844D3C90213E72E9D4240F1C* KeyValuePair_2_get_Val
 	return il2cppRetVal;
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool VariantVariantMapEnumerator_MoveNext_mBD4ECB27F072218FD3DE27476AA880BB530A0F06 (VariantVariantMapEnumerator_t4DFA1BCCD0E7549154EF427E5E3E0EAE35CB5F21* __this, const RuntimeMethod* method) ;
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_ExportFix();
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_new_Future_InternalDataSnapshot();
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_Future_InternalDataSnapshot_SWIG_OnCompletion(void*, Il2CppMethodPointer, int32_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
-IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_Future_InternalDataSnapshot_SWIG_FreeCompletionData(void*, intptr_t);
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
+IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_Future_InternalDataSnapshot_SWIG_FreeCompletionData(intptr_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_Future_InternalDataSnapshot_GetResult(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_delete_Future_InternalDataSnapshot(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshotList_Clear(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshotList_Add(void*, void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C uint32_t DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshotList_size(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C uint32_t DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshotList_capacity(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshotList_reserve(void*, uint32_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_new_InternalDataSnapshotList__SWIG_0();
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_new_InternalDataSnapshotList__SWIG_1(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_new_InternalDataSnapshotList__SWIG_2(int32_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshotList_getitemcopy(void*, int32_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshotList_getitem(void*, int32_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshotList_setitem(void*, int32_t, void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshotList_AddRange(void*, void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshotList_GetRange(void*, int32_t, int32_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshotList_Insert(void*, int32_t, void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshotList_InsertRange(void*, int32_t, void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshotList_RemoveAt(void*, int32_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshotList_RemoveRange(void*, int32_t, int32_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshotList_Repeat(void*, int32_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshotList_Reverse__SWIG_0(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshotList_Reverse__SWIG_1(void*, int32_t, int32_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshotList_SetRange(void*, int32_t, void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_delete_InternalDataSnapshotList(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_MutableDataChildrenEnumerator_Current(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C int32_t DEFAULT_CALL Firebase_Database_CSharp_MutableDataChildrenEnumerator_MoveNext(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_MutableDataChildrenEnumerator_Reset(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_delete_MutableDataChildrenEnumerator(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C char* DEFAULT_CALL Firebase_Database_CSharp_GetErrorMessage(int32_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_ServerTimestamp();
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalFirebaseDatabase_GetInstance__SWIG_0(void*, int32_t*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalFirebaseDatabase_GetInstance__SWIG_1(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalFirebaseDatabase_GetInstance__SWIG_2(void*, char*, int32_t*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalFirebaseDatabase_GetInstance__SWIG_3(void*, char*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_delete_InternalFirebaseDatabase(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalFirebaseDatabase_app(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalFirebaseDatabase_GetReference__SWIG_0(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalFirebaseDatabase_GetReference__SWIG_1(void*, char*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalFirebaseDatabase_GetReferenceFromUrl(void*, char*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalFirebaseDatabase_GoOffline(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalFirebaseDatabase_GoOnline(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalFirebaseDatabase_PurgeOutstandingWrites(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalFirebaseDatabase_set_persistence_enabled(void*, int32_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalFirebaseDatabase_set_log_level(void*, int32_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C int32_t DEFAULT_CALL Firebase_Database_CSharp_InternalFirebaseDatabase_log_level(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalFirebaseDatabase_GetInstanceInternal(void*, char*, int32_t*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalFirebaseDatabase_ReleaseReferenceInternal(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_delete_DisconnectionHandler(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_DisconnectionHandler_Cancel(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_DisconnectionHandler_RemoveValue(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_DisconnectionHandler_SetValue(void*, void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_DisconnectionHandler_SetValueAndPriority(void*, void*, void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_DisconnectionHandler_UpdateChildren(void*, void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_new_InternalDataSnapshot__SWIG_0();
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_new_InternalDataSnapshot__SWIG_1(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_delete_InternalDataSnapshot(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C int32_t DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshot_exists(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshot_Child__SWIG_0(void*, char*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshot_children(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C uint32_t DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshot_children_count(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C int32_t DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshot_has_children(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C char* DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshot_key(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C char* DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshot_key_string(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshot_value(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshot_priority(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshot_GetReference(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C int32_t DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshot_HasChild__SWIG_0(void*, char*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C int32_t DEFAULT_CALL Firebase_Database_CSharp_InternalDataSnapshot_is_valid(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_delete_ValueListener(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_ValueListener_OnValueChanged(void*, void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_ValueListener_OnCancelled(void*, int32_t, char*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_delete_ChildListener(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_ChildListener_OnChildAdded(void*, void*, char*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_ChildListener_OnChildChanged(void*, void*, char*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_ChildListener_OnChildMoved(void*, void*, char*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_ChildListener_OnChildRemoved(void*, void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_ChildListener_OnCancelled(void*, int32_t, char*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_new_InternalQuery__SWIG_0();
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_new_InternalQuery__SWIG_1(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_delete_InternalQuery(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalQuery_GetValue(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalQuery_AddValueListener(void*, void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalQuery_RemoveValueListener(void*, void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalQuery_RemoveAllValueListeners(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalQuery_AddChildListener(void*, void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalQuery_RemoveChildListener(void*, void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalQuery_RemoveAllChildListeners(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalQuery_GetReference(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalQuery_SetKeepSynchronized(void*, int32_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalQuery_OrderByChild__SWIG_0(void*, char*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalQuery_OrderByKey(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalQuery_OrderByPriority(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalQuery_OrderByValue(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalQuery_StartAt__SWIG_0(void*, void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalQuery_StartAt__SWIG_1(void*, void*, char*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalQuery_EndAt__SWIG_0(void*, void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalQuery_EndAt__SWIG_1(void*, void*, char*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalQuery_EqualTo__SWIG_0(void*, void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalQuery_EqualTo__SWIG_1(void*, void*, char*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalQuery_LimitToFirst(void*, uint32_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalQuery_LimitToLast(void*, uint32_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C int32_t DEFAULT_CALL Firebase_Database_CSharp_InternalQuery_is_valid(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalQuery_CreateValueListener(void*, int32_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalQuery_DestroyValueListener(intptr_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalQuery_RegisterValueListenerCallbacks(Il2CppMethodPointer, Il2CppMethodPointer);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalQuery_CreateChildListener(void*, int32_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalQuery_DestroyChildListener(intptr_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalQuery_RegisterChildListenerCallbacks(Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_new_InternalDatabaseReference__SWIG_0();
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_delete_InternalDatabaseReference(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_new_InternalDatabaseReference__SWIG_1(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalDatabaseReference_database(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C char* DEFAULT_CALL Firebase_Database_CSharp_InternalDatabaseReference_key(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C char* DEFAULT_CALL Firebase_Database_CSharp_InternalDatabaseReference_key_string(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C int32_t DEFAULT_CALL Firebase_Database_CSharp_InternalDatabaseReference_is_root(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C int32_t DEFAULT_CALL Firebase_Database_CSharp_InternalDatabaseReference_is_valid(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalDatabaseReference_GetParent(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalDatabaseReference_GetRoot(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalDatabaseReference_Child__SWIG_0(void*, char*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalDatabaseReference_PushChild(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalDatabaseReference_RemoveValue(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalDatabaseReference_SetPriority(void*, void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalDatabaseReference_SetValue(void*, void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalDatabaseReference_SetValueAndPriority(void*, void*, void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalDatabaseReference_UpdateChildren(void*, void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C char* DEFAULT_CALL Firebase_Database_CSharp_InternalDatabaseReference_url(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalDatabaseReference_OnDisconnect(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalDatabaseReference_GoOffline(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalDatabaseReference_GoOnline(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalDatabaseReference_RegisterTransactionCallback(Il2CppMethodPointer);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalDatabaseReference_RunTransaction(void*, int32_t, int32_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_delete_InternalMutableData(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C uint32_t DEFAULT_CALL Firebase_Database_CSharp_InternalMutableData_children_count(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C char* DEFAULT_CALL Firebase_Database_CSharp_InternalMutableData_key(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalMutableData_value(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalMutableData_priority(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C int32_t DEFAULT_CALL Firebase_Database_CSharp_InternalMutableData_HasChild__SWIG_0(void*, char*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalMutableData_set_value(void*, void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL Firebase_Database_CSharp_InternalMutableData_set_priority(void*, void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalMutableData_ChildrenEnumerator(void*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalMutableData_GetChild(void*, char*);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_Future_InternalDataSnapshot_SWIGUpcast(intptr_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C intptr_t DEFAULT_CALL Firebase_Database_CSharp_InternalDatabaseReference_SWIGUpcast(intptr_t);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL SWIGRegisterExceptionCallbacks_DatabaseInternal(Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL SWIGRegisterExceptionArgumentCallbacks_DatabaseInternal(Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer);
 #endif
-#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL SWIGRegisterStringCallback_DatabaseInternal(Il2CppMethodPointer);
 #endif
 #ifdef __clang__
@@ -8391,12 +8391,92 @@ IL_007e:
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Future_InternalDataSnapshot_SetCompletionData_mAA4E8E317176CDF9D079F5BDF76E3F75BF707808 (Future_InternalDataSnapshot_t4FD9C35AAA7BE682060CF99DE0CDC72C083559BD* __this, intptr_t ___0_data, const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
-		Future_InternalDataSnapshot_ThrowIfDisposed_m30E2B463AC06313078F644896B453ED1937642ED(__this, NULL);
-		intptr_t L_0 = __this->___callbackData;
-		Future_InternalDataSnapshot_SWIG_FreeCompletionData_mBFABB246B4475320E815EF1A38869A089F6D256D(__this, L_0, NULL);
-		intptr_t L_1 = ___0_data;
-		__this->___callbackData = L_1;
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&FirebaseApp_tD23C437863A3502177988D1382B58820B0571A25_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Future_InternalDataSnapshot_t4FD9C35AAA7BE682060CF99DE0CDC72C083559BD_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* V_0 = NULL;
+	bool V_1 = false;
+	bool V_2 = false;
+	{
+		il2cpp_codegen_runtime_class_init_inline(FirebaseApp_tD23C437863A3502177988D1382B58820B0571A25_il2cpp_TypeInfo_var);
+		RuntimeObject* L_0 = ((FirebaseApp_tD23C437863A3502177988D1382B58820B0571A25_StaticFields*)il2cpp_codegen_static_fields_for(FirebaseApp_tD23C437863A3502177988D1382B58820B0571A25_il2cpp_TypeInfo_var))->___disposeLock;
+		V_0 = L_0;
+		V_1 = (bool)0;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_004f:
+			{
+				{
+					bool L_1 = V_1;
+					if (!L_1)
+					{
+						goto IL_0059;
+					}
+				}
+				{
+					RuntimeObject* L_2 = V_0;
+					Monitor_Exit_m05B2CF037E2214B3208198C282490A2A475653FA(L_2, NULL);
+				}
+
+IL_0059:
+				{
+					return;
+				}
+			}
+		});
+		try
+		{
+			{
+				RuntimeObject* L_3 = V_0;
+				Monitor_Enter_m3CDB589DA1300B513D55FDCFB52B63E879794149(L_3, (&V_1), NULL);
+				HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F* L_4 = (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F*)(&__this->___swigCPtr);
+				intptr_t L_5;
+				L_5 = HandleRef_get_Handle_m2055005E349E895499E1B3B826C89228FFAC4C17_inline(L_4, NULL);
+				bool L_6;
+				L_6 = IntPtr_op_Equality_m7D9CDCDE9DC2A0C2C614633F4921E90187FAB271(L_5, 0, NULL);
+				V_2 = L_6;
+				bool L_7 = V_2;
+				if (!L_7)
+				{
+					goto IL_0037_1;
+				}
+			}
+			{
+				intptr_t L_8 = ___0_data;
+				il2cpp_codegen_runtime_class_init_inline(Future_InternalDataSnapshot_t4FD9C35AAA7BE682060CF99DE0CDC72C083559BD_il2cpp_TypeInfo_var);
+				Future_InternalDataSnapshot_SWIG_FreeCompletionData_m8CF09E6C9416D1883391E38BD46ACB781DCCDB27(L_8, NULL);
+				goto IL_004c_1;
+			}
+
+IL_0037_1:
+			{
+				intptr_t L_9 = __this->___callbackData;
+				il2cpp_codegen_runtime_class_init_inline(Future_InternalDataSnapshot_t4FD9C35AAA7BE682060CF99DE0CDC72C083559BD_il2cpp_TypeInfo_var);
+				Future_InternalDataSnapshot_SWIG_FreeCompletionData_m8CF09E6C9416D1883391E38BD46ACB781DCCDB27(L_9, NULL);
+				intptr_t L_10 = ___0_data;
+				__this->___callbackData = L_10;
+			}
+
+IL_004c_1:
+			{
+				goto IL_005a;
+			}
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_005a:
+	{
 		return;
 	}
 }
@@ -8614,7 +8694,7 @@ IL_0022:
 		return L_8;
 	}
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Future_InternalDataSnapshot_SWIG_FreeCompletionData_mBFABB246B4475320E815EF1A38869A089F6D256D (Future_InternalDataSnapshot_t4FD9C35AAA7BE682060CF99DE0CDC72C083559BD* __this, intptr_t ___0_data, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Future_InternalDataSnapshot_SWIG_FreeCompletionData_m8CF09E6C9416D1883391E38BD46ACB781DCCDB27 (intptr_t ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8625,28 +8705,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Future_InternalDataSnapshot_SWIG_FreeCom
 	}
 	bool V_0 = false;
 	{
-		HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F L_0 = __this->___swigCPtr;
-		intptr_t L_1 = ___0_data;
+		intptr_t L_0 = ___0_data;
 		il2cpp_codegen_runtime_class_init_inline(DatabaseInternalPINVOKE_t688350F60BB05C93E6B80EB6B64181492937512F_il2cpp_TypeInfo_var);
-		DatabaseInternalPINVOKE_Future_InternalDataSnapshot_SWIG_FreeCompletionData_m9F3C28735B00145DCAE15E9B6322FEC3C36AF580(L_0, L_1, NULL);
+		DatabaseInternalPINVOKE_Future_InternalDataSnapshot_SWIG_FreeCompletionData_mA65246594101DAB3487C5946A4BBAB1BF511945D(L_0, NULL);
 		il2cpp_codegen_runtime_class_init_inline(SWIGPendingException_tABBC4E77437B082457DE5327A693947CE0C7CF63_il2cpp_TypeInfo_var);
-		bool L_2;
-		L_2 = SWIGPendingException_get_Pending_mFF0B94BEAD2C48E3CD3BB7EFB5EB23A0B6CF55EE(NULL);
-		V_0 = L_2;
-		bool L_3 = V_0;
-		if (!L_3)
+		bool L_1;
+		L_1 = SWIGPendingException_get_Pending_mFF0B94BEAD2C48E3CD3BB7EFB5EB23A0B6CF55EE(NULL);
+		V_0 = L_1;
+		bool L_2 = V_0;
+		if (!L_2)
 		{
-			goto IL_001d;
+			goto IL_0017;
 		}
 	}
 	{
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&SWIGPendingException_tABBC4E77437B082457DE5327A693947CE0C7CF63_il2cpp_TypeInfo_var)));
-		Exception_t* L_4;
-		L_4 = SWIGPendingException_Retrieve_m5AF2B72B0C255B87F0044137B357F55F50101D51(NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_4, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Future_InternalDataSnapshot_SWIG_FreeCompletionData_mBFABB246B4475320E815EF1A38869A089F6D256D_RuntimeMethod_var)));
+		Exception_t* L_3;
+		L_3 = SWIGPendingException_Retrieve_m5AF2B72B0C255B87F0044137B357F55F50101D51(NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Future_InternalDataSnapshot_SWIG_FreeCompletionData_m8CF09E6C9416D1883391E38BD46ACB781DCCDB27_RuntimeMethod_var)));
 	}
 
-IL_001d:
+IL_0017:
 	{
 		return;
 	}
@@ -18707,17 +18786,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE__cctor_mCB2EA995
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_ExportFix_m303178F815F0B1AA4E6CFDE338E4B2E65FE5ED60 (const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) ();
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = 0;
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_ExportFix", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_ExportFix", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_ExportFix)();
 	#else
 	il2cppPInvokeFunc();
@@ -18727,17 +18806,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_ExportFix_m30317
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_new_Future_InternalDataSnapshot_m9A1EEA04B81C05778CAF3F80524F3E344BEE9AFC (const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) ();
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = 0;
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_new_Future_InternalDataSnapshot", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_new_Future_InternalDataSnapshot", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_new_Future_InternalDataSnapshot)();
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc();
@@ -18748,12 +18827,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_new_Future_I
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_Future_InternalDataSnapshot_SWIG_OnCompletion_mB092BCAAE048658527EC96816197C26AD97858BC (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, SWIG_CompletionDelegate_t949FDF41F70E0F081E90389828604556255CF4A9* ___1_jarg2, int32_t ___2_jarg3, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, Il2CppMethodPointer, int32_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*) + sizeof(int32_t);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_Future_InternalDataSnapshot_SWIG_OnCompletion", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_Future_InternalDataSnapshot_SWIG_OnCompletion", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -18764,7 +18843,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_Future_Inter
 	Il2CppMethodPointer ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = il2cpp_codegen_marshal_delegate(reinterpret_cast<MulticastDelegate_t*>(___1_jarg2));
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_Future_InternalDataSnapshot_SWIG_OnCompletion)(____0_jarg1_marshaled, ____1_jarg2_marshaled, ___2_jarg3);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled, ___2_jarg3);
@@ -18772,38 +18851,35 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_Future_Inter
 
 	return returnValue;
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_Future_InternalDataSnapshot_SWIG_FreeCompletionData_m9F3C28735B00145DCAE15E9B6322FEC3C36AF580 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, intptr_t ___1_jarg2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_Future_InternalDataSnapshot_SWIG_FreeCompletionData_mA65246594101DAB3487C5946A4BBAB1BF511945D (intptr_t ___0_jarg1, const RuntimeMethod* method) 
 {
-	typedef void (DEFAULT_CALL *PInvokeFunc) (void*, intptr_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	typedef void (DEFAULT_CALL *PInvokeFunc) (intptr_t);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
-		int parameterSize = sizeof(void*) + sizeof(intptr_t);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_Future_InternalDataSnapshot_SWIG_FreeCompletionData", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		int parameterSize = sizeof(intptr_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_Future_InternalDataSnapshot_SWIG_FreeCompletionData", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
 
-	void* ____0_jarg1_marshaled = NULL;
-	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
-
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
-	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_Future_InternalDataSnapshot_SWIG_FreeCompletionData)(____0_jarg1_marshaled, ___1_jarg2);
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
+	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_Future_InternalDataSnapshot_SWIG_FreeCompletionData)(___0_jarg1);
 	#else
-	il2cppPInvokeFunc(____0_jarg1_marshaled, ___1_jarg2);
+	il2cppPInvokeFunc(___0_jarg1);
 	#endif
 
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_Future_InternalDataSnapshot_GetResult_mFE66424CFF346ADACE64F9B8CD6CCFF1495F989E (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_Future_InternalDataSnapshot_GetResult", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_Future_InternalDataSnapshot_GetResult", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -18811,7 +18887,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_Future_Inter
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_Future_InternalDataSnapshot_GetResult)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -18822,12 +18898,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_Future_Inter
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_Future_InternalDataSnapshot_m3265978851D3C9EC5D2E8167DFAFF0427ED0BA10 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_delete_Future_InternalDataSnapshot", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_delete_Future_InternalDataSnapshot", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -18835,7 +18911,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_Future_In
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_delete_Future_InternalDataSnapshot)(____0_jarg1_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -18845,12 +18921,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_Future_In
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnapshotList_Clear_m51C52D56DCB85CA04203E3A9D1E686B3ADBDEA30 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_Clear", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_Clear", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -18858,7 +18934,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnap
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshotList_Clear)(____0_jarg1_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -18868,12 +18944,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnap
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnapshotList_Add_mF66FA8ED21FC7BB28408D1B2313CDDFADD8964AA (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*, void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_Add", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_Add", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -18884,7 +18960,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnap
 	void* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = (void*)___1_jarg2.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshotList_Add)(____0_jarg1_marshaled, ____1_jarg2_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled);
@@ -18894,12 +18970,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnap
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t DatabaseInternalPINVOKE_InternalDataSnapshotList_size_m95C6D77F3649EA67310C787E546A208E64BD3557 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef uint32_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_size", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_size", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -18907,7 +18983,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t DatabaseInternalPINVOKE_InternalData
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	uint32_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshotList_size)(____0_jarg1_marshaled);
 	#else
 	uint32_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -18918,12 +18994,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t DatabaseInternalPINVOKE_InternalData
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t DatabaseInternalPINVOKE_InternalDataSnapshotList_capacity_m9FEBF6285885F9C6D983340B0B89E89CA5FEB4DA (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef uint32_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_capacity", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_capacity", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -18931,7 +19007,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t DatabaseInternalPINVOKE_InternalData
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	uint32_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshotList_capacity)(____0_jarg1_marshaled);
 	#else
 	uint32_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -18942,12 +19018,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t DatabaseInternalPINVOKE_InternalData
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnapshotList_reserve_m1739E7A92DDBC75FB4129C77B9DAC921929CF5CD (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, uint32_t ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*, uint32_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(uint32_t);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_reserve", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_reserve", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -18955,7 +19031,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnap
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshotList_reserve)(____0_jarg1_marshaled, ___1_jarg2);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled, ___1_jarg2);
@@ -18965,17 +19041,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnap
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_new_InternalDataSnapshotList__SWIG_0_mE49C3D2E75C7A2924DD1E12BD862C8DA481380AE (const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) ();
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = 0;
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_new_InternalDataSnapshotList__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_new_InternalDataSnapshotList__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_new_InternalDataSnapshotList__SWIG_0)();
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc();
@@ -18986,12 +19062,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_new_Internal
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_new_InternalDataSnapshotList__SWIG_1_m58261993C3971EE78749F53744B23D2C880F6A31 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_new_InternalDataSnapshotList__SWIG_1", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_new_InternalDataSnapshotList__SWIG_1", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -18999,7 +19075,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_new_Internal
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_new_InternalDataSnapshotList__SWIG_1)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -19010,17 +19086,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_new_Internal
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_new_InternalDataSnapshotList__SWIG_2_m08CDC6AE56641D71563F0CE7D0B2670E25631421 (int32_t ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (int32_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(int32_t);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_new_InternalDataSnapshotList__SWIG_2", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_new_InternalDataSnapshotList__SWIG_2", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_new_InternalDataSnapshotList__SWIG_2)(___0_jarg1);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(___0_jarg1);
@@ -19031,12 +19107,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_new_Internal
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalDataSnapshotList_getitemcopy_m0E3E678FC08F29042CD66BB0FD35B6030C8AC12E (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, int32_t ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, int32_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(int32_t);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_getitemcopy", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_getitemcopy", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19044,7 +19120,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshotList_getitemcopy)(____0_jarg1_marshaled, ___1_jarg2);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ___1_jarg2);
@@ -19055,12 +19131,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalDataSnapshotList_getitem_m3E4EBA02964DA7056E69D54DF68B357C02A6EFF4 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, int32_t ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, int32_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(int32_t);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_getitem", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_getitem", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19068,7 +19144,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshotList_getitem)(____0_jarg1_marshaled, ___1_jarg2);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ___1_jarg2);
@@ -19079,12 +19155,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnapshotList_setitem_mC71A08733DDFE9C4298A1668571AA7237D98BC5C (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, int32_t ___1_jarg2, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___2_jarg3, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*, int32_t, void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(int32_t) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_setitem", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_setitem", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19095,7 +19171,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnap
 	void* ____2_jarg3_marshaled = NULL;
 	____2_jarg3_marshaled = (void*)___2_jarg3.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshotList_setitem)(____0_jarg1_marshaled, ___1_jarg2, ____2_jarg3_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled, ___1_jarg2, ____2_jarg3_marshaled);
@@ -19105,12 +19181,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnap
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnapshotList_AddRange_m4EE12E3FB393E3DC94B03905C377960CE612F05D (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*, void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_AddRange", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_AddRange", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19121,7 +19197,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnap
 	void* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = (void*)___1_jarg2.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshotList_AddRange)(____0_jarg1_marshaled, ____1_jarg2_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled);
@@ -19131,12 +19207,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnap
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalDataSnapshotList_GetRange_mC7BDB2855651FE23538BA742D2E05D5164381CC6 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, int32_t ___1_jarg2, int32_t ___2_jarg3, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, int32_t, int32_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(int32_t) + sizeof(int32_t);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_GetRange", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_GetRange", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19144,7 +19220,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshotList_GetRange)(____0_jarg1_marshaled, ___1_jarg2, ___2_jarg3);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ___1_jarg2, ___2_jarg3);
@@ -19155,12 +19231,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnapshotList_Insert_m98BCA201C8F618B1D0417B278E56B450AC102F1F (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, int32_t ___1_jarg2, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___2_jarg3, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*, int32_t, void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(int32_t) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_Insert", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_Insert", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19171,7 +19247,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnap
 	void* ____2_jarg3_marshaled = NULL;
 	____2_jarg3_marshaled = (void*)___2_jarg3.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshotList_Insert)(____0_jarg1_marshaled, ___1_jarg2, ____2_jarg3_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled, ___1_jarg2, ____2_jarg3_marshaled);
@@ -19181,12 +19257,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnap
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnapshotList_InsertRange_m3FA1CA96AB0345E728F234878C0B8CB6154F7DCB (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, int32_t ___1_jarg2, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___2_jarg3, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*, int32_t, void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(int32_t) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_InsertRange", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_InsertRange", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19197,7 +19273,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnap
 	void* ____2_jarg3_marshaled = NULL;
 	____2_jarg3_marshaled = (void*)___2_jarg3.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshotList_InsertRange)(____0_jarg1_marshaled, ___1_jarg2, ____2_jarg3_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled, ___1_jarg2, ____2_jarg3_marshaled);
@@ -19207,12 +19283,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnap
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnapshotList_RemoveAt_m4D4769E7D5E0FE4F9E7906841E8F8F2E3735E02F (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, int32_t ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*, int32_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(int32_t);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_RemoveAt", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_RemoveAt", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19220,7 +19296,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnap
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshotList_RemoveAt)(____0_jarg1_marshaled, ___1_jarg2);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled, ___1_jarg2);
@@ -19230,12 +19306,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnap
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnapshotList_RemoveRange_m8900C99C84DF719A5C1BBE23BB3E38BEC0D8A077 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, int32_t ___1_jarg2, int32_t ___2_jarg3, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*, int32_t, int32_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(int32_t) + sizeof(int32_t);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_RemoveRange", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_RemoveRange", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19243,7 +19319,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnap
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshotList_RemoveRange)(____0_jarg1_marshaled, ___1_jarg2, ___2_jarg3);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled, ___1_jarg2, ___2_jarg3);
@@ -19253,12 +19329,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnap
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalDataSnapshotList_Repeat_m63768632A93A2252D34D2FA67255887754DCAB7E (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, int32_t ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, int32_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(int32_t);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_Repeat", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_Repeat", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19266,7 +19342,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshotList_Repeat)(____0_jarg1_marshaled, ___1_jarg2);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ___1_jarg2);
@@ -19277,12 +19353,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnapshotList_Reverse__SWIG_0_m1495FB63970A71FC74344677F25DAF2C61CAA4EC (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_Reverse__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_Reverse__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19290,7 +19366,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnap
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshotList_Reverse__SWIG_0)(____0_jarg1_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -19300,12 +19376,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnap
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnapshotList_Reverse__SWIG_1_m1423A1B15CEFEAD5334E442B5AD75F0EBA9210DA (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, int32_t ___1_jarg2, int32_t ___2_jarg3, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*, int32_t, int32_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(int32_t) + sizeof(int32_t);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_Reverse__SWIG_1", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_Reverse__SWIG_1", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19313,7 +19389,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnap
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshotList_Reverse__SWIG_1)(____0_jarg1_marshaled, ___1_jarg2, ___2_jarg3);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled, ___1_jarg2, ___2_jarg3);
@@ -19323,12 +19399,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnap
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnapshotList_SetRange_m8ADCEEC58CD4B8D207C06325F3CEAEE7746F2E69 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, int32_t ___1_jarg2, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___2_jarg3, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*, int32_t, void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(int32_t) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_SetRange", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshotList_SetRange", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19339,7 +19415,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnap
 	void* ____2_jarg3_marshaled = NULL;
 	____2_jarg3_marshaled = (void*)___2_jarg3.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshotList_SetRange)(____0_jarg1_marshaled, ___1_jarg2, ____2_jarg3_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled, ___1_jarg2, ____2_jarg3_marshaled);
@@ -19349,12 +19425,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDataSnap
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_InternalDataSnapshotList_m8D2A4E309A9FC79ABAF4198EBAEF923C4D50E7CA (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_delete_InternalDataSnapshotList", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_delete_InternalDataSnapshotList", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19362,7 +19438,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_InternalD
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_delete_InternalDataSnapshotList)(____0_jarg1_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -19372,12 +19448,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_InternalD
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_MutableDataChildrenEnumerator_Current_mC556FA6F3D874872E4F85118A5D4DAAC5FD9DB7B (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_MutableDataChildrenEnumerator_Current", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_MutableDataChildrenEnumerator_Current", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19385,7 +19461,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_MutableDataC
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_MutableDataChildrenEnumerator_Current)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -19396,12 +19472,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_MutableDataC
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DatabaseInternalPINVOKE_MutableDataChildrenEnumerator_MoveNext_mD34242E0062D144FC170003C9B7DA820FFF5078A (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_MutableDataChildrenEnumerator_MoveNext", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_MutableDataChildrenEnumerator_MoveNext", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19409,7 +19485,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DatabaseInternalPINVOKE_MutableDataChild
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	int32_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_MutableDataChildrenEnumerator_MoveNext)(____0_jarg1_marshaled);
 	#else
 	int32_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -19420,12 +19496,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DatabaseInternalPINVOKE_MutableDataChild
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_MutableDataChildrenEnumerator_Reset_m14C0AD7CF7FDABE8F99C5F08516FFDEC1671A954 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_MutableDataChildrenEnumerator_Reset", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_MutableDataChildrenEnumerator_Reset", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19433,7 +19509,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_MutableDataChild
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_MutableDataChildrenEnumerator_Reset)(____0_jarg1_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -19443,12 +19519,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_MutableDataChild
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_MutableDataChildrenEnumerator_mC1B878DF2F265BF6F651AF2EB9B3C62A8EEEFBFB (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_delete_MutableDataChildrenEnumerator", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_delete_MutableDataChildrenEnumerator", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19456,7 +19532,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_MutableDa
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_delete_MutableDataChildrenEnumerator)(____0_jarg1_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -19466,17 +19542,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_MutableDa
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DatabaseInternalPINVOKE_GetErrorMessage_m9D1F75A2D378629BE37AEBF4156594521236F56B (int32_t ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef char* (DEFAULT_CALL *PInvokeFunc) (int32_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(int32_t);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_GetErrorMessage", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_GetErrorMessage", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	char* returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_GetErrorMessage)(___0_jarg1);
 	#else
 	char* returnValue = il2cppPInvokeFunc(___0_jarg1);
@@ -19493,17 +19569,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DatabaseInternalPINVOKE_GetErrorMes
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_ServerTimestamp_mD54A95C7C7D9AC76567F3A68810A22C07A56D3D0 (const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) ();
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = 0;
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_ServerTimestamp", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_ServerTimestamp", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_ServerTimestamp)();
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc();
@@ -19514,12 +19590,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_ServerTimest
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalFirebaseDatabase_GetInstance__SWIG_0_m3B307CF980F5F0B0B98539E6A8B0412EDE8EF07A (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, int32_t* ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, int32_t*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(int32_t*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_GetInstance__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_GetInstance__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19527,7 +19603,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalFire
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalFirebaseDatabase_GetInstance__SWIG_0)(____0_jarg1_marshaled, ___1_jarg2);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ___1_jarg2);
@@ -19538,12 +19614,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalFire
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalFirebaseDatabase_GetInstance__SWIG_1_mD2B48AF85B0BD129BCAA872BE05F08D3F38AD00E (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_GetInstance__SWIG_1", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_GetInstance__SWIG_1", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19551,7 +19627,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalFire
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalFirebaseDatabase_GetInstance__SWIG_1)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -19562,12 +19638,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalFire
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalFirebaseDatabase_GetInstance__SWIG_2_m8BBD93DB78ACD67E306F04832FC842BEC4B031E2 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, String_t* ___1_jarg2, int32_t* ___2_jarg3, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, char*, int32_t*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(char*) + sizeof(int32_t*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_GetInstance__SWIG_2", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_GetInstance__SWIG_2", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19578,7 +19654,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalFire
 	char* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = il2cpp_codegen_marshal_string(___1_jarg2);
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalFirebaseDatabase_GetInstance__SWIG_2)(____0_jarg1_marshaled, ____1_jarg2_marshaled, ___2_jarg3);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled, ___2_jarg3);
@@ -19592,12 +19668,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalFire
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalFirebaseDatabase_GetInstance__SWIG_3_m9B2D694FC61F74907222E6F5B9C3CC9CCD0490E7 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, String_t* ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, char*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(char*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_GetInstance__SWIG_3", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_GetInstance__SWIG_3", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19608,7 +19684,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalFire
 	char* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = il2cpp_codegen_marshal_string(___1_jarg2);
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalFirebaseDatabase_GetInstance__SWIG_3)(____0_jarg1_marshaled, ____1_jarg2_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled);
@@ -19622,12 +19698,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalFire
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_InternalFirebaseDatabase_m9B2910F784417E968E563A5F27B71AF4AE9206B7 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_delete_InternalFirebaseDatabase", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_delete_InternalFirebaseDatabase", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19635,7 +19711,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_InternalF
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_delete_InternalFirebaseDatabase)(____0_jarg1_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -19645,12 +19721,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_InternalF
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalFirebaseDatabase_app_mD8F6EECB963554690A531B77F013882341461797 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_app", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_app", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19658,7 +19734,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalFire
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalFirebaseDatabase_app)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -19669,12 +19745,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalFire
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalFirebaseDatabase_GetReference__SWIG_0_mA66AD0BD29EE77022482443C931BD25E9912CCDD (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_GetReference__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_GetReference__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19682,7 +19758,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalFire
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalFirebaseDatabase_GetReference__SWIG_0)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -19693,12 +19769,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalFire
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalFirebaseDatabase_GetReference__SWIG_1_m0897446FE748C5499861EF234A23628157A0505A (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, String_t* ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, char*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(char*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_GetReference__SWIG_1", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_GetReference__SWIG_1", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19709,7 +19785,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalFire
 	char* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = il2cpp_codegen_marshal_string(___1_jarg2);
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalFirebaseDatabase_GetReference__SWIG_1)(____0_jarg1_marshaled, ____1_jarg2_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled);
@@ -19723,12 +19799,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalFire
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalFirebaseDatabase_GetReferenceFromUrl_m5CC3FD309C4E271565AD054EAEDE238C4993243D (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, String_t* ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, char*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(char*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_GetReferenceFromUrl", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_GetReferenceFromUrl", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19739,7 +19815,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalFire
 	char* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = il2cpp_codegen_marshal_string(___1_jarg2);
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalFirebaseDatabase_GetReferenceFromUrl)(____0_jarg1_marshaled, ____1_jarg2_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled);
@@ -19753,12 +19829,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalFire
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalFirebaseDatabase_GoOffline_m2A9126AAC97EE4903E842A940DDA3BB944D549E1 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_GoOffline", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_GoOffline", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19766,7 +19842,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalFirebase
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalFirebaseDatabase_GoOffline)(____0_jarg1_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -19776,12 +19852,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalFirebase
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalFirebaseDatabase_GoOnline_mACA8BD99A4338067FE546563A3EE20011DCA4D93 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_GoOnline", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_GoOnline", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19789,7 +19865,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalFirebase
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalFirebaseDatabase_GoOnline)(____0_jarg1_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -19799,12 +19875,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalFirebase
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalFirebaseDatabase_PurgeOutstandingWrites_m17E4B2E47B9D17C0C6833A679E2CF1F9AEAC1896 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_PurgeOutstandingWrites", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_PurgeOutstandingWrites", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19812,7 +19888,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalFirebase
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalFirebaseDatabase_PurgeOutstandingWrites)(____0_jarg1_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -19822,12 +19898,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalFirebase
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalFirebaseDatabase_set_persistence_enabled_m693FDB2CEABC94287463B35A6D848D2E34474B72 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, bool ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*, int32_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + 4;
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_set_persistence_enabled", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_set_persistence_enabled", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19835,7 +19911,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalFirebase
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalFirebaseDatabase_set_persistence_enabled)(____0_jarg1_marshaled, static_cast<int32_t>(___1_jarg2));
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled, static_cast<int32_t>(___1_jarg2));
@@ -19845,12 +19921,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalFirebase
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalFirebaseDatabase_set_log_level_m08D55E90BF7634027CEFCF554E3319697C662CED (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, int32_t ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*, int32_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(int32_t);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_set_log_level", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_set_log_level", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19858,7 +19934,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalFirebase
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalFirebaseDatabase_set_log_level)(____0_jarg1_marshaled, ___1_jarg2);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled, ___1_jarg2);
@@ -19868,12 +19944,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalFirebase
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DatabaseInternalPINVOKE_InternalFirebaseDatabase_log_level_m63A7731E11CBA654BCE07E57FB63A26F27189612 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_log_level", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_log_level", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19881,7 +19957,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DatabaseInternalPINVOKE_InternalFireb
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	int32_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalFirebaseDatabase_log_level)(____0_jarg1_marshaled);
 	#else
 	int32_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -19892,12 +19968,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DatabaseInternalPINVOKE_InternalFireb
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalFirebaseDatabase_GetInstanceInternal_m04AFDE17136626FCF0AEF17085C209E2F7C9DBA2 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, String_t* ___1_jarg2, int32_t* ___2_jarg3, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, char*, int32_t*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(char*) + sizeof(int32_t*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_GetInstanceInternal", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_GetInstanceInternal", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19908,7 +19984,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalFire
 	char* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = il2cpp_codegen_marshal_string(___1_jarg2);
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalFirebaseDatabase_GetInstanceInternal)(____0_jarg1_marshaled, ____1_jarg2_marshaled, ___2_jarg3);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled, ___2_jarg3);
@@ -19922,12 +19998,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalFire
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalFirebaseDatabase_ReleaseReferenceInternal_m7D07BAA524947C1C37B3FBD2B905FA812FC83ADF (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_ReleaseReferenceInternal", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalFirebaseDatabase_ReleaseReferenceInternal", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19935,7 +20011,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalFirebase
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalFirebaseDatabase_ReleaseReferenceInternal)(____0_jarg1_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -19945,12 +20021,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalFirebase
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_DisconnectionHandler_mE06791A4BA5256B809C8BC92D26D1607A27B57B7 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_delete_DisconnectionHandler", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_delete_DisconnectionHandler", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19958,7 +20034,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_Disconnec
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_delete_DisconnectionHandler)(____0_jarg1_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -19968,12 +20044,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_Disconnec
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_DisconnectionHandler_Cancel_m2AFAC1BC5C85BF55AA390F378E514D6E8AA4FB7D (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_DisconnectionHandler_Cancel", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_DisconnectionHandler_Cancel", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -19981,7 +20057,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_Disconnectio
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_DisconnectionHandler_Cancel)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -19992,12 +20068,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_Disconnectio
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_DisconnectionHandler_RemoveValue_m39AB513DD7870977193578BEADA8D6AD5D29C6CF (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_DisconnectionHandler_RemoveValue", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_DisconnectionHandler_RemoveValue", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20005,7 +20081,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_Disconnectio
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_DisconnectionHandler_RemoveValue)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -20016,12 +20092,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_Disconnectio
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_DisconnectionHandler_SetValue_m946E26E3A9AB33F881F28B1BCB7B99C2CA80BB5D (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_DisconnectionHandler_SetValue", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_DisconnectionHandler_SetValue", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20032,7 +20108,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_Disconnectio
 	void* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = (void*)___1_jarg2.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_DisconnectionHandler_SetValue)(____0_jarg1_marshaled, ____1_jarg2_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled);
@@ -20043,12 +20119,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_Disconnectio
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_DisconnectionHandler_SetValueAndPriority_m6B4289B5E55B2954780462BB882BBE4B56423155 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___1_jarg2, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___2_jarg3, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, void*, void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_DisconnectionHandler_SetValueAndPriority", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_DisconnectionHandler_SetValueAndPriority", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20062,7 +20138,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_Disconnectio
 	void* ____2_jarg3_marshaled = NULL;
 	____2_jarg3_marshaled = (void*)___2_jarg3.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_DisconnectionHandler_SetValueAndPriority)(____0_jarg1_marshaled, ____1_jarg2_marshaled, ____2_jarg3_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled, ____2_jarg3_marshaled);
@@ -20073,12 +20149,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_Disconnectio
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_DisconnectionHandler_UpdateChildren_m972A2D67707D916F35249DBC5511E9BFD060D534 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_DisconnectionHandler_UpdateChildren", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_DisconnectionHandler_UpdateChildren", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20089,7 +20165,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_Disconnectio
 	void* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = (void*)___1_jarg2.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_DisconnectionHandler_UpdateChildren)(____0_jarg1_marshaled, ____1_jarg2_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled);
@@ -20100,17 +20176,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_Disconnectio
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_new_InternalDataSnapshot__SWIG_0_mACFC78BCAC670DEF6C3C131AAC1C23ACD1C424D2 (const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) ();
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = 0;
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_new_InternalDataSnapshot__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_new_InternalDataSnapshot__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_new_InternalDataSnapshot__SWIG_0)();
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc();
@@ -20121,12 +20197,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_new_Internal
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_new_InternalDataSnapshot__SWIG_1_m1753D5542492AAD7CF4B371E1328B4B9ADBEF4CF (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_new_InternalDataSnapshot__SWIG_1", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_new_InternalDataSnapshot__SWIG_1", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20134,7 +20210,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_new_Internal
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_new_InternalDataSnapshot__SWIG_1)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -20145,12 +20221,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_new_Internal
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_InternalDataSnapshot_m9B4F29AEFAB9F75C0DDE194CC9F240A56944EEFC (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_delete_InternalDataSnapshot", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_delete_InternalDataSnapshot", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20158,7 +20234,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_InternalD
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_delete_InternalDataSnapshot)(____0_jarg1_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -20168,12 +20244,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_InternalD
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DatabaseInternalPINVOKE_InternalDataSnapshot_exists_m4EFB959BC37CEB11B5EA0821056072635534C8C9 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshot_exists", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshot_exists", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20181,7 +20257,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DatabaseInternalPINVOKE_InternalDataSnap
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	int32_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshot_exists)(____0_jarg1_marshaled);
 	#else
 	int32_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -20192,12 +20268,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DatabaseInternalPINVOKE_InternalDataSnap
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalDataSnapshot_Child__SWIG_0_m918F2CA8E6F4CA88896D409E154BC56690D92988 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, String_t* ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, char*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(char*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshot_Child__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshot_Child__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20208,7 +20284,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 	char* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = il2cpp_codegen_marshal_string(___1_jarg2);
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshot_Child__SWIG_0)(____0_jarg1_marshaled, ____1_jarg2_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled);
@@ -20222,12 +20298,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalDataSnapshot_children_m813AAE9881CCF7F3D1E0EA49128F9830A365B9CC (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshot_children", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshot_children", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20235,7 +20311,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshot_children)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -20246,12 +20322,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t DatabaseInternalPINVOKE_InternalDataSnapshot_children_count_m74E244933D5F33FFBEC57A95BBD1E7B67CDDDFD7 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef uint32_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshot_children_count", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshot_children_count", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20259,7 +20335,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t DatabaseInternalPINVOKE_InternalData
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	uint32_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshot_children_count)(____0_jarg1_marshaled);
 	#else
 	uint32_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -20270,12 +20346,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t DatabaseInternalPINVOKE_InternalData
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DatabaseInternalPINVOKE_InternalDataSnapshot_has_children_mDEFDC0BD89344BD1D5A36F0E896AFDC8DC9D5877 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshot_has_children", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshot_has_children", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20283,7 +20359,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DatabaseInternalPINVOKE_InternalDataSnap
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	int32_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshot_has_children)(____0_jarg1_marshaled);
 	#else
 	int32_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -20294,12 +20370,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DatabaseInternalPINVOKE_InternalDataSnap
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DatabaseInternalPINVOKE_InternalDataSnapshot_key_m762441A7EDD23839D9E11D47CAC7EF1F58502BA8 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef char* (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshot_key", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshot_key", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20307,7 +20383,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DatabaseInternalPINVOKE_InternalDat
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	char* returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshot_key)(____0_jarg1_marshaled);
 	#else
 	char* returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -20324,12 +20400,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DatabaseInternalPINVOKE_InternalDat
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DatabaseInternalPINVOKE_InternalDataSnapshot_key_string_mA2EE4631F0F9A099237A65D31DE7BE43C12B5F9B (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef char* (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshot_key_string", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshot_key_string", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20337,7 +20413,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DatabaseInternalPINVOKE_InternalDat
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	char* returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshot_key_string)(____0_jarg1_marshaled);
 	#else
 	char* returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -20354,12 +20430,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DatabaseInternalPINVOKE_InternalDat
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalDataSnapshot_value_m287A94D7F9C95E4751E89B29957EB46AD0209643 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshot_value", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshot_value", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20367,7 +20443,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshot_value)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -20378,12 +20454,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalDataSnapshot_priority_mEDF921C72547E612E9A6F14FB9F85078F986EF0E (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshot_priority", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshot_priority", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20391,7 +20467,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshot_priority)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -20402,12 +20478,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalDataSnapshot_GetReference_mC53F90BAB6C6F978E890EB477402CD426C843507 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshot_GetReference", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshot_GetReference", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20415,7 +20491,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshot_GetReference)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -20426,12 +20502,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DatabaseInternalPINVOKE_InternalDataSnapshot_HasChild__SWIG_0_mC0C4BFCBD6FF5B86B595C7071E3FFEA96AB534BD (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, String_t* ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (void*, char*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(char*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshot_HasChild__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshot_HasChild__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20442,7 +20518,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DatabaseInternalPINVOKE_InternalDataSnap
 	char* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = il2cpp_codegen_marshal_string(___1_jarg2);
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	int32_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshot_HasChild__SWIG_0)(____0_jarg1_marshaled, ____1_jarg2_marshaled);
 	#else
 	int32_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled);
@@ -20456,12 +20532,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DatabaseInternalPINVOKE_InternalDataSnap
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DatabaseInternalPINVOKE_InternalDataSnapshot_is_valid_mCD584F6E085BDE862F4D49B518E509BDC5875372 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDataSnapshot_is_valid", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDataSnapshot_is_valid", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20469,7 +20545,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DatabaseInternalPINVOKE_InternalDataSnap
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	int32_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDataSnapshot_is_valid)(____0_jarg1_marshaled);
 	#else
 	int32_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -20480,12 +20556,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DatabaseInternalPINVOKE_InternalDataSnap
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_ValueListener_mF4B7E1DF3C7A889F4066DE911A760E5316B34582 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_delete_ValueListener", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_delete_ValueListener", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20493,7 +20569,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_ValueList
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_delete_ValueListener)(____0_jarg1_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -20503,12 +20579,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_ValueList
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_ValueListener_OnValueChanged_m053FEC49A927B965B4B993D2C5897E74186F9A68 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*, void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_ValueListener_OnValueChanged", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_ValueListener_OnValueChanged", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20519,7 +20595,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_ValueListener_On
 	void* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = (void*)___1_jarg2.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_ValueListener_OnValueChanged)(____0_jarg1_marshaled, ____1_jarg2_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled);
@@ -20529,12 +20605,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_ValueListener_On
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_ValueListener_OnCancelled_m7109FE9FAC39CA2501F6789A449098710329CA22 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, int32_t ___1_jarg2, String_t* ___2_jarg3, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*, int32_t, char*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(int32_t) + sizeof(char*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_ValueListener_OnCancelled", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_ValueListener_OnCancelled", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20545,7 +20621,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_ValueListener_On
 	char* ____2_jarg3_marshaled = NULL;
 	____2_jarg3_marshaled = il2cpp_codegen_marshal_string(___2_jarg3);
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_ValueListener_OnCancelled)(____0_jarg1_marshaled, ___1_jarg2, ____2_jarg3_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled, ___1_jarg2, ____2_jarg3_marshaled);
@@ -20558,12 +20634,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_ValueListener_On
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_ChildListener_m9135F33A8002C516DB373E255E132C1CB5407691 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_delete_ChildListener", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_delete_ChildListener", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20571,7 +20647,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_ChildList
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_delete_ChildListener)(____0_jarg1_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -20581,12 +20657,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_ChildList
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_ChildListener_OnChildAdded_mF699E6FC68DB3F48F2936EDC9F20219CAFF302AA (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___1_jarg2, String_t* ___2_jarg3, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*, void*, char*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*) + sizeof(char*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_ChildListener_OnChildAdded", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_ChildListener_OnChildAdded", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20600,7 +20676,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_ChildListener_On
 	char* ____2_jarg3_marshaled = NULL;
 	____2_jarg3_marshaled = il2cpp_codegen_marshal_string(___2_jarg3);
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_ChildListener_OnChildAdded)(____0_jarg1_marshaled, ____1_jarg2_marshaled, ____2_jarg3_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled, ____2_jarg3_marshaled);
@@ -20613,12 +20689,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_ChildListener_On
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_ChildListener_OnChildChanged_m08AAF64BD2AA4EB98753AA55654DAA39E6D9B68F (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___1_jarg2, String_t* ___2_jarg3, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*, void*, char*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*) + sizeof(char*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_ChildListener_OnChildChanged", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_ChildListener_OnChildChanged", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20632,7 +20708,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_ChildListener_On
 	char* ____2_jarg3_marshaled = NULL;
 	____2_jarg3_marshaled = il2cpp_codegen_marshal_string(___2_jarg3);
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_ChildListener_OnChildChanged)(____0_jarg1_marshaled, ____1_jarg2_marshaled, ____2_jarg3_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled, ____2_jarg3_marshaled);
@@ -20645,12 +20721,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_ChildListener_On
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_ChildListener_OnChildMoved_mC11AED561FBB9C7D48317F09AB665FF7D614C3CA (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___1_jarg2, String_t* ___2_jarg3, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*, void*, char*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*) + sizeof(char*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_ChildListener_OnChildMoved", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_ChildListener_OnChildMoved", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20664,7 +20740,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_ChildListener_On
 	char* ____2_jarg3_marshaled = NULL;
 	____2_jarg3_marshaled = il2cpp_codegen_marshal_string(___2_jarg3);
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_ChildListener_OnChildMoved)(____0_jarg1_marshaled, ____1_jarg2_marshaled, ____2_jarg3_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled, ____2_jarg3_marshaled);
@@ -20677,12 +20753,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_ChildListener_On
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_ChildListener_OnChildRemoved_mD04336A88B6DDF34EE11675A702FF524D0227EC2 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*, void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_ChildListener_OnChildRemoved", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_ChildListener_OnChildRemoved", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20693,7 +20769,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_ChildListener_On
 	void* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = (void*)___1_jarg2.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_ChildListener_OnChildRemoved)(____0_jarg1_marshaled, ____1_jarg2_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled);
@@ -20703,12 +20779,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_ChildListener_On
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_ChildListener_OnCancelled_m5B5B143EB24E10D98E19C845EC3CAAE526BA3C83 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, int32_t ___1_jarg2, String_t* ___2_jarg3, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*, int32_t, char*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(int32_t) + sizeof(char*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_ChildListener_OnCancelled", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_ChildListener_OnCancelled", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20719,7 +20795,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_ChildListener_On
 	char* ____2_jarg3_marshaled = NULL;
 	____2_jarg3_marshaled = il2cpp_codegen_marshal_string(___2_jarg3);
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_ChildListener_OnCancelled)(____0_jarg1_marshaled, ___1_jarg2, ____2_jarg3_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled, ___1_jarg2, ____2_jarg3_marshaled);
@@ -20732,17 +20808,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_ChildListener_On
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_new_InternalQuery__SWIG_0_m7CFB9F5E267C741BC5170B6A891F98B7A970BC5B (const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) ();
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = 0;
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_new_InternalQuery__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_new_InternalQuery__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_new_InternalQuery__SWIG_0)();
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc();
@@ -20753,12 +20829,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_new_Internal
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_new_InternalQuery__SWIG_1_mD13B17EA481F6C45FD673E58E8E82BE9E0B9269D (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_new_InternalQuery__SWIG_1", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_new_InternalQuery__SWIG_1", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20766,7 +20842,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_new_Internal
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_new_InternalQuery__SWIG_1)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -20777,12 +20853,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_new_Internal
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_InternalQuery_m90A6FFAC0DB2AC6092334DDE739D4AE8C290AEF9 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_delete_InternalQuery", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_delete_InternalQuery", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20790,7 +20866,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_InternalQ
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_delete_InternalQuery)(____0_jarg1_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -20800,12 +20876,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_InternalQ
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuery_GetValue_mE8FF00BBF07A616360EDCAFF9E400464EF73409E (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalQuery_GetValue", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalQuery_GetValue", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20813,7 +20889,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalQuery_GetValue)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -20824,12 +20900,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_AddValueListener_m82C7C2337D27E8D2CB5E5D7F8C085C500CE667F9 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*, void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalQuery_AddValueListener", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalQuery_AddValueListener", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20840,7 +20916,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_Ad
 	void* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = (void*)___1_jarg2.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalQuery_AddValueListener)(____0_jarg1_marshaled, ____1_jarg2_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled);
@@ -20850,12 +20926,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_Ad
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_RemoveValueListener_m10C9822FF044CCA0166A8B513CE2F3FE148A7762 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*, void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalQuery_RemoveValueListener", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalQuery_RemoveValueListener", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20866,7 +20942,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_Re
 	void* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = (void*)___1_jarg2.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalQuery_RemoveValueListener)(____0_jarg1_marshaled, ____1_jarg2_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled);
@@ -20876,12 +20952,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_Re
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_RemoveAllValueListeners_mCC157F28F5BCF37B4D0997670AF1F934BA07B233 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalQuery_RemoveAllValueListeners", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalQuery_RemoveAllValueListeners", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20889,7 +20965,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_Re
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalQuery_RemoveAllValueListeners)(____0_jarg1_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -20899,12 +20975,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_Re
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_AddChildListener_m0F0610C2A5910328CF2B6156F4F5994F78EC8375 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*, void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalQuery_AddChildListener", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalQuery_AddChildListener", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20915,7 +20991,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_Ad
 	void* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = (void*)___1_jarg2.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalQuery_AddChildListener)(____0_jarg1_marshaled, ____1_jarg2_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled);
@@ -20925,12 +21001,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_Ad
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_RemoveChildListener_m43BAFBF3C9F43A3F3D73605FE0BD7248721F18E2 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*, void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalQuery_RemoveChildListener", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalQuery_RemoveChildListener", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20941,7 +21017,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_Re
 	void* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = (void*)___1_jarg2.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalQuery_RemoveChildListener)(____0_jarg1_marshaled, ____1_jarg2_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled);
@@ -20951,12 +21027,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_Re
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_RemoveAllChildListeners_m590B7493AB49AE7AA0914FDBB0F1C2BA673D6187 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalQuery_RemoveAllChildListeners", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalQuery_RemoveAllChildListeners", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20964,7 +21040,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_Re
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalQuery_RemoveAllChildListeners)(____0_jarg1_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -20974,12 +21050,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_Re
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuery_GetReference_mEBE98E1B78236910DB2C16306FFFC5BDC8F69123 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalQuery_GetReference", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalQuery_GetReference", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -20987,7 +21063,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalQuery_GetReference)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -20998,12 +21074,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_SetKeepSynchronized_mECD7740943545A1C83BB9B2E58F33EF372FD7B25 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, bool ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*, int32_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + 4;
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalQuery_SetKeepSynchronized", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalQuery_SetKeepSynchronized", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21011,7 +21087,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_Se
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalQuery_SetKeepSynchronized)(____0_jarg1_marshaled, static_cast<int32_t>(___1_jarg2));
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled, static_cast<int32_t>(___1_jarg2));
@@ -21021,12 +21097,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_Se
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuery_OrderByChild__SWIG_0_mF694192B35A0110DEF3D5A7D306FFBFF30AA143D (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, String_t* ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, char*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(char*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalQuery_OrderByChild__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalQuery_OrderByChild__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21037,7 +21113,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 	char* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = il2cpp_codegen_marshal_string(___1_jarg2);
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalQuery_OrderByChild__SWIG_0)(____0_jarg1_marshaled, ____1_jarg2_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled);
@@ -21051,12 +21127,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuery_OrderByKey_m432817B6F4AF85C8A015BA3DC3A005EC77A732FE (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalQuery_OrderByKey", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalQuery_OrderByKey", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21064,7 +21140,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalQuery_OrderByKey)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -21075,12 +21151,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuery_OrderByPriority_m5507F6E7A752FC9A723312BEC74D32BBFA2BC080 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalQuery_OrderByPriority", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalQuery_OrderByPriority", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21088,7 +21164,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalQuery_OrderByPriority)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -21099,12 +21175,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuery_OrderByValue_m0D482FC64544B1BF29BBA27D8F0B3DA49586E23D (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalQuery_OrderByValue", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalQuery_OrderByValue", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21112,7 +21188,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalQuery_OrderByValue)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -21123,12 +21199,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuery_StartAt__SWIG_0_mC800505C32A8CB22B69D4A8FD9FA36E26720C233 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalQuery_StartAt__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalQuery_StartAt__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21139,7 +21215,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 	void* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = (void*)___1_jarg2.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalQuery_StartAt__SWIG_0)(____0_jarg1_marshaled, ____1_jarg2_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled);
@@ -21150,12 +21226,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuery_StartAt__SWIG_1_mE1AC978544A02F4D4C7BB20852CE8F75E70D3D70 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___1_jarg2, String_t* ___2_jarg3, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, void*, char*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*) + sizeof(char*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalQuery_StartAt__SWIG_1", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalQuery_StartAt__SWIG_1", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21169,7 +21245,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 	char* ____2_jarg3_marshaled = NULL;
 	____2_jarg3_marshaled = il2cpp_codegen_marshal_string(___2_jarg3);
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalQuery_StartAt__SWIG_1)(____0_jarg1_marshaled, ____1_jarg2_marshaled, ____2_jarg3_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled, ____2_jarg3_marshaled);
@@ -21183,12 +21259,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuery_EndAt__SWIG_0_m8660F4C731623797A418B274AA130CBDECE9BDA8 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalQuery_EndAt__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalQuery_EndAt__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21199,7 +21275,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 	void* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = (void*)___1_jarg2.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalQuery_EndAt__SWIG_0)(____0_jarg1_marshaled, ____1_jarg2_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled);
@@ -21210,12 +21286,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuery_EndAt__SWIG_1_m78038B0BE5D3045F94997F01C4F0FC48CB136CD0 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___1_jarg2, String_t* ___2_jarg3, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, void*, char*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*) + sizeof(char*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalQuery_EndAt__SWIG_1", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalQuery_EndAt__SWIG_1", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21229,7 +21305,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 	char* ____2_jarg3_marshaled = NULL;
 	____2_jarg3_marshaled = il2cpp_codegen_marshal_string(___2_jarg3);
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalQuery_EndAt__SWIG_1)(____0_jarg1_marshaled, ____1_jarg2_marshaled, ____2_jarg3_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled, ____2_jarg3_marshaled);
@@ -21243,12 +21319,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuery_EqualTo__SWIG_0_m2DEA74EC17BA3F45F086EE3BF8DFEFA651A6BA77 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalQuery_EqualTo__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalQuery_EqualTo__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21259,7 +21335,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 	void* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = (void*)___1_jarg2.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalQuery_EqualTo__SWIG_0)(____0_jarg1_marshaled, ____1_jarg2_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled);
@@ -21270,12 +21346,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuery_EqualTo__SWIG_1_mAB68BACE9B82812B1F9CEF05E545AF9DE1D4408E (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___1_jarg2, String_t* ___2_jarg3, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, void*, char*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*) + sizeof(char*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalQuery_EqualTo__SWIG_1", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalQuery_EqualTo__SWIG_1", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21289,7 +21365,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 	char* ____2_jarg3_marshaled = NULL;
 	____2_jarg3_marshaled = il2cpp_codegen_marshal_string(___2_jarg3);
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalQuery_EqualTo__SWIG_1)(____0_jarg1_marshaled, ____1_jarg2_marshaled, ____2_jarg3_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled, ____2_jarg3_marshaled);
@@ -21303,12 +21379,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuery_LimitToFirst_mAD97AF20711F2BD317F341B03FF8FD8CD01DFDD3 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, uint32_t ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, uint32_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(uint32_t);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalQuery_LimitToFirst", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalQuery_LimitToFirst", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21316,7 +21392,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalQuery_LimitToFirst)(____0_jarg1_marshaled, ___1_jarg2);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ___1_jarg2);
@@ -21327,12 +21403,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuery_LimitToLast_mEDBA8629FD891275FE56084F880FCC744CC82C52 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, uint32_t ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, uint32_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(uint32_t);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalQuery_LimitToLast", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalQuery_LimitToLast", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21340,7 +21416,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalQuery_LimitToLast)(____0_jarg1_marshaled, ___1_jarg2);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ___1_jarg2);
@@ -21351,12 +21427,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DatabaseInternalPINVOKE_InternalQuery_is_valid_m08E3E8399135C4E65FA85F34290904A922ABCCAE (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalQuery_is_valid", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalQuery_is_valid", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21364,7 +21440,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DatabaseInternalPINVOKE_InternalQuery_is
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	int32_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalQuery_is_valid)(____0_jarg1_marshaled);
 	#else
 	int32_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -21375,12 +21451,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DatabaseInternalPINVOKE_InternalQuery_is
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuery_CreateValueListener_m94CB226311D406663ADFACEE5CE07EC46C3F7639 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, int32_t ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, int32_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(int32_t);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalQuery_CreateValueListener", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalQuery_CreateValueListener", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21388,7 +21464,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalQuery_CreateValueListener)(____0_jarg1_marshaled, ___1_jarg2);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ___1_jarg2);
@@ -21399,17 +21475,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_DestroyValueListener_m87E4EF6960BA02F67F47ABB56A4375BF042DB2A4 (intptr_t ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (intptr_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(intptr_t);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalQuery_DestroyValueListener", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalQuery_DestroyValueListener", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalQuery_DestroyValueListener)(___0_jarg1);
 	#else
 	il2cppPInvokeFunc(___0_jarg1);
@@ -21419,12 +21495,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_De
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_RegisterValueListenerCallbacks_mFC5FEF32EE1234BA8AB3AD6995A968C8B7C9A02F (OnCancelledDelegate_t00A083ED3BEB8060C5E562C8E76C7D1B973E2BA0* ___0_jarg1, OnValueChangedDelegate_tBAD34B2C949FAC8B59EE9A11939AAA31A3DE963D* ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (Il2CppMethodPointer, Il2CppMethodPointer);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalQuery_RegisterValueListenerCallbacks", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalQuery_RegisterValueListenerCallbacks", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21435,7 +21511,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_Re
 	Il2CppMethodPointer ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = il2cpp_codegen_marshal_delegate(reinterpret_cast<MulticastDelegate_t*>(___1_jarg2));
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalQuery_RegisterValueListenerCallbacks)(____0_jarg1_marshaled, ____1_jarg2_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled);
@@ -21445,12 +21521,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_Re
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuery_CreateChildListener_m7D207FF56F55EC7BC0DBD1C407D6FC9850A2524C (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, int32_t ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, int32_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(int32_t);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalQuery_CreateChildListener", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalQuery_CreateChildListener", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21458,7 +21534,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalQuery_CreateChildListener)(____0_jarg1_marshaled, ___1_jarg2);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ___1_jarg2);
@@ -21469,17 +21545,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalQuer
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_DestroyChildListener_m76F43AD90DFFBE797FA6C3C7D8E7CBA2E6B87B04 (intptr_t ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (intptr_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(intptr_t);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalQuery_DestroyChildListener", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalQuery_DestroyChildListener", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalQuery_DestroyChildListener)(___0_jarg1);
 	#else
 	il2cppPInvokeFunc(___0_jarg1);
@@ -21489,12 +21565,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_De
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_RegisterChildListenerCallbacks_m71F33785368094C7D023E22FF3ACAA41EE1F30DB (OnCancelledDelegate_t00A083ED3BEB8060C5E562C8E76C7D1B973E2BA0* ___0_jarg1, OnChildChangeDelegate_tE121C8EE3B943265E9012619F90D831FDED9094F* ___1_jarg2, OnChildRemovedDelegate_t202E2826D92859441F312FC11D112D97465DF56B* ___2_jarg3, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalQuery_RegisterChildListenerCallbacks", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalQuery_RegisterChildListenerCallbacks", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21508,7 +21584,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_Re
 	Il2CppMethodPointer ____2_jarg3_marshaled = NULL;
 	____2_jarg3_marshaled = il2cpp_codegen_marshal_delegate(reinterpret_cast<MulticastDelegate_t*>(___2_jarg3));
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalQuery_RegisterChildListenerCallbacks)(____0_jarg1_marshaled, ____1_jarg2_marshaled, ____2_jarg3_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled, ____2_jarg3_marshaled);
@@ -21518,17 +21594,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalQuery_Re
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_new_InternalDatabaseReference__SWIG_0_mCCB4D0183B299383B2526F79E07DA950673C107F (const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) ();
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = 0;
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_new_InternalDatabaseReference__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_new_InternalDatabaseReference__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_new_InternalDatabaseReference__SWIG_0)();
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc();
@@ -21539,12 +21615,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_new_Internal
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_InternalDatabaseReference_m7C09B39DA3F1BA03E6F5A3C0B07FAC9F00BD90C1 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_delete_InternalDatabaseReference", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_delete_InternalDatabaseReference", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21552,7 +21628,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_InternalD
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_delete_InternalDatabaseReference)(____0_jarg1_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -21562,12 +21638,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_InternalD
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_new_InternalDatabaseReference__SWIG_1_mB20DBF9DAAB286C2A11AF505E89DD973BD9CF2C2 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_new_InternalDatabaseReference__SWIG_1", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_new_InternalDatabaseReference__SWIG_1", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21575,7 +21651,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_new_Internal
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_new_InternalDatabaseReference__SWIG_1)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -21586,12 +21662,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_new_Internal
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalDatabaseReference_database_m5183D6A8BA7B1342C9A9E11D0A97FE921730E555 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDatabaseReference_database", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDatabaseReference_database", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21599,7 +21675,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDatabaseReference_database)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -21610,12 +21686,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DatabaseInternalPINVOKE_InternalDatabaseReference_key_mD53271045E19A6817403208900369BBFD9FEAB1D (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef char* (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDatabaseReference_key", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDatabaseReference_key", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21623,7 +21699,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DatabaseInternalPINVOKE_InternalDat
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	char* returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDatabaseReference_key)(____0_jarg1_marshaled);
 	#else
 	char* returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -21640,12 +21716,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DatabaseInternalPINVOKE_InternalDat
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DatabaseInternalPINVOKE_InternalDatabaseReference_key_string_m6925BE28F3FB84ACF0BDD26131AB67B21DAC13F7 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef char* (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDatabaseReference_key_string", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDatabaseReference_key_string", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21653,7 +21729,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DatabaseInternalPINVOKE_InternalDat
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	char* returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDatabaseReference_key_string)(____0_jarg1_marshaled);
 	#else
 	char* returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -21670,12 +21746,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DatabaseInternalPINVOKE_InternalDat
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DatabaseInternalPINVOKE_InternalDatabaseReference_is_root_mF1D0E401DEBB2CEE54D7D0FAE5D58BA6EF50AD47 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDatabaseReference_is_root", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDatabaseReference_is_root", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21683,7 +21759,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DatabaseInternalPINVOKE_InternalDatabase
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	int32_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDatabaseReference_is_root)(____0_jarg1_marshaled);
 	#else
 	int32_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -21694,12 +21770,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DatabaseInternalPINVOKE_InternalDatabase
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DatabaseInternalPINVOKE_InternalDatabaseReference_is_valid_m27D0CC706E61AA9579E37860A86E088B7C93AFFE (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDatabaseReference_is_valid", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDatabaseReference_is_valid", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21707,7 +21783,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DatabaseInternalPINVOKE_InternalDatabase
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	int32_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDatabaseReference_is_valid)(____0_jarg1_marshaled);
 	#else
 	int32_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -21718,12 +21794,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DatabaseInternalPINVOKE_InternalDatabase
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalDatabaseReference_GetParent_mF98252BC20C895D3C623F4610370D3F8A7005DEF (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDatabaseReference_GetParent", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDatabaseReference_GetParent", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21731,7 +21807,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDatabaseReference_GetParent)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -21742,12 +21818,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalDatabaseReference_GetRoot_mF649067870E54F1C6B993B90491298E98DB3A44B (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDatabaseReference_GetRoot", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDatabaseReference_GetRoot", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21755,7 +21831,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDatabaseReference_GetRoot)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -21766,12 +21842,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalDatabaseReference_Child__SWIG_0_mF116A429BD565D6DE91948DEC8F8620BEC7D2E09 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, String_t* ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, char*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(char*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDatabaseReference_Child__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDatabaseReference_Child__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21782,7 +21858,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 	char* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = il2cpp_codegen_marshal_string(___1_jarg2);
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDatabaseReference_Child__SWIG_0)(____0_jarg1_marshaled, ____1_jarg2_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled);
@@ -21796,12 +21872,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalDatabaseReference_PushChild_mF9D76F329CF88D8B60537EDE5FD7B69E993131D7 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDatabaseReference_PushChild", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDatabaseReference_PushChild", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21809,7 +21885,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDatabaseReference_PushChild)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -21820,12 +21896,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalDatabaseReference_RemoveValue_mE97936CB07631F2D2E94615F20B2FD64540456F8 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDatabaseReference_RemoveValue", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDatabaseReference_RemoveValue", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21833,7 +21909,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDatabaseReference_RemoveValue)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -21844,12 +21920,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalDatabaseReference_SetPriority_m31EE995371DD854AAEF1BE2ED544CCA5F8F6A9BB (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDatabaseReference_SetPriority", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDatabaseReference_SetPriority", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21860,7 +21936,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 	void* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = (void*)___1_jarg2.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDatabaseReference_SetPriority)(____0_jarg1_marshaled, ____1_jarg2_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled);
@@ -21871,12 +21947,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalDatabaseReference_SetValue_m5943066DDF3AF1FF2A4477CE8C531B4711B24709 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDatabaseReference_SetValue", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDatabaseReference_SetValue", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21887,7 +21963,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 	void* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = (void*)___1_jarg2.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDatabaseReference_SetValue)(____0_jarg1_marshaled, ____1_jarg2_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled);
@@ -21898,12 +21974,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalDatabaseReference_SetValueAndPriority_mC042B57420B17EF0FD14F0D554ECF25518AE4F7C (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___1_jarg2, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___2_jarg3, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, void*, void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDatabaseReference_SetValueAndPriority", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDatabaseReference_SetValueAndPriority", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21917,7 +21993,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 	void* ____2_jarg3_marshaled = NULL;
 	____2_jarg3_marshaled = (void*)___2_jarg3.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDatabaseReference_SetValueAndPriority)(____0_jarg1_marshaled, ____1_jarg2_marshaled, ____2_jarg3_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled, ____2_jarg3_marshaled);
@@ -21928,12 +22004,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalDatabaseReference_UpdateChildren_mC39E0A3FAACB5F2B489A70AA3250CB776ABEAF20 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDatabaseReference_UpdateChildren", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDatabaseReference_UpdateChildren", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21944,7 +22020,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 	void* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = (void*)___1_jarg2.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDatabaseReference_UpdateChildren)(____0_jarg1_marshaled, ____1_jarg2_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled);
@@ -21955,12 +22031,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DatabaseInternalPINVOKE_InternalDatabaseReference_url_m217ECDD7213E8262A4F8D3D2370A9866833FCDB3 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef char* (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDatabaseReference_url", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDatabaseReference_url", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21968,7 +22044,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DatabaseInternalPINVOKE_InternalDat
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	char* returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDatabaseReference_url)(____0_jarg1_marshaled);
 	#else
 	char* returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -21985,12 +22061,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DatabaseInternalPINVOKE_InternalDat
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalDatabaseReference_OnDisconnect_mFEE984C3B0800867DACBD0006965737E57EADC0F (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDatabaseReference_OnDisconnect", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDatabaseReference_OnDisconnect", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -21998,7 +22074,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDatabaseReference_OnDisconnect)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -22009,12 +22085,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDatabaseReference_GoOffline_m08524EFB356C51AC151B408E90544382B2F50513 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDatabaseReference_GoOffline", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDatabaseReference_GoOffline", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -22022,7 +22098,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDatabase
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDatabaseReference_GoOffline)(____0_jarg1_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -22032,12 +22108,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDatabase
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDatabaseReference_GoOnline_m6792F9F313BA3DB7DA8B9DB662D5A99BA5679DD0 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDatabaseReference_GoOnline", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDatabaseReference_GoOnline", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -22045,7 +22121,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDatabase
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDatabaseReference_GoOnline)(____0_jarg1_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -22055,12 +22131,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDatabase
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDatabaseReference_RegisterTransactionCallback_m2D04F54FC89E889C091957EA58A09C968C540DCC (TransactionDelegate_tB71C35B707E37995A14BCCDE6DDBB55D6720F30E* ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (Il2CppMethodPointer);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDatabaseReference_RegisterTransactionCallback", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDatabaseReference_RegisterTransactionCallback", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -22068,7 +22144,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDatabase
 	Il2CppMethodPointer ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = il2cpp_codegen_marshal_delegate(reinterpret_cast<MulticastDelegate_t*>(___0_jarg1));
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDatabaseReference_RegisterTransactionCallback)(____0_jarg1_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -22078,12 +22154,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalDatabase
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalDatabaseReference_RunTransaction_m1FE84FC8D528C6BF742859F1356BDFFBFD241458 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, int32_t ___1_jarg2, bool ___2_jarg3, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, int32_t, int32_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(int32_t) + 4;
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDatabaseReference_RunTransaction", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDatabaseReference_RunTransaction", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -22091,7 +22167,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDatabaseReference_RunTransaction)(____0_jarg1_marshaled, ___1_jarg2, static_cast<int32_t>(___2_jarg3));
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ___1_jarg2, static_cast<int32_t>(___2_jarg3));
@@ -22102,12 +22178,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalData
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_InternalMutableData_m7FC5E16639F8FE31C66B5676F6E661811BC3C11D (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_delete_InternalMutableData", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_delete_InternalMutableData", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -22115,7 +22191,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_InternalM
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_delete_InternalMutableData)(____0_jarg1_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -22125,12 +22201,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_delete_InternalM
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t DatabaseInternalPINVOKE_InternalMutableData_children_count_m86403C60C57B38BDBAC7578F66172981531043F7 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef uint32_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalMutableData_children_count", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalMutableData_children_count", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -22138,7 +22214,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t DatabaseInternalPINVOKE_InternalMuta
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	uint32_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalMutableData_children_count)(____0_jarg1_marshaled);
 	#else
 	uint32_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -22149,12 +22225,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t DatabaseInternalPINVOKE_InternalMuta
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DatabaseInternalPINVOKE_InternalMutableData_key_m4462D74DFA2B1B90DA180C4C3AFDFC1A70009763 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef char* (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalMutableData_key", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalMutableData_key", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -22162,7 +22238,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DatabaseInternalPINVOKE_InternalMut
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	char* returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalMutableData_key)(____0_jarg1_marshaled);
 	#else
 	char* returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -22179,12 +22255,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DatabaseInternalPINVOKE_InternalMut
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalMutableData_value_m259C083B2CF756B76CDBE6DF241664BEA1ED2EE9 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalMutableData_value", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalMutableData_value", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -22192,7 +22268,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalMuta
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalMutableData_value)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -22203,12 +22279,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalMuta
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalMutableData_priority_mA821256DF9B8F7A242FAD265D252A3D50D1D3C5C (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalMutableData_priority", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalMutableData_priority", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -22216,7 +22292,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalMuta
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalMutableData_priority)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -22227,12 +22303,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalMuta
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DatabaseInternalPINVOKE_InternalMutableData_HasChild__SWIG_0_mABB215477779F87FADC11F214BFE00A81883DDD1 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, String_t* ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (void*, char*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(char*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalMutableData_HasChild__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalMutableData_HasChild__SWIG_0", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -22243,7 +22319,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DatabaseInternalPINVOKE_InternalMutableD
 	char* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = il2cpp_codegen_marshal_string(___1_jarg2);
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	int32_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalMutableData_HasChild__SWIG_0)(____0_jarg1_marshaled, ____1_jarg2_marshaled);
 	#else
 	int32_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled);
@@ -22257,12 +22333,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DatabaseInternalPINVOKE_InternalMutableD
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalMutableData_set_value_m3F51B3F1A50810BE568E570358736CE8B6AA3A46 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*, void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalMutableData_set_value", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalMutableData_set_value", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -22273,7 +22349,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalMutableD
 	void* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = (void*)___1_jarg2.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalMutableData_set_value)(____0_jarg1_marshaled, ____1_jarg2_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled);
@@ -22283,12 +22359,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalMutableD
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalMutableData_set_priority_mB00C83807ECC51AFAC4C7DED3B2A2B716B6B94C2 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (void*, void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalMutableData_set_priority", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalMutableData_set_priority", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -22299,7 +22375,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalMutableD
 	void* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = (void*)___1_jarg2.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalMutableData_set_priority)(____0_jarg1_marshaled, ____1_jarg2_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled);
@@ -22309,12 +22385,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatabaseInternalPINVOKE_InternalMutableD
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalMutableData_ChildrenEnumerator_m6E4D7BA9A70727B7CACBB5DD744795460D392B1E (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalMutableData_ChildrenEnumerator", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalMutableData_ChildrenEnumerator", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -22322,7 +22398,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalMuta
 	void* ____0_jarg1_marshaled = NULL;
 	____0_jarg1_marshaled = (void*)___0_jarg1.____handle;
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalMutableData_ChildrenEnumerator)(____0_jarg1_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled);
@@ -22333,12 +22409,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalMuta
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalMutableData_GetChild_m336F5AE38A5E164BF8F791D5FD4530C111DD674D (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F ___0_jarg1, String_t* ___1_jarg2, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (void*, char*);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(char*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalMutableData_GetChild", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalMutableData_GetChild", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -22349,7 +22425,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalMuta
 	char* ____1_jarg2_marshaled = NULL;
 	____1_jarg2_marshaled = il2cpp_codegen_marshal_string(___1_jarg2);
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalMutableData_GetChild)(____0_jarg1_marshaled, ____1_jarg2_marshaled);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(____0_jarg1_marshaled, ____1_jarg2_marshaled);
@@ -22363,17 +22439,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalMuta
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_Future_InternalDataSnapshot_SWIGUpcast_m49F7F2106ADDC0BA49B3E52A984FCC0E9C631B82 (intptr_t ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (intptr_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(intptr_t);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_Future_InternalDataSnapshot_SWIGUpcast", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_Future_InternalDataSnapshot_SWIGUpcast", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_Future_InternalDataSnapshot_SWIGUpcast)(___0_jarg1);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(___0_jarg1);
@@ -22384,17 +22460,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_Future_Inter
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DatabaseInternalPINVOKE_InternalDatabaseReference_SWIGUpcast_m96801A06500A9E85E0730EC68A362A14C76353DF (intptr_t ___0_jarg1, const RuntimeMethod* method) 
 {
 	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) (intptr_t);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(intptr_t);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "Firebase_Database_CSharp_InternalDatabaseReference_SWIGUpcast", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "Firebase_Database_CSharp_InternalDatabaseReference_SWIGUpcast", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(Firebase_Database_CSharp_InternalDatabaseReference_SWIGUpcast)(___0_jarg1);
 	#else
 	intptr_t returnValue = il2cppPInvokeFunc(___0_jarg1);
@@ -22569,12 +22645,12 @@ extern "C" void DEFAULT_CALL ReversePInvokeWrapper_SWIGExceptionHelper_SetPendin
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SWIGExceptionHelper_SWIGRegisterExceptionCallbacks_DatabaseInternal_m1DB3C84F742953AE94FF31C0794DE618A8F82C02 (ExceptionDelegate_tDDFC9EA98CCE60E60A21CA7CD6CE75F9F359031F* ___0_applicationDelegate, ExceptionDelegate_tDDFC9EA98CCE60E60A21CA7CD6CE75F9F359031F* ___1_arithmeticDelegate, ExceptionDelegate_tDDFC9EA98CCE60E60A21CA7CD6CE75F9F359031F* ___2_divideByZeroDelegate, ExceptionDelegate_tDDFC9EA98CCE60E60A21CA7CD6CE75F9F359031F* ___3_indexOutOfRangeDelegate, ExceptionDelegate_tDDFC9EA98CCE60E60A21CA7CD6CE75F9F359031F* ___4_invalidCastDelegate, ExceptionDelegate_tDDFC9EA98CCE60E60A21CA7CD6CE75F9F359031F* ___5_invalidOperationDelegate, ExceptionDelegate_tDDFC9EA98CCE60E60A21CA7CD6CE75F9F359031F* ___6_ioDelegate, ExceptionDelegate_tDDFC9EA98CCE60E60A21CA7CD6CE75F9F359031F* ___7_nullReferenceDelegate, ExceptionDelegate_tDDFC9EA98CCE60E60A21CA7CD6CE75F9F359031F* ___8_outOfMemoryDelegate, ExceptionDelegate_tDDFC9EA98CCE60E60A21CA7CD6CE75F9F359031F* ___9_overflowDelegate, ExceptionDelegate_tDDFC9EA98CCE60E60A21CA7CD6CE75F9F359031F* ___10_systemExceptionDelegate, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*) + sizeof(void*) + sizeof(void*) + sizeof(void*) + sizeof(void*) + sizeof(void*) + sizeof(void*) + sizeof(void*) + sizeof(void*) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "SWIGRegisterExceptionCallbacks_DatabaseInternal", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "SWIGRegisterExceptionCallbacks_DatabaseInternal", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -22612,7 +22688,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SWIGExceptionHelper_SWIGRegisterExceptio
 	Il2CppMethodPointer ____10_systemExceptionDelegate_marshaled = NULL;
 	____10_systemExceptionDelegate_marshaled = il2cpp_codegen_marshal_delegate(reinterpret_cast<MulticastDelegate_t*>(___10_systemExceptionDelegate));
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(SWIGRegisterExceptionCallbacks_DatabaseInternal)(____0_applicationDelegate_marshaled, ____1_arithmeticDelegate_marshaled, ____2_divideByZeroDelegate_marshaled, ____3_indexOutOfRangeDelegate_marshaled, ____4_invalidCastDelegate_marshaled, ____5_invalidOperationDelegate_marshaled, ____6_ioDelegate_marshaled, ____7_nullReferenceDelegate_marshaled, ____8_outOfMemoryDelegate_marshaled, ____9_overflowDelegate_marshaled, ____10_systemExceptionDelegate_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_applicationDelegate_marshaled, ____1_arithmeticDelegate_marshaled, ____2_divideByZeroDelegate_marshaled, ____3_indexOutOfRangeDelegate_marshaled, ____4_invalidCastDelegate_marshaled, ____5_invalidOperationDelegate_marshaled, ____6_ioDelegate_marshaled, ____7_nullReferenceDelegate_marshaled, ____8_outOfMemoryDelegate_marshaled, ____9_overflowDelegate_marshaled, ____10_systemExceptionDelegate_marshaled);
@@ -22622,12 +22698,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SWIGExceptionHelper_SWIGRegisterExceptio
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SWIGExceptionHelper_SWIGRegisterExceptionCallbacksArgument_DatabaseInternal_m0215CBEF6143F677C79684EB63C73A97777BA1C3 (ExceptionArgumentDelegate_t34C90C327D0A04150099806AFB68CE714ECD39C0* ___0_argumentDelegate, ExceptionArgumentDelegate_t34C90C327D0A04150099806AFB68CE714ECD39C0* ___1_argumentNullDelegate, ExceptionArgumentDelegate_t34C90C327D0A04150099806AFB68CE714ECD39C0* ___2_argumentOutOfRangeDelegate, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (Il2CppMethodPointer, Il2CppMethodPointer, Il2CppMethodPointer);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*) + sizeof(void*) + sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "SWIGRegisterExceptionArgumentCallbacks_DatabaseInternal", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "SWIGRegisterExceptionArgumentCallbacks_DatabaseInternal", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -22641,7 +22717,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SWIGExceptionHelper_SWIGRegisterExceptio
 	Il2CppMethodPointer ____2_argumentOutOfRangeDelegate_marshaled = NULL;
 	____2_argumentOutOfRangeDelegate_marshaled = il2cpp_codegen_marshal_delegate(reinterpret_cast<MulticastDelegate_t*>(___2_argumentOutOfRangeDelegate));
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(SWIGRegisterExceptionArgumentCallbacks_DatabaseInternal)(____0_argumentDelegate_marshaled, ____1_argumentNullDelegate_marshaled, ____2_argumentOutOfRangeDelegate_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_argumentDelegate_marshaled, ____1_argumentNullDelegate_marshaled, ____2_argumentOutOfRangeDelegate_marshaled);
@@ -23592,12 +23668,12 @@ extern "C" char* DEFAULT_CALL ReversePInvokeWrapper_SWIGStringHelper_CreateStrin
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SWIGStringHelper_SWIGRegisterStringCallback_DatabaseInternal_m9BB704D671386CBA6AA948E6F20AFB82091564DF (SWIGStringDelegate_t1DD54CC2F04E95E7A036563DB573F764FB517A34* ___0_stringDelegate, const RuntimeMethod* method) 
 {
 	typedef void (DEFAULT_CALL *PInvokeFunc) (Il2CppMethodPointer);
-	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	static PInvokeFunc il2cppPInvokeFunc;
 	if (il2cppPInvokeFunc == NULL)
 	{
 		int parameterSize = sizeof(void*);
-		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_4_0"), "SWIGRegisterStringCallback_DatabaseInternal", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("FirebaseCppApp-11_5_0"), "SWIGRegisterStringCallback_DatabaseInternal", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
 		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
 	}
 	#endif
@@ -23605,7 +23681,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SWIGStringHelper_SWIGRegisterStringCallb
 	Il2CppMethodPointer ____0_stringDelegate_marshaled = NULL;
 	____0_stringDelegate_marshaled = il2cpp_codegen_marshal_delegate(reinterpret_cast<MulticastDelegate_t*>(___0_stringDelegate));
 
-	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_4_0_INTERNAL
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_FirebaseCppApp_11_5_0_INTERNAL
 	reinterpret_cast<PInvokeFunc>(SWIGRegisterStringCallback_DatabaseInternal)(____0_stringDelegate_marshaled);
 	#else
 	il2cppPInvokeFunc(____0_stringDelegate_marshaled);

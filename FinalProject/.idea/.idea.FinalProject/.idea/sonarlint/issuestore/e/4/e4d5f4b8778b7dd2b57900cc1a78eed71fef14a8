@@ -1,0 +1,5 @@
+
+Wcsharpsquid:S3903"5Move 'PlayerSpawnerPrototype' into a named namespace.(άσ²όÿÿÿÿ
+¨csharpsquid:S1939"…'SpawnerPrototype<PlayerSpawnPointPrototype>' implements 'IPlayerJoined' so 'IPlayerJoined' can be removed from the inheritance list.(άσ²όÿÿÿÿ
+¤csharpsquid:S1939"'SpawnerPrototype<PlayerSpawnPointPrototype>' implements 'IPlayerLeft' so 'IPlayerLeft' can be removed from the inheritance list.(άσ²όÿÿÿÿ
+ªcsharpsquid:S1939"‡'SpawnerPrototype<PlayerSpawnPointPrototype>' implements 'ISceneLoadDone' so 'ISceneLoadDone' can be removed from the inheritance list.(άσ²όÿÿÿÿ

@@ -1,0 +1,23 @@
+
+Gcsharpsquid:S1125"*Remove the unnecessary Boolean literal(s).(Ìƒ© 
+Scsharpsquid:S3903"6Move 'InputBehaviourPrototype' into a named namespace.(ëªÒ…
+Vcsharpsquid:S3903c"4Move 'NetworkInputPrototype' into a named namespace.(çÏïüÿÿÿÿ
+–csharpsquid:S1186C"yAdd a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.(•µŸ˜
+›csharpsquid:S1186E"yAdd a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.(‡áÉşÿÿÿÿ
+›csharpsquid:S1186F"yAdd a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.(¬ŸÚÄùÿÿÿÿ
+›csharpsquid:S1186G"yAdd a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.(¤»‚Òùÿÿÿÿ
+›csharpsquid:S1186H"yAdd a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.(—Ò¥Üüÿÿÿÿ
+–csharpsquid:S1186I"yAdd a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.(ÁŞ£ù
+–csharpsquid:S1186J"yAdd a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.(ì½­
+›csharpsquid:S1186K"yAdd a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.(ÂƒØ–øÿÿÿÿ
+›csharpsquid:S1186L"yAdd a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.(˜ë†ùÿÿÿÿ
+›csharpsquid:S1186M"yAdd a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.(èîÂÌüÿÿÿÿ
+–csharpsquid:S1186N"yAdd a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.(Í¢«°
+›csharpsquid:S1186Q"yAdd a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.(®‰ø»øÿÿÿÿ
+–csharpsquid:S1186U"yAdd a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.(Àµè±
+›csharpsquid:S1186X"yAdd a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.(«™’Ÿøÿÿÿÿ
+–csharpsquid:S1186["yAdd a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.(æ²É¯
+fcsharpsquid:S1104y"DMake this field 'private' and encapsulate it in a 'public' property.(ı¤Õíùÿÿÿÿ
+fcsharpsquid:S1104z"DMake this field 'private' and encapsulate it in a 'public' property.(–â“ãşÿÿÿÿ
+fcsharpsquid:S1104{"DMake this field 'private' and encapsulate it in a 'public' property.(²å†Íüÿÿÿÿ
+acsharpsquid:S1104|"DMake this field 'private' and encapsulate it in a 'public' property.(„µ³¨

@@ -1,0 +1,22 @@
+
+ˆcsharpsquid:S101"lRename class 'Win_or_Loss_Decission' to match pascal case naming rules, consider using 'WinorLossDecission'.(°ºíÁ
+†csharpsquid:S101"dRename class 'Dods_ChanceMaker' to match pascal case naming rules, consider using 'DodsChanceMaker'.(´÷Àıÿÿÿÿ
+{csharpsquid:S3776d"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(âÂÅÂûÿÿÿÿ8ÅúŞ…´1
+Qcsharpsquid:S3903"4Move 'Win_or_Loss_Decission' into a named namespace.(°ºíÁ
+Rcsharpsquid:S3903"/Move 'Dods_ChanceMaker' into a named namespace.(´÷Àıÿÿÿÿ
+;csharpsquid:S2933"Make 'myTeamCount' 'readonly'.(‰ËÄí
+Jcsharpsquid:S2933"!Make 'enemyTeamCount' 'readonly'.(¬èÿæıÿÿÿÿ8ÅúŞ…´1
+?csharpsquid:S2933	"Make 'sequence' 'readonly'.(İ¸¾8ÆúŞ…´1
+Kcsharpsquid:S2933""Make 'player1Property' 'readonly'.(£ö÷ùÿÿÿÿ8ÆúŞ…´1
+Kcsharpsquid:S2933""Make 'player2Property' 'readonly'.(õ‰©éıÿÿÿÿ8ÆúŞ…´1
+Hcsharpsquid:S2933"Make 'myInputValue' 'readonly'.(ş¬²Ùúÿÿÿÿ8ÆúŞ…´1
+Fcsharpsquid:S2933""Make 'enemyInputValue' 'readonly'.(Íçïš8ÆúŞ…´1
+?csharpsquid:S2933"Make 'ATKspeed' 'readonly'.(”òÙË8ÆúŞ…´1
+Icsharpsquid:S2933" Make 'player1health' 'readonly'.(ëšËÿÿÿÿÿ8ÆúŞ…´1
+Icsharpsquid:S2933" Make 'player2health' 'readonly'.(é¨È×ûÿÿÿÿ8ÆúŞ…´1
+Acsharpsquid:S2933"Make 'player1ATK' 'readonly'.(¥©©8ÆúŞ…´1
+@csharpsquid:S2933"Make 'player2ATK' 'readonly'.(úş×@8ÆúŞ…´1
+Ecsharpsquid:S2933"!Make 'player1Defense' 'readonly'.(İé€8ÆúŞ…´1
+Jcsharpsquid:S2933"!Make 'player2Defense' 'readonly'.(¶—ôøÿÿÿÿ8ÆúŞ…´1
+Fcsharpsquid:S2933""Make 'player1ATKSpeed' 'readonly'.(¡‘û8ÆúŞ…´1
+Kcsharpsquid:S2933""Make 'player2ATKSpeed' 'readonly'.(Äò¸•ıÿÿÿÿ8ÆúŞ…´1

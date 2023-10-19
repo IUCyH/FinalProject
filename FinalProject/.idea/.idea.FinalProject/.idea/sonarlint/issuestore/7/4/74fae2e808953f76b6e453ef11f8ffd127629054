@@ -1,0 +1,28 @@
+
+Hcsharpsquid:S1125¤"*Remove the unnecessary Boolean literal(s).(Ú÷ç
+Mcsharpsquid:S1125ä"*Remove the unnecessary Boolean literal(s).(ØÕ½ìıÿÿÿÿ
+Hcsharpsquid:S1125Ø"*Remove the unnecessary Boolean literal(s).(ÂšúÕ
+Hcsharpsquid:S1125ª"*Remove the unnecessary Boolean literal(s).(ÚÏÆ—
+Hcsharpsquid:S1125Î"*Remove the unnecessary Boolean literal(s).(Ğ¸Ûß
+pcsharpsquid:S3776¬"RRefactor this method to reduce its Cognitive Complexity from 34 to the 15 allowed.(ä®ò¨
+pcsharpsquid:S3776“"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(Ûªí
+Vcsharpsquid:S1854¥"8Remove this useless assignment to local variable 'ndsg'.(Ôìí¤
+Mcsharpsquid:S3903"0Move 'NetworkDebugStart' into a named namespace.(şÃ„¸
+gcsharpsquid:S3358á"DExtract this nested ternary operation into an independent statement.(À“Ì»ùÿÿÿÿ
+fcsharpsquid:S11046"DMake this field 'private' and encapsulate it in a 'public' property.(¶ôıŠøÿÿÿÿ
+`csharpsquid:S1104>"DMake this field 'private' and encapsulate it in a 'public' property.(Ëëüu
+acsharpsquid:S1104G"DMake this field 'private' and encapsulate it in a 'public' property.(¡¹ã¬
+acsharpsquid:S1104N"DMake this field 'private' and encapsulate it in a 'public' property.(ÑÅ‡
+acsharpsquid:S1104V"DMake this field 'private' and encapsulate it in a 'public' property.(Ñ˜ª°
+acsharpsquid:S1104]"DMake this field 'private' and encapsulate it in a 'public' property.(ª«¶õ
+fcsharpsquid:S1104c"DMake this field 'private' and encapsulate it in a 'public' property.(÷Í‰“ıÿÿÿÿ
+acsharpsquid:S1104i"DMake this field 'private' and encapsulate it in a 'public' property.(«‚ì¯
+acsharpsquid:S1104u"DMake this field 'private' and encapsulate it in a 'public' property.(ÉñÌª
+Rcsharpsquid:S1066¾"/Merge this if statement with the enclosing one.(¼Šø¥ÿÿÿÿÿ
+dcsharpsquid:S4136¯"AAll 'StartServerPlusClients' method overloads should be adjacent.(•‚÷§øÿÿÿÿ
+bcsharpsquid:S4136¸"?All 'StartHostPlusClients' method overloads should be adjacent.(¯ÿùÿÿÿÿ
+Rcsharpsquid:S4136ñ"4All 'AddClient' method overloads should be adjacent.(Š×€ê
+fcsharpsquid:S2696²"HRemove this set, which updates a 'static' field from an instance method.(ÿƒı
+—csharpsquid:S2583Ñ"mChange this condition so that it does not always evaluate to 'false'; some subsequent code is never executed.(•Üòµúÿÿÿÿ8¢ô·„´1
+Ncsharpsquid:S1481¢"0Remove the unused local variable 'currentScene'.(óç‚
+<csharpsquid:S125Û"Remove this commented out code.(Ù»Ù¿

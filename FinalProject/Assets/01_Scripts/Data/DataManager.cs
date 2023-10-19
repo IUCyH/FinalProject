@@ -22,11 +22,25 @@ public class DataManager : Singleton_DontDestroy<DataManager>
     {
         dbReference = FirebaseDatabase.DefaultInstance.RootReference;
         uuid = SystemInfo.deviceUniqueIdentifier;
-        
+
         Load();
     }
     
-    public void Load()
+    public void Save()
+    {
+        playerData.jsonOfChapters = JsonUtility.ToJson(playerData.unlockedChapters);
+        var json = JsonUtility.ToJson(playerData);
+        
+        dbReference.Child(PlayerDataRoot).Child(uuid).SetRawJsonValueAsync(json).ContinueWith(task =>
+        {
+            if (task.IsCompleted)
+            {
+                Debug.Log("데이터 저장 성공");
+            }
+        });
+    }
+    
+    void Load()
     {
         dbReference.Child(PlayerDataRoot).Child(uuid).GetValueAsync().ContinueWith(task =>
         {
@@ -63,18 +77,9 @@ public class DataManager : Singleton_DontDestroy<DataManager>
             }
         });
     }
-    
-    public void Save()
+
+    void ImageLoad()
     {
-        playerData.jsonOfChapters = JsonUtility.ToJson(playerData.unlockedChapters);
-        var json = JsonUtility.ToJson(playerData);
         
-        dbReference.Child(PlayerDataRoot).Child(uuid).SetRawJsonValueAsync(json).ContinueWith(task =>
-        {
-            if (task.IsCompleted)
-            {
-                Debug.Log("데이터 저장 성공");
-            }
-        });
     }
 }
