@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Net;
+using System.Threading.Tasks;
 using Firebase.Database;
 using Firebase.Storage;
 using Google.MiniJSON;
@@ -13,35 +15,32 @@ using Random = UnityEngine.Random;
 
 public class DataManager : Singleton_DontDestroy<DataManager>
 {
-    const string AssetBundleCache = "AssetBundles";
+    const string AssetBundles = "AssetBundles";
     const string PlayerDataRoot = "PlayerData";
     const string SpriteStorageRoot = "Sprites";
+    const string ManifestFile = "ManifestFile";
     
     DatabaseReference dbReference;
     StorageReference storageReference;
     PlayerData playerData;
-    [SerializeField]
-    List<Sprite> sprites = new List<Sprite>();
-    [SerializeField]
-    List<string> assetBundleNames = new List<string>();
+    List<string> bundleNames = new List<string>();
     string uuid;
-#if UNITY_EDITOR
-    int spriteID;
-    [SerializeField]
-    bool createTableFile;
-#endif
+    
+    bool loadAssetBundleNamesDone;
 
     public PlayerData PlayerData => playerData;
     public bool LoadCompleted { get; private set; }
 
     protected override void OnAwake()
     {
+        //TODO : 스프라이트 get 함수 구현
+        //TODO : 스프라이트 데이터 로드 관련 코드 리뷰
         dbReference = FirebaseDatabase.DefaultInstance.RootReference;
         storageReference = FirebaseStorage.DefaultInstance.GetReferenceFromUrl("gs://garden-c0326.appspot.com/");
         uuid = SystemInfo.deviceUniqueIdentifier;
 
         Load();
-        LoadSprites();
+        LoadAssetBundles();
     }
     
     public void Save()
@@ -90,54 +89,39 @@ public class DataManager : Singleton_DontDestroy<DataManager>
 
                 Save();
                 Debug.Log("데이터 로드 성공");
-
-                LoadCompleted = true;
             }
         });
     }
 
-    void LoadSprites()
+    async void LoadAssetBundles()
     {
-        var path = Path.Combine(Application.persistentDataPath, AssetBundleCache);
+        var path = Path.Combine(Application.persistentDataPath, AssetBundles);
         DirectoryInfo directoryInfo = new DirectoryInfo(path);
 
-        if (directoryInfo.Exists)
+        await GetBundleNames();
+        
+        if(!directoryInfo.Exists)
         {
-            var files = directoryInfo.GetFiles();
-            for (int i = 0; i < files.Length; i++)
-            {
-                if (files[i].Name.Split(".").Length > 1)
-                {
-                    continue;
-                }
-                
-                var filePath = Path.Combine(Application.persistentDataPath, AssetBundleCache, files[i].Name);
-                
-                var bundle = AssetBundle.LoadFromFile(filePath);
-                var spriteArr = bundle.LoadAllAssets<Sprite>();
-
-                sprites.AddRange(spriteArr);
-            }
-            Debug.Log("cache load success");
+            directoryInfo.Create();
+            StartCoroutine(SaveSpritesFromStorage());
+            
+            Debug.Log("File cache success");
         }
         else
         {
-            directoryInfo.Create();
-            StartCoroutine(GetSpritesFromStorage());
-#if UNITY_EDITOR
-            CreateAssetBundleIndexTable();
-#endif
-            Debug.Log("File cache success");
+            CheckUpdateAndPatch(directoryInfo, path);
         }
+
+        LoadCompleted = true;
     }
 
-    IEnumerator GetSpritesFromStorage()
+    IEnumerator SaveSpritesFromStorage()
     {
         var spriteRef = storageReference.Child(SpriteStorageRoot);
 
-        for (int i = 0; i < assetBundleNames.Count; i++)
+        for (int i = 0; i < bundleNames.Count; i++)
         {
-            var fileName = assetBundleNames[i];
+            var fileName = bundleNames[i];
             Uri uri = null;
 
             spriteRef.Child(fileName).GetDownloadUrlAsync().ContinueWith(task => { uri = task.Result; });
@@ -145,34 +129,106 @@ public class DataManager : Singleton_DontDestroy<DataManager>
             while (uri == null) yield return null;
 
             var request = UnityWebRequest.Get(uri);
-            var path = Path.Combine(Application.persistentDataPath, AssetBundleCache, fileName);
+            var path = Path.Combine(Application.persistentDataPath, AssetBundles, fileName);
             
             yield return request.SendWebRequest();
 
             File.WriteAllBytes(path, request.downloadHandler.data);
+        }
+    }
 
-            if (fileName.Split(".").Length == 1)
+    async Task GetBundleNames()
+    {
+        var snapshot = await dbReference.Child(AssetBundles).GetValueAsync();
+        
+        if (snapshot.Exists)
+        {
+            foreach (var data in snapshot.Children)
             {
-                var bundle = AssetBundle.LoadFromFile(path);
-                var spriteArr = bundle.LoadAllAssets<Sprite>();
-                sprites.AddRange(spriteArr);
+                if (data.Key == ManifestFile)
+                {
+                    foreach (var child in data.Children)
+                    {
+                        var value = (string)child.Value;
+                        Debug.Log(value.Split(',')[0]);
+                        bundleNames.Add(value.Split(',')[0]);
+                    }
+                    
+                    continue;
+                }
+                bundleNames.Add((string)data.Value);
+            }
+        }
+
+        loadAssetBundleNamesDone = true;
+    }
+
+    async void CheckUpdateAndPatch(DirectoryInfo directoryInfo, string defaultPath)
+    {
+        var files = directoryInfo.GetFiles();
+        var count = files.Length;
+
+        for (int i = 0; i < count; i++)
+        {
+            if (files[i].Name.Contains("manifest"))
+            {
+                var manifestFilePath = Path.Combine(defaultPath, files[i].Name);
+                StreamReader streamReader = new StreamReader(manifestFilePath);
+
+                while (!streamReader.EndOfStream)
+                {
+                    var line = streamReader.ReadLine();
+
+                    if (line == null) break;
+                    
+                    if (line.Contains("CRC"))
+                    {
+                        var snapshot = await dbReference.Child(AssetBundles).Child(ManifestFile).GetValueAsync();
+
+                        if (snapshot.Exists)
+                        {
+                            var fileNameSplit = files[i].Name.Split(".");
+                            var data = snapshot.Child(fileNameSplit[0]);
+                            var result = (string)data.Value;
+                            
+                            var split = result.Split(",");
+                            var lineSplit = line.Split(':');
+                            
+                            if (!string.Equals(lineSplit[1], split[1]))
+                            {
+                                for (int j = 0; j < bundleNames.Count; j++)
+                                {
+                                    if (bundleNames[j].Contains(fileNameSplit[0]))
+                                    {
+                                        StartCoroutine(Coroutine_SaveFileFromStorage(bundleNames[j]));
+                                    }
+                                }
+                            }
+                        }
+                        
+                        break;
+                    }
+                }
+                
+                streamReader.Close();
             }
         }
     }
 
-    void CreateAssetBundleIndexTable()
+    IEnumerator Coroutine_SaveFileFromStorage(string fileName)
     {
-        var path = Path.Combine(Application.dataPath, "SpriteIDTable.txt");
+        Uri uri = null;
+        var fileRef = storageReference.Child(SpriteStorageRoot).Child(fileName);
 
-        StreamWriter streamWriter = new StreamWriter(path, File.Exists(path));
+        fileRef.GetDownloadUrlAsync().ContinueWith(task => { uri = task.Result; });
 
-        for (int i = 0; i < sprites.Count; i++)
-        {
-            streamWriter.WriteLine(string.Format("{0} : {1}", spriteID, sprites[i].name));
-            spriteID++;
-            Debug.Log(sprites[i].name);
-        }
-
-        streamWriter.Close();
+        while (uri == null) yield return null;
+        
+        var request = UnityWebRequest.Get(uri);
+        var path = Path.Combine(Application.persistentDataPath, AssetBundles, fileName);
+            
+        yield return request.SendWebRequest();
+        
+        File.WriteAllBytes(path, request.downloadHandler.data);
     }
 }

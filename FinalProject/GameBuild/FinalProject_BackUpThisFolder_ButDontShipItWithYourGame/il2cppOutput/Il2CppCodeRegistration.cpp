@@ -24,6 +24,7 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Firebase_App_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Firebase_Database_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Firebase_Platform_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Firebase_Storage_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Fusion_Addressables_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Fusion_Common_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Fusion_Realtime_CodeGenModule;
@@ -83,12 +84,13 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_TextMeshPro_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g___Generated_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_mscorlib_CodeGenModule;
 IL2CPP_EXTERN_C const Il2CppCodeGenModule* g_CodeGenModules[];
-const Il2CppCodeGenModule* g_CodeGenModules[62] = 
+const Il2CppCodeGenModule* g_CodeGenModules[63] = 
 {
 	(&g_AssemblyU2DCSharp_CodeGenModule),
 	(&g_Firebase_App_CodeGenModule),
 	(&g_Firebase_Database_CodeGenModule),
 	(&g_Firebase_Platform_CodeGenModule),
+	(&g_Firebase_Storage_CodeGenModule),
 	(&g_Fusion_Addressables_CodeGenModule),
 	(&g_Fusion_Common_CodeGenModule),
 	(&g_Fusion_Realtime_CodeGenModule),
@@ -151,22 +153,22 @@ const Il2CppCodeGenModule* g_CodeGenModules[62] =
 IL2CPP_EXTERN_C const Il2CppCodeRegistration g_CodeRegistration;
 const Il2CppCodeRegistration g_CodeRegistration = 
 {
-	65,
+	84,
 	g_ReversePInvokeWrapperPointers,
-	5476,
+	5590,
 	g_Il2CppGenericMethodPointers,
 	g_Il2CppGenericAdjustorThunks,
-	7634,
+	7684,
 	g_Il2CppInvokerPointers,
-	577,
+	578,
 	g_UnresolvedVirtualMethodPointers,
 	g_UnresolvedInstanceMethodPointers,
 	g_UnresolvedStaticMethodPointers,
-	527,
+	539,
 	g_Il2CppInteropData,
 	0,
 	NULL,
-	62,
+	63,
 	g_CodeGenModules,
 };
 IL2CPP_EXTERN_C_CONST Il2CppMetadataRegistration g_MetadataRegistration;

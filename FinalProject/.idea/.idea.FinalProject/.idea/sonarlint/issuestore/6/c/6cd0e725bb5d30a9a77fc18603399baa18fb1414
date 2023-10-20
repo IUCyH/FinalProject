@@ -1,3 +1,5 @@
 
-?csharpsquid:S3168"Return 'Task' instead.(Æ‰šòùÿÿÿÿ8ÀŒ¸È´1
-Rcsharpsquid:S3903"0Move 'UploadAssetBundle' into a named namespace.(Ùóþ•ýÿÿÿÿ
+?csharpsquid:S3168"Return 'Task' instead.(Æ‰šòùÿÿÿÿ8ÀŒ¸È´1
+{csharpsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(Æ‰šòùÿÿÿÿ8ìý˜ì´1
+Rcsharpsquid:S3903
+"0Move 'UploadAssetBundle' into a named namespace.(Ùóþ•ýÿÿÿÿ

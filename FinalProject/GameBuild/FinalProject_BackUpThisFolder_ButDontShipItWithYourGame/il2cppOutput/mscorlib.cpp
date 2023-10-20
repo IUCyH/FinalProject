@@ -26291,7 +26291,7 @@ IL_0019:
 		int32_t L_9 = ___1_length;
 		Span_1_tDEB40BEFA77B5E4BB49B058CD3050EEA4DD36C54 L_10;
 		memset((&L_10), 0, sizeof(L_10));
-		Span_1__ctor_mBA868F06359701D9950DEB1B10F52F848E9FF6DA_inline((&L_10), L_8, L_9, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 16));
+		Span_1__ctor_mBA868F06359701D9950DEB1B10F52F848E9FF6DA_inline((&L_10), L_8, L_9, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 17));
 		return L_10;
 	}
 }

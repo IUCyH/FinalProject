@@ -27518,6 +27518,19 @@ IL_0068:
 		return (-1);
 	}
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t String_LastIndexOf_m8923DBD89F2B3E5A34190B038B48F402E0C17E40 (String_t* __this, String_t* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___0_value;
+		int32_t L_1;
+		L_1 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(__this, NULL);
+		int32_t L_2;
+		L_2 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(__this, NULL);
+		int32_t L_3;
+		L_3 = String_LastIndexOf_m006A7DECADAD9E77347EEF727D7C55CF52B353B1(__this, L_0, ((int32_t)il2cpp_codegen_subtract(L_1, 1)), L_2, 0, NULL);
+		return L_3;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t String_LastIndexOf_m436B3CDFB93031C7D7710274C092EE52CEAF419F (String_t* __this, String_t* ___0_value, int32_t ___1_comparisonType, const RuntimeMethod* method) 
 {
 	{
@@ -31275,7 +31288,7 @@ IL_000e:
 		int32_t L_7 = ___0_start;
 		Span_1_tDEB40BEFA77B5E4BB49B058CD3050EEA4DD36C54 L_8;
 		memset((&L_8), 0, sizeof(L_8));
-		Span_1__ctor_mBA868F06359701D9950DEB1B10F52F848E9FF6DA_inline((&L_8), L_5, ((int32_t)il2cpp_codegen_subtract(L_6, L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 16));
+		Span_1__ctor_mBA868F06359701D9950DEB1B10F52F848E9FF6DA_inline((&L_8), L_5, ((int32_t)il2cpp_codegen_subtract(L_6, L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 17));
 		return L_8;
 	}
 }
