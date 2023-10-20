@@ -23,8 +23,19 @@ public class UploadAssetBundle : EditorWindow
         {
             var path = Path.Combine(Application.dataPath, "05_AssetBundles", files[i].Name);
             var stream = new FileStream(path, FileMode.Open, FileAccess.Read);
+            var name = files[i].Name;
 
-            await spriteRef.Child("/" + files[i].Name).PutStreamAsync(stream);
+            var splitResult = name.Split(".");
+            if (splitResult.Length > 1)
+            {
+                var length = splitResult.Length;
+                if (length == 2 ? splitResult[1] == "meta" : splitResult[2] == "meta")
+                {
+                    continue;
+                }
+            }
+            
+            await spriteRef.Child("/" + name).PutStreamAsync(stream);
             
             stream.Close();
         }

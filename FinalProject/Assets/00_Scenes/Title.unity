@@ -2874,6 +2874,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea456379915c895408cead168bed8a68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  assetBundleNames:
+  - sprite_structure
+  - sprite_structure.manifest
+  - sprite_ui
+  - sprite_ui.manifest
+  createTableFile: 0
 --- !u!4 &857828792
 Transform:
   m_ObjectHideFlags: 0
