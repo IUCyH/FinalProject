@@ -101,3 +101,5 @@ R
 "Assets/Editor/UploadAssetBundle.cs,6\c\6cd0e725bb5d30a9a77fc18603399baa18fb1414
 U
 %Assets/01_Scripts/Data/DataManager.cs,c\3\c3a6cf9d96e064a4072a439ab8a3ca59721b60aa
+U
+%Assets/01_Scripts/Etc/PatchManager.cs,a\d\adededf82cc6fb9d4062ef938c86427e15ef4483

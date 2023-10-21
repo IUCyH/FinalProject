@@ -2,16 +2,17 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using System.Net;
 using System.Threading.Tasks;
 using Firebase.Database;
 using Firebase.Storage;
-using Google.MiniJSON;
-using TMPro;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.Networking;
-using Random = UnityEngine.Random;
+
+public enum SpriteAssetBundleTag
+{
+    Structure,
+    UI
+}
 
 public class DataManager : Singleton_DontDestroy<DataManager>
 {
@@ -19,7 +20,9 @@ public class DataManager : Singleton_DontDestroy<DataManager>
     const string PlayerDataRoot = "PlayerData";
     const string SpriteStorageRoot = "Sprites";
     const string ManifestFile = "ManifestFile";
-    
+    const string Manifest = "manifest";
+
+    List<AssetBundle> assetBundles = new List<AssetBundle>();
     DatabaseReference dbReference;
     StorageReference storageReference;
     PlayerData playerData;
@@ -58,6 +61,14 @@ public class DataManager : Singleton_DontDestroy<DataManager>
         
         var path = Path.Combine(Application.persistentDataPath, AssetBundles, fileName);
         File.WriteAllBytes(path, request.downloadHandler.data);
+    }
+
+    public Sprite[] GetAllSprites(SpriteAssetBundleTag bundleTag)
+    {
+        var bundle = assetBundles[(int)bundleTag];
+        var sprites = bundle.LoadAllAssets<Sprite>();
+
+        return sprites;
     }
     
     public void Save()
@@ -120,11 +131,24 @@ public class DataManager : Singleton_DontDestroy<DataManager>
         if(!directoryInfo.Exists)
         {
             directoryInfo.Create();
-            StartCoroutine(Coroutine_CacheSpritesFromStorage());
+            StartCoroutine(Coroutine_CacheSpritesFromStorageAndSaveAssetBundle());
         }
         else
         {
             PatchManager.Instance.CheckUpdateAndPatch(directoryInfo, path);
+        }
+
+        for (int i = 0; i < bundleNames.Count; i++)
+        {
+            if (bundleNames[i].Contains(Manifest)) continue;
+
+            var filePath = Path.Combine(path, bundleNames[i]);
+            var bundle = AssetBundle.LoadFromFile(filePath);
+
+            if (!string.IsNullOrEmpty(bundle.name))
+            {
+                assetBundles.Add(bundle);
+            }
         }
 
         LoadCompleted = true;
@@ -159,7 +183,7 @@ public class DataManager : Singleton_DontDestroy<DataManager>
         }
     }
 
-    IEnumerator Coroutine_CacheSpritesFromStorage()
+    IEnumerator Coroutine_CacheSpritesFromStorageAndSaveAssetBundle()
     {
         var spriteRef = storageReference.Child(SpriteStorageRoot);
 
