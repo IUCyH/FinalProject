@@ -103,3 +103,7 @@ U
 %Assets/01_Scripts/Data/DataManager.cs,c\3\c3a6cf9d96e064a4072a439ab8a3ca59721b60aa
 U
 %Assets/01_Scripts/Etc/PatchManager.cs,a\d\adededf82cc6fb9d4062ef938c86427e15ef4483
+Q
+!Assets/Editor/SearchSpriteName.cs,d\8\d835d2d016c29e8f22676c0f11572d9a88927223
+O
+Assets/Editor/RegisterFolder.cs,0\e\0e051ccad67bfbc93444ce873568ba8bfa8e65a4

@@ -21,6 +21,7 @@ public class DataManager : Singleton_DontDestroy<DataManager>
     const string SpriteStorageRoot = "Sprites";
     const string ManifestFile = "ManifestFile";
     const string Manifest = "manifest";
+    const string StorageDefaultUrl = "gs://garden-c0326.appspot.com/";
 
     List<AssetBundle> assetBundles = new List<AssetBundle>();
     DatabaseReference dbReference;
@@ -36,7 +37,7 @@ public class DataManager : Singleton_DontDestroy<DataManager>
     {
         //TODO : 스프라이트 get 함수 구현
         dbReference = FirebaseDatabase.DefaultInstance.RootReference;
-        storageReference = FirebaseStorage.DefaultInstance.GetReferenceFromUrl("gs://garden-c0326.appspot.com/");
+        storageReference = FirebaseStorage.DefaultInstance.GetReferenceFromUrl(StorageDefaultUrl);
         uuid = SystemInfo.deviceUniqueIdentifier;
 
         Load();
