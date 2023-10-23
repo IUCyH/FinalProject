@@ -90,11 +90,6 @@ public class SearchSpriteName : EditorWindow
                     if (fileName.Contains(userInput, StringComparison.OrdinalIgnoreCase) || fileName.Contains(userInput) || fileName.Contains(upper) || fileName.Contains(lower))
                     {
                         if(fileName.Contains(".meta")) continue;
-                        if (fileName.Contains("png"))
-                        {
-                            var index = fileName.IndexOf('.');
-                            fileName = fileName.Remove(index);
-                        }
                         
                         resultList.Add(fileName);
                     }
