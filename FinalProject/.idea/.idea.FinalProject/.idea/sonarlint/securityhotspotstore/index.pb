@@ -83,27 +83,7 @@ W
 'Assets/01_Scripts/Title/TitleManager.cs,4\0\403d28776b47f1c227801b6f0208cd169674b21f
 ^
 .Assets/01_Scripts/Network/NetworkPlayerTest.cs,4\8\48f25d6830cd9c23028773bebabacc3b23fb21bf
-`
-0Assets/01_Scripts/UI/Lobby/MainMenu/QuestMenu.cs,f\9\f9592e6b57e716281c91fe8b65919ab91185266b
-Y
-)Assets/01_Scripts/Window/WindowManager.cs,f\0\f0e0f5884c074668f3b1f82a9baca82e15419362
 S
 #Assets/01_Scripts/Window/IWindow.cs,b\d\bdc2ec6b72bc0752ed380740d650febc44ef949d
-K
-Assets/Editor/UploadData.cs,8\4\84cea0c5273a2174b03045b77b9bf1eecfb3be1f
-]
--Assets/01_Scripts/UI/Lobby/MainLobbyButton.cs,3\5\35f1efba5a8540a91e859423e681d97bb5e9cf9b
 b
 2Assets/01_Scripts/UI/Lobby/MainMenu/OptionsMenu.cs,c\a\ca058a9756ef3d616186901d91de7b13fd9749f8
-Q
-!Assets/Editor/BuildAssetBundle.cs,5\8\580b264a99c193b5227ba229e170ae4a91cf7c7a
-R
-"Assets/Editor/UploadAssetBundle.cs,6\c\6cd0e725bb5d30a9a77fc18603399baa18fb1414
-U
-%Assets/01_Scripts/Data/DataManager.cs,c\3\c3a6cf9d96e064a4072a439ab8a3ca59721b60aa
-U
-%Assets/01_Scripts/Etc/PatchManager.cs,a\d\adededf82cc6fb9d4062ef938c86427e15ef4483
-Q
-!Assets/Editor/SearchSpriteName.cs,d\8\d835d2d016c29e8f22676c0f11572d9a88927223
-O
-Assets/Editor/RegisterFolder.cs,0\e\0e051ccad67bfbc93444ce873568ba8bfa8e65a4

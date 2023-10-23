@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
 using Firebase.Database;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PatchManager : Singleton<PatchManager>
@@ -10,13 +13,14 @@ public class PatchManager : Singleton<PatchManager>
     const string ManifestFile = "ManifestFile";
     
     DatabaseReference dbReference;
+    List<string> filesShouldPatch = new List<string>();
 
     protected override void OnAwake()
     {
         dbReference = FirebaseDatabase.DefaultInstance.RootReference;
     }
 
-    public void CheckUpdateAndPatch(DirectoryInfo directoryInfo, string defaultPath)
+    public async Task CheckUpdateAndPatch(DirectoryInfo directoryInfo, string defaultPath)
     {
         var files = directoryInfo.GetFiles();
         var count = files.Length;
@@ -25,12 +29,14 @@ public class PatchManager : Singleton<PatchManager>
         {
             if (files[i].Name.Contains("manifest"))
             {
-                Patch(defaultPath, files[i].Name);
+                await Patch(defaultPath, files[i].Name);
             }
         }
+
+        await PatchNewFile(files);
     }
 
-    async void Patch(string defaultPath, string fileName)
+    async Task Patch(string defaultPath, string fileName)
     {
         var manifestFilePath = Path.Combine(defaultPath, fileName);
         StreamReader streamReader = new StreamReader(manifestFilePath);
@@ -78,5 +84,48 @@ public class PatchManager : Singleton<PatchManager>
         }
 
         return false;
+    }
+
+    async Task PatchNewFile(FileInfo[] files)
+    {
+        var assetBundles = await dbReference.Child(AssetBundles).GetValueAsync();
+        
+        if (assetBundles.Exists)
+        {
+            filesShouldPatch.Clear();
+            foreach (var child in assetBundles.Children)
+            {
+                if (child.Key == ManifestFile) continue;
+
+                var value = (string)child.Value;
+
+                for (int i = 0; i < files.Length; i++)
+                {
+                    if (files[i].Name.Contains("manifest")) continue;
+
+                    var fileName = files[i].Name;
+                    if (fileName == value)
+                    {
+                        if (filesShouldPatch.Contains(value))
+                        {
+                            filesShouldPatch.Remove(value);
+                        }
+
+                        break;
+                    }
+
+                    if (!filesShouldPatch.Contains(value))
+                    {
+                        filesShouldPatch.Add(value);
+                    }
+                }
+            }
+
+            for (int i = 0; i < filesShouldPatch.Count; i++)
+            {
+                DataManager.Instance.DownloadNewFile(filesShouldPatch[i]);
+                DataManager.Instance.DownloadNewFile(string.Format("{0}.{1}", filesShouldPatch[i], "manifest"));
+            }
+        }
     }
 }

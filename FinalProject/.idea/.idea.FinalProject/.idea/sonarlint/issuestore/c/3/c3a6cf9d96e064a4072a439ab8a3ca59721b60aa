@@ -1,8 +1,0 @@
-
-?csharpsquid:S3168}"Return 'Task' instead.(³Ğš’ÿÿÿÿÿ8£Èµ1
-\csharpsquid:S3903"3Move 'SpriteAssetBundleTag' into a named namespace.(åü¤–üÿÿÿÿ8¾±Âµ1
-Scsharpsquid:S3903"*Move 'DataManager' into a named namespace.(‰Ôçÿÿÿÿÿ8˜­ˆî´1
-Hcsharpsquid:S2933"Make 'assetBundles' 'readonly'.(–½¦ûÿÿÿÿ8¶ÒÅµ1
-Gcsharpsquid:S2933"Make 'bundleNames' 'readonly'.(Şıê¬şÿÿÿÿ8˜­ˆî´1
-hcsharpsquid:S1075"?Refactor your code not to use hardcoded absolute paths or URIs.(À»¹”úÿÿÿÿ8Šó™µ1
-Xcsharpsquid:S1135&"4Complete the task associated to this 'TODO' comment.(Éº¥§8°²§ğ´1

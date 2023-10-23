@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
 using Firebase.Database;
+using Firebase.Extensions;
 using Firebase.Storage;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -71,6 +72,14 @@ public class DataManager : Singleton_DontDestroy<DataManager>
 
         return sprites;
     }
+
+    public Sprite GetSprite(SpriteAssetBundleTag bundleTag, string spriteName)
+    {
+        var bundle = assetBundles[(int)bundleTag];
+        var sprite = bundle.LoadAsset<Sprite>(spriteName);
+
+        return sprite;
+    }
     
     public void Save()
     {
@@ -133,25 +142,14 @@ public class DataManager : Singleton_DontDestroy<DataManager>
         {
             directoryInfo.Create();
             StartCoroutine(Coroutine_CacheSpritesFromStorageAndSaveAssetBundle());
+            
         }
         else
         {
-            PatchManager.Instance.CheckUpdateAndPatch(directoryInfo, path);
+            await PatchManager.Instance.CheckUpdateAndPatch(directoryInfo, path);
         }
 
-        for (int i = 0; i < bundleNames.Count; i++)
-        {
-            if (bundleNames[i].Contains(Manifest)) continue;
-
-            var filePath = Path.Combine(path, bundleNames[i]);
-            var bundle = AssetBundle.LoadFromFile(filePath);
-
-            if (!string.IsNullOrEmpty(bundle.name))
-            {
-                assetBundles.Add(bundle);
-            }
-        }
-
+        StartCoroutine(Coroutine_InitAssetBundlesList(path));
         LoadCompleted = true;
     }
     
@@ -184,6 +182,24 @@ public class DataManager : Singleton_DontDestroy<DataManager>
         }
     }
 
+    IEnumerator Coroutine_InitAssetBundlesList(string path)
+    {
+        for (int i = 0; i < bundleNames.Count; i++)
+        {
+            if (bundleNames[i].Contains(Manifest)) continue;
+
+            var filePath = Path.Combine(path, bundleNames[i]);
+            while (!File.Exists(filePath)) yield return null;
+            
+            var bundle = AssetBundle.LoadFromFile(filePath);
+
+            if (!string.IsNullOrEmpty(bundle.name))
+            {
+                assetBundles.Add(bundle);
+            }
+        }
+    }
+
     IEnumerator Coroutine_CacheSpritesFromStorageAndSaveAssetBundle()
     {
         var spriteRef = storageReference.Child(SpriteStorageRoot);
@@ -206,6 +222,7 @@ public class DataManager : Singleton_DontDestroy<DataManager>
             yield return request.SendWebRequest();
 
             File.WriteAllBytes(path, request.downloadHandler.data);
+            
         }
     }
 }
