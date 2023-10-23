@@ -24,8 +24,13 @@ public class ImageLoadTest : MonoBehaviour
     {
         while (!DataManager.Instance.LoadCompleted) yield return null;
         Debug.Log("s");
-        var sprite = DataManager.Instance.GetSprite(SpriteAssetBundleTag.UI, "UI_Friend");
-
+        var sprite = DataManager.Instance.GetSprite(SpriteAssetBundleTag.UI, "UI_Nickname_Level.png");
+        image.sprite = sprite;
+        yield return new WaitForSeconds(1f);
+        sprite = DataManager.Instance.GetSprite(SpriteAssetBundleTag.UI, "UI_Achievements.png");
+        image.sprite = sprite;
+        yield return new WaitForSeconds(1f);
+        sprite = DataManager.Instance.GetSprite(SpriteAssetBundleTag.UI, "UI_Nickname_Level.png");
         image.sprite = sprite;
     }
 }

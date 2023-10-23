@@ -29,6 +29,7 @@ public class DataManager : Singleton_DontDestroy<DataManager>
     StorageReference storageReference;
     PlayerData playerData;
     List<string> bundleNames = new List<string>();
+    Dictionary<string, Sprite> sprites = new Dictionary<string, Sprite>();
     string uuid;
 
     public PlayerData PlayerData => playerData;
@@ -65,19 +66,14 @@ public class DataManager : Singleton_DontDestroy<DataManager>
         File.WriteAllBytes(path, request.downloadHandler.data);
     }
 
-    public Sprite[] GetAllSprites(SpriteAssetBundleTag bundleTag)
-    {
-        var bundle = assetBundles[(int)bundleTag];
-        var sprites = bundle.LoadAllAssets<Sprite>();
-
-        return sprites;
-    }
-
     public Sprite GetSprite(SpriteAssetBundleTag bundleTag, string spriteName)
     {
+        if (sprites.ContainsKey(spriteName)) return sprites[spriteName];
+        
         var bundle = assetBundles[(int)bundleTag];
         var sprite = bundle.LoadAsset<Sprite>(spriteName);
-Debug.Log(sprite);
+
+        sprites.Add(spriteName, sprite);
         return sprite;
     }
     
