@@ -181,7 +181,8 @@ public class Win_or_Loss_Judgment : MonoBehaviour
                 if (player1ATKSpeed[i] > player2ATKSpeed[i] * 2)
                 {
                     int num1 = 1;
-                    while (player2ATKSpeed[i] - (20 * num1) < player1ATKSpeed[i])
+
+                    for (int j = 0; j < Mathf.Abs(player2ATKSpeed[i] - (player1ATKSpeed[i] * num1)); j++)
                     {
                         Debug.Log(i + "번째 아군이 떄림");
                         num1++;
@@ -196,11 +197,11 @@ public class Win_or_Loss_Judgment : MonoBehaviour
             {
                 if (player2ATKSpeed[i] > player1ATKSpeed[i] * 2)
                 {
-                    int num2 = 1;
-                    while (player1ATKSpeed[i] - (20 * num2) < player2ATKSpeed[i])
+                    float num2 = 1.5f;
+                    
+                    for(int j = 0; j < Mathf.Abs(player1ATKSpeed[i] - (player2ATKSpeed[i] * num2)); j++)
                     {
                         Debug.Log(i + "번째 적군이 떄림");
-                        num2++;
                     }
                 }
                 else

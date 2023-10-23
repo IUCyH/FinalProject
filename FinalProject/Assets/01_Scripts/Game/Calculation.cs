@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Calculation : MonoBehaviour
 {
-    //¿¬»ê ¿¡¼Â
+    //ì—°ì‚° ì—ì…‹
 }
 
 //https://dodnet.tistory.com/4484
