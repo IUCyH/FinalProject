@@ -13,7 +13,8 @@ namespace AttackType
     {
         basic,
         heal,
-        
+        skill,
+
     }
 
 }
@@ -78,14 +79,17 @@ public class Win_or_Loss_Judgment : MonoBehaviour
         player2ATKSpeed.Add(40);
     }
 
-    void Update()
+    //전투실행
+    public void Fight()
+    {   
+        SkillSequence();
+        SkillCheck();
+        SkillSeqencePlay();
+    }
+
+    void FightEnd()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            SkillSequence();
-            SkillCheck();
-            SkillSeqencePlay();
-        }
+        Debug.Log("FightEnd");
     }
 
     public void SkillSequence()
@@ -138,7 +142,8 @@ public class Win_or_Loss_Judgment : MonoBehaviour
         ATKspeed.Sort(); // 속도 정보 정렬
     }
 
-    public void SkillSeqencePlay()
+    //공식, 수식 고려하기
+    public void SkillSeqencePlay() 
     {
         int i = 0;
         while (i < sequence.Count)
@@ -178,47 +183,11 @@ public class Win_or_Loss_Judgment : MonoBehaviour
 
             i++;
         }
+
+
+
+        FightEnd();
     }
 }
 
-//https://dodnet.tistory.com/4484
-public static class Dods_ChanceMaker
-{
-    public static bool GetThisChanceResult(float Chance)
-    {
-        if (Chance < 0.0000001f)
-        {
-            Chance = 0.0000001f;
-        }
 
-        bool Success = false;
-        int RandAccuracy = 10000000;
-        float RandHitRange = Chance * RandAccuracy;
-        int Rand = UnityEngine.Random.Range(1, RandAccuracy + 1);
-        if (Rand <= RandHitRange)
-        {
-            Success = true;
-        }
-        return Success;
-    }
-
-    public static bool GetThisChanceResult_Percentage(float Percentage_Chance)
-    {
-        if (Percentage_Chance < 0.0000001f)
-        {
-            Percentage_Chance = 0.0000001f;
-        }
-
-        Percentage_Chance = Percentage_Chance / 100;
-
-        bool Success = false;
-        int RandAccuracy = 10000000;
-        float RandHitRange = Percentage_Chance * RandAccuracy;
-        int Rand = UnityEngine.Random.Range(1, RandAccuracy + 1);
-        if (Rand <= RandHitRange)
-        {
-            Success = true;
-        }
-        return Success;
-    }
-}
