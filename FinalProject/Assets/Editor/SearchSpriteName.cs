@@ -10,7 +10,7 @@ public class SearchSpriteName : EditorWindow
     static GUIContent title = new GUIContent("스프라이트 이름 검색");
     static List<string> searchableFolders = new List<string>();
     static List<string> resultList = new List<string>();
-    static string userInput;
+    static string userInput = "";
     
     [MenuItem("Search/Search Sprite Name")]
     static void OpenSearchWindow()
@@ -57,6 +57,7 @@ public class SearchSpriteName : EditorWindow
 
         if (!string.IsNullOrEmpty(userInput))
         {
+            Search();
             for (int i = 0; i < resultList.Count; i++)
             {
                 GUILayout.TextArea(resultList[i]);
@@ -86,7 +87,7 @@ public class SearchSpriteName : EditorWindow
                     var upper = userInput.ToUpper();
                     var lower = userInput.ToLower();
                     
-                    if (fileName.Contains(userInput) || fileName.Contains(upper) || fileName.Contains(lower))
+                    if (fileName.Contains(userInput, StringComparison.OrdinalIgnoreCase) || fileName.Contains(userInput) || fileName.Contains(upper) || fileName.Contains(lower))
                     {
                         if(fileName.Contains(".meta")) continue;
                         if (fileName.Contains("png"))
