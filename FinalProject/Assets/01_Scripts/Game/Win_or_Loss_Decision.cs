@@ -16,7 +16,6 @@ namespace AttackType
         skill,
 
     }
-
 }
 
 public class Win_or_Loss_Judgment : MonoBehaviour
@@ -42,7 +41,8 @@ public class Win_or_Loss_Judgment : MonoBehaviour
     List<(int myInputID, int myInputSkillNum)> myInputValue = new List<(int, int)>();
     List<(int enemyInputID, int enemyInputSkillNum)> enemyInputValue = new List<(int, int)>();
 
-    List<(float myATKspeed, float enemyATKspeed)> ATKspeed = new List<(float, float)>();
+    List<float> myATKspeed = new List <float>();
+    List<float> enemyATKspeed = new List<float>();
 
     float player1health = 100; // 예시로 초기값 설정
     float player2health = 100; // 예시로 초기값 설정
@@ -56,6 +56,8 @@ public class Win_or_Loss_Judgment : MonoBehaviour
     List<int> player1ATKSpeed = new List<int>(); // 예시로 더미 데이터 추가
     List<int> player2ATKSpeed = new List<int>(); // 예시로 더미 데이터 추가
 
+    int allTeamCount;
+
     void Start()
     {
         for (int m = 0; m < myTeam.childCount; m++)
@@ -66,52 +68,70 @@ public class Win_or_Loss_Judgment : MonoBehaviour
         for(int e = 0; e < enemyTeam.childCount; e++)
         {
             enemyTeamCount++;
-        }
-
-
+        }     
 
 
         // 예시로 초기 데이터 추가
         player1Property.Add((10, 1));
         player2Property.Add((20, 2));
 
-        player1ATKSpeed.Add(30);
+        player1ATKSpeed.Add(10);
+        player1ATKSpeed.Add(10);
+        player1ATKSpeed.Add(10);
+        player1ATKSpeed.Add(10);
+
         player2ATKSpeed.Add(40);
+        player2ATKSpeed.Add(40);
+        player2ATKSpeed.Add(40);
+        player2ATKSpeed.Add(40);
+
     }
 
-    //전투실행
-    public void Fight()
+    void Update()
+    {
+        allTeamCount = myTeamCount + enemyTeamCount; //남은 수
+    }
+
+    //전투실행, 2배속 고려
+    public void FightStart()
     {   
         SkillSequence();
         SkillCheck();
         SkillSeqencePlay();
     }
 
+    //자동전투 고려
     void FightEnd()
     {
         Debug.Log("FightEnd");
     }
-
+    
     public void SkillSequence()
     {
-        int allTeamCount = (myTeamCount + enemyTeamCount) - 1;
-
 
         for (int j = 0; j < myTeamCount; j++)
         {
             myInputValue.Add((1, 2)); // 예시로 초기 데이터 추가
         }
 
-        for (int k = 0; k < allTeamCount; k++)
+
+        for (int k = 0; k < myTeamCount; k++)
         {
-            ATKspeed.Add((player1ATKSpeed[k], player2ATKSpeed[k])); // 예시로 초기 데이터 추가
+            myATKspeed.Add((player1ATKSpeed[k])); // 예시로 초기 데이터 추가
+            
         }
+        for (int u = 0; u < myTeamCount; u++)
+        {
+            enemyATKspeed.Add((player1ATKSpeed[u])); // 예시로 초기 데이터 추가
+
+        }
+        
     }
 
     public void SkillCheck()
     {
         //공속 비교
-        for (int i = 0; i < (myInputValue.Count + enemyInputValue.Count); i++)
+        for (int i = 0; i < myTeamCount; i++)
         {
             if (player1Property[i].player1SkillNum != player2Property[i].player2SkillNum)
             {
@@ -139,7 +159,8 @@ public class Win_or_Loss_Judgment : MonoBehaviour
             }
         }
 
-        ATKspeed.Sort(); // 속도 정보 정렬
+        myATKspeed.Sort(); // 속도 정보 정렬
+        enemyATKspeed.Sort();
     }
 
     //공식, 수식 고려하기
