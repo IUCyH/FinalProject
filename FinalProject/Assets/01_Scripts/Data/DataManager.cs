@@ -137,7 +137,7 @@ public class DataManager : Singleton_DontDestroy<DataManager>
         if(!directoryInfo.Exists)
         {
             directoryInfo.Create();
-            StartCoroutine(Coroutine_CacheSpritesFromStorageAndSaveAssetBundle());
+            StartCoroutine(Coroutine_CacheSpritesFromStorage());
             
         }
         else
@@ -198,7 +198,7 @@ public class DataManager : Singleton_DontDestroy<DataManager>
         LoadCompleted = true;
     }
 
-    IEnumerator Coroutine_CacheSpritesFromStorageAndSaveAssetBundle()
+    IEnumerator Coroutine_CacheSpritesFromStorage()
     {
         var spriteRef = storageReference.Child(SpriteStorageRoot);
 
@@ -220,7 +220,6 @@ public class DataManager : Singleton_DontDestroy<DataManager>
             yield return request.SendWebRequest();
 
             File.WriteAllBytes(path, request.downloadHandler.data);
-            
         }
     }
 }
