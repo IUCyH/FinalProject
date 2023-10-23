@@ -19,6 +19,6 @@ public class ClickWhat : MonoBehaviour
         // 방금 클릭한 게임 오브젝트를 가져와서 저장
         GameObject clickObject = EventSystem.current.currentSelectedGameObject;
 
-        Debug.Log(clickObject.name, clickObject.GetComponentInChildren<TextMeshProUGUI>());
+        battleButton.Sequence(clickObject.GetComponent<RectTransform>());
     }
 }

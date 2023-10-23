@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class BattleButton : MonoBehaviour
 {
+    [SerializeField]
+    List<GameObject> sequenceImages = new List<GameObject>();
 
     [SerializeField]
     List<int> skillNum = new List<int>();
@@ -16,13 +18,18 @@ public class BattleButton : MonoBehaviour
 
     int skillAddNum;
 
+    bool isBigger;
 
     //순서를 차례대로 부여 ++;
     //1 -> 2 -> 3 선택 상태에서 1을 뺐다면 1 -> 4
-
-
     //들어온 수가 가장 큰가?
-    bool isBigger;
+    public void Sequence(RectTransform buttonTransform)
+    {
+        sequenceImages[skillAddNum].GetComponent<RectTransform>().anchoredPosition = buttonTransform.anchoredPosition;
+        sequenceImages[skillAddNum].SetActive(true);
+        skillAddNum++;
+
+    }
 
     public void SaveNum(int skillID)
     {

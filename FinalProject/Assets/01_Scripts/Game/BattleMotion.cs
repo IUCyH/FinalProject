@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BattleMotion : MonoBehaviour
 {
+
 
     void AttackMove(RectTransform myTrans, RectTransform enemyID, float duration) // 내 위치, 적 위치, 이동에 걸리는 시간
     {
