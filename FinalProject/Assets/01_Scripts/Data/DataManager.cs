@@ -77,7 +77,7 @@ public class DataManager : Singleton_DontDestroy<DataManager>
     {
         var bundle = assetBundles[(int)bundleTag];
         var sprite = bundle.LoadAsset<Sprite>(spriteName);
-
+Debug.Log(sprite);
         return sprite;
     }
     
@@ -150,7 +150,6 @@ public class DataManager : Singleton_DontDestroy<DataManager>
         }
 
         StartCoroutine(Coroutine_InitAssetBundlesList(path));
-        LoadCompleted = true;
     }
     
     async Task GetBundleNames()
@@ -195,9 +194,12 @@ public class DataManager : Singleton_DontDestroy<DataManager>
 
             if (!string.IsNullOrEmpty(bundle.name))
             {
+                Debug.Log(bundle.name);
                 assetBundles.Add(bundle);
             }
         }
+        
+        LoadCompleted = true;
     }
 
     IEnumerator Coroutine_CacheSpritesFromStorageAndSaveAssetBundle()
