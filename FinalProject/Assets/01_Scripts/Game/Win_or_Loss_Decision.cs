@@ -73,7 +73,14 @@ public class Win_or_Loss_Judgment : MonoBehaviour
 
         // 예시로 초기 데이터 추가
         player1Property.Add((10, 1));
-        player2Property.Add((20, 2));
+        player1Property.Add((20, 2));
+        player1Property.Add((30, 3));
+        player1Property.Add((40, 4));
+
+        player2Property.Add((50, 5));
+        player2Property.Add((60, 6));
+        player2Property.Add((70, 7));
+        player2Property.Add((80, 8));
 
         player1ATKSpeed.Add(10);
         player1ATKSpeed.Add(10);
