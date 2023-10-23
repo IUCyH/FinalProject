@@ -7446,7 +7446,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SmallXmlParser_Peek_mD173A8049A313FE6
 		TextReader_tB8D43017CB6BE1633E5A86D64E7757366507C1F7* L_0 = __this->___reader;
 		NullCheck(L_0);
 		int32_t L_1;
-		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(8, L_0);
+		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(9, L_0);
 		return L_1;
 	}
 }
@@ -7460,7 +7460,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SmallXmlParser_Read_m6FD131F7AC40E5B5
 		TextReader_tB8D43017CB6BE1633E5A86D64E7757366507C1F7* L_0 = __this->___reader;
 		NullCheck(L_0);
 		int32_t L_1;
-		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(9, L_0);
+		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(10, L_0);
 		int32_t L_2 = L_1;
 		if ((!(((uint32_t)L_2) == ((uint32_t)((int32_t)10)))))
 		{
@@ -23463,7 +23463,7 @@ IL_0032:
 			StreamReader_t81027449065C1B0C339DB46241D8001A6F61130B* L_7 = V_1;
 			NullCheck(L_7);
 			String_t* L_8;
-			L_8 = VirtualFuncInvoker0< String_t* >::Invoke(11, L_7);
+			L_8 = VirtualFuncInvoker0< String_t* >::Invoke(12, L_7);
 			KeyPairPersistence_FromXml_m6D94C0820F4E00B8761FD92E3404E5C583215876(__this, L_8, NULL);
 			goto IL_0033;
 		}
