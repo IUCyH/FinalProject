@@ -1,10 +1,37 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Win_or_Loss_Decission : MonoBehaviour
+namespace AttackType
 {
-    int myTeamCount = 1; // 예시로 1로 설정, 실제 값에 따라 변경해주세요.
-    int enemyTeamCount = 1; // 예시로 1로 설정, 실제 값에 따라 변경해주세요.
+    enum Range
+    {
+        single,
+        multi
+    }
+
+    enum Type
+    {
+        basic,
+        heal,
+        
+    }
+
+}
+
+public class Win_or_Loss_Judgment : MonoBehaviour
+{
+    //부모
+    [SerializeField]
+    Transform myTeam;
+    [SerializeField]
+    Transform enemyTeam;
+
+    //개체 수 카운트
+    [SerializeField]
+    int myTeamCount; 
+    [SerializeField]
+    int enemyTeamCount; 
+
 
     List<(int ID, int SkillNum)> sequence = new List<(int, int)>();
 
@@ -30,9 +57,23 @@ public class Win_or_Loss_Decission : MonoBehaviour
 
     void Start()
     {
+        for (int m = 0; m < myTeam.childCount; m++)
+        {
+            myTeamCount++;
+        }
+
+        for(int e = 0; e < enemyTeam.childCount; e++)
+        {
+            enemyTeamCount++;
+        }
+
+
+
+
         // 예시로 초기 데이터 추가
-        player1Property.Add((1, 2));
-        player2Property.Add((3, 4));
+        player1Property.Add((10, 1));
+        player2Property.Add((20, 2));
+
         player1ATKSpeed.Add(30);
         player2ATKSpeed.Add(40);
     }
