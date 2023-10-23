@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class BattleButton : MonoBehaviour
 {
+
     [SerializeField]
     List<int> skillNum = new List<int>();
 
@@ -56,5 +57,4 @@ public class BattleButton : MonoBehaviour
         isSkill[skillID] = false; //눌린 버튼 해제
 
     }
-
 }

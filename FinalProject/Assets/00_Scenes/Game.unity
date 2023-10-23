@@ -2350,11 +2350,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 684d9100776b5b346918774ae4049acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillTrans: []
-  skillNumImages: []
   skillNum: 
-  skillClick: 
-  m_Camera: {fileID: 27914183}
+  isSkill: 
 --- !u!114 &986736416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2367,6 +2364,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 476a002e02498a944a6a5573a2ef160d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  battleButton: {fileID: 986736415}
+  skillID: 
 --- !u!1 &1045446384
 GameObject:
   m_ObjectHideFlags: 0
@@ -4020,7 +4019,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1861259203}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 986736413}
+        m_TargetAssemblyTypeName: Win_or_Loss_Judgment, Assembly-CSharp
+        m_MethodName: FightStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1861259203
 MonoBehaviour:
   m_ObjectHideFlags: 0
