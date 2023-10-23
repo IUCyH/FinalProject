@@ -15,62 +15,51 @@
 extern void AssetBundle__ctor_m12989CA081324BB49ED893BDA5E3B4E758D61410 (void);
 extern void AssetBundle_LoadFromFile_Internal_m806E92FA35F9FF7F9868058055FB347B9E35BD74 (void);
 extern void AssetBundle_LoadFromFile_mAFD7B0E8F0A0A88E9BB60180EBA0A99B8B3F2629 (void);
-extern void AssetBundle_LoadAllAssets_m0A8F41292C96F658A89B0E8D0ADB2E8395DD7F62 (void);
-extern void AssetBundle_LoadAssetWithSubAssets_Internal_m14AE2B2D7696182CBDF12087E8D3FEA867290DA8 (void);
-static Il2CppMethodPointer s_methodPointers[7] = 
+extern void AssetBundle_LoadAsset_m021FE0B52DD660E54AE4C225D9AE66147902B8FE (void);
+extern void AssetBundle_LoadAsset_Internal_mD096392756815901FE982C1AF64DDF0846551433 (void);
+static Il2CppMethodPointer s_methodPointers[6] = 
 {
 	AssetBundle__ctor_m12989CA081324BB49ED893BDA5E3B4E758D61410,
 	AssetBundle_LoadFromFile_Internal_m806E92FA35F9FF7F9868058055FB347B9E35BD74,
 	AssetBundle_LoadFromFile_mAFD7B0E8F0A0A88E9BB60180EBA0A99B8B3F2629,
 	NULL,
-	NULL,
-	AssetBundle_LoadAllAssets_m0A8F41292C96F658A89B0E8D0ADB2E8395DD7F62,
-	AssetBundle_LoadAssetWithSubAssets_Internal_m14AE2B2D7696182CBDF12087E8D3FEA867290DA8,
+	AssetBundle_LoadAsset_m021FE0B52DD660E54AE4C225D9AE66147902B8FE,
+	AssetBundle_LoadAsset_Internal_mD096392756815901FE982C1AF64DDF0846551433,
 };
-static const int32_t s_InvokerIndices[7] = 
+static const int32_t s_InvokerIndices[6] = 
 {
 	2719,
 	4406,
 	6545,
 	0,
-	0,
-	2116,
+	1351,
 	1351,
 };
-static const Il2CppTokenRangePair s_rgctxIndices[2] = 
+static const Il2CppTokenRangePair s_rgctxIndices[1] = 
 {
-	{ 0x06000004, { 0, 3 } },
-	{ 0x06000005, { 3, 3 } },
+	{ 0x06000004, { 0, 2 } },
 };
-extern const uint32_t g_rgctx_TU5BU5D_t62435FFFCFDDAF58FFD9198485B2A31DC6C62CFA;
-extern const uint32_t g_rgctx_T_t89104750519603A8F27C7F396B9F54E9AEDA9257;
-extern const uint32_t g_rgctx_TU5BU5D_t62435FFFCFDDAF58FFD9198485B2A31DC6C62CFA;
-extern const uint32_t g_rgctx_T_t4DDCDE7720DB1E953B03BAB314A225D5D5780ED5;
-extern const uint32_t g_rgctx_AssetBundle_ConvertObjects_TisT_t4DDCDE7720DB1E953B03BAB314A225D5D5780ED5_mAE3896E191A8837DA13ADC43597D711900694863;
-extern const uint32_t g_rgctx_TU5BU5D_tBAC463FFCA4BD4AF85453A8FA9F8A8C54AC90A4F;
-static const Il2CppRGCTXDefinition s_rgctxValues[6] = 
+extern const uint32_t g_rgctx_T_t8F5466E687C8861B9EA9A0932E573160D9356A57;
+extern const uint32_t g_rgctx_T_t8F5466E687C8861B9EA9A0932E573160D9356A57;
+static const Il2CppRGCTXDefinition s_rgctxValues[2] = 
 {
-	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TU5BU5D_t62435FFFCFDDAF58FFD9198485B2A31DC6C62CFA },
-	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_T_t89104750519603A8F27C7F396B9F54E9AEDA9257 },
-	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TU5BU5D_t62435FFFCFDDAF58FFD9198485B2A31DC6C62CFA },
-	{ (Il2CppRGCTXDataType)1, (const void *)&g_rgctx_T_t4DDCDE7720DB1E953B03BAB314A225D5D5780ED5 },
-	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AssetBundle_ConvertObjects_TisT_t4DDCDE7720DB1E953B03BAB314A225D5D5780ED5_mAE3896E191A8837DA13ADC43597D711900694863 },
-	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TU5BU5D_tBAC463FFCA4BD4AF85453A8FA9F8A8C54AC90A4F },
+	{ (Il2CppRGCTXDataType)1, (const void *)&g_rgctx_T_t8F5466E687C8861B9EA9A0932E573160D9356A57 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_T_t8F5466E687C8861B9EA9A0932E573160D9356A57 },
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_AssetBundleModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_AssetBundleModule_CodeGenModule = 
 {
 	"UnityEngine.AssetBundleModule.dll",
-	7,
+	6,
 	s_methodPointers,
 	0,
 	NULL,
 	s_InvokerIndices,
 	0,
 	NULL,
-	2,
+	1,
 	s_rgctxIndices,
-	6,
+	2,
 	s_rgctxValues,
 	NULL,
 	NULL,

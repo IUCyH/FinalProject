@@ -877,7 +877,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1A
 		StringReader_t1A336148FF22A9584E759A9D720CC96C23E35DD8* L_1 = __this->___json;
 		NullCheck(L_1);
 		int32_t L_2;
-		L_2 = VirtualFuncInvoker0< int32_t >::Invoke(9, L_1);
+		L_2 = VirtualFuncInvoker0< int32_t >::Invoke(10, L_1);
 		goto IL_00c7;
 	}
 
@@ -996,7 +996,7 @@ IL_007f:
 		StringReader_t1A336148FF22A9584E759A9D720CC96C23E35DD8* L_15 = __this->___json;
 		NullCheck(L_15);
 		int32_t L_16;
-		L_16 = VirtualFuncInvoker0< int32_t >::Invoke(9, L_15);
+		L_16 = VirtualFuncInvoker0< int32_t >::Invoke(10, L_15);
 		int32_t L_17;
 		L_17 = Parser_get_NextToken_m1929B96398C765C1294FEDD658C9DF0B4C95E6CB(__this, NULL);
 		V_3 = L_17;
@@ -1093,7 +1093,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9
 		StringReader_t1A336148FF22A9584E759A9D720CC96C23E35DD8* L_1 = __this->___json;
 		NullCheck(L_1);
 		int32_t L_2;
-		L_2 = VirtualFuncInvoker0< int32_t >::Invoke(9, L_1);
+		L_2 = VirtualFuncInvoker0< int32_t >::Invoke(10, L_1);
 		V_1 = (bool)1;
 		goto IL_006c;
 	}
@@ -1411,7 +1411,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Parser_ParseString_m3A1DBEF95B05BE6
 		StringReader_t1A336148FF22A9584E759A9D720CC96C23E35DD8* L_1 = __this->___json;
 		NullCheck(L_1);
 		int32_t L_2;
-		L_2 = VirtualFuncInvoker0< int32_t >::Invoke(9, L_1);
+		L_2 = VirtualFuncInvoker0< int32_t >::Invoke(10, L_1);
 		V_2 = (bool)1;
 		goto IL_018e;
 	}
@@ -1421,7 +1421,7 @@ IL_001a:
 		StringReader_t1A336148FF22A9584E759A9D720CC96C23E35DD8* L_3 = __this->___json;
 		NullCheck(L_3);
 		int32_t L_4;
-		L_4 = VirtualFuncInvoker0< int32_t >::Invoke(8, L_3);
+		L_4 = VirtualFuncInvoker0< int32_t >::Invoke(9, L_3);
 		V_3 = (bool)((((int32_t)L_4) == ((int32_t)(-1)))? 1 : 0);
 		bool L_5 = V_3;
 		if (!L_5)
@@ -1474,7 +1474,7 @@ IL_0059:
 		StringReader_t1A336148FF22A9584E759A9D720CC96C23E35DD8* L_10 = __this->___json;
 		NullCheck(L_10);
 		int32_t L_11;
-		L_11 = VirtualFuncInvoker0< int32_t >::Invoke(8, L_10);
+		L_11 = VirtualFuncInvoker0< int32_t >::Invoke(9, L_10);
 		V_5 = (bool)((((int32_t)L_11) == ((int32_t)(-1)))? 1 : 0);
 		bool L_12 = V_5;
 		if (!L_12)
@@ -1887,11 +1887,11 @@ IL_0003:
 		StringReader_t1A336148FF22A9584E759A9D720CC96C23E35DD8* L_0 = __this->___json;
 		NullCheck(L_0);
 		int32_t L_1;
-		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(9, L_0);
+		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(10, L_0);
 		StringReader_t1A336148FF22A9584E759A9D720CC96C23E35DD8* L_2 = __this->___json;
 		NullCheck(L_2);
 		int32_t L_3;
-		L_3 = VirtualFuncInvoker0< int32_t >::Invoke(8, L_2);
+		L_3 = VirtualFuncInvoker0< int32_t >::Invoke(9, L_2);
 		V_0 = (bool)((((int32_t)L_3) == ((int32_t)(-1)))? 1 : 0);
 		bool L_4 = V_0;
 		if (!L_4)
@@ -1940,7 +1940,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Il2CppChar Parser_get_PeekChar_m472C7F26ADA56
 		StringReader_t1A336148FF22A9584E759A9D720CC96C23E35DD8* L_0 = __this->___json;
 		NullCheck(L_0);
 		int32_t L_1;
-		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(8, L_0);
+		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(9, L_0);
 		il2cpp_codegen_runtime_class_init_inline(Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
 		Il2CppChar L_2;
 		L_2 = Convert_ToChar_mF1B1B205DDEFDE52251235514E7DAFCAB37D1F24(L_1, NULL);
@@ -1967,7 +1967,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Il2CppChar Parser_get_NextChar_mAA110522471FA
 		StringReader_t1A336148FF22A9584E759A9D720CC96C23E35DD8* L_0 = __this->___json;
 		NullCheck(L_0);
 		int32_t L_1;
-		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(9, L_0);
+		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(10, L_0);
 		il2cpp_codegen_runtime_class_init_inline(Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
 		Il2CppChar L_2;
 		L_2 = Convert_ToChar_mF1B1B205DDEFDE52251235514E7DAFCAB37D1F24(L_1, NULL);
@@ -2011,7 +2011,7 @@ IL_0009:
 		StringReader_t1A336148FF22A9584E759A9D720CC96C23E35DD8* L_4 = __this->___json;
 		NullCheck(L_4);
 		int32_t L_5;
-		L_5 = VirtualFuncInvoker0< int32_t >::Invoke(8, L_4);
+		L_5 = VirtualFuncInvoker0< int32_t >::Invoke(9, L_4);
 		V_1 = (bool)((((int32_t)L_5) == ((int32_t)(-1)))? 1 : 0);
 		bool L_6 = V_1;
 		if (!L_6)
@@ -2076,7 +2076,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Parser_get_NextToken_m1929B96398C765C
 		StringReader_t1A336148FF22A9584E759A9D720CC96C23E35DD8* L_0 = __this->___json;
 		NullCheck(L_0);
 		int32_t L_1;
-		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(8, L_0);
+		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(9, L_0);
 		V_0 = (bool)((((int32_t)L_1) == ((int32_t)(-1)))? 1 : 0);
 		bool L_2 = V_0;
 		if (!L_2)
@@ -2269,7 +2269,7 @@ IL_00c0:
 		StringReader_t1A336148FF22A9584E759A9D720CC96C23E35DD8* L_10 = __this->___json;
 		NullCheck(L_10);
 		int32_t L_11;
-		L_11 = VirtualFuncInvoker0< int32_t >::Invoke(9, L_10);
+		L_11 = VirtualFuncInvoker0< int32_t >::Invoke(10, L_10);
 		V_1 = 2;
 		goto IL_0143;
 	}
@@ -2285,7 +2285,7 @@ IL_00d4:
 		StringReader_t1A336148FF22A9584E759A9D720CC96C23E35DD8* L_12 = __this->___json;
 		NullCheck(L_12);
 		int32_t L_13;
-		L_13 = VirtualFuncInvoker0< int32_t >::Invoke(9, L_12);
+		L_13 = VirtualFuncInvoker0< int32_t >::Invoke(10, L_12);
 		V_1 = 4;
 		goto IL_0143;
 	}
@@ -2295,7 +2295,7 @@ IL_00e4:
 		StringReader_t1A336148FF22A9584E759A9D720CC96C23E35DD8* L_14 = __this->___json;
 		NullCheck(L_14);
 		int32_t L_15;
-		L_15 = VirtualFuncInvoker0< int32_t >::Invoke(9, L_14);
+		L_15 = VirtualFuncInvoker0< int32_t >::Invoke(10, L_14);
 		V_1 = 6;
 		goto IL_0143;
 	}
