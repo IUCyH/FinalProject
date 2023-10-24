@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1670383450
+CRC: 3720320216
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: f08a62ff14223854dffe74e21788e1dc
+    Hash: a2ec70601c90c662353d251b59d0fd5c
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2d8df09e698f722ada1caa03d3413830
@@ -15,7 +15,7 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/02_Sprites/UI/Lobby/UI_Option.png
+- Assets/02_Sprites/UI/Lobby/UI_Options.png
 - "Assets/02_Sprites/05_UIKeyButton/\uBA54\uB274 - \uAC8C\uC784 \uC885\uB8CC,\uC124\uC815.png"
 - "Assets/02_Sprites/05_UIKeyButton/\uBC29\uD5A5\uD0A4(\uC704).png"
 - "Assets/02_Sprites/05_UIKeyButton/\uC544\uC774\uD15C \uC0AC\uC6A9 2.png"
@@ -30,13 +30,13 @@ Assets:
 - "Assets/02_Sprites/05_UIKeyButton/\uC624\uB978\uCABD.png"
 - "Assets/02_Sprites/05_UIKeyButton/\uC544\uC774\uD15C \uC0AC\uC6A9 3.png"
 - Assets/02_Sprites/UI/Lobby/UI_Achievements.png
-- Assets/02_Sprites/UI/Lobby/UI_Friend.png
+- Assets/02_Sprites/UI/Lobby/UI_Friends.png
 - "Assets/02_Sprites/05_UIKeyButton/\uBC84\uD2BC.psd"
-- Assets/02_Sprites/UI/Lobby/UI_Play.png
+- Assets/02_Sprites/UI/Lobby/UI_Fight.png
 - Assets/02_Sprites/UI/Lobby/UI_SolarCoin.png
 - "Assets/02_Sprites/05_UIKeyButton/\uC138\uC774\uBE0C \uC0C1\uD638\uC791\uC6A9.png"
 - "Assets/02_Sprites/05_UIKeyButton/\uC544\uB798.png"
-- Assets/02_Sprites/UI/Lobby/UI_Mission.png
+- Assets/02_Sprites/UI/Lobby/UI_Quest.png
 - Assets/02_Sprites/05_UIKeyButton/free-icon-pause-button-6527791.png
 - Assets/02_Sprites/UI/Lobby/UI_Store.png
 - "Assets/02_Sprites/05_UIKeyButton/\uB9F5.png"

@@ -69,8 +69,6 @@ b
 2Assets/01_Scripts/UI/Lobby/MainMenu/MailBoxMenu.cs,e\3\e3531b8fb703d414a503283198a84425319cdba6
 h
 8Assets/01_Scripts/UI/Lobby/MainMenu/SelectChapterMenu.cs,4\4\4431c5c730cfa6e3da00bda61e93ed1d9fff8a63
-\
-,Assets/01_Scripts/UI/Lobby/LobbyUIManager.cs,a\1\a19a7003914aa3ace52d12555f23d116114f3abe
 ]
 -Assets/Photon/FusionCodeGen/Fusion.CodeGen.cs,d\a\da8a422860915e4067552b7a8a179ff52a365d26
 B
@@ -85,3 +83,9 @@ S
 #Assets/01_Scripts/Window/IWindow.cs,b\d\bdc2ec6b72bc0752ed380740d650febc44ef949d
 b
 2Assets/01_Scripts/UI/Lobby/MainMenu/OptionsMenu.cs,c\a\ca058a9756ef3d616186901d91de7b13fd9749f8
+K
+Assets/Editor/UploadData.cs,8\4\84cea0c5273a2174b03045b77b9bf1eecfb3be1f
+R
+"Assets/Editor/UploadAssetBundle.cs,6\c\6cd0e725bb5d30a9a77fc18603399baa18fb1414
+Q
+!Assets/Editor/BuildAssetBundle.cs,5\8\580b264a99c193b5227ba229e170ae4a91cf7c7a
