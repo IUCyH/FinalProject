@@ -24,6 +24,7 @@ public class DataManager : Singleton_DontDestroy<DataManager>
     const string Manifest = "manifest";
     const string StorageDefaultUrl = "gs://garden-c0326.appspot.com/";
 
+    Task waitUntilDataLoad;
     List<AssetBundle> assetBundles = new List<AssetBundle>();
     DatabaseReference dbReference;
     StorageReference storageReference;
@@ -41,9 +42,22 @@ public class DataManager : Singleton_DontDestroy<DataManager>
         dbReference = FirebaseDatabase.DefaultInstance.RootReference;
         storageReference = FirebaseStorage.DefaultInstance.GetReferenceFromUrl(StorageDefaultUrl);
         uuid = SystemInfo.deviceUniqueIdentifier;
+        waitUntilDataLoad = new Task(() =>
+        {
+            while (!LoadCompleted)
+            {
+                if (LoadCompleted)
+                {
+                    return;
+                }
+            }
+        });
+    }
 
+    protected override async void OnStart()
+    {
         Load();
-        LoadAssetBundles();
+        await LoadAssetBundles();
     }
 
     public void DownloadNewFile(string fileName)
@@ -127,7 +141,7 @@ public class DataManager : Singleton_DontDestroy<DataManager>
         });
     }
 
-    async void LoadAssetBundles()
+    async Task LoadAssetBundles()
     {
         var path = Path.Combine(Application.persistentDataPath, AssetBundles);
         DirectoryInfo directoryInfo = new DirectoryInfo(path);
@@ -196,6 +210,7 @@ public class DataManager : Singleton_DontDestroy<DataManager>
         }
         
         LoadCompleted = true;
+        SceneLoadManager.Instance.Load(KindOfScene.Lobby);
     }
 
     IEnumerator Coroutine_CacheSpritesFromStorage()

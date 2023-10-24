@@ -8,11 +8,11 @@ public class ImageLoadTest : MonoBehaviour
     Image image;
     
     // Start is called before the first frame update
-    void Start()
+    /*void Start()
     {
         image = GetComponent<Image>();
         StartCoroutine(LoadImage());
-    }
+    }*/
 
     // Update is called once per frame
     void Update()
@@ -20,7 +20,7 @@ public class ImageLoadTest : MonoBehaviour
         
     }
 
-    IEnumerator LoadImage()
+    /*IEnumerator LoadImage()
     {
         while (!DataManager.Instance.LoadCompleted) yield return null;
         Debug.Log("s");
@@ -32,5 +32,5 @@ public class ImageLoadTest : MonoBehaviour
         yield return new WaitForSeconds(1f);
         sprite = DataManager.Instance.GetSprite(SpriteAssetBundleTag.UI, "UI_Nickname_Level.png");
         image.sprite = sprite;
-    }
+    }*/
 }

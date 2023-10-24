@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3720320216
+CRC: 1604995504
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: a2ec70601c90c662353d251b59d0fd5c
+    Hash: 2a71e4cffb81a780efd682e2e74892f4
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2d8df09e698f722ada1caa03d3413830
@@ -17,11 +17,14 @@ SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/02_Sprites/UI/Lobby/UI_Options.png
 - "Assets/02_Sprites/05_UIKeyButton/\uBA54\uB274 - \uAC8C\uC784 \uC885\uB8CC,\uC124\uC815.png"
+- Assets/02_Sprites/UI/Lobby/UI_Events.png
 - "Assets/02_Sprites/05_UIKeyButton/\uBC29\uD5A5\uD0A4(\uC704).png"
+- Assets/02_Sprites/UI/Lobby/UI_MailBox.png
 - "Assets/02_Sprites/05_UIKeyButton/\uC544\uC774\uD15C \uC0AC\uC6A9 2.png"
 - "Assets/02_Sprites/05_UIKeyButton/\uC0C1\uD638\uC791\uC6A9.png"
 - Assets/02_Sprites/UI/Lobby/UI_SunCoin.png
 - "Assets/02_Sprites/05_UIKeyButton/\uC544\uC774\uD15C \uC0AC\uC6A9 4.png"
+- Assets/02_Sprites/UI/Lobby/UI_LevelBG.png
 - Assets/02_Sprites/UI/Lobby/UI_NEMO.png
 - "Assets/02_Sprites/05_UIKeyButton/\uC544\uC774\uD15C \uC0AC\uC6A9 1.png"
 - "Assets/02_Sprites/05_UIKeyButton/\uACF5\uACA9.png"
@@ -30,6 +33,7 @@ Assets:
 - "Assets/02_Sprites/05_UIKeyButton/\uC624\uB978\uCABD.png"
 - "Assets/02_Sprites/05_UIKeyButton/\uC544\uC774\uD15C \uC0AC\uC6A9 3.png"
 - Assets/02_Sprites/UI/Lobby/UI_Achievements.png
+- Assets/02_Sprites/UI/Lobby/UI_EditGarden.png
 - Assets/02_Sprites/UI/Lobby/UI_Friends.png
 - "Assets/02_Sprites/05_UIKeyButton/\uBC84\uD2BC.psd"
 - Assets/02_Sprites/UI/Lobby/UI_Fight.png

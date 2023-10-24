@@ -13,13 +13,15 @@ public class MainLobbyButton : MonoBehaviour
     void Start()
     {
         var splitResult = name.Split("_");
+        var spriteName = string.Format("UI_{0}.png", splitResult[1]);
         int.TryParse(splitResult[0], out int order);
         kindOfMenu = (LobbyMainMenu)order;
         button = GetComponent<Button>();
         image = GetComponent<Image>();
         
         button.onClick.AddListener(OnPressButton);
-        //image.sprite = DataManager.Instance.GetSprite()
+        //Debug.Log(spriteName);
+        image.sprite = DataManager.Instance.GetSprite(SpriteAssetBundleTag.UI, spriteName);
     }
 
     public void OnPressButton()
