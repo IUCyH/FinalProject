@@ -1,60 +1,45 @@
-using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class BattleButton : MonoBehaviour
 {
-
     [SerializeField]
-    List<int> skillNum = new List<int>();
-
+    List<GameObject> sequenceImages = new List<GameObject>();
 
     [SerializeField]
     List<bool> isSkill = new List<bool>();
 
-    int skillAddNum;
-
-
     //순서를 차례대로 부여 ++;
     //1 -> 2 -> 3 선택 상태에서 1을 뺐다면 1 -> 4
-
-
     //들어온 수가 가장 큰가?
-    bool isBigger;
-
-    public void SaveNum(int skillID)
+    void Sequence(RectTransform buttonTransform)
     {
-        //if skillID가 안 눌렸을 때
-        isSkill[skillID] = true; //안 눌린 버튼 설정
-
-        
-        for (int i = 0;  skillNum.Count < i; i++)
+        for (int i = 0; isSkill.Count < i; i++)
         {
-            if (skillNum[i] < skillID)
+            if (isSkill[i] == false)
             {
-                isBigger = true;
-            }
-            else
-            {
-                isBigger = false;
-                skillNum[i] += skillAddNum; //0번째부터 아니면 0 번호 대입
+                print("Yes");
+                Num(i, buttonTransform);
+                break;
+                //0번째부터 아니면 0 번호 대입
             }
         }
-
-        if (isBigger)
-        {
-            skillNum[skillID] += skillAddNum; //번호 설정 (번호 이미지)
-            skillAddNum++;
-        }
-
     }
 
-    public void MinusNum(int skillID)
+    void Num(int addNum, RectTransform buttonTransform)
     {
-        //else
-        isSkill[skillID] = false; //눌린 버튼 해제
+        sequenceImages[addNum].GetComponent<RectTransform>().anchoredPosition = buttonTransform.anchoredPosition;
+        sequenceImages[addNum].SetActive(true);
+        isSkill[addNum] = true;
+    }
 
+    // 버튼을 눌렀을 때 호출될 함수
+    public void ClickBtn()
+    {
+        // 방금 클릭한 게임 오브젝트를 가져와서 저장
+        GameObject clickObject = EventSystem.current.currentSelectedGameObject;
+
+        Sequence(clickObject.GetComponent<RectTransform>());
     }
 }
