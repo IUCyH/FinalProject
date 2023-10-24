@@ -8,6 +8,7 @@ public class MainLobbyButton : MonoBehaviour
 {
     LobbyMainMenu kindOfMenu;
     Button button;
+    Image image;
     
     void Start()
     {
@@ -15,8 +16,10 @@ public class MainLobbyButton : MonoBehaviour
         int.TryParse(splitResult[0], out int order);
         kindOfMenu = (LobbyMainMenu)order;
         button = GetComponent<Button>();
+        image = GetComponent<Image>();
         
         button.onClick.AddListener(OnPressButton);
+        //image.sprite = DataManager.Instance.GetSprite()
     }
 
     public void OnPressButton()
