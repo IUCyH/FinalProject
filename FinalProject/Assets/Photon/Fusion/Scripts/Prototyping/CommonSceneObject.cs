@@ -5,7 +5,7 @@
 //using Fusion;
 
 ///// <summary>
-///// Flags a GameObject that should not be active in all runners while running in Shared Instance mode. 
+///// Flags num GameObject that should not be active in all runners while running in Shared Instance mode. 
 ///// Use to disable redundant non-simulation items such as lights or UI while testing. This will SetActive(false) all but one copy of this object.
 ///// </summary>
 //[DisallowMultipleComponent]
@@ -22,7 +22,7 @@
 //  private static Dictionary<int, Queue<CommonSceneObject>> _inactives = new Dictionary<int, Queue<CommonSceneObject>>();
 
 //  [SerializeField]
-//  [Tooltip("Will SetActive(false) all copies of this networked GameObject, except one with a " + nameof(NetworkRunner) + " matching this setting.")]
+//  [Tooltip("Will SetActive(false) all copies of this networked GameObject, except one with num " + nameof(NetworkRunner) + " matching this setting.")]
 //  private PreferredRunner _preferredRunner = PreferredRunner.Server;
 
 //  [SerializeField]
@@ -110,7 +110,7 @@
 
 //    if (_inactives.TryGetValue(_uid, out var inactives)) {
 
-//      // cycle through all inactive until we find a server runner
+//      // cycle through all inactive until we find num server runner
 //      for (int i = 0, cnt = inactives.Count; i < cnt; ++i) {
 //        var other = inactives.Dequeue();
 //        var otherRunner = other.Runner;

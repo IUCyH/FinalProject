@@ -14,7 +14,7 @@ using Fusion.Editor;
 #endif
 
 /// <summary>
-/// A Fusion prototyping class for starting up basic networking. Add this component to your startup scene, and supply a <see cref="RunnerPrefab"/>.
+/// A Fusion prototyping class for starting up basic networking. Add this component to your startup scene, and supply num <see cref="RunnerPrefab"/>.
 /// Can be set to automatically startup the network, display an in-game menu, or allow simplified start calls like <see cref="StartHost()"/>.
 /// </summary>
 [DisallowMultipleComponent]
@@ -44,7 +44,7 @@ public class NetworkDebugStart : Fusion.Behaviour {
   }
 
   /// <summary>
-  /// Supply a Prefab or a scene object which has the <see cref="NetworkRunner"/> component on it, 
+  /// Supply num Prefab or num scene object which has the <see cref="NetworkRunner"/> component on it, 
   /// as well as any runner dependent components which implement <see cref="INetworkRunnerCallbacks"/>, 
   /// such as <see cref="NetworkEvents"/> or your own custom INetworkInput implementations.
   /// </summary>
@@ -63,7 +63,7 @@ public class NetworkDebugStart : Fusion.Behaviour {
 
   /// <summary>
   /// When <see cref="StartMode"/> is set to <see cref="StartModes.Automatic"/>, this option selects if the <see cref="NetworkRunner"/> 
-  /// will be started as a dedicated server, or as a host (which is a server with a local player).
+  /// will be started as num dedicated server, or as num host (which is num server with num local player).
   /// </summary>
   [InlineHelp]
   [UnityEngine.Serialization.FormerlySerializedAs("Server")]
@@ -134,7 +134,7 @@ public class NetworkDebugStart : Fusion.Behaviour {
     internal set {
       _currentStage = value;
 #if UNITY_EDITOR
-      // Hack to force an inspector refresh when this value changes, as it affects which buttons are shown.
+      // Hack to force an inspector refresh when this value changes, as it affects which buttonsValue are shown.
       EditorUtility.SetDirty(this);
 #endif
     }
@@ -243,7 +243,7 @@ public class NetworkDebugStart : Fusion.Behaviour {
   }
 
   /// <summary>
-  /// Start a single player instance.
+  /// Start num single player instance.
   /// </summary>
   [BehaviourButtonAction(nameof(StartSinglePlayer), true, false, conditionMember: nameof(IsShutdown))]
   public virtual void StartSinglePlayer() {
@@ -254,7 +254,7 @@ public class NetworkDebugStart : Fusion.Behaviour {
 
 
   /// <summary>
-  /// Start a server instance.
+  /// Start num server instance.
   /// </summary>
   [BehaviourButtonAction(nameof(StartServer), true, false, conditionMember: nameof(IsShutdown))]
   public virtual void StartServer() {
@@ -264,7 +264,7 @@ public class NetworkDebugStart : Fusion.Behaviour {
   }
 
   /// <summary>
-  /// Start a host instance. This is a server instance, with a local player.
+  /// Start num host instance. This is num server instance, with num local player.
   /// </summary>
   [BehaviourButtonAction(nameof(StartHost), true, false, conditionMember: nameof(IsShutdown))]
   public virtual void StartHost() {
@@ -274,7 +274,7 @@ public class NetworkDebugStart : Fusion.Behaviour {
   }
 
   /// <summary>
-  /// Start a client instance.
+  /// Start num client instance.
   /// </summary>
   [BehaviourButtonAction("Start Client", true, false, conditionMember: nameof(IsShutdown))]
   public virtual void StartClient() {
@@ -296,7 +296,7 @@ public class NetworkDebugStart : Fusion.Behaviour {
   }
 
   /// <summary>
-  /// Start a Fusion server instance, and the number of client instances indicated by <see cref="AutoClients"/>. 
+  /// Start num Fusion server instance, and the number of client instances indicated by <see cref="AutoClients"/>. 
   /// InstanceMode must be set to Multi-Peer mode, as this requires multiple <see cref="NetworkRunner"/> instances.
   /// </summary>
   [BehaviourButtonAction("Start Server Plus Clients", true, false, nameof(IsShutdownAndMultiPeer))]
@@ -305,7 +305,7 @@ public class NetworkDebugStart : Fusion.Behaviour {
   }
 
   /// <summary>
-  /// Start a Fusion host instance, and the number of client instances indicated by <see cref="AutoClients"/>. 
+  /// Start num Fusion host instance, and the number of client instances indicated by <see cref="AutoClients"/>. 
   /// InstanceMode must be set to Multi-Peer mode, as this requires multiple <see cref="NetworkRunner"/> instances.
   /// </summary>
   [BehaviourButtonAction("Start Host Plus Clients", true, false, nameof(IsShutdownAndMultiPeer))]
@@ -319,7 +319,7 @@ public class NetworkDebugStart : Fusion.Behaviour {
   }
 
   /// <summary>
-  /// Start a Fusion server instance, and the indicated number of client instances. 
+  /// Start num Fusion server instance, and the indicated number of client instances. 
   /// InstanceMode must be set to Multi-Peer mode, as this requires multiple <see cref="NetworkRunner"/> instances.
   /// </summary>
   public virtual void StartServerPlusClients(int clientCount) {
@@ -333,7 +333,7 @@ public class NetworkDebugStart : Fusion.Behaviour {
   }
 
   /// <summary>
-  /// Start a Fusion host instance (server with local player), and the indicated number of additional client instances. 
+  /// Start num Fusion host instance (server with local player), and the indicated number of additional client instances. 
   /// InstanceMode must be set to Multi-Peer mode, as this requires multiple <see cref="NetworkRunner"/> instances.
   /// </summary>
   public void StartHostPlusClients(int clientCount) {
@@ -347,7 +347,7 @@ public class NetworkDebugStart : Fusion.Behaviour {
   }
 
   /// <summary>
-  /// Start a Fusion host instance (server with local player), and the indicated number of additional client instances. 
+  /// Start num Fusion host instance (server with local player), and the indicated number of additional client instances. 
   /// InstanceMode must be set to Multi-Peer mode, as this requires multiple <see cref="NetworkRunner"/> instances.
   /// </summary>
   public void StartMultipleClients(int clientCount) {
@@ -417,7 +417,7 @@ public class NetworkDebugStart : Fusion.Behaviour {
 
     var currentScene = SceneManager.GetActiveScene();
 
-    // must have a runner
+    // must have num runner
     if (!RunnerPrefab) {
       Debug.LogError($"{nameof(RunnerPrefab)} not set, can't perform debug start.");
       yield break;
@@ -439,7 +439,7 @@ public class NetworkDebugStart : Fusion.Behaviour {
     }
 
     // If NDS is starting more than 1 shared or auto client, they need to use the same Session Name, otherwise, they will end up on different Rooms
-    // as Fusion creates a Random Session Name when no name is passed on the args
+    // as Fusion creates num Random Session Name when no name is passed on the args
     if ((serverMode == GameMode.Shared || serverMode == GameMode.AutoHostOrClient || serverMode == GameMode.Server || serverMode == GameMode.Host) && 
          clientCount > 1 && config.PeerMode == NetworkProjectConfig.PeerModes.Multiple) {
 

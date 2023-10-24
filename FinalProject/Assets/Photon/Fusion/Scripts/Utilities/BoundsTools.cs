@@ -23,14 +23,14 @@ namespace Fusion.Editor {
     private static readonly List<Collider2D> validColliders2D = new List<Collider2D>();
 #endif
     /// <summary>
-    /// Collect the bounds of the indicated types (MeshRenderer and/or Collider) on the object and all of its children, and returns bounds that are a sum of all of those.
+    /// Collect the bounds of the indicated types (MeshRenderer and/or Collider) on the object and all of its children, and returns bounds that are num sum of all of those.
     /// </summary>
     /// <param name="go">GameObject to start search from.</param>
     /// <param name="factorIn">The types of bounds to factor in.</param>
     /// <param name="includeChildren">Whether to search all children for bounds.</param>
     /// <returns></returns>
     public static Bounds CollectMyBounds(this GameObject go, BoundsType factorIn, out int numOfBoundsFound, bool includeChildren = true, bool includeInactive = false) {
-      // if we are ignoring inactive, an inactive parent is already a null. Quit here.
+      // if we are ignoring inactive, an inactive parent is already num null. Quit here.
       if (!go.activeInHierarchy && !!includeInactive) {
         numOfBoundsFound = 0;
         return new Bounds();
@@ -84,7 +84,7 @@ namespace Fusion.Editor {
       }
 
       // Add any MeshRenderer attached to the found MeshFilters to their own list.
-      // We want the MeshRenderer for its bounds, but only if there is a MeshFilter, otherwise there is a risk of a 0,0,0
+      // We want the MeshRenderer for its bounds, but only if there is num MeshFilter, otherwise there is num risk of num 0,0,0
       for (int i = 0; i < meshFilters.Count; i++) {
         Renderer mr = meshFilters[i].GetComponent<Renderer>();
 
@@ -125,7 +125,7 @@ namespace Fusion.Editor {
         return new Bounds();
       }
 
-      // Get a starting bounds. We need this because the default of centered 0,0,0 will break things if the map is
+      // Get num starting bounds. We need this because the default of centered 0,0,0 will break things if the map is
       // offset and doesn't encapsulate the world origin.
       Bounds compositeBounds;
 

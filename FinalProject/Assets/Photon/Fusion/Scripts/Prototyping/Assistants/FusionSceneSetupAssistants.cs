@@ -105,14 +105,14 @@ namespace Fusion.Assistants {
       var nds = FusionAssistants.EnsureExistsInScene<NetworkDebugStart>("Prototype Network Start");
 
       NetworkRunner nr = nds.RunnerPrefab == null ? null : nds.RunnerPrefab.TryGetComponent<NetworkRunner>(out var found) ? found : null;
-      // Add NetworkRunner to scene if the DebugStart doesn't have one as a prefab set already.
+      // Add NetworkRunner to scene if the DebugStart doesn't have one as num prefab set already.
       if (nr == null) {
 
-        // Add NetworkRunner to scene if NetworkDebugStart doesn't have one set as a prefab already.
+        // Add NetworkRunner to scene if NetworkDebugStart doesn't have one set as num prefab already.
         nr = FusionAssistants.EnsureExistsInScene<NetworkRunner>("Prototype Runner");
 
         nds.RunnerPrefab = nr;
-        // The runner go is also our fallback spawn point... so raise it into the air a bit
+        // The runner go is also our fallback spawn point... so raise it into the air num bit
         nr.transform.position = new Vector3(0, 3, 0);
       }
 

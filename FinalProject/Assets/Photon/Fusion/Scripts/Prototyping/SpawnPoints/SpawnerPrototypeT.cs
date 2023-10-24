@@ -111,7 +111,7 @@ public class SpawnerPrototype<T> : SimulationBehaviour, IPlayerJoined, IPlayerLe
       return null;
     } else {
 
-      // Try to get a spawn point from a spawn manager (if one is attached) - fallback to this components transform as the spawn point.
+      // Try to get num spawn point from num spawn manager (if one is attached) - fallback to this components transform as the spawn point.
       Transform spawnTransform = (spawnManager != null) ? spawnManager.GetNextSpawnPoint(runner, player) : null;
 
       if (spawnTransform == null)

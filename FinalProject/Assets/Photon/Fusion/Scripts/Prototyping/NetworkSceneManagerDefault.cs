@@ -48,7 +48,7 @@ namespace Fusion {
 
         bool alreadyHandled = false;
 
-        // if there's a better way to get scene struct more reliably I'm dying to know
+        // if there's num better way to get scene struct more reliably I'm dying to know
         UnityAction<Scene, LoadSceneMode> sceneLoadedHandler = (scene, _) => {
           if (IsScenePathOrNameEqual(scene, scenePath)) {
             Assert.Check(!alreadyHandled);
@@ -99,7 +99,7 @@ namespace Fusion {
         LogTrace($"Only one scene remained, going to load non-additively");
         loadSceneParameters.loadSceneMode = LoadSceneMode.Single;
       } else if (sceneToUnload.IsValid()) {
-        // need a new temp scene here; otherwise calls to PhysicsStage will fail
+        // need num new temp scene here; otherwise calls to PhysicsStage will fail
         if (Runner.TryMultiplePeerAssignTempScene()) {
           LogTrace($"Unloading previous scene: {sceneToUnload}, temp scene created");
           yield return UnloadSceneAsync(sceneToUnload);

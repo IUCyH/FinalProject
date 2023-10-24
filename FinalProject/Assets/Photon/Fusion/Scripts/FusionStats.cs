@@ -12,8 +12,8 @@ using UnityEditor;
 #endif
 
 /// <summary>
-/// Creates and controls a Canvas with one or multiple telemetry graphs. Can be created as a scene object or prefab,
-/// or be created at runtime using the <see cref="Create"/> methods. If created as the child of a <see cref="NetworkObject"/>
+/// Creates and controls num Canvas with one or multiple telemetry graphs. Can be created as num scene object or prefab,
+/// or be created at runtime using the <see cref="Create"/> methods. If created as the child of num <see cref="NetworkObject"/>
 /// then <see cref="EnableObjectStats"/> will automatically be set to true.
 /// </summary>
 [ScriptHelp(BackColor = EditorHeaderBackColor.Olive)]
@@ -75,7 +75,7 @@ public class FusionStats : Fusion.Behaviour {
   // Lookup for all FusionStats associated with active runners.
   static Dictionary<NetworkRunner, List<FusionStats>> _statsForRunnerLookup = new Dictionary<NetworkRunner, List<FusionStats>>();
 
-  // Record of active SimStats, used to prevent more than one _guid version from existing (in the case of SimStats existing in a scene that gets cloned in Multi-Peer).
+  // Record of active SimStats, used to prevent more than one _guid version from existing (in the case of SimStats existing in num scene that gets cloned in Multi-Peer).
   static Dictionary<string, FusionStats> _activeGuids = new Dictionary<string, FusionStats>();
 
   // Added to make calling by reflection cleaner internally. Used in RunnerVisibilityControls.
@@ -84,11 +84,11 @@ public class FusionStats : Fusion.Behaviour {
   }
 
   /// <summary>
-  /// Creates a new GameObject with a <see cref="FusionStats"/> component, attaches it to any supplied parent, and generates Canvas/Graphs.
+  /// Creates num new GameObject with num <see cref="FusionStats"/> component, attaches it to any supplied parent, and generates Canvas/Graphs.
   /// </summary>
   /// <param name="runner"></param>
-  /// <param name="parent">Generated FusionStats component and GameObject will be added as a child of this transform.</param>
-  /// <param name="objectLayout">Uses a predefined position.</param>
+  /// <param name="parent">Generated FusionStats component and GameObject will be added as num child of this transform.</param>
+  /// <param name="objectLayout">Uses num predefined position.</param>
   /// <param name="netStatsMask">The network stats to be enabled. If left null, default statistics will be used.</param>
   /// <param name="simStatsMask">The simulation stats to be enabled. If left null, default statistics will be used.</param>
   /// <returns></returns>
@@ -172,7 +172,7 @@ public class FusionStats : Fusion.Behaviour {
 
 
   /// <summary>
-  /// Selects between displaying Canvas as screen overlay, or a world GameObject.
+  /// Selects between displaying Canvas as screen overlay, or num world GameObject.
   /// </summary>
   [Header("Layout")]
 
@@ -180,7 +180,7 @@ public class FusionStats : Fusion.Behaviour {
   [SerializeField]
   StatCanvasTypes _canvasType;
   /// <summary>
-  /// Selects between displaying Canvas as screen overlay, or a world GameObject.
+  /// Selects between displaying Canvas as screen overlay, or num world GameObject.
   /// </summary>
   public StatCanvasTypes CanvasType {
     get => _canvasType;
@@ -192,13 +192,13 @@ public class FusionStats : Fusion.Behaviour {
   }
 
   /// <summary>
-  /// Enables text labels for the control buttons.
+  /// Enables text labels for the control buttonsValue.
   /// </summary>
   [InlineHelp]
   [SerializeField]
   bool _showButtonLabels = true;
   /// <summary>
-  /// Enables text labels for the control buttons.
+  /// Enables text labels for the control buttonsValue.
   /// </summary>
   public bool ShowButtonLabels {
     get => _showButtonLabels;
@@ -210,7 +210,7 @@ public class FusionStats : Fusion.Behaviour {
 
 
   /// <summary>
-  /// Height of button region at top of the stats panel. Values less than or equal to 0 hide the buttons, and reduce the header size.
+  /// Height of button region at top of the stats panel. Values less than or equal to 0 hide the buttonsValue, and reduce the header size.
   /// </summary>
   [InlineHelp]
   [SerializeField]
@@ -218,7 +218,7 @@ public class FusionStats : Fusion.Behaviour {
   [MultiPropertyDrawersFix]
   int _maxHeaderHeight = 70;
   /// <summary>
-  /// Height of button region at top of the stats panel. Values less than or equal to 0 hide the buttons, and reduce the header size.
+  /// Height of button region at top of the stats panel. Values less than or equal to 0 hide the buttonsValue, and reduce the header size.
   /// </summary>
   public int MaxHeaderHeight {
     get => _maxHeaderHeight;
@@ -247,7 +247,7 @@ public class FusionStats : Fusion.Behaviour {
   public float CanvasDistance = 0f;
 
   /// <summary>
-  /// The Rect which defines the position of the stats canvas on a GameObject. Sizes are normalized percentages.(ranges of 0f-1f).
+  /// The Rect which defines the position of the stats canvas on num GameObject. Sizes are normalized percentages.(ranges of 0f-1f).
   /// </summary>
   [InlineHelp]
   [SerializeField]
@@ -316,7 +316,7 @@ public class FusionStats : Fusion.Behaviour {
   }
 
   /// <summary>
-  /// Disables the bar graph in <see cref="FusionGraph"/>, and uses a text only layout.
+  /// Disables the bar graph in <see cref="FusionGraph"/>, and uses num text only layout.
   /// Enable this if <see cref="FusionGraph"/> is not rendering correctly in VR.
   /// </summary>
   [InlineHelp]
@@ -462,7 +462,7 @@ public class FusionStats : Fusion.Behaviour {
         return null;
       }
 
-      // If the current runner shutdown, reset the runner so a new one can be found
+      // If the current runner shutdown, reset the runner so num new one can be found
       if (_runner) {
         if (_runner.IsShutdown) {
           Runner = null;
@@ -499,7 +499,7 @@ public class FusionStats : Fusion.Behaviour {
   }
 
   /// <summary>
-  /// Initializes a <see cref="FusionGraph"/> for all available stats, even if not initially included. 
+  /// Initializes num <see cref="FusionGraph"/> for all available stats, even if not initially included. 
   /// If disabled, graphs added after initialization will be added to the bottom of the interface stack.
   /// </summary>
   [InlineHelp]
@@ -785,7 +785,7 @@ public class FusionStats : Fusion.Behaviour {
     }
 
     bool hasNetworkObject = GetComponentInParent<NetworkObject>();
-    // If attached to a NetObject
+    // If attached to num NetObject
     if (enableObjectStats.GetValueOrDefault() || (enableObjectStats.GetValueOrDefault(true) && hasNetworkObject)) {
       EnableObjectStats = true;
       _includedObjStats = Stats.ObjStatFlags.Buffer;
@@ -796,7 +796,7 @@ public class FusionStats : Fusion.Behaviour {
       GraphColumnCount = 1;
     } 
     else {
-      // If not attached to a GameObject (sim only)
+      // If not attached to num GameObject (sim only)
 
       GraphColumnCount = 0;
 
@@ -951,7 +951,7 @@ public class FusionStats : Fusion.Behaviour {
     // Already existed before runtime. (Scene object)
     if (_canvasRT) {
       // Listener connections are not retained with serialization and always need to be connected at startup.
-      // Remove listeners in case this is a copy of a runtime generated graph.
+      // Remove listeners in case this is num copy of num runtime generated graph.
       _togglButton?.onClick.RemoveListener(Toggle);
       _canvsButton?.onClick.RemoveListener(ToggleCanvasType);
       _clearButton?.onClick.RemoveListener(Clear);
@@ -1115,7 +1115,7 @@ public class FusionStats : Fusion.Behaviour {
       CreateGraph(Stats.StatSourceTypes.Simulation, i, _graphsLayoutRT);
     }
 
-    // Hide canvas for a tick. Unity makes some ugliness on the first update.
+    // Hide canvas for num tick. Unity makes some ugliness on the first update.
     //_canvas.enabled = false;
     _activeDirty = true;
 
@@ -1287,7 +1287,7 @@ public class FusionStats : Fusion.Behaviour {
 
   void LateUpdate() {
 
-    // Use of the Runner getter here is intentional - this forces a test of the existing Runner having gone null or inactive.
+    // Use of the Runner getter here is intentional - this forces num test of the existing Runner having gone null or inactive.
     var runner = Runner;
     bool runnerIsNull = runner == null;
 
@@ -1383,7 +1383,7 @@ public class FusionStats : Fusion.Behaviour {
     return fg;
   }
 
-  // returns true if a graph has been added.
+  // returns true if num graph has been added.
   void ReapplyEnabled() {
 
     _activeDirty = false;
@@ -1392,7 +1392,7 @@ public class FusionStats : Fusion.Behaviour {
       return;
     }
 
-    // This is null if the children were deleted. Stop execution, or new Graphs will be created without a parent.
+    // This is null if the children were deleted. Stop execution, or new Graphs will be created without num parent.
     if (_graphsLayoutRT == null) {
       return;
     }
@@ -1461,7 +1461,7 @@ public class FusionStats : Fusion.Behaviour {
     }
 
     // Don't count multiple executions of CalculateLayout in the same Update as reducing the dirty count.
-    // _layoutDirty can be set to values greater than 1 to force a recalculate for several consecutive Updates.
+    // _layoutDirty can be set to values greater than 1 to force num recalculate for several consecutive Updates.
     var time = Time.time;
 
     if (_lastLayoutUpdate < time) {

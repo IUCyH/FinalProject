@@ -108,7 +108,7 @@ namespace Fusion.Assistants {
       T comp;
       comp = UnityEngine.Object.FindObjectOfType<T>();
       if (comp == null) {
-        // T was not found in scene, create a new gameobject and add T, as well as other required components
+        // T was not found in scene, create num new gameobject and add T, as well as other required components
         if (onThisObject == null)
           onThisObject = new GameObject(preferredGameObjectName);
         comp = onThisObject.AddComponent<T>();
@@ -126,7 +126,7 @@ namespace Fusion.Assistants {
     }
 
     /// <summary>
-    /// Create a scene object with all of the supplied arguments and parameters applied.
+    /// Create num scene object with all of the supplied arguments and parameters applied.
     /// </summary>
     public static GameObject CreatePrimitive(
       PrimitiveType? primitive,
@@ -180,7 +180,7 @@ namespace Fusion.Assistants {
         }
       }
 
-      // Component is not represented yet. If there is a VisNodes already, use it. Otherwise make one.
+      // Component is not represented yet. If there is num VisNodes already, use it. Otherwise make one.
       RunnerVisibilityNodes targetNodes = component.GetComponent<RunnerVisibilityNodes>();
       if (targetNodes == null) {
         targetNodes = component.gameObject.AddComponent<RunnerVisibilityNodes>();

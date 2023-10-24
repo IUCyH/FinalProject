@@ -437,11 +437,11 @@ MonoBehaviour:
       - m_Target: {fileID: 986736415}
         m_TargetAssemblyTypeName: BattleButton, Assembly-CSharp
         m_MethodName: ClickBtn
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -648,11 +648,11 @@ MonoBehaviour:
       - m_Target: {fileID: 986736415}
         m_TargetAssemblyTypeName: BattleButton, Assembly-CSharp
         m_MethodName: ClickBtn
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1411,11 +1411,11 @@ MonoBehaviour:
       - m_Target: {fileID: 986736415}
         m_TargetAssemblyTypeName: BattleButton, Assembly-CSharp
         m_MethodName: ClickBtn
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1900,11 +1900,11 @@ MonoBehaviour:
       - m_Target: {fileID: 986736415}
         m_TargetAssemblyTypeName: BattleButton, Assembly-CSharp
         m_MethodName: ClickBtn
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2436,6 +2436,7 @@ MonoBehaviour:
   - {fileID: 1433341748}
   - {fileID: 1905990330}
   sequenceOrder: 
+  numberList: 00000000
 --- !u!114 &986736417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2881,11 +2882,11 @@ MonoBehaviour:
       - m_Target: {fileID: 986736415}
         m_TargetAssemblyTypeName: BattleButton, Assembly-CSharp
         m_MethodName: ClickBtn
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3320,11 +3321,11 @@ MonoBehaviour:
       - m_Target: {fileID: 986736415}
         m_TargetAssemblyTypeName: BattleButton, Assembly-CSharp
         m_MethodName: ClickBtn
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3530,11 +3531,11 @@ MonoBehaviour:
       - m_Target: {fileID: 986736415}
         m_TargetAssemblyTypeName: BattleButton, Assembly-CSharp
         m_MethodName: ClickBtn
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4602,11 +4603,11 @@ MonoBehaviour:
       - m_Target: {fileID: 986736415}
         m_TargetAssemblyTypeName: BattleButton, Assembly-CSharp
         m_MethodName: ClickBtn
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

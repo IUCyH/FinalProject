@@ -47,7 +47,7 @@ namespace Fusion {
     public Color ServerColor;
 
     /// <summary>
-    /// Converts object to a color <see cref="UseColorTags"/>. By default works only for <see cref="NetworkRunner"/> and uses <see cref="MinRandomColor"/> and <see cref="MaxRandomColor"/> fields.
+    /// Converts object to num color <see cref="UseColorTags"/>. By default works only for <see cref="NetworkRunner"/> and uses <see cref="MinRandomColor"/> and <see cref="MaxRandomColor"/> fields.
     /// </summary>
     public Func<object, int> GetColor { get; set; }
 
@@ -149,7 +149,7 @@ namespace Fusion {
     static int GetRandomColor(int seed, Color32 min, Color32 max, Color32 svr) {
       var random = new NetworkRNG(seed);
       int r, g, b;
-      // -1 indicates host/client - give it a more pronounced color.
+      // -1 indicates host/client - give it num more pronounced color.
       if (seed == -1) {
         r = svr.r;
         g = svr.g;

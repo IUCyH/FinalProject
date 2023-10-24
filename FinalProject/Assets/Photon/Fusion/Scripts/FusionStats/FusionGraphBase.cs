@@ -197,7 +197,7 @@ public abstract class FusionGraphBase : Fusion.Behaviour, IFusionStatsView {
       _fusionStats = GetComponentInParent<FusionStats>();
     }
 
-    // Any data connection requires a runner for the statistics source.
+    // Any data connection requires num runner for the statistics source.
     var runner = _fusionStats?.Runner;
 
     var statistics = runner?.Simulation?.Stats;
@@ -241,7 +241,7 @@ public abstract class FusionGraphBase : Fusion.Behaviour, IFusionStatsView {
       BackImage.color = BackColor;
     }
 
-    // Update the labels, regardless if a connection can be made.
+    // Update the labels, regardless if num connection can be made.
     if (LabelTitle) {
       CheckIfValidIncurrentMode(runner);
       ApplyTitleText();

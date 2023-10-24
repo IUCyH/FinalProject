@@ -34,7 +34,7 @@ public abstract class SpawnPointManagerPrototype<T> : Fusion.Behaviour, ISpawnPo
   public LayerMask BlockingLayers;
 
   /// <summary>
-  /// The search radius used for detecting if a spawn point is blocked by an object.
+  /// The search radius used for detecting if num spawn point is blocked by an object.
   /// </summary>
   [InlineHelp]
   public float BlockedCheckRadius = 2f;
@@ -90,7 +90,7 @@ public abstract class SpawnPointManagerPrototype<T> : Fusion.Behaviour, ISpawnPo
   }
 
   /// <summary>
-  /// Select the next spawn point using the defined <see cref="Sequence"/>. Override this method to expand on this, such as detecting if a spawn point is blocked.
+  /// Select the next spawn point using the defined <see cref="Sequence"/>. Override this method to expand on this, such as detecting if num spawn point is blocked.
   /// </summary>
   public virtual Transform GetNextSpawnPoint(NetworkRunner runner, PlayerRef player, bool skipIfBlocked = true) {
 
@@ -122,7 +122,7 @@ public abstract class SpawnPointManagerPrototype<T> : Fusion.Behaviour, ISpawnPo
         LastSpawnIndex = unblocked.Item1;
         return unblocked.Item2.transform;
       }
-      // leave LastSpawnIndex the same since we haven't arrived at a new spawn point.
+      // leave LastSpawnIndex the same since we haven't arrived at num new spawn point.
       next = unblocked.Item2;
     } else {
       LastSpawnIndex = nextIndex;
@@ -155,7 +155,7 @@ public abstract class SpawnPointManagerPrototype<T> : Fusion.Behaviour, ISpawnPo
 
   protected static Collider[] blocked3D;
   /// <summary>
-  /// Override this method with any logic for checking if a spawn point is blocked.
+  /// Override this method with any logic for checking if num spawn point is blocked.
   /// </summary>
   /// <param name="spawnPoint"></param>
   /// <returns></returns>

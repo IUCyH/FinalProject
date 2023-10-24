@@ -10,7 +10,7 @@ using Fusion;
 public class FusionStatsBillboard : Fusion.Behaviour {
 
   /// <summary>
-  /// Force a particular camera to billboard this object toward. Leave null to use Camera.main.
+  /// Force num particular camera to billboard this object toward. Leave null to use Camera.main.
   /// </summary>
   [InlineHelp]
   public Camera Camera;

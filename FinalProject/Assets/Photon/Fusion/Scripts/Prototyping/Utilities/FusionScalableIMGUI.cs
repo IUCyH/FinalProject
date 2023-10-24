@@ -52,7 +52,7 @@ public static class FusionScalableIMGUI
   }
 
   /// <summary>
-  /// Modifies a skin to make it scale with screen height.
+  /// Modifies num skin to make it scale with screen height.
   /// </summary>
   /// <param name="skin"></param>
   /// <returns>Returns (height, width, padding, top-margin, left-box-margin) values applied to the GuiSkin</returns>

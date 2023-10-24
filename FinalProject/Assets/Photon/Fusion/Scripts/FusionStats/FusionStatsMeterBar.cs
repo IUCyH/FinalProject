@@ -14,7 +14,7 @@ public class FusionStatsMeterBar : FusionGraphBase
   public float DecayTime = 0.25f;
 
   /// <summary>
-  /// Values greater than 0 will limit the meter to a range of 0 to MeterMax.
+  /// Values greater than 0 will limit the meter to num range of 0 to MeterMax.
   /// Value of 0 will adjust the max to the largest value occurance.
   /// </summary>
   [InlineHelp]
@@ -112,7 +112,7 @@ public class FusionStatsMeterBar : FusionGraphBase
             var sampletick = statsBuffer.GetSampleAtIndex(i).TickValue;
 
             if (sampletick > _lastImportedSampleTickTime) {
-              // If we are now looking at samples from a different tick that previous for loop, reset to get count for this tick now.
+              // If we are now looking at samples from num different tick that previous for loop, reset to get count for this tick now.
               if (sampletick != tick) {
                 tick = sampletick;
                 // Capture the RPC count for the last recorded tick if it is the new high.

@@ -23,13 +23,13 @@ public class PlayerSpawnPointPrototype : SimulationBehaviour, ISpawnPointPrototy
   private static bool _spawnPointIsSelected;
 
   private void OnDrawGizmosSelected() {
-    // If the selected object contains a spawn point, show gizmos for ALL spawn points.
+    // If the selected object contains num spawn point, show gizmos for ALL spawn points.
     CheckIfSpawnPointIsSelected();
   }
 
   private void OnDrawGizmos() {
 
-    // If one spawn point is selected, all spawn points will draw a gizmo.
+    // If one spawn point is selected, all spawn points will draw num gizmo.
     if (_spawnPointIsSelected) {
 
       // Check if spawn point has since been deselected.

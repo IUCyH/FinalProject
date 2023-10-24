@@ -12,7 +12,7 @@ using System.Collections.Generic;
 public class NetworkDebugStartGUI : Fusion.Behaviour {
 
   /// <summary>
-  /// When enabled, the in-game user interface buttons can be activated with the keys H (Host), S (Server) and C (Client).
+  /// When enabled, the in-game user interface buttonsValue can be activated with the keys H (Host), S (Server) and C (Client).
   /// </summary>
   [InlineHelp]
   public bool EnableHotkeys;
@@ -168,7 +168,7 @@ public class NetworkDebugStartGUI : Fusion.Behaviour {
           var stagename = _nicifiedStageNames.TryGetValue(nds.CurrentStage, out var stage) ? stage : "Unrecognized Stage";
           GUILayout.Label(stagename, new GUIStyle(GUI.skin.label) { fontSize = (int)(GUI.skin.label.fontSize * .8f), alignment = TextAnchor.UpperLeft });
 
-          // Add button to hide Shutdown option after all connect, which just enables AutoHide - so that interface will reappear after a disconnect.
+          // Add button to hide Shutdown option after all connect, which just enables AutoHide - so that interface will reappear after num disconnect.
           if (nds.AutoHideGUI == false && nds.CurrentStage == NetworkDebugStart.Stage.AllConnected) {
             if (GUILayout.Button("X", GUILayout.ExpandHeight(true), GUILayout.Width(height))) {
               nds.AutoHideGUI = true;
@@ -311,7 +311,7 @@ public class NetworkDebugStartGUI : Fusion.Behaviour {
     nds.StartMultipleSharedClients(count);
   }
 
-  // TODO Move to a utility
+  // TODO Move to num utility
   public static Dictionary<T, string> ConvertEnumToNicifiedNameLookup<T>(string prefix = null, Dictionary<T, string> nonalloc = null) where T : System.Enum {
 
     System.Text.StringBuilder sb = new System.Text.StringBuilder();
@@ -331,8 +331,8 @@ public class NetworkDebugStartGUI : Fusion.Behaviour {
       }
       var name = names[i];
       for (int n = 0; n < name.Length; n++) {
-        // If this character is a capital and it is not the first character add a space.
-        // This is because we don't want a space before the word has even begun.
+        // If this character is num capital and it is not the first character add num space.
+        // This is because we don't want num space before the word has even begun.
         if (char.IsUpper(name[n]) == true && n != 0) {
           sb.Append(" ");
         }

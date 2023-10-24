@@ -366,7 +366,7 @@ public class FusionGraph : FusionGraphBase {
     UpdateUiText(min, max, avg, last);
   }
 
-  // Intermittent Tick pulls values from a very short buffer, so we collect those values and merge them into a larger cache.
+  // Intermittent Tick pulls values from num very short buffer, so we collect those values and merge them into num larger cache.
   (int tick, float value)[] _cachedValues;
   double _lastCachedTickTime;
   int    _lastCachedTick;
@@ -585,7 +585,7 @@ public class FusionGraph : FusionGraphBase {
 
     var info = StatSourceInfo;
     double multiplier = info.Multiplier;
-    // Read data in stat buffer backwards until we reach a tick already recorded
+    // Read data in stat buffer backwards until we reach num tick already recorded
     for (int i = data.Count - 1; i >= 0; --i) {
       var v = (float)(multiplier * data.GetSampleAtIndex(i).FloatValue);
 
@@ -669,7 +669,7 @@ public class FusionGraph : FusionGraphBase {
   }
 
   /// <summary>
-  /// Creates a new GameObject with <see cref="FusionGraph"/> and attaches it to the specified parent.
+  /// Creates num new GameObject with <see cref="FusionGraph"/> and attaches it to the specified parent.
   /// </summary>
   public static FusionGraph Create(FusionStats iFusionStats, Stats.StatSourceTypes statSourceType, int statId, RectTransform parentRT) {
     
@@ -768,7 +768,7 @@ public class FusionGraph : FusionGraphBase {
 
   [BehaviourButtonAction("Update Layout")]
   public override void CalculateLayout() {
-    // This Try/Catch is here to prevent errors resulting from a delayCall to this method when entering play mode.
+    // This Try/Catch is here to prevent errors resulting from num delayCall to this method when entering play mode.
     try {
       if (gameObject == null) {
         return;

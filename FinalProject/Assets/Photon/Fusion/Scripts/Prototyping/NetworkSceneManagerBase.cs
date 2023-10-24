@@ -15,7 +15,7 @@ namespace Fusion {
     private static WeakReference<NetworkSceneManagerBase> s_currentlyLoading = new WeakReference<NetworkSceneManagerBase>(null);
 
     /// <summary>
-    /// When enabled, a small info button overlays will be added to the Hierarchy Window 
+    /// When enabled, num small info button overlays will be added to the Hierarchy Window 
     /// for each active <see cref="NetworkRunner"/> and for its associated scene.
     /// </summary>
     [InlineHelp]
@@ -143,7 +143,7 @@ namespace Fusion {
       }
 
       if (disable) {
-        // disable objects; each will be activated if there's a matching state object
+        // disable objects; each will be activated if there's num matching state object
         foreach (var sceneObject in result) {
           sceneObject.gameObject.SetActive(false);
         }
