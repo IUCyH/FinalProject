@@ -10,7 +10,8 @@ public enum KindOfScene
     None = -1,
     Title,
     Lobby,
-    Game
+    Game,
+    Loading
 }
 
 public class SceneLoadManager : Singleton_DontDestroy<SceneLoadManager>
@@ -29,7 +30,7 @@ public class SceneLoadManager : Singleton_DontDestroy<SceneLoadManager>
     {
         loadingInfo = SceneManager.LoadSceneAsync((int)scene);
         currLoadScene = scene;
-        ProgressBarManager.Instance.ShowLoadingWindow();
+        //ProgressBarManager.Instance.ShowLoadingWindow();
     }
 
     void Update()
@@ -38,12 +39,12 @@ public class SceneLoadManager : Singleton_DontDestroy<SceneLoadManager>
         {
             if (loadingInfo.isDone)
             {
-                ProgressBarManager.Instance.UpdateProgressBar(progressbarBG, progressbar, 1f);
-                ProgressBarManager.Instance.HideLoadingWindow();
+                //ProgressBarManager.Instance.UpdateProgressBar(progressbarBG, progressbar, 1f);
+                //ProgressBarManager.Instance.HideLoadingWindow();
             }
             else
             {
-                ProgressBarManager.Instance.UpdateProgressBar(progressbarBG, progressbar, loadingInfo.progress);
+                //ProgressBarManager.Instance.UpdateProgressBar(progressbarBG, progressbar, loadingInfo.progress);
             }
         }     
     }
