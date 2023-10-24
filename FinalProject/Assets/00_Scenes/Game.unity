@@ -434,10 +434,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 986736415}
+      - m_Target: {fileID: 986736418}
         m_TargetAssemblyTypeName: BattleButton, Assembly-CSharp
-        m_MethodName: ClickBtn
-        m_Mode: 1
+        m_MethodName: Clickbtn
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -645,10 +645,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 986736415}
+      - m_Target: {fileID: 986736418}
         m_TargetAssemblyTypeName: BattleButton, Assembly-CSharp
-        m_MethodName: ClickBtn
-        m_Mode: 1
+        m_MethodName: Clickbtn
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1408,10 +1408,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 986736415}
+      - m_Target: {fileID: 986736418}
         m_TargetAssemblyTypeName: BattleButton, Assembly-CSharp
-        m_MethodName: ClickBtn
-        m_Mode: 1
+        m_MethodName: Clickbtn
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1897,10 +1897,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 986736415}
+      - m_Target: {fileID: 986736418}
         m_TargetAssemblyTypeName: BattleButton, Assembly-CSharp
-        m_MethodName: ClickBtn
-        m_Mode: 1
+        m_MethodName: Clickbtn
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2377,7 +2377,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 986736414}
-  - component: {fileID: 986736415}
+  - component: {fileID: 986736418}
   - component: {fileID: 986736413}
   - component: {fileID: 986736417}
   m_Layer: 0
@@ -2418,7 +2418,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &986736415
+--- !u!114 &986736417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986736412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 209ba59feeef93e46a7503bb7f5e4650, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &986736418
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2435,20 +2447,8 @@ MonoBehaviour:
   - {fileID: 663923125}
   - {fileID: 1433341748}
   - {fileID: 1905990330}
-  sequenceOrder: 
-  numberList: 00000000
---- !u!114 &986736417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 986736412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 209ba59feeef93e46a7503bb7f5e4650, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  sequenceValue: 
+  sequenceInput: 01000000020000000300000004000000
 --- !u!1 &1045446384
 GameObject:
   m_ObjectHideFlags: 0
@@ -2879,10 +2879,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 986736415}
+      - m_Target: {fileID: 986736418}
         m_TargetAssemblyTypeName: BattleButton, Assembly-CSharp
-        m_MethodName: ClickBtn
-        m_Mode: 1
+        m_MethodName: Clickbtn
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3318,10 +3318,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 986736415}
+      - m_Target: {fileID: 986736418}
         m_TargetAssemblyTypeName: BattleButton, Assembly-CSharp
-        m_MethodName: ClickBtn
-        m_Mode: 1
+        m_MethodName: Clickbtn
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3528,10 +3528,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 986736415}
+      - m_Target: {fileID: 986736418}
         m_TargetAssemblyTypeName: BattleButton, Assembly-CSharp
-        m_MethodName: ClickBtn
-        m_Mode: 1
+        m_MethodName: Clickbtn
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4600,10 +4600,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 986736415}
+      - m_Target: {fileID: 986736418}
         m_TargetAssemblyTypeName: BattleButton, Assembly-CSharp
-        m_MethodName: ClickBtn
-        m_Mode: 1
+        m_MethodName: Clickbtn
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
