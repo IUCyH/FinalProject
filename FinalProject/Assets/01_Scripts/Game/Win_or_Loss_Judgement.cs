@@ -27,13 +27,6 @@ public class Win_or_Loss_Judgment : MonoBehaviour
     [SerializeField]
     Transform enemyTeam;
 
-    //개체 수 카운트
-    [SerializeField]
-    int myTeamCount;
-    [SerializeField]
-    int enemyTeamCount;
-
-
     List<(int ID, int SkillNum)> sequence = new List<(int, int)>();
 
     List<(int player1ID, int player1SkillNum)> player1Property = new List<(int, int)>(); // 예시로 더미 데이터 추가
@@ -45,8 +38,17 @@ public class Win_or_Loss_Judgment : MonoBehaviour
     List<float> myATKspeed = new List<float>();
     List<float> enemyATKspeed = new List<float>();
 
+    List<int> player1ATKSpeed = new List<int>(); // 예시로 더미 데이터 추가
+    List<int> player2ATKSpeed = new List<int>(); // 예시로 더미 데이터 추가
+
     float player1health = 100; // 예시로 초기값 설정
     float player2health = 100; // 예시로 초기값 설정
+
+    //개체 수 카운트
+    [SerializeField]
+    int myTeamCount;
+    [SerializeField]
+    int enemyTeamCount;
 
     int player1ATK = 10; // 예시로 초기값 설정
     int player2ATK = 10; // 예시로 초기값 설정
@@ -54,8 +56,7 @@ public class Win_or_Loss_Judgment : MonoBehaviour
     int player1Defense = 5; // 예시로 초기값 설정
     int player2Defense = 5; // 예시로 초기값 설정
 
-    List<int> player1ATKSpeed = new List<int>(); // 예시로 더미 데이터 추가
-    List<int> player2ATKSpeed = new List<int>(); // 예시로 더미 데이터 추가
+    
 
     int allTeamCount;
 
@@ -144,27 +145,11 @@ public class Win_or_Loss_Judgment : MonoBehaviour
         {
             if (player1Property[i].player1SkillNum != player2Property[i].player2SkillNum)
             {
-                if (player1Property[i].player1SkillNum > player2Property[i].player2SkillNum)
-                {
-                    sequence.Add(player1Property[i]);
-                }
-                else
-                {
-                    sequence.Add(player2Property[i]);
-                }
+                AddSequenceBySkillNumber(i);
             }
             else
             {
-                // 동일한 경우 50% 처리
-                bool halfATK = Dods_ChanceMaker.GetThisChanceResult_Percentage(50);
-                if (halfATK)
-                {
-                    sequence.Add(player1Property[i]);
-                }
-                else
-                {
-                    sequence.Add(player2Property[i]);
-                }
+                AddSequenceByHalfChance(i);
             }
         }
     
@@ -172,6 +157,33 @@ public class Win_or_Loss_Judgment : MonoBehaviour
         enemyATKspeed.Sort();
     }
 
+    void AddSequenceBySkillNumber(int order)
+    {
+        if (player1Property[order].player1SkillNum > player2Property[order].player2SkillNum)
+        {
+            sequence.Add(player1Property[order]);
+        }
+        else
+        {
+            sequence.Add(player2Property[order]);
+        }
+    }
+
+    void AddSequenceByHalfChance(int order)
+    {
+        // 동일한 경우 50% 처리
+        bool halfATK = Dods_ChanceMaker.GetThisChanceResult_Percentage(50);
+        if (halfATK)
+        {
+            sequence.Add(player1Property[order]);
+        }
+        else
+        {
+            sequence.Add(player2Property[order]);
+        }
+    }
+
+    //공식, 수식 계산하기
     int DamageCalculate()
     {
         int result;
@@ -180,27 +192,35 @@ public class Win_or_Loss_Judgment : MonoBehaviour
         return result;
     }
 
-    //공식, 수식 고려하기
+    
     public void SkillSeqencePlay() 
     {      
+        
         int i = 0;
         while (i < sequence.Count)
         {
-            if (player1ATKSpeed[i] > player2ATKSpeed[i])
+            bool isFasterThanPlayer2 = player1ATKSpeed[i] > player2ATKSpeed[i];
+
+            if (isFasterThanPlayer2)
             {
-                if (player1ATKSpeed[i] > player2ATKSpeed[i] * 2)
-                {
-                    int num1 = 1;
-                    for (int j = 0; j < Mathf.Abs(player2ATKSpeed[i] - (player1ATKSpeed[i] * num1)); j++)
-                    {
-                        Debug.Log(i + "번째 아군이 떄림");
-                        num1++;
-                    }
-                }
-                else
+                int num1 = 1;
+                if(player1ATKSpeed[i] < player2ATKSpeed[i] * 2)
                 {
                     Debug.Log(i + "번째 적군이 떄림");
+                    i++;
+                    continue;
                 }
+
+                for (int j = 0; j < Mathf.Abs(player2ATKSpeed[i] - (player1ATKSpeed[i] * num1)); j++)
+                {
+                    Debug.Log(i + "번째 아군이 떄림");
+                    num1++;
+                }
+
+            }
+            else if (isFasterThanPlayer2 && player1ATKSpeed[i] < player2ATKSpeed[i] * 2)
+            {
+                Debug.Log(i + "번째 적군이 떄림");
             }
             else
             {

@@ -437,11 +437,11 @@ MonoBehaviour:
       - m_Target: {fileID: 986736415}
         m_TargetAssemblyTypeName: BattleButton, Assembly-CSharp
         m_MethodName: ClickBtn
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -648,11 +648,11 @@ MonoBehaviour:
       - m_Target: {fileID: 986736415}
         m_TargetAssemblyTypeName: BattleButton, Assembly-CSharp
         m_MethodName: ClickBtn
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1411,11 +1411,11 @@ MonoBehaviour:
       - m_Target: {fileID: 986736415}
         m_TargetAssemblyTypeName: BattleButton, Assembly-CSharp
         m_MethodName: ClickBtn
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1900,11 +1900,11 @@ MonoBehaviour:
       - m_Target: {fileID: 986736415}
         m_TargetAssemblyTypeName: BattleButton, Assembly-CSharp
         m_MethodName: ClickBtn
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2377,8 +2377,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 986736414}
-  - component: {fileID: 986736413}
   - component: {fileID: 986736415}
+  - component: {fileID: 986736413}
   - component: {fileID: 986736417}
   m_Layer: 0
   m_Name: Decision
@@ -2430,8 +2430,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 684d9100776b5b346918774ae4049acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sequenceImages: []
-  isSkill: 00000000
+  sequenceImages:
+  - {fileID: 1913271917}
+  - {fileID: 663923125}
+  - {fileID: 1433341748}
+  - {fileID: 1905990330}
+  sequenceOrder: 
 --- !u!114 &986736417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2877,11 +2881,11 @@ MonoBehaviour:
       - m_Target: {fileID: 986736415}
         m_TargetAssemblyTypeName: BattleButton, Assembly-CSharp
         m_MethodName: ClickBtn
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3316,11 +3320,11 @@ MonoBehaviour:
       - m_Target: {fileID: 986736415}
         m_TargetAssemblyTypeName: BattleButton, Assembly-CSharp
         m_MethodName: ClickBtn
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3526,11 +3530,11 @@ MonoBehaviour:
       - m_Target: {fileID: 986736415}
         m_TargetAssemblyTypeName: BattleButton, Assembly-CSharp
         m_MethodName: ClickBtn
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4598,11 +4602,11 @@ MonoBehaviour:
       - m_Target: {fileID: 986736415}
         m_TargetAssemblyTypeName: BattleButton, Assembly-CSharp
         m_MethodName: ClickBtn
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

@@ -8,38 +8,35 @@ public class BattleButton : MonoBehaviour
     List<GameObject> sequenceImages = new List<GameObject>();
 
     [SerializeField]
-    List<bool> isSkill = new List<bool>();
-
-    //순서를 차례대로 부여 ++;
-    //1 -> 2 -> 3 선택 상태에서 1을 뺐다면 1 -> 4
-    //들어온 수가 가장 큰가?
-    void Sequence(RectTransform buttonTransform)
-    {
-        for (int i = 0; isSkill.Count < i; i++)
-        {
-            if (isSkill[i] == false)
-            {
-                print("Yes");
-                Num(i, buttonTransform);
-                break;
-                //0번째부터 아니면 0 번호 대입
-            }
-        }
-    }
-
-    void Num(int addNum, RectTransform buttonTransform)
-    {
-        sequenceImages[addNum].GetComponent<RectTransform>().anchoredPosition = buttonTransform.anchoredPosition;
-        sequenceImages[addNum].SetActive(true);
-        isSkill[addNum] = true;
-    }
+    List<int> sequenceOrder = new List<int>(); // 순서를 저장하는 리스트
 
     // 버튼을 눌렀을 때 호출될 함수
-    public void ClickBtn()
+    public void ClickBtn(int btnIndex) //고유번호 지정 필요
     {
-        // 방금 클릭한 게임 오브젝트를 가져와서 저장
-        GameObject clickObject = EventSystem.current.currentSelectedGameObject;
+        if (sequenceOrder.Count == 0 || sequenceOrder[sequenceOrder.Count - 1] != btnIndex) //0이거나 
+        {
+            sequenceOrder.Add(btnIndex);
+        }
+        else
+        {
+            sequenceOrder.RemoveAt(sequenceOrder.Count - 1);
+        }
 
-        Sequence(clickObject.GetComponent<RectTransform>());
+        UpdateSequenceImages();
+    }
+
+    void UpdateSequenceImages()
+    {
+        for (int i = 0; i < sequenceImages.Count; i++)
+        {
+            bool isActive = i < sequenceOrder.Count;
+            sequenceImages[i].SetActive(isActive);
+
+            if (isActive)
+            {
+                RectTransform btnTransform = EventSystem.current.currentSelectedGameObject.GetComponent<RectTransform>();
+                sequenceImages[i].GetComponent<RectTransform>().anchoredPosition = btnTransform.anchoredPosition;
+            }
+        }
     }
 }
