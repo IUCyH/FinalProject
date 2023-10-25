@@ -1582,7 +1582,7 @@ GameObject:
   m_Component:
   - component: {fileID: 216393235}
   m_Layer: 5
-  m_Name: MainLobbyUIButton
+  m_Name: MainLobbyButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10127,8 +10127,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   exitButtonImg: {fileID: 389795230}
   selectMenu: {fileID: 392386538}
-  mainLobbyUI: {fileID: 216393234}
-  mainLobbyMenu: {fileID: 1176395668}
+  mainLobbyButtonParent: {fileID: 216393234}
+  mainLobbyMenuParent: {fileID: 1176395668}
 --- !u!1 &1451994305
 GameObject:
   m_ObjectHideFlags: 0

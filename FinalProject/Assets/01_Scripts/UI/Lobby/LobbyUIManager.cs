@@ -35,23 +35,25 @@ public class LobbyUIManager : Singleton<LobbyUIManager>
     [SerializeField]
     GameObject selectMenu;
     [SerializeField]
-    GameObject mainLobbyUI;
+    GameObject mainLobbyButtonParent;
     [SerializeField]
-    GameObject mainLobbyMenu;
+    GameObject mainLobbyMenuParent;
     RectTransform selectMenuRectTrans;
-    Image[] lobbyMenuBackgrounds;
     Button[] selectButtons;
     TextMeshProUGUI[] selectButtonTexts;
+    Dictionary<string, Sprite> uiSprites = new Dictionary<string, Sprite>();
 
     protected override void OnStart()
     {
         exitButtonImg.SetActive(false);
 
-        mainLobbyMenus = mainLobbyMenu.GetComponentsInChildren<IWindow>(true);
+        mainLobbyMenus = mainLobbyMenuParent.GetComponentsInChildren<IWindow>(true);
         selectButtons = selectMenu.GetComponentsInChildren<Button>();
         selectButtonTexts = selectMenu.GetComponentsInChildren<TextMeshProUGUI>();
         selectMenuRectTrans = selectMenu.GetComponent<RectTransform>();
-        
+
+        var mainMenus = mainLobbyButtonParent.GetComponentsInChildren<MainLobbyButton>(true);
+        GetUISprites(mainMenus);
         HideSelectMenu();
         CloseAllLobbyMenu();
     }
@@ -63,7 +65,7 @@ public class LobbyUIManager : Singleton<LobbyUIManager>
 
         if (kindOfMenu != LobbyMainMenu.OptionsMenu)
         {
-            mainLobbyUI.SetActive(false);
+            mainLobbyButtonParent.SetActive(false);
             exitButtonImg.SetActive(true);
         }
     }
@@ -71,7 +73,7 @@ public class LobbyUIManager : Singleton<LobbyUIManager>
     public void OnPressExitMenuButton()
     {
         WindowManager.Instance.CloseWindowAndPop();
-        mainLobbyUI.SetActive(true);
+        mainLobbyButtonParent.SetActive(true);
 
         exitButtonImg.SetActive(false);
     }
@@ -99,11 +101,33 @@ public class LobbyUIManager : Singleton<LobbyUIManager>
         }
     }
 
+    public void SetImageSprite(Image image, string spriteName)
+    {
+        if (uiSprites.TryGetValue(spriteName, out Sprite sprite))
+        {
+            image.sprite = sprite;
+        }
+    }
+
     void CloseAllLobbyMenu()
     {
         for (int i = 0; i < mainLobbyMenus.Length; i++)
         {
             mainLobbyMenus[i].Close();
+        }
+    }
+
+    void GetUISprites(MainLobbyButton[] mainMenus)
+    {
+        for (int i = 0; i < mainMenus.Length; i++)
+        {
+            var name = mainMenus[i].name;
+            Debug.Log(name);
+            var split = name.Split('_');
+            var spriteName = string.Format("UI_{0}.png", split[1]);
+            var sprite = DataManager.Instance.GetSprite(SpriteAssetBundleTag.UI, spriteName);
+            
+            uiSprites.Add(name, sprite);
         }
     }
 }
