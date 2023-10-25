@@ -17,6 +17,7 @@ public class MainLobbyButton : MonoBehaviour
         var image = GetComponent<Image>();
         
         button.onClick.AddListener(OnPressButton);
+        Debug.Log(image.name);
         LobbyUIManager.Instance.SetImageSprite(image, name);
     }
 
