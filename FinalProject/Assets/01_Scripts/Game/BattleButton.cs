@@ -7,48 +7,49 @@ using UnityEngine.EventSystems;
 public class BattleButton : MonoBehaviour
 {
     [SerializeField]
+    RectTransform[] btnRectTransforms;
+    [SerializeField]
     List<GameObject> sequenceImages = new List<GameObject>();
+    
+    List<int> sequenceValue = new List<int>(); //선택된 버튼 저장
 
-    [SerializeField]
-    List<int> sequenceValue = new List<int>();
+    List<int> sequenceInput = new List<int>(); //1, 2, 3, 4 //버튼 순서 저장
 
-    [SerializeField]
-    List<int> sequenceInput = new List<int>(); //1, 2, 3, 4
+    int lastSequence;
 
     // 버튼을 눌렀을 때 호출될 함수
-    public void Clickbtn(int btnNum) 
+    public void Clickbtn(int btnNum)
     {
-        sequenceInput.Sort(); //정렬 
-
-        
-        int minValue = sequenceInput.Min(); //가장 낮은 숫자  
-
-        
-        if (sequenceValue.Contains(btnNum) && sequenceValue != null) //&& sequenceValue != null
+        if (sequenceValue.Contains(btnNum)) //&& sequenceValue != null
         {
-            sequenceInput.Add(btnNum);
-            sequenceValue.Remove(btnNum);
-            UpdateSequenceImages(minValue, false);
-
-        }
-        else if (!sequenceValue.Contains(btnNum) && sequenceInput != null) //&& sequenceInput != null 
-        {
-            if (btnNum == 0)
+            var index = sequenceValue.IndexOf(btnNum);
+            for (int i = index; i < sequenceValue.Count; i++)
             {
-                btnNum = minValue;
-                sequenceInput.Remove(btnNum);
+                var buttonNumber = sequenceValue[i];
+                UpdateSequenceImages(btnRectTransforms[buttonNumber], i, false);
+            }
+            sequenceValue.Remove(btnNum);
+            
+            for (int i = index; i < sequenceValue.Count; i++)
+            {
+                var buttonNumber = sequenceValue[i];
+                UpdateSequenceImages(btnRectTransforms[buttonNumber], i, true);
+            }
+        }
+        else //&& sequenceInput != null 
+        {
+            if (sequenceValue.Count < 4)
+            {
                 sequenceValue.Add(btnNum);
-                UpdateSequenceImages(minValue, true);
-                Debug.Log(btnNum);
+                UpdateSequenceImages(btnRectTransforms[btnNum], sequenceValue.Count - 1, true);
             }
         }
 
     }
 
-    void UpdateSequenceImages(int imageNumber, bool isOk)
-    {        
-        RectTransform btnTransform = EventSystem.current.currentSelectedGameObject.GetComponent<RectTransform>();
-        sequenceImages[imageNumber - 1].GetComponent<RectTransform>().anchoredPosition = btnTransform.anchoredPosition;
-        sequenceImages[imageNumber - 1].SetActive(isOk);
+    void UpdateSequenceImages(RectTransform rectTransform, int imageNumber, bool isOk)
+    {
+        sequenceImages[imageNumber].GetComponent<RectTransform>().anchoredPosition = rectTransform.anchoredPosition;
+        sequenceImages[imageNumber].SetActive(isOk);
     }
 }

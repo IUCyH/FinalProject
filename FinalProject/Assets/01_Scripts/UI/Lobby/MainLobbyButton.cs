@@ -7,21 +7,17 @@ using UnityEngine.UI;
 public class MainLobbyButton : MonoBehaviour
 {
     LobbyMainMenu kindOfMenu;
-    Button button;
-    Image image;
     
     void Start()
     {
         var splitResult = name.Split("_");
-        var spriteName = string.Format("UI_{0}.png", splitResult[1]);
         int.TryParse(splitResult[0], out int order);
         kindOfMenu = (LobbyMainMenu)order;
-        button = GetComponent<Button>();
-        image = GetComponent<Image>();
+        var button = GetComponent<Button>();
+        var image = GetComponent<Image>();
         
         button.onClick.AddListener(OnPressButton);
-        //Debug.Log(spriteName);
-        image.sprite = DataManager.Instance.GetSprite(SpriteAssetBundleTag.UI, spriteName);
+        LobbyUIManager.Instance.SetImageSprite(image, name);
     }
 
     public void OnPressButton()
