@@ -38,7 +38,6 @@ public class DataManager : Singleton_DontDestroy<DataManager>
 
     protected override void OnAwake()
     {
-        //TODO : 스프라이트 get 함수 구현
         dbReference = FirebaseDatabase.DefaultInstance.RootReference;
         storageReference = FirebaseStorage.DefaultInstance.GetReferenceFromUrl(StorageDefaultUrl);
         uuid = SystemInfo.deviceUniqueIdentifier;
