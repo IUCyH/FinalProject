@@ -19,7 +19,7 @@ namespace AttackType
     }
 }
 
-public class Win_or_Loss_Judgment : MonoBehaviour
+public class Win_or_Loss_Judgment : MonoBehaviour 
 {
     //부모
     [SerializeField]
@@ -27,22 +27,14 @@ public class Win_or_Loss_Judgment : MonoBehaviour
     [SerializeField]
     Transform enemyTeam;
 
-    List<(int ID, int SkillNum)> sequence = new List<(int, int)>();
+    List<int> finalSequence = new List<int>();
 
-    List<(int player1ID, int player1SkillNum)> player1Property = new List<(int, int)>(); // 예시로 더미 데이터 추가
-    List<(int player2ID, int player2SkillNum)> player2Property = new List<(int, int)>(); // 예시로 더미 데이터 추가
+    //입력값
+    List<int>  myInputValue = new List<int>();
+    List<int> enemyInputValue = new List<int>();
 
-    List<(int myInputID, int myInputSkillNum)> myInputValue = new List<(int, int)>();
-    List<(int enemyInputID, int enemyInputSkillNum)> enemyInputValue = new List<(int, int)>();
-
-    List<float> myATKspeed = new List<float>();
-    List<float> enemyATKspeed = new List<float>();
-
-    List<int> player1ATKSpeed = new List<int>(); // 예시로 더미 데이터 추가
-    List<int> player2ATKSpeed = new List<int>(); // 예시로 더미 데이터 추가
-
-    float player1health = 100; // 예시로 초기값 설정
-    float player2health = 100; // 예시로 초기값 설정
+    List<int> myATKspeed = new List<int>();
+    List<int> enemyATKspeed = new List<int>();
 
     //개체 수 카운트
     [SerializeField]
@@ -50,92 +42,41 @@ public class Win_or_Loss_Judgment : MonoBehaviour
     [SerializeField]
     int enemyTeamCount;
 
-    int player1ATK = 10; // 예시로 초기값 설정
-    int player2ATK = 10; // 예시로 초기값 설정
+    int player1ATK = 10; 
+    int player2ATK = 10; 
 
-    int player1Defense = 5; // 예시로 초기값 설정
-    int player2Defense = 5; // 예시로 초기값 설정
-
-    
-
-    int allTeamCount;
+    int player1Defense = 5;
+    int player2Defense = 5; 
 
     void Start()
     {
-        
-        for (int m = 0; m < myTeam.childCount; m++)
-        {
-            myTeamCount++;
-        }
-
-        for (int e = 0; e < enemyTeam.childCount; e++)
-        {
-            enemyTeamCount++;
-        }
+        myTeamCount = myTeam.childCount;
+        enemyTeamCount = enemyTeam.childCount;
 
 
-        // 예시로 초기 데이터 추가
-        player1Property.Add((10, 1));
-        player1Property.Add((20, 2));
-        player1Property.Add((30, 3));
-        player1Property.Add((40, 4));
 
-        player2Property.Add((50, 5));
-        player2Property.Add((60, 6));
-        player2Property.Add((70, 7));
-        player2Property.Add((80, 8));
-
-        player1ATKSpeed.Add(10);
-        player1ATKSpeed.Add(10);
-        player1ATKSpeed.Add(10);
-        player1ATKSpeed.Add(10);
-
-        player2ATKSpeed.Add(40);
-        player2ATKSpeed.Add(40);
-        player2ATKSpeed.Add(40);
-        player2ATKSpeed.Add(40);
-
-    }
-
-    void Update()
-    {
-        allTeamCount = myTeamCount + enemyTeamCount; //남은 수
     }
 
     //전투실행, 2배속 고려
     public void FightStart()
     {
-        SkillSequence();
         SkillCheck();
         SkillSeqencePlay();
     }
 
-    //자동전투 고려
+    
     void FightEnd()
     {
         Debug.Log("FightEnd");
-    }
 
-    public void SkillSequence()
-    {
-        
-        for (int j = 0; j < myTeamCount; j++)
+        if (myTeamCount + enemyTeamCount < 1)
         {
-            myInputValue.Add((1, 2)); // 예시로 초기 데이터 추가
+            //BattleEnd();
         }
-
-
-        for (int k = 0; k < myTeamCount; k++)
+        else
         {
-            myATKspeed.Add(player1ATKSpeed[k]); // 예시로 초기 데이터 추가
-
+            //자동전투 고려 또는 다시 
         }
-        for (int u = 0; u < myTeamCount; u++)
-        {
-            enemyATKspeed.Add(player1ATKSpeed[u]); // 예시로 초기 데이터 추가
-
-        }
-
     }
 
     public void SkillCheck()
@@ -143,7 +84,7 @@ public class Win_or_Loss_Judgment : MonoBehaviour
         //공속 비교
         for (int i = 0; i < myTeamCount; i++)
         {
-            if (player1Property[i].player1SkillNum != player2Property[i].player2SkillNum)
+            if (myInputValue[i] != enemyInputValue[i])
             {
                 AddSequenceBySkillNumber(i);
             }
@@ -159,13 +100,13 @@ public class Win_or_Loss_Judgment : MonoBehaviour
 
     void AddSequenceBySkillNumber(int order)
     {
-        if (player1Property[order].player1SkillNum > player2Property[order].player2SkillNum)
+        if (myInputValue[order] > enemyInputValue[order])
         {
-            sequence.Add(player1Property[order]);
+            finalSequence.Add(myInputValue[order]);
         }
         else
         {
-            sequence.Add(player2Property[order]);
+            finalSequence.Add(enemyInputValue[order]);
         }
     }
 
@@ -175,60 +116,52 @@ public class Win_or_Loss_Judgment : MonoBehaviour
         bool halfATK = Dods_ChanceMaker.GetThisChanceResult_Percentage(50);
         if (halfATK)
         {
-            sequence.Add(player1Property[order]);
+            finalSequence.Add(myInputValue[order]);
         }
         else
         {
-            sequence.Add(player2Property[order]);
+            finalSequence.Add(enemyInputValue[order]);
         }
     }
 
-    //공식, 수식 계산하기
-    int DamageCalculate()
-    {
-        int result;
-        result = player1ATK - player2Defense;
-
-        return result;
-    }
-
-    
+    //리스트 순서대로 실행 (연속공격 고려)
     public void SkillSeqencePlay() 
     {      
         
-        int i = 0;
-        while (i < sequence.Count)
-        {
-            bool isFasterThanPlayer2 = player1ATKSpeed[i] > player2ATKSpeed[i];
+ 
 
-            if (isFasterThanPlayer2)
+        for (int i = 0; i < finalSequence.Count; i++)
+        {
+            bool isFasterThanEnemy = myATKspeed[i] > enemyATKspeed[i];
+
+            if (isFasterThanEnemy)
             {
                 int num1 = 1;
-                if(player1ATKSpeed[i] < player2ATKSpeed[i] * 2)
+                if(myATKspeed[i] < enemyATKspeed[i] * 2)
                 {
                     Debug.Log(i + "번째 적군이 떄림");
                     i++;
                     continue;
                 }
 
-                for (int j = 0; j < Mathf.Abs(player2ATKSpeed[i] - (player1ATKSpeed[i] * num1)); j++)
+                for (int j = 0; j < Mathf.Abs(enemyATKspeed[i] - (myATKspeed[i] * num1)); j++)
                 {
                     Debug.Log(i + "번째 아군이 떄림");
                     num1++;
                 }
 
             }
-            else if (isFasterThanPlayer2 && player1ATKSpeed[i] < player2ATKSpeed[i] * 2)
+            else if (isFasterThanEnemy && myATKspeed[i] < enemyATKspeed[i] * 2)
             {
                 Debug.Log(i + "번째 적군이 떄림");
             }
             else
             {
-                if (player2ATKSpeed[i] > player1ATKSpeed[i] * 2)
+                if (enemyATKspeed[i] > myATKspeed[i] * 2)
                 {
                     float num2 = 1.5f;
 
-                    for (int j = 0; j < Mathf.Abs(player1ATKSpeed[i] - (player2ATKSpeed[i] * num2)); j++) 
+                    for (int j = 0; j < Mathf.Abs(myATKspeed[i] - (enemyATKspeed[i] * num2)); j++) 
                     { 
                         Debug.Log(i + "번째 적군이 떄림");
                     }
@@ -246,6 +179,15 @@ public class Win_or_Loss_Judgment : MonoBehaviour
 
 
         FightEnd();
+    }
+
+    //때릴 떄 공식, 수식 계산하기
+    int DamageCalculate()
+    {
+        int result;
+        result = player1ATK - player2Defense;
+
+        return result;
     }
 }
 
