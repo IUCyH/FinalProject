@@ -1,0 +1,7 @@
+
+\csharpsquid:S3903"3Move 'SpriteAssetBundleTag' into a named namespace.(åü¤–üÿÿÿÿ8â‰­¶1
+Scsharpsquid:S3903"*Move 'DataManager' into a named namespace.(‰Ôçÿÿÿÿÿ8â‰­¶1
+Hcsharpsquid:S2933"Make 'assetBundles' 'readonly'.(–½¦ûÿÿÿÿ8ã‰­¶1
+Gcsharpsquid:S2933 "Make 'bundleNames' 'readonly'.(Şıê¬şÿÿÿÿ8ã‰­¶1
+>csharpsquid:S2933!"Make 'sprites' 'readonly'.(ï˜§„8ã‰­¶1
+hcsharpsquid:S1075"?Refactor your code not to use hardcoded absolute paths or URIs.(À»¹”úÿÿÿÿ8ã‰­¶1

@@ -10,6 +10,8 @@ public class PlayerData
     public int solarCoin;
     public int sunCoin;
     public string jsonOfChapters;
+    public bool isInPlay;
+    public bool isOnline;
     public List<bool> unlockedChapters;
     public SerializableDateTime recentPlayDateTime;
 }
