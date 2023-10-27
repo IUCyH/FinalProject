@@ -52,21 +52,20 @@ public class Win_or_Loss_Judgment : MonoBehaviour
     {
         myTeamCount = myTeam.childCount;
         enemyTeamCount = enemyTeam.childCount;
+    }
 
-
-
+    public void GetInputSeqeunce(List<int> myInputSkillNum)
+    {
+        myInputValue = myInputSkillNum;
     }
 
     //전투실행, 2배속 고려
     public void FightStart()
     {
-        //SkillCheck();
-        //SkillSeqencePlay();
-
-
+        SkillCheck();
+        SkillSeqencePlay();
     }
-
-    
+ 
     void FightEnd()
     {
         Debug.Log("FightEnd");
@@ -80,6 +79,7 @@ public class Win_or_Loss_Judgment : MonoBehaviour
             //자동전투 고려 또는 다시 
         }
     }
+
 
     public void SkillCheck()
     {       

@@ -145,6 +145,7 @@ public class BattleButton : MonoBehaviour
     public void EndOfTurnButton()
     {
         SetActiveCheckButtons();
+        judgment.GetInputSeqeunce(sequenceValue);
         judgment.FightStart();
     }
 }
