@@ -113,3 +113,9 @@ U
 ,Assets/01_Scripts/UI/Lobby/LobbyUIManager.cs,a\1\a19a7003914aa3ace52d12555f23d116114f3abe
 ]
 -Assets/01_Scripts/UI/Lobby/MainLobbyButton.cs,3\5\35f1efba5a8540a91e859423e681d97bb5e9cf9b
+]
+-Assets/01_Scripts/Game/Manager/GameManager.cs,7\9\790ec6787b63153e424677e7d76be74c40a0a271
+X
+(Assets/01_Scripts/Etc/MatchingManager.cs,9\7\97b54440d9c53ec2a5f680e396687e746e971409
+^
+.Assets/01_Scripts/Setting/ProgressBarManger.cs,1\0\10ec29374462d9982fbf25471b262be2ad939d81
