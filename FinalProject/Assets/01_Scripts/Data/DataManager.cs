@@ -23,17 +23,18 @@ public class DataManager : Singleton_DontDestroy<DataManager>
     const string ManifestFile = "ManifestFile";
     const string Manifest = "manifest";
     const string StorageDefaultUrl = "gs://garden-c0326.appspot.com/";
-
-    Task waitUntilDataLoad;
+    
     List<AssetBundle> assetBundles = new List<AssetBundle>();
     DatabaseReference dbReference;
     StorageReference storageReference;
     PlayerData playerData;
     List<string> bundleNames = new List<string>();
+    List<PlayerData> playersInGame = new List<PlayerData>();
     Dictionary<string, Sprite> sprites = new Dictionary<string, Sprite>();
     string uuid;
 
     public PlayerData PlayerData => playerData;
+    public List<PlayerData> Players => playersInGame;
     public bool LoadCompleted { get; private set; }
 
     protected override void OnAwake()
@@ -41,20 +42,11 @@ public class DataManager : Singleton_DontDestroy<DataManager>
         dbReference = FirebaseDatabase.DefaultInstance.RootReference;
         storageReference = FirebaseStorage.DefaultInstance.GetReferenceFromUrl(StorageDefaultUrl);
         uuid = SystemInfo.deviceUniqueIdentifier;
-        waitUntilDataLoad = new Task(() =>
-        {
-            while (!LoadCompleted)
-            {
-                if (LoadCompleted)
-                {
-                    return;
-                }
-            }
-        });
     }
 
     protected override async void OnStart()
     {
+        await GetPlayers();
         Load();
         await LoadAssetBundles();
     }
@@ -102,6 +94,19 @@ public class DataManager : Singleton_DontDestroy<DataManager>
                 Debug.Log("데이터 저장 성공");
             }
         });
+    }
+
+    async Task GetPlayers()
+    {
+        var players = await dbReference.Child(PlayerDataRoot).GetValueAsync();
+
+        foreach (var player in players.Children)
+        {
+            var data = JsonUtility.FromJson<PlayerData>(player.GetRawJsonValue());
+            if(!data.isOnline) continue;
+            
+            playersInGame.Add(data);
+        }
     }
     
     void Load()
