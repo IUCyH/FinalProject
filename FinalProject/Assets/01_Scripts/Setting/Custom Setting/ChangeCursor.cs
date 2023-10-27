@@ -20,11 +20,11 @@ public class ChangeCursor : MonoBehaviour
         {
             if (Time.timeScale > 0f)
             {
-                ChangeToCursor(cursor2Img, 1.5f);
+                ChangeToCursor(cursor2Img, 0.03f);
             }
             else
             {
-                ChangeToCursor(cursor1Img, 0.8f);
+                ChangeToCursor(cursor1Img, 0.03f);
             }
 
             yield return null;

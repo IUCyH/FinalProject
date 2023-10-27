@@ -90,11 +90,9 @@ public class BattleButton : MonoBehaviour
     void TwiceChoiceButton(int i, int num1, int num2)
     {
         if (isSetButton[i + num1] == false)
-        {
-            print("falseCheck");
+        {        
             if (isSetButton[i + num2] == true)
             {
-
                 isSetButton[i + num2] = false;
                 sequenceValue.Remove(i + num2);
                 UpdateSequenceImages(btnRectTransforms[i + num2], i + num2, false);
@@ -107,10 +105,7 @@ public class BattleButton : MonoBehaviour
         }
         else
         {
-            print("trueCheck");
-
             isSetButton[i + num1] = false;
-
             sequenceValue.Remove(i + num1);
             UpdateSequenceImages(btnRectTransforms[i + num1], i + num1, false);
 
@@ -135,14 +130,12 @@ public class BattleButton : MonoBehaviour
         bool halfATK = Dods_ChanceMaker.GetThisChanceResult_Percentage(50);
         if (halfATK)
         {
-            print("dodo");
             isSetButton[activeButtons] = true;
             sequenceValue.Add(activeButtons);
             UpdateSequenceImages(btnRectTransforms[activeButtons], activeButtons, true);
         }
         else
         {
-            print("do");
             isSetButton[activeButtons + 1] = true;
             sequenceValue.Add(activeButtons + 1);
             UpdateSequenceImages(btnRectTransforms[activeButtons + 1], activeButtons + 1, true);

@@ -836,9 +836,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a31a89407e6d9664ea969478ccbb8667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  progressBar: {fileID: 0}
-  progressBg: {fileID: 0}
-  loadCanvas: {fileID: 0}
+  progressBar: {fileID: 688645425}
+  progressBg: {fileID: 1857264788}
+  loadCanvas: {fileID: 2054937399}
 --- !u!1 &199476464
 GameObject:
   m_ObjectHideFlags: 0
@@ -5735,8 +5735,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PressButton, Assembly-CSharp
+      - m_Target: {fileID: 53739104}
+        m_TargetAssemblyTypeName: SettingManager, Assembly-CSharp
         m_MethodName: StartButton
         m_Mode: 1
         m_Arguments:
