@@ -2,13 +2,14 @@ using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using System.Collections;
+using TMPro;
 
 public class ScreenSetting : MonoBehaviour
 {
     [SerializeField]
-    Text screenSizeSettingText;
+    TextMeshProUGUI screenSizeSettingText;
     [SerializeField]
-    Text resolutionSettingText;
+    TextMeshProUGUI resolutionSettingText;
 
     List<string> screenSizeTextList = new List<string>();
     List<string> resolutionTextList = new List<string>();
@@ -55,7 +56,7 @@ public class ScreenSetting : MonoBehaviour
             yield return null;
         }
     }
-
+        
     public void ONFullScreenButton()
     {
         if (!isOneClick)
