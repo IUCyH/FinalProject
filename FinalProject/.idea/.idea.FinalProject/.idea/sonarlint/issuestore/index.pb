@@ -37,8 +37,6 @@ X
 (Assets/DemoScripts/Garden/FieldOfLand.cs,1\c\1cc2379ee2ee3ca37bbd35b138449ddf3cda5bf0
 X
 (Assets/DemoScripts/Garden/SelectPopup.cs,8\d\8dfc498a506e424f891f7997d75cb4c4616c71e8
-U
-%Assets/01_Scripts/Etc/InputManager.cs,d\f\dfbf690bceb4e7fab72ccbb468b7ddbbbac522da
 `
 0Assets/01_Scripts/Utill/GridLayout_Horizontal.cs,e\7\e7946a4a0468be7ce73e007d3312e3dcb22b2f77
 ^
@@ -117,5 +115,3 @@ X
 (Assets/01_Scripts/Etc/MatchingManager.cs,9\7\97b54440d9c53ec2a5f680e396687e746e971409
 ]
 -Assets/01_Scripts/Game/Manager/GameManager.cs,7\9\790ec6787b63153e424677e7d76be74c40a0a271
-^
-.Assets/01_Scripts/Setting/ProgressBarManger.cs,1\0\10ec29374462d9982fbf25471b262be2ad939d81
