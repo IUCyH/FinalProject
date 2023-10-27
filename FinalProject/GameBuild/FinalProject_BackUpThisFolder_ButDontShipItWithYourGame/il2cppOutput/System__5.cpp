@@ -17419,7 +17419,7 @@ IL_04c8:
 		int32_t L_173 = L_172;
 		HeaderInfo_t945B81ABA4E05A9C9CF75446CEE8C1A475FECFB3* L_174 = (L_171)->GetAt(static_cast<il2cpp_array_size_t>(L_173));
 		NullCheck(L_165);
-		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(26, L_165, L_170, L_174);
+		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25, L_165, L_170, L_174);
 		int32_t L_175 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_175, 1));
 	}
@@ -17454,7 +17454,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HeaderInfo_t945B81ABA4E05A9C9CF75446CEE8C1A47
 		String_t* L_1 = ___0_name;
 		NullCheck(L_0);
 		RuntimeObject* L_2;
-		L_2 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(25, L_0, L_1);
+		L_2 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24, L_0, L_1);
 		V_0 = ((HeaderInfo_t945B81ABA4E05A9C9CF75446CEE8C1A475FECFB3*)CastclassClass((RuntimeObject*)L_2, HeaderInfo_t945B81ABA4E05A9C9CF75446CEE8C1A475FECFB3_il2cpp_TypeInfo_var));
 		HeaderInfo_t945B81ABA4E05A9C9CF75446CEE8C1A475FECFB3* L_3 = V_0;
 		if (L_3)
@@ -20220,7 +20220,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CookieContainer_AddRemoveDomain_mE979977
 		Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* L_0 = __this->___m_domainTable;
 		NullCheck(L_0);
 		RuntimeObject* L_1;
-		L_1 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(32, L_0);
+		L_1 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(31, L_0);
 		V_0 = L_1;
 		V_1 = (bool)0;
 	}
@@ -20263,7 +20263,7 @@ IL_003f:
 				Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* L_6 = __this->___m_domainTable;
 				String_t* L_7 = ___0_key;
 				NullCheck(L_6);
-				VirtualActionInvoker1< RuntimeObject* >::Invoke(31, L_6, L_7);
+				VirtualActionInvoker1< RuntimeObject* >::Invoke(30, L_6, L_7);
 				goto IL_0040;
 			}
 
@@ -20273,7 +20273,7 @@ IL_0027_1:
 				String_t* L_9 = ___0_key;
 				PathList_t664024587678F89691589365F8D856B0A977D14A* L_10 = ___1_value;
 				NullCheck(L_8);
-				VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(26, L_8, L_9, L_10);
+				VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(25, L_8, L_9, L_10);
 				goto IL_0040;
 			}
 		}
@@ -20541,7 +20541,7 @@ IL_0007:
 		Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* L_0 = __this->___m_domainTable;
 		NullCheck(L_0);
 		RuntimeObject* L_1;
-		L_1 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(32, L_0);
+		L_1 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(31, L_0);
 		V_4 = L_1;
 		V_5 = (bool)0;
 	}
@@ -20581,7 +20581,7 @@ IL_004a:
 			L_8 = List_1_get_Item_m21AEC50E791371101DC22ABCF96A2E46800811F8(L_6, L_7, List_1_get_Item_m21AEC50E791371101DC22ABCF96A2E46800811F8_RuntimeMethod_var);
 			NullCheck(L_5);
 			RuntimeObject* L_9;
-			L_9 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(25, L_5, L_8);
+			L_9 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24, L_5, L_8);
 			V_3 = ((PathList_t664024587678F89691589365F8D856B0A977D14A*)CastclassClass((RuntimeObject*)L_9, PathList_t664024587678F89691589365F8D856B0A977D14A_il2cpp_TypeInfo_var));
 			goto IL_004b;
 		}
@@ -21337,7 +21337,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* PathList_get_Item_mB529DE417A2
 		String_t* L_1 = ___0_s;
 		NullCheck(L_0);
 		RuntimeObject* L_2;
-		L_2 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(28, L_0, L_1);
+		L_2 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(27, L_0, L_1);
 		return L_2;
 	}
 }
@@ -21347,7 +21347,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* PathList_GetEnumerator_mDD83CA
 		SortedList_t847331629BA06B518F1B5203BD22B59746EDDBF3* L_0 = __this->___m_list;
 		NullCheck(L_0);
 		RuntimeObject* L_1;
-		L_1 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(25, L_0);
+		L_1 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(24, L_0);
 		return L_1;
 	}
 }
@@ -23063,7 +23063,7 @@ IL_003e:
 		L_14 = Uri_get_Scheme_m29106D5109538220B22FC49DE7B44040E51B0F6F(L_13, NULL);
 		NullCheck(L_12);
 		RuntimeObject* L_15;
-		L_15 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(25, L_12, L_14);
+		L_15 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24, L_12, L_14);
 		G_B9_0 = ((Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E*)IsInstClass((RuntimeObject*)L_15, Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_il2cpp_TypeInfo_var));
 	}
 
@@ -23503,7 +23503,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebProxy_IsLocalInProxyHash_m20B75565C09
 		L_4 = Uri_get_Scheme_m29106D5109538220B22FC49DE7B44040E51B0F6F(L_3, NULL);
 		NullCheck(L_2);
 		RuntimeObject* L_5;
-		L_5 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(25, L_2, L_4);
+		L_5 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24, L_2, L_4);
 		il2cpp_codegen_runtime_class_init_inline(Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_il2cpp_TypeInfo_var);
 		bool L_6;
 		L_6 = Uri_op_Equality_mD7D7AAB7023C0873B37D8B8C7195BEF34002A194(((Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E*)CastclassClass((RuntimeObject*)L_5, Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_il2cpp_TypeInfo_var)), (Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E*)NULL, NULL);
@@ -30691,7 +30691,7 @@ IL_000e:
 		int32_t L_7 = ___0_start;
 		Span_1_tDEB40BEFA77B5E4BB49B058CD3050EEA4DD36C54 L_8;
 		memset((&L_8), 0, sizeof(L_8));
-		Span_1__ctor_mBA868F06359701D9950DEB1B10F52F848E9FF6DA_inline((&L_8), L_5, ((int32_t)il2cpp_codegen_subtract(L_6, L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 17));
+		Span_1__ctor_mBA868F06359701D9950DEB1B10F52F848E9FF6DA_inline((&L_8), L_5, ((int32_t)il2cpp_codegen_subtract(L_6, L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 16));
 		return L_8;
 	}
 }

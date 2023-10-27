@@ -31288,7 +31288,7 @@ IL_000e:
 		int32_t L_7 = ___0_start;
 		Span_1_tDEB40BEFA77B5E4BB49B058CD3050EEA4DD36C54 L_8;
 		memset((&L_8), 0, sizeof(L_8));
-		Span_1__ctor_mBA868F06359701D9950DEB1B10F52F848E9FF6DA_inline((&L_8), L_5, ((int32_t)il2cpp_codegen_subtract(L_6, L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 17));
+		Span_1__ctor_mBA868F06359701D9950DEB1B10F52F848E9FF6DA_inline((&L_8), L_5, ((int32_t)il2cpp_codegen_subtract(L_6, L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 16));
 		return L_8;
 	}
 }

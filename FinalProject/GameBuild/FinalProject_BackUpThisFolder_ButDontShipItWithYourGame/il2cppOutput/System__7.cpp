@@ -8654,7 +8654,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NameObjectEntry_t58A8B38FC7A6ABE5C83153B6C3F2
 		String_t* L_2 = ___0_key;
 		NullCheck(L_1);
 		RuntimeObject* L_3;
-		L_3 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(25, L_1, L_2);
+		L_3 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24, L_1, L_2);
 		return ((NameObjectEntry_t58A8B38FC7A6ABE5C83153B6C3F2696F88E7A9A2*)CastclassClass((RuntimeObject*)L_3, NameObjectEntry_t58A8B38FC7A6ABE5C83153B6C3F2696F88E7A9A2_il2cpp_TypeInfo_var));
 	}
 
@@ -8715,7 +8715,7 @@ IL_0018:
 		String_t* L_8 = ___0_name;
 		NullCheck(L_7);
 		RuntimeObject* L_9;
-		L_9 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(25, L_7, L_8);
+		L_9 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24, L_7, L_8);
 		if (L_9)
 		{
 			goto IL_0057;
