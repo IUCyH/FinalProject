@@ -32,12 +32,12 @@ namespace Fusion {
     public string GlobalPrefixColor;
 
     /// <summary>
-    /// Min Random Color
+    /// Min RandomChoiceButtons Color
     /// </summary>
     public Color32 MinRandomColor;
     
     /// <summary>
-    /// Max Random Color
+    /// Max RandomChoiceButtons Color
     /// </summary>
     public Color32 MaxRandomColor;
 

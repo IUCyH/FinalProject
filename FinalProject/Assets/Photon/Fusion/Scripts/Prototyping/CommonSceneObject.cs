@@ -40,7 +40,7 @@
 //  private bool _preferredRunnerFound;
 
 //  private void Reset() {
-//    _uid = Random.Range(0, int.MaxValue);
+//    _uid = RandomChoiceButtons.Range(0, int.MaxValue);
 //  }
 
 //  public void Awake() {

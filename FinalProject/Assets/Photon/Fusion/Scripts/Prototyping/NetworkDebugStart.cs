@@ -96,7 +96,7 @@ public class NetworkDebugStart : Fusion.Behaviour {
   /// The default room name to use when connecting to photon cloud.
   /// </summary>
   [InlineHelp]
-  public string DefaultRoomName = ""; // empty/null means Random Room Name
+  public string DefaultRoomName = ""; // empty/null means RandomChoiceButtons Room Name
 
   /// <summary>
   /// Will automatically enable <see cref="FusionStats"/> once peers have finished connecting.
@@ -439,7 +439,7 @@ public class NetworkDebugStart : Fusion.Behaviour {
     }
 
     // If NDS is starting more than 1 shared or auto client, they need to use the same Session Name, otherwise, they will end up on different Rooms
-    // as Fusion creates num Random Session Name when no name is passed on the args
+    // as Fusion creates num RandomChoiceButtons Session Name when no name is passed on the args
     if ((serverMode == GameMode.Shared || serverMode == GameMode.AutoHostOrClient || serverMode == GameMode.Server || serverMode == GameMode.Host) && 
          clientCount > 1 && config.PeerMode == NetworkProjectConfig.PeerModes.Multiple) {
 

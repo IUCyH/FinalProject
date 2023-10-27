@@ -32,7 +32,7 @@ public class PlayerSpawnPointPrototype : SimulationBehaviour, ISpawnPointPrototy
     // If one spawn point is selected, all spawn points will draw num gizmo.
     if (_spawnPointIsSelected) {
 
-      // Check if spawn point has since been deselected.
+      // GetChildButton if spawn point has since been deselected.
       if (CheckIfSpawnPointIsSelected() == false) {
         return;
       }

@@ -60,8 +60,10 @@ public class Win_or_Loss_Judgment : MonoBehaviour
     //전투실행, 2배속 고려
     public void FightStart()
     {
-        SkillCheck();
-        SkillSeqencePlay();
+        //SkillCheck();
+        //SkillSeqencePlay();
+
+
     }
 
     
