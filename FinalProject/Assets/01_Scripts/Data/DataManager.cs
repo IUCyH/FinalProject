@@ -209,7 +209,7 @@ public class DataManager : Singleton_DontDestroy<DataManager>
         }
         
         LoadCompleted = true;
-        SceneLoadManager.Instance.Load(KindOfScene.Lobby);
+        //SceneLoadManager.Instance.Load(KindOfScene.Lobby);
     }
 
     IEnumerator Coroutine_CacheSpritesFromStorage()

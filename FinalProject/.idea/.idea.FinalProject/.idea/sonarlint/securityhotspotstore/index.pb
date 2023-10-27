@@ -99,8 +99,6 @@ Y
 )Assets/01_Scripts/Etc/SceneLoadManager.cs,c\1\c100c01216e3bcbb005c8d44a58549bcfc367859
 V
 &Assets/01_Scripts/Game/BattleButton.cs,e\7\e743d1e6d769fbd1187f38ecc230e17f8a91d521
-G
-Assets/ImageLoadTest.cs,c\8\c8f29f7e5ad5c5bcea6672fdb5bf53e4220c2004
 U
 %Assets/01_Scripts/Etc/PatchManager.cs,a\d\adededf82cc6fb9d4062ef938c86427e15ef4483
 g

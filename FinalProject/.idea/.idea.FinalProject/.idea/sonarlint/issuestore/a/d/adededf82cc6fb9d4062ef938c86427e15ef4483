@@ -1,0 +1,5 @@
+
+vcsharpsquid:S3776Y"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(ºÛĞö8¾í¢¶1
+Ocsharpsquid:S3903
+"+Move 'PatchManager' into a named namespace.(¾¢š8¾í¢¶1
+Gcsharpsquid:S2933"#Make 'filesShouldPatch' 'readonly'.(÷œÔ¿8¾í¢¶1
