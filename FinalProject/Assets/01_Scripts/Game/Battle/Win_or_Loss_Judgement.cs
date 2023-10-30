@@ -2,23 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace AttackType
-{
-    enum Range
-    {
-        single,
-        multi
-    }
-
-    enum Type
-    {
-        basic,
-        heal,
-        skill,
-
-    }
-}
-
 public class Win_or_Loss_Judgment : MonoBehaviour 
 {
     //부모
@@ -31,6 +14,8 @@ public class Win_or_Loss_Judgment : MonoBehaviour
 
     //입력값
     List<int>  myInputValue = new List<int>();
+
+    [SerializeField]
     List<int> enemyInputValue = new List<int>();
 
     List<int> myATKspeed = new List<int>();
@@ -48,7 +33,7 @@ public class Win_or_Loss_Judgment : MonoBehaviour
     int player1Defense = 5;
     int player2Defense = 5; 
 
-    void Start()
+    void Start() //전투 시작 시 오브젝트 자식에 생성하기 또는 이동 
     {
         myTeamCount = myTeam.childCount;
         enemyTeamCount = enemyTeam.childCount;
@@ -96,8 +81,8 @@ public class Win_or_Loss_Judgment : MonoBehaviour
             }
         }
     
-        myATKspeed.Sort(); // 속도 정보 정렬
-        enemyATKspeed.Sort();
+        //myATKspeed.Sort(); // 속도 정보 정렬
+        //enemyATKspeed.Sort();
     }
 
     void AddSequenceBySkillNumber(int order)
@@ -129,8 +114,6 @@ public class Win_or_Loss_Judgment : MonoBehaviour
     //리스트 순서대로 실행 (연속공격 고려)
     public void SkillSeqencePlay() 
     {      
-        
- 
 
         for (int i = 0; i < finalSequence.Count; i++)
         {
@@ -138,6 +121,7 @@ public class Win_or_Loss_Judgment : MonoBehaviour
 
             if (isFasterThanEnemy)
             {
+                print("isFasterThanEnemy : true");
                 int num1 = 1;
                 if(myATKspeed[i] < enemyATKspeed[i] * 2)
                 {
@@ -155,10 +139,12 @@ public class Win_or_Loss_Judgment : MonoBehaviour
             }
             else if (isFasterThanEnemy && myATKspeed[i] < enemyATKspeed[i] * 2)
             {
+                print("isFasterThanEnemy : else if");
                 Debug.Log(i + "번째 적군이 떄림");
             }
             else
             {
+                print("isFasterThanEnemy : false");
                 if (enemyATKspeed[i] > myATKspeed[i] * 2)
                 {
                     float num2 = 1.5f;
