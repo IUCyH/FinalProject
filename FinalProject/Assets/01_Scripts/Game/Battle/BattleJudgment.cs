@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Win_or_Loss_Judgment : MonoBehaviour 
+public class BattleJudgment : MonoBehaviour 
 {
     //부모
     [SerializeField]
@@ -26,12 +26,6 @@ public class Win_or_Loss_Judgment : MonoBehaviour
     int myTeamCount;
     [SerializeField]
     int enemyTeamCount;
-
-    int player1ATK = 10; 
-    int player2ATK = 10; 
-
-    int player1Defense = 5;
-    int player2Defense = 5; 
 
     void Start() //전투 시작 시 오브젝트 자식에 생성하기 또는 이동 
     {
@@ -170,13 +164,7 @@ public class Win_or_Loss_Judgment : MonoBehaviour
     }
 
     //때릴 떄 공식, 수식 계산하기
-    int DamageCalculate()
-    {
-        int result;
-        result = player1ATK - player2Defense;
 
-        return result;
-    }
 }
 
 

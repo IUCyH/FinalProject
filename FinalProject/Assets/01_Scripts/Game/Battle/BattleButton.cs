@@ -19,7 +19,7 @@ public class BattleButton : MonoBehaviour
     }
 
     [SerializeField]
-    Win_or_Loss_Judgment judgment;
+    BattleJudgment judgment;
 
     [SerializeField]
     List<GameObject> sonButtons = new List<GameObject>(); //자식 버튼들 
