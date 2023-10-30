@@ -55,41 +55,14 @@ namespace AttackType
     }
 }
 
-//namespace UnitInfomation
-//{
-//    enum Essential 
-//    {
-//        UnitCode = 0,
-//        Level = 0,
-//        ATK = 0,
-//        DEF = 0,
-//        Health = 0,
-//        HealthPerTurn = 0,
-//        ShieldValue = 0
-//    }
-
-//    enum EntireType
-//    {
-//        Critical = 0,
-//        ArmorPenetration = 0,
-//        LifeAbsorb = 0,
-//        DamageReduction = 0
-//    }
-
-//    enum IndividualType
-//    {
-//        ATKSpeed = 0,
-//        Evasion = 0,
-//        BasicATKDamageReflected = 0,
-//        SkillATKDamageReflected = 0
-//    }
-//}
-
 public class CharacterInfomation : MonoBehaviour
 {
     #region UnitState
+    [Header("Arrangement")]
+    public int arrangementNumber;
+
     [Header("Essential")]
-    public int UniCode;
+    public int UnitCode;
     public int Level;
     public int ATK;
     public int Def;
@@ -103,16 +76,18 @@ public class CharacterInfomation : MonoBehaviour
     public int LifeAbsorb;
     public int DamageReduction;
 
-    [Header("IndividualType")]
+    [Header("IndividualType ")]
     public int ATKSpeed;
     public int Evasion;
     public int BasicATKDamageReflected;
     public int SkillATKDamageReflected;
 
-    #endregion
-
+    [Header("AttackType ")]
     public ATKRange atkRange;
     public ATKType atkType;
+
+    #endregion
+
     public void CheckState()
     {
         switch (atkRange)
@@ -135,4 +110,6 @@ public class CharacterInfomation : MonoBehaviour
                 break;
         }
     }
+
+
 }

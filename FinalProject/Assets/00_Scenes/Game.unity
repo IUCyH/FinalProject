@@ -273,7 +273,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Player1
+  m_text: Player3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -857,7 +857,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Player1
+  m_text: Player2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1018,6 +1018,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 905654744}
     m_Modifications:
+    - target: {fileID: -4848233346130369334, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
+      propertyPath: UniCode
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: -4848233346130369334, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
+      propertyPath: ATKSpeed
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: -4848233346130369334, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
+      propertyPath: UnitCode
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: -4848233346130369334, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
+      propertyPath: arrangementNumber
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1441718249121803101, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1549728872, guid: 747cbd1f3336fd04dad4ea0e1e14a645, type: 3}
     - target: {fileID: 2327847460816656599, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1084,11 +1104,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2327847460816656599, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 406
+      value: 390
       objectReference: {fileID: 0}
     - target: {fileID: 2327847460816656599, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 302
+      value: 137
       objectReference: {fileID: 0}
     - target: {fileID: 2327847460816656599, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1394,6 +1414,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 905654744}
     m_Modifications:
+    - target: {fileID: -4848233346130369334, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
+      propertyPath: UniCode
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: -4848233346130369334, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
+      propertyPath: ATKSpeed
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: -4848233346130369334, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
+      propertyPath: UnitCode
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: -4848233346130369334, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
+      propertyPath: arrangementNumber
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1441718249121803101, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -232147916, guid: 747cbd1f3336fd04dad4ea0e1e14a645, type: 3}
     - target: {fileID: 2327847460816656599, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1460,11 +1500,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2327847460816656599, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 406
+      value: 315
       objectReference: {fileID: 0}
     - target: {fileID: 2327847460816656599, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 302
+      value: 180.00003
       objectReference: {fileID: 0}
     - target: {fileID: 2327847460816656599, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2398,6 +2438,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1240323715}
     m_Modifications:
+    - target: {fileID: 318634311849306840, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
+      propertyPath: UniCode
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 318634311849306840, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
+      propertyPath: ATKSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 318634311849306840, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
+      propertyPath: UnitCode
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 318634311849306840, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
+      propertyPath: arrangementNumber
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734128830824632414, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1492910141, guid: 747cbd1f3336fd04dad4ea0e1e14a645, type: 3}
     - target: {fileID: 2824438846205772070, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
       propertyPath: m_Name
       value: TeamPlayer (1)
@@ -2468,11 +2528,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3449698781279134979, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 60
+      value: 137.99998
       objectReference: {fileID: 0}
     - target: {fileID: 3449698781279134979, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 302
+      value: 184
       objectReference: {fileID: 0}
     - target: {fileID: 3449698781279134979, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2854,8 +2914,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 986736414}
-  - component: {fileID: 986736418}
   - component: {fileID: 986736413}
+  - component: {fileID: 986736418}
   - component: {fileID: 986736417}
   m_Layer: 0
   m_Name: Decision
@@ -2878,7 +2938,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myTeam: {fileID: 1240323715}
   enemyTeam: {fileID: 905654744}
-  enemyInputValue: 
+  myInputValue: 
+  enemyInputValue: 01000000020000000300000004000000
+  myATKspeed: 
+  enemyATKspeed: 
   myTeamCount: 0
   enemyTeamCount: 0
 --- !u!4 &986736414
@@ -2939,6 +3002,7 @@ MonoBehaviour:
   - {fileID: 1465562604}
   - {fileID: 1905990330}
   sequenceValue: 
+  sequencePlayer: 
   judgment: {fileID: 986736413}
   sonButtons:
   - {fileID: 560790538}
@@ -3143,7 +3207,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Player1
+  m_text: Player4
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3228,6 +3292,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1240323715}
     m_Modifications:
+    - target: {fileID: 318634311849306840, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
+      propertyPath: UniCode
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 318634311849306840, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
+      propertyPath: ATKSpeed
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 318634311849306840, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
+      propertyPath: UnitCode
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 318634311849306840, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
+      propertyPath: arrangementNumber
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734128830824632414, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 286429360, guid: 747cbd1f3336fd04dad4ea0e1e14a645, type: 3}
     - target: {fileID: 2824438846205772070, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
       propertyPath: m_Name
       value: TeamPlayer (2)
@@ -3298,11 +3382,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3449698781279134979, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 60
+      value: 78
       objectReference: {fileID: 0}
     - target: {fileID: 3449698781279134979, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 302
+      value: 237
       objectReference: {fileID: 0}
     - target: {fileID: 3449698781279134979, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3468,6 +3552,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1240323715}
     m_Modifications:
+    - target: {fileID: 318634311849306840, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
+      propertyPath: UniCode
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 318634311849306840, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
+      propertyPath: ATKSpeed
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 318634311849306840, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
+      propertyPath: UnitCode
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 318634311849306840, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
+      propertyPath: arrangementNumber
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734128830824632414, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1592777279, guid: 747cbd1f3336fd04dad4ea0e1e14a645, type: 3}
     - target: {fileID: 2824438846205772070, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
       propertyPath: m_Name
       value: TeamPlayer (3)
@@ -3538,11 +3642,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3449698781279134979, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 60
+      value: 77
       objectReference: {fileID: 0}
     - target: {fileID: 3449698781279134979, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 302
+      value: 134
       objectReference: {fileID: 0}
     - target: {fileID: 3449698781279134979, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4089,6 +4193,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 905654744}
     m_Modifications:
+    - target: {fileID: -4848233346130369334, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
+      propertyPath: UniCode
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: -4848233346130369334, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
+      propertyPath: ATKSpeed
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: -4848233346130369334, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
+      propertyPath: UnitCode
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: -4848233346130369334, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
+      propertyPath: arrangementNumber
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1441718249121803101, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1934598717, guid: 747cbd1f3336fd04dad4ea0e1e14a645, type: 3}
     - target: {fileID: 2327847460816656599, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4155,11 +4279,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2327847460816656599, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 406
+      value: 388
       objectReference: {fileID: 0}
     - target: {fileID: 2327847460816656599, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 302
+      value: 236.00003
       objectReference: {fileID: 0}
     - target: {fileID: 2327847460816656599, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5176,6 +5300,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1240323715}
     m_Modifications:
+    - target: {fileID: 318634311849306840, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
+      propertyPath: UniCode
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 318634311849306840, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
+      propertyPath: ATKSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 318634311849306840, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
+      propertyPath: UnitCode
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 318634311849306840, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
+      propertyPath: arrangementNumber
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734128830824632414, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 832249477, guid: 747cbd1f3336fd04dad4ea0e1e14a645, type: 3}
     - target: {fileID: 2824438846205772070, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
       propertyPath: m_Name
       value: TeamPlayer
@@ -5246,11 +5390,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3449698781279134979, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 60
+      value: 138
       objectReference: {fileID: 0}
     - target: {fileID: 3449698781279134979, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 302
+      value: 280
       objectReference: {fileID: 0}
     - target: {fileID: 3449698781279134979, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5277,6 +5421,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 905654744}
     m_Modifications:
+    - target: {fileID: -4848233346130369334, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
+      propertyPath: UniCode
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: -4848233346130369334, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
+      propertyPath: ATKSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: -4848233346130369334, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
+      propertyPath: UnitCode
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -4848233346130369334, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
+      propertyPath: arrangementNumber
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1441718249121803101, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1727015326, guid: 747cbd1f3336fd04dad4ea0e1e14a645, type: 3}
     - target: {fileID: 2327847460816656599, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5343,11 +5507,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2327847460816656599, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 406
+      value: 315
       objectReference: {fileID: 0}
     - target: {fileID: 2327847460816656599, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 302
+      value: 283
       objectReference: {fileID: 0}
     - target: {fileID: 2327847460816656599, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

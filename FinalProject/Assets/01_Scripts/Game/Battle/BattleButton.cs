@@ -10,13 +10,10 @@ public class BattleButton : MonoBehaviour
     List<GameObject> sequenceImages = new List<GameObject>();
 
     [SerializeField]
-    List<int> sequenceValue = new List<int>(); //선택된 버튼 저장
-    
-    void UpdateSequenceImages(RectTransform rectTransform, int imageNumber, bool isOk)
-    {
-        sequenceImages[imageNumber].GetComponent<RectTransform>().anchoredPosition = rectTransform.anchoredPosition;
-        sequenceImages[imageNumber].SetActive(isOk);
-    }
+    List<int> sequenceValue = new List<int>(); //선택된 버튼 저장 *비어있음
+
+    [SerializeField]
+    List<int> sequencePlayer = new List<int>();//플레이어 순서 *비어있음
 
     [SerializeField]
     BattleJudgment judgment;
@@ -89,7 +86,11 @@ public class BattleButton : MonoBehaviour
         }
     }
 
-
+    void UpdateSequenceImages(RectTransform rectTransform, int imageNumber, bool isOk)
+    {
+        sequenceImages[imageNumber].GetComponent<RectTransform>().anchoredPosition = rectTransform.anchoredPosition;
+        sequenceImages[imageNumber].SetActive(isOk);
+    }
 
     void SetActiveCheckButtons()
     {
@@ -119,10 +120,36 @@ public class BattleButton : MonoBehaviour
         }
     }
 
+
+   
+    void PlayerSort()
+    {
+        for (int i = 0; i < sequenceValue.Count; i++)
+        {
+            if (sequenceValue[i] == 0 || sequenceValue[i] == 1)
+            {
+                sequencePlayer.Add(1);
+            }
+            else if (sequenceValue[i] == 2 || sequenceValue[i] == 3)
+            {
+                sequencePlayer.Add(2);
+            }
+            else if (sequenceValue[i] == 4 || sequenceValue[i] == 5)
+            {
+                sequencePlayer.Add(3);
+            }
+            else if (sequenceValue[i] == 6 || sequenceValue[i] == 7)
+            {
+                sequencePlayer.Add(4);
+            }
+        }
+    }
+
     public void EndOfTurnButton()
     {
         SetActiveCheckButtons();
-        judgment.GetInputSeqeunce(sequenceValue);
+        PlayerSort();
+        judgment.GetInputSeqeunce(sequencePlayer);
         judgment.FightStart();
     }
 }

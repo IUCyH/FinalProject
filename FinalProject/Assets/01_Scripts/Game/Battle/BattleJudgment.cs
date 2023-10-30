@@ -13,12 +13,16 @@ public class BattleJudgment : MonoBehaviour
     List<int> finalSequence = new List<int>();
 
     //입력값
+    [SerializeField]
     List<int>  myInputValue = new List<int>();
 
     [SerializeField]
     List<int> enemyInputValue = new List<int>();
 
+    [SerializeField]
     List<int> myATKspeed = new List<int>();
+
+    [SerializeField]
     List<int> enemyATKspeed = new List<int>();
 
     //개체 수 카운트
@@ -36,6 +40,11 @@ public class BattleJudgment : MonoBehaviour
     public void GetInputSeqeunce(List<int> myInputSkillNum)
     {
         myInputValue = myInputSkillNum;
+    } //순서대로 받아옴
+
+    public void GetATKSpeed(List<int> myPlayerSpeed) //순서대로 받아옴
+    {
+        myATKspeed = myPlayerSpeed;
     }
 
     //전투실행, 2배속 고려
