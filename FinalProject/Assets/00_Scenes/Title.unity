@@ -539,7 +539,6 @@ GameObject:
   - component: {fileID: 53739105}
   - component: {fileID: 53739104}
   - component: {fileID: 53739106}
-  - component: {fileID: 53739108}
   m_Layer: 0
   m_Name: 'SettingManager '
   m_TagString: Untagged
@@ -594,20 +593,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   screenSizeSettingText: {fileID: 10952267}
   resolutionSettingText: {fileID: 5808531}
---- !u!114 &53739108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 53739103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6136fc5d637ccc44b91ad10a9466b9bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cursor1Img: {fileID: 2800000, guid: b2dbaebb5e2490b449131dc149f5c342, type: 3}
-  cursor2Img: {fileID: 2800000, guid: b2dbaebb5e2490b449131dc149f5c342, type: 3}
 --- !u!1 &71390686
 GameObject:
   m_ObjectHideFlags: 0

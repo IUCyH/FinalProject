@@ -90,18 +90,31 @@ public class BattleButton : MonoBehaviour
     void TwiceChoiceButton(int i, int num1, int num2)
     {
         if (isSetButton[i + num1] == false)
-        {        
+        {
             if (isSetButton[i + num2] == true)
             {
                 isSetButton[i + num2] = false;
-                sequenceValue.Remove(i + num2);
+                isSetButton[i + num1] = true;
+
+                for (int j = 0; j < sequenceValue.Count; j++)
+                {
+                    if (sequenceValue[j] == i + num2)
+                    {
+                        sequenceValue[j] = i + num1;
+                        break;
+                    }
+                }
+
                 UpdateSequenceImages(btnRectTransforms[i + num2], i + num2, false);
+                UpdateSequenceImages(btnRectTransforms[i + num1], i + num1, true);
             }
+            else
+            {
 
-            isSetButton[i + num1] = true;
-            sequenceValue.Add(i + num1);
-            UpdateSequenceImages(btnRectTransforms[i + num1], i + num1, true);
-
+                isSetButton[i + num1] = true;
+                sequenceValue.Add(i + num1);
+                UpdateSequenceImages(btnRectTransforms[i + num1], i + num1, true);
+            }
         }
         else
         {
