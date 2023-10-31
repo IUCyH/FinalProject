@@ -33,8 +33,8 @@ public class PGC_BattleJudgment : MonoBehaviour
 
     void Start() //전투 시작 시 오브젝트 자식에 생성하기 또는 이동 
     {
-        p1TeamCount = p1Team.childCount;
-        p2TeamCount = p2Team.childCount;
+        //p1TeamCount = p1Team.childCount;
+        //p2TeamCount = p2Team.childCount;
 
     }
 

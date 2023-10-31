@@ -39,6 +39,11 @@ public class SettingManager : Singleton_DontDestroy<SettingManager>
         SceneLoadManager.Instance.Load(KindOfScene.Lobby);
     }
 
+    public void GameStartButton()
+    {
+        SceneLoadManager.Instance.Load(KindOfScene.Game);
+    }
+
     public void SettingButton()
     {
         DisableAllPopups(allTitlePopup);
