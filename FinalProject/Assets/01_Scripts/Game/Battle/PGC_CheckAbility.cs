@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class GetCharacterInformation : MonoBehaviour
+public class PGC_CheckAbility : MonoBehaviour //CharacterInfomation에서 ID 갖고오면 됨 정보창 띄우기
 {
     // 버튼을 눌렀을 때 호출될 함수
     public void ClickCharacter()

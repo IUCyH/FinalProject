@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+#region Set List
 //##필수
 //유닛 코드
 //레벨
@@ -39,6 +40,7 @@ using UnityEngine;
 //방어력 증폭(%) 증가(+)
 //턴당 체력 재생 증폭(%) 증가(+)
 //속도 증폭(%) 증가(+)
+#endregion
 
 namespace AttackType
 {
@@ -55,7 +57,7 @@ namespace AttackType
     }
 }
 
-public class CharacterInfomation : MonoBehaviour
+public class PGC_Unit : MonoBehaviour
 {
     #region UnitState
     [Header("Arrangement")]
@@ -111,5 +113,8 @@ public class CharacterInfomation : MonoBehaviour
         }
     }
 
-
+    void FindTarget()
+    {
+        //DataManager.Instance.GetTarget(this);
+    }
 }

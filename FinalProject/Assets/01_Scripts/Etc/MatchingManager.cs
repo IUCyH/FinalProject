@@ -22,6 +22,6 @@ public class MatchingManager : Singleton<MatchingManager>
         }
 
         var randomIndex = Random.Range(0, playersCanMatch.Count);
-        GameManager.Instance.SetEnemyData(playersCanMatch[randomIndex]);
+        PGC_BattleManager.Instance.SetEnemyData(playersCanMatch[randomIndex]);
     }
 }

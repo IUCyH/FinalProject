@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using System.Collections;
 using TMPro;
 
-public class ScreenSetting : MonoBehaviour
+public class PGC_ScreenSetting : MonoBehaviour
 {
     [SerializeField]
     TextMeshProUGUI screenSizeSettingText;

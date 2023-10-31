@@ -16,7 +16,7 @@ enum TRUNSTATE
     End
 }
 
-public class GameManager : Singleton<GameManager>
+public class PGC_BattleManager : Singleton<PGC_BattleManager>
 {
     PlayerData enemyData;
     
@@ -25,6 +25,6 @@ public class GameManager : Singleton<GameManager>
         enemyData = data;
     }
 
-
+    
 
 }

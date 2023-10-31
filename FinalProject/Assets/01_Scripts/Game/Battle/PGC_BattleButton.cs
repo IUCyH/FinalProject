@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class BattleButton : MonoBehaviour
+public class PGC_BattleButton : MonoBehaviour
 {
     [SerializeField]
     RectTransform[] btnRectTransforms;
@@ -10,13 +10,13 @@ public class BattleButton : MonoBehaviour
     List<GameObject> sequenceImages = new List<GameObject>();
 
     [SerializeField]
-    List<int> sequenceValue = new List<int>(); //선택된 버튼 저장 *비어있음
+    List<int> sequenceValue = new List<int>(); //선택된 버튼 저장 *비어있음 전투 끝나면 초기화
 
     [SerializeField]
-    List<int> sequencePlayer = new List<int>();//플레이어 순서 *비어있음
+    List<int> sequencePlayer = new List<int>();//플레이어 순서 *비어있음 전투 끝나면 초기화
 
     [SerializeField]
-    BattleJudgment judgment;
+    PGC_BattleJudgment judgment;
 
     [SerializeField]
     List<GameObject> sonButtons = new List<GameObject>(); //자식 버튼들 
@@ -119,9 +119,7 @@ public class BattleButton : MonoBehaviour
             UpdateSequenceImages(btnRectTransforms[activeButtons + 1], activeButtons + 1, true);
         }
     }
-
-
-   
+  
     void PlayerSort()
     {
         for (int i = 0; i < sequenceValue.Count; i++)
