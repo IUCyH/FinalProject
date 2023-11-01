@@ -46,7 +46,6 @@ public class DataManager : Singleton_DontDestroy<DataManager>
 
     protected override async void OnStart()
     {
-        await GetPlayers();
         Load();
         await LoadAssetBundles();
     }
@@ -96,17 +95,10 @@ public class DataManager : Singleton_DontDestroy<DataManager>
         });
     }
 
-    async Task GetPlayers()
+    public void SetPlayerOnline()
     {
-        var players = await dbReference.Child(PlayerDataRoot).GetValueAsync();
-
-        foreach (var player in players.Children)
-        {
-            var data = JsonUtility.FromJson<PlayerData>(player.GetRawJsonValue());
-            if(!data.isOnline) continue;
-            
-            playersInGame.Add(data);
-        }
+        playerData.isOnline = true;
+        Save();
     }
     
     void Load()

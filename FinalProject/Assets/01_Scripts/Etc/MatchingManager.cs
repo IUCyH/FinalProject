@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class MatchingManager : Singleton<MatchingManager>
 {
-    List<PlayerData> playersCanMatch = new List<PlayerData>();
+    readonly List<PlayerData> playersCanMatch = new List<PlayerData>();
     
     public void Match()
     {
+        playersCanMatch.Clear();
         var players = DataManager.Instance.Players;
         var user = DataManager.Instance.PlayerData;
         for (int i = 0; i < players.Count; i++)
         {
             var player = players[i];
-            bool isCanMatch = player.level - user.level < 3;
+            bool isCanMatch = player.level - user.level < 3 && !player.isInPlay;
 
             if (isCanMatch)
             {

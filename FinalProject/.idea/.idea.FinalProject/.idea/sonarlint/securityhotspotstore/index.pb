@@ -115,3 +115,5 @@ U
 -Assets/01_Scripts/Game/Manager/GameManager.cs,7\9\790ec6787b63153e424677e7d76be74c40a0a271
 X
 (Assets/01_Scripts/Etc/MatchingManager.cs,9\7\97b54440d9c53ec2a5f680e396687e746e971409
+_
+/Assets/01_Scripts/Setting/ProgressBarManager.cs,5\2\527493cecbb20d92accf6abae33cb8abc4153359
