@@ -39,7 +39,7 @@ public class FlowerPerson : MonoBehaviour
     {
         transform.position = Vector3.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
 
-        isCanAttach = (transform.position - targetPos).sqrMagnitude > 0f;
+        isCanAttach = (targetPos - transform.position).sqrMagnitude > 0.1f;
     }
 
     public void ActFree()
