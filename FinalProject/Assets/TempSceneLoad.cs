@@ -1,14 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class TempSceneLoad : MonoBehaviour
+public class TempSceneLoad : Singleton_DontDestroy<TempSceneLoad>
 {
-    void Awake()
+    protected override void OnAwake()
     {
-        if (!DataManager.Instance.LoadCompleted)
-        {
-            SceneLoadManager.Instance.Load(KindOfScene.Loading);
-        }
+        SceneManager.LoadScene("LoadingScene");
+        StartCoroutine(TestDataLoad());
+    }
+
+    IEnumerator TestDataLoad()
+    {
+        while (!DataManager.Instance.LoadCompleted) yield return null;
+
+        SceneManager.LoadScene("Lobby");
     }
 }

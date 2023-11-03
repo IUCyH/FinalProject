@@ -1,18 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
-
-public enum OrderOfButton
-{
-    First,
-    Second,
-    Third,
-    Fourth
-}
 
 public enum LobbyMainMenu
 {
@@ -41,21 +34,35 @@ public class LobbyUIManager : Singleton<LobbyUIManager>
     RectTransform selectMenuRectTrans;
     Button[] selectButtons;
     TextMeshProUGUI[] selectButtonTexts;
+    [SerializeField]
+    TextMeshProUGUI currentSolarCoinText;
+    [SerializeField]
+    TextMeshProUGUI currentSunCoinText;
     Dictionary<string, Sprite> uiSprites = new Dictionary<string, Sprite>();
 
     protected override void OnStart()
     {
+        currentSolarCoinText.text = DataManager.Instance.PlayerData.solarCoin.ToString();
+        currentSunCoinText.text = DataManager.Instance.PlayerData.sunCoin.ToString();
         exitButtonImg.SetActive(false);
 
         mainLobbyMenus = mainLobbyMenuParent.GetComponentsInChildren<IWindow>(true);
-        selectButtons = selectMenu.GetComponentsInChildren<Button>();
-        selectButtonTexts = selectMenu.GetComponentsInChildren<TextMeshProUGUI>();
+        selectButtons = selectMenu.GetComponentsInChildren<Button>(true);
+        selectButtonTexts = selectMenu.GetComponentsInChildren<TextMeshProUGUI>(true);
         selectMenuRectTrans = selectMenu.GetComponent<RectTransform>();
 
         var mainMenus = mainLobbyButtonParent.GetComponentsInChildren<MainLobbyButton>(true);
         GetUISprites(mainMenus);
         HideSelectMenu();
         CloseAllLobbyMenu();
+    }
+
+    public void UpdateSolarCoin(int amount)
+    {
+        DataManager.Instance.PlayerData.solarCoin += amount;
+        currentSolarCoinText.text = DataManager.Instance.PlayerData.solarCoin.ToString();
+        
+        DataManager.Instance.Save();
     }
 
     public void ShowLobbyMenu(LobbyMainMenu kindOfMenu)
@@ -80,16 +87,20 @@ public class LobbyUIManager : Singleton<LobbyUIManager>
 
     public void SetSelectMenuPosition(Vector3 pos)
     {
-        selectMenuRectTrans.position = pos;
+        selectMenuRectTrans.position = pos - (new Vector3(selectMenuRectTrans.rect.width, selectMenuRectTrans.rect.height) * 0.5f);
     }
 
-    public void ShowSelectButton(OrderOfButton order, string buttonText, UnityAction onClickAction)
+    public void ShowSelectMenu(string[] buttonTexts, UnityAction[] onClickActions, int menuCount = 4)
     {
-        var button = selectButtons[(int)order];
+        if (menuCount > selectButtons.Length) return;
         
-        button.gameObject.SetActive(true);
-        button.onClick.AddListener(onClickAction);
-        selectButtonTexts[(int)order].text = buttonText;
+        HideSelectMenu();
+        for (int i = 0; i < menuCount; i++)
+        {
+            selectButtons[i].gameObject.SetActive(true);
+            selectButtons[i].onClick.AddListener(onClickActions[i]);
+            selectButtonTexts[i].text = buttonTexts[i];
+        }
     }
 
     public void HideSelectMenu()

@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public enum KindOfScene
 {
     None = -1,
+    CI,
     Title,
     Lobby,
     Game,
@@ -30,33 +31,32 @@ public class SceneLoadManager : Singleton_DontDestroy<SceneLoadManager>
 
     public void Load(KindOfScene scene)
     {
-        SceneManager.LoadSceneAsync((int)KindOfScene.Loading);
-        loadingInfo = SceneManager.LoadSceneAsync((int)scene);
-        loadingInfo.allowSceneActivation = false;
+        loadingInfo = SceneManager.LoadSceneAsync((int)KindOfScene.Loading);
         currLoadScene = scene;
         loadingCanvas.enabled = true;
+        progressbar.fillAmount = 0f;
         //ProgressBarManager.Instance.ShowLoadingWindow();
     }
 
     void Update()
     {
-        if (loadingInfo != null)
+        if (currLoadScene != KindOfScene.None)
         {
-            if (loadingInfo.progress < 0.9f)
+            var progress = loadingInfo.progress * DataManager.Instance.LoadProgress;
+            progressbar.fillAmount = progress;
+
+            if (progress >= 0.9f)
             {
-                progressbar.fillAmount = loadingInfo.progress;
-            }
-            else
-            {
-                loadingTimer += Time.unscaledDeltaTime;
-                progressbar.fillAmount = Mathf.Lerp(loadingInfo.progress, 1f, loadingTimer);
+                loadingTimer += Time.deltaTime;
+
+                progressbar.fillAmount = Mathf.Lerp(progressbar.fillAmount, 1f, loadingTimer);
 
                 if (progressbar.fillAmount >= 1f)
                 {
-                    progressbar.fillAmount = 0f;
-                    loadingTimer = 0f;
+                    SceneManager.LoadSceneAsync((int)currLoadScene);
+                    progressbar.fillAmount = 1f;
+                    currLoadScene = KindOfScene.None;
                     loadingCanvas.enabled = false;
-                    loadingInfo.allowSceneActivation = true;
                 }
             }
         }
