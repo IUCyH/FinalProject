@@ -23,6 +23,6 @@ public class MatchingManager : Singleton<MatchingManager>
         }
 
         var randomIndex = Random.Range(0, playersCanMatch.Count);
-        PGC_BattleManager.Instance.SetEnemyData(playersCanMatch[randomIndex]);
+        PGC_BattleJudgement.Instance.SetEnemyData(playersCanMatch[randomIndex]);
     }
 }

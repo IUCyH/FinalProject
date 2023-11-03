@@ -2318,21 +2318,21 @@ GameObject:
   m_Component:
   - component: {fileID: 905654744}
   m_Layer: 0
-  m_Name: 'EnemyTeam '
+  m_Name: 'p2Team '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &905654744
-Transform:
+--- !u!224 &905654744
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905654743}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -635.6088, y: -361.2663, z: 37.29302}
+  m_LocalPosition: {x: 0, y: 0, z: 37.29302}
   m_LocalScale: {x: 2.1818182, y: 2.1818182, z: 2.1818182}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2343,6 +2343,11 @@ Transform:
   m_Father: {fileID: 135781634}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -635.6088, y: -361.2663}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &912241185
 GameObject:
   m_ObjectHideFlags: 0
@@ -2531,36 +2536,18 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 986736414}
-  - component: {fileID: 986736413}
+  - component: {fileID: 986736422}
+  - component: {fileID: 986736420}
   - component: {fileID: 986736418}
-  - component: {fileID: 986736417}
+  - component: {fileID: 986736421}
+  - component: {fileID: 986736419}
   m_Layer: 0
-  m_Name: Decision
+  m_Name: BattleManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &986736413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 986736412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d7eecaee559df9479c3cb8ce4bc5fdc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myTeam: {fileID: 1240323715}
-  enemyTeam: {fileID: 905654744}
-  myInputValue: 
-  enemyInputValue: 01000000020000000300000004000000
-  myAtkSpeed: 
-  enemyAtkSpeed: 
-  myTeamCount: 0
-  enemyTeamCount: 0
 --- !u!4 &986736414
 Transform:
   m_ObjectHideFlags: 0
@@ -2569,26 +2556,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 986736412}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 297.9247, y: 283.76154, z: 13.9065}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &986736417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 986736412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 209ba59feeef93e46a7503bb7f5e4650, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _unitState: 0
 --- !u!114 &986736418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2621,7 +2595,7 @@ MonoBehaviour:
   - {fileID: 1905990330}
   sequenceValue: 
   sequencePlayer: 
-  judgment: {fileID: 986736413}
+  battleManager: {fileID: 986736420}
   sonButtons:
   - {fileID: 560790538}
   - {fileID: 53336883}
@@ -2632,6 +2606,67 @@ MonoBehaviour:
   - {fileID: 1451377077}
   - {fileID: 1945668041}
   isSetButton: 0000000000000000
+--- !u!114 &986736419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986736412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e556f0173045e94eabb37f7366b7b0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &986736420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986736412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd82408bc2e59f04caf2fe9acd209afe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  p1Team: {fileID: 1240323715}
+  p2Team: {fileID: 905654744}
+  p1InputValue: 
+  p2InputValue: 
+  p1AtkSpeed: 
+  p2AtkSpeed: 
+  p1TeamCount: 0
+  p2TeamCount: 0
+--- !u!114 &986736421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986736412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8055cb91e182444eb68c70e5cb4d321, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &986736422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986736412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f782afc7f749aae4eb7c930469d97d82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _unitPool:
+  - {fileID: 1240323715}
+  - {fileID: 905654744}
+  _p1UnitList: []
+  _p2UnitList: []
 --- !u!1 &1045446384
 GameObject:
   m_ObjectHideFlags: 0
@@ -2910,6 +2945,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 905654744}
     m_Modifications:
+    - target: {fileID: -4848233346130369334, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
+      propertyPath: ATKSpeed
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: -4848233346130369334, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
+      propertyPath: UnitCode
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 2327847460816656599, guid: 8c71c01116a7d0e4f8ef4d8834a109b3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3166,6 +3209,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1240323715}
     m_Modifications:
+    - target: {fileID: 318634311849306840, guid: ccf38da9e3f3e894fb93f2bf9879f892, type: 3}
+      propertyPath: ATKSpeed
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 318634311849306840, guid: ccf38da9e3f3e894fb93f2bf9879f892, type: 3}
+      propertyPath: UnitCode
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 2824438846205772070, guid: ccf38da9e3f3e894fb93f2bf9879f892, type: 3}
       propertyPath: m_Name
       value: TeamPlayer3
@@ -3425,21 +3476,21 @@ GameObject:
   m_Component:
   - component: {fileID: 1240323715}
   m_Layer: 0
-  m_Name: MyTeam
+  m_Name: p1Team
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1240323715
-Transform:
+--- !u!224 &1240323715
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1240323714}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -635.6088, y: -361.2663, z: 37.29302}
+  m_LocalPosition: {x: 0, y: 0, z: 37.29302}
   m_LocalScale: {x: 2.1818182, y: 2.1818182, z: 2.1818182}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3450,6 +3501,11 @@ Transform:
   m_Father: {fileID: 135781634}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -635.6088, y: -361.2663}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1278797012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3458,6 +3514,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 905654744}
     m_Modifications:
+    - target: {fileID: -4848233346130369334, guid: c32feebf55c12624c9e0dfa76242261f, type: 3}
+      propertyPath: ATKSpeed
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: -4848233346130369334, guid: c32feebf55c12624c9e0dfa76242261f, type: 3}
+      propertyPath: UnitCode
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 2327847460816656599, guid: c32feebf55c12624c9e0dfa76242261f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4135,6 +4199,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1240323715}
     m_Modifications:
+    - target: {fileID: 318634311849306840, guid: 6ba26ace84f138b4a97df3714119d442, type: 3}
+      propertyPath: ATKSpeed
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 318634311849306840, guid: 6ba26ace84f138b4a97df3714119d442, type: 3}
+      propertyPath: UnitCode
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2824438846205772070, guid: 6ba26ace84f138b4a97df3714119d442, type: 3}
       propertyPath: m_Name
       value: TeamPlayer4
@@ -4295,6 +4367,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1240323715}
     m_Modifications:
+    - target: {fileID: 318634311849306840, guid: a58e8b4816f4b27429ab4f32afa5d3fd, type: 3}
+      propertyPath: ATKSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 318634311849306840, guid: a58e8b4816f4b27429ab4f32afa5d3fd, type: 3}
+      propertyPath: UnitCode
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 2824438846205772070, guid: a58e8b4816f4b27429ab4f32afa5d3fd, type: 3}
       propertyPath: m_Name
       value: TeamPlayer2
@@ -4455,6 +4535,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 905654744}
     m_Modifications:
+    - target: {fileID: -4848233346130369334, guid: c3ba85406b88076488e54ef26836907a, type: 3}
+      propertyPath: ATKSpeed
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: -4848233346130369334, guid: c3ba85406b88076488e54ef26836907a, type: 3}
+      propertyPath: UnitCode
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 2327847460816656599, guid: c3ba85406b88076488e54ef26836907a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4712,6 +4800,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1240323715}
     m_Modifications:
+    - target: {fileID: 318634311849306840, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
+      propertyPath: ATKSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 318634311849306840, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
+      propertyPath: UnitCode
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2824438846205772070, guid: ae27207b8dca33a4d84bcfe098ea25d4, type: 3}
       propertyPath: m_Name
       value: TeamPlayer1
@@ -5255,6 +5351,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 905654744}
     m_Modifications:
+    - target: {fileID: -4848233346130369334, guid: 3cb462d7e1c379943aeca4dad6d05657, type: 3}
+      propertyPath: ATKSpeed
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: -4848233346130369334, guid: 3cb462d7e1c379943aeca4dad6d05657, type: 3}
+      propertyPath: UnitCode
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 2327847460816656599, guid: 3cb462d7e1c379943aeca4dad6d05657, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

@@ -37,7 +37,7 @@ public class PGC_GameManager : MonoBehaviour
                         _unitPool[i].GetChild(j).gameObject.tag = "p1";
                         break;
                     case 1:
-                        _p1UnitList.Add(_unitPool[i].GetChild(j).GetComponent<PGC_Unit>());
+                        _p2UnitList.Add(_unitPool[i].GetChild(j).GetComponent<PGC_Unit>());
                         _unitPool[i].GetChild(j).gameObject.tag = "p2";
                         break;
                 }

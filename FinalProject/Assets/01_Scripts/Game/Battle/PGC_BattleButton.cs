@@ -16,7 +16,7 @@ public class PGC_BattleButton : MonoBehaviour
     List<int> sequencePlayer = new List<int>();//플레이어 순서 *비어있음 전투 끝나면 초기화
 
     [SerializeField]
-    PGC_BattleJudgment judgment;
+    PGC_BattleManager battleManager;
 
     [SerializeField]
     List<GameObject> sonButtons = new List<GameObject>(); //자식 버튼들 
@@ -147,7 +147,7 @@ public class PGC_BattleButton : MonoBehaviour
     {
         SetActiveCheckButtons();
         PlayerSort();
-        judgment.GetInputSeqeunce(sequencePlayer);
-        judgment.FightStart();
+        battleManager.GetInputSeqeunce(sequencePlayer);
+        battleManager.FightStart();
     }
 }
