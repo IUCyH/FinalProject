@@ -1,5 +1,5 @@
 
-Ucsharpsquid:S3903	",Move 'OrderOfButton' into a named namespace.(ĞÏÌ¥øÿÿÿÿ8Çùì¢¶1
-Ucsharpsquid:S3903",Move 'LobbyMainMenu' into a named namespace.(…î†¥ùÿÿÿÿ8Çùì¢¶1
-Qcsharpsquid:S3903"-Move 'LobbyUIManager' into a named namespace.(–¸æ8Èùì¢¶1
-Ecsharpsquid:S2933,"Make 'uiSprites' 'readonly'.(÷•¼¨ùÿÿÿÿ8Èùì¢¶1
+Ucsharpsquid:S3903
+",Move 'LobbyMainMenu' into a named namespace.(…î†¥ùÿÿÿÿ8Çùì¢¶1
+Qcsharpsquid:S3903"-Move 'LobbyUIManager' into a named namespace.(–¸æ8Èùì¢¶1
+Ecsharpsquid:S2933)"Make 'uiSprites' 'readonly'.(÷•¼¨ùÿÿÿÿ8…Œ›—¹1

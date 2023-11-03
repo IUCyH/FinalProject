@@ -57,8 +57,6 @@ r
 BAssets/Photon/Fusion/Scripts/Prototyping/PlayerSpawnerPrototype.cs,e\4\e4d5f4b8778b7dd2b57900cc1a78eed71fef14a8
 N
 Assets/01_Scripts/Data/Data.cs,d\0\d0332d87100b45876c60fcc09b27c02fbef7f649
-[
-+Assets/01_Scripts/Setting/SettingManager.cs,4\0\40e01ff7307a3d98aad3fa550eac1f1d2234e454
 b
 2Assets/01_Scripts/UI/Lobby/MainMenu/MailBoxMenu.cs,e\3\e3531b8fb703d414a503283198a84425319cdba6
 h
@@ -105,15 +103,21 @@ b
 2Assets/01_Scripts/UI/Lobby/MainMenu/FriendsMenu.cs,6\f\6f849d33180e3b2bbeea907f45452b33d4e4edb6
 U
 %Assets/01_Scripts/Data/DataManager.cs,c\3\c3a6cf9d96e064a4072a439ab8a3ca59721b60aa
-V
-&Assets/01_Scripts/Game/BattleButton.cs,e\7\e743d1e6d769fbd1187f38ecc230e17f8a91d521
 \
 ,Assets/01_Scripts/UI/Lobby/LobbyUIManager.cs,a\1\a19a7003914aa3ace52d12555f23d116114f3abe
 ]
 -Assets/01_Scripts/UI/Lobby/MainLobbyButton.cs,3\5\35f1efba5a8540a91e859423e681d97bb5e9cf9b
 X
 (Assets/01_Scripts/Etc/MatchingManager.cs,9\7\97b54440d9c53ec2a5f680e396687e746e971409
-]
--Assets/01_Scripts/Game/Manager/GameManager.cs,7\9\790ec6787b63153e424677e7d76be74c40a0a271
+a
+1Assets/01_Scripts/Game/Battle/PGC_BattleButton.cs,e\9\e9972c7cf3c862e41042e97e3c72db4c337ed5db
+c
+3Assets/01_Scripts/Game/Manager/PGC_BattleManager.cs,3\8\385c4ab3950f01ad635b59441299b2590bd75dba
+O
+Assets/01_Scripts/Etc/CILoad.cs,c\4\c4559aaadfdca6bdd16d0bb8d4817460e33391f4
 _
-/Assets/01_Scripts/Setting/ProgressBarManager.cs,5\2\527493cecbb20d92accf6abae33cb8abc4153359
+/Assets/01_Scripts/Setting/PGC_SettingManager.cs,3\c\3c5080b8742b75b06b17002210daed7f147b493d
+e
+5Assets/01_Scripts/UI/Lobby/MainMenu/EditGardenMenu.cs,c\8\c8f5368e77a9207c8b3abac180e50f9ad6b64ba6
+E
+Assets/ButtonTest1.cs,e\d\ed328f0769a3c678376db7765eb747c4fd6bda74

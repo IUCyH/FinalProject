@@ -1,0 +1,7 @@
+
+‡csharpsquid:S101"fRename class 'PGC_BattleManager' to match pascal case naming rules, consider using 'PgcBattleManager'.(øá—®ùÿÿÿÿ
+Ecsharpsquid:S3903"(Move 'GAMESTATE' into a named namespace.(å¶Þí
+Ecsharpsquid:S3903"(Move 'TRUNSTATE' into a named namespace.(ø·ŸÑ
+Rcsharpsquid:S3903"0Move 'PGC_BattleManager' into a named namespace.(øá—®ùÿÿÿÿ
+|csharpsquid:S2342"_Rename this enumeration to match the regular expression: '^([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$'.(å¶Þí
+|csharpsquid:S2342"_Rename this enumeration to match the regular expression: '^([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$'.(ø·ŸÑ

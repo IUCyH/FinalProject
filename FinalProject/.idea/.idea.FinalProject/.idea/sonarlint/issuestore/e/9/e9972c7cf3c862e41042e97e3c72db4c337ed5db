@@ -1,0 +1,7 @@
+
+Scsharpsquid:S11255"*Remove the unnecessary Boolean literal(s).(ÇŸå±ÿÿÿÿÿ8åŠû¹1
+Ncsharpsquid:S11257"*Remove the unnecessary Boolean literal(s).(áÉ±à8çŠû¹1
+Ncsharpsquid:S1125c"*Remove the unnecessary Boolean literal(s).(şÕØ¯8éŠû¹1
+Ncsharpsquid:S1125c"*Remove the unnecessary Boolean literal(s).(şÕØ¯8ëŠû¹1
+…csharpsquid:S101"dRename class 'PGC_BattleButton' to match pascal case naming rules, consider using 'PgcBattleButton'.(îÓçûÿÿÿÿ
+Qcsharpsquid:S3903"/Move 'PGC_BattleButton' into a named namespace.(îÓçûÿÿÿÿ

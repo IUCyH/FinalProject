@@ -36,6 +36,7 @@ public class DataManager : Singleton_DontDestroy<DataManager>
     public PlayerData PlayerData => playerData;
     public List<PlayerData> Players => playersInGame;
     public bool LoadCompleted { get; private set; }
+    public float LoadProgress { get; private set; }
 
     protected override void OnAwake()
     {
@@ -100,6 +101,11 @@ public class DataManager : Singleton_DontDestroy<DataManager>
         playerData.isOnline = true;
         Save();
     }
+
+    void UpdateLoadProgress(float value)
+    {
+        LoadProgress += value;
+    }
     
     void Load()
     {
@@ -116,6 +122,7 @@ public class DataManager : Singleton_DontDestroy<DataManager>
 
                 if (snapshot.Exists)
                 {
+                    Debug.Log(snapshot.GetRawJsonValue());
                     playerData = JsonUtility.FromJson<PlayerData>(snapshot.GetRawJsonValue());
                     playerData.unlockedChapters = JsonUtility.FromJson<List<bool>>(playerData.jsonOfChapters);
                 }
@@ -132,6 +139,7 @@ public class DataManager : Singleton_DontDestroy<DataManager>
                 }
 
                 Save();
+                UpdateLoadProgress(0.3f);
                 Debug.Log("데이터 로드 성공");
             }
         });
@@ -143,16 +151,17 @@ public class DataManager : Singleton_DontDestroy<DataManager>
         DirectoryInfo directoryInfo = new DirectoryInfo(path);
 
         await GetBundleNames();
+        UpdateLoadProgress(0.1f);
         
         if(!directoryInfo.Exists)
         {
             directoryInfo.Create();
             StartCoroutine(Coroutine_CacheSpritesFromStorage());
-            
         }
         else
         {
             await PatchManager.Instance.CheckUpdateAndPatch(directoryInfo, path);
+            UpdateLoadProgress(0.1f);
         }
 
         StartCoroutine(Coroutine_InitAssetBundlesList(path));
@@ -205,8 +214,8 @@ public class DataManager : Singleton_DontDestroy<DataManager>
             }
         }
         
+        UpdateLoadProgress(0.5f);
         LoadCompleted = true;
-        //SceneLoadManager.Instance.Load(KindOfScene.Lobby);
     }
 
     IEnumerator Coroutine_CacheSpritesFromStorage()
@@ -232,5 +241,6 @@ public class DataManager : Singleton_DontDestroy<DataManager>
 
             File.WriteAllBytes(path, request.downloadHandler.data);
         }
+        UpdateLoadProgress(0.1f);
     }
 }

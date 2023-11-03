@@ -5,7 +5,7 @@ using UnityEngine;
 public class PGC_BattleManager : MonoBehaviour 
 {
     #region ValueList
-    //ºÎ¸ğ
+    //ë¶€ëª¨
     [SerializeField]
     Transform p1Team;
     [SerializeField]
@@ -13,7 +13,7 @@ public class PGC_BattleManager : MonoBehaviour
 
     List<int> finalSequence = new List<int>();
 
-    //ÀÔ·Â°ª
+    //ì…ë ¥ê°’
     [SerializeField]
     List<int>  p1InputValue = new List<int>();
 
@@ -26,7 +26,7 @@ public class PGC_BattleManager : MonoBehaviour
     [SerializeField]
     List<int> p2AtkSpeed = new List<int>();
 
-    //°³Ã¼ ¼ö Ä«¿îÆ®
+    //ê°œì²´ ìˆ˜ ì¹´ìš´íŠ¸
     [SerializeField]
     int p1TeamCount;
     [SerializeField]
@@ -35,7 +35,7 @@ public class PGC_BattleManager : MonoBehaviour
 
 
 
-    void Start() //ÀüÅõ ½ÃÀÛ ½Ã ¿ÀºêÁ§Æ® ÀÚ½Ä¿¡ »ı¼ºÇÏ±â ¶Ç´Â ÀÌµ¿ 
+    void Start() //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½Ú½Ä¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½Ç´ï¿½ ï¿½Ìµï¿½ 
     {
         p1TeamCount = p1Team.childCount;
         p2TeamCount = p2Team.childCount;
@@ -45,7 +45,7 @@ public class PGC_BattleManager : MonoBehaviour
     public void GetInputSeqeunce(List<int> myInputSkillNum)
     {
         p1InputValue = myInputSkillNum;
-    } //¼ø¼­´ë·Î ¹Ş¾Æ¿È
+    } //ìˆœì„œëŒ€ë¡œ ë°›ì•„ì˜´
 
     [SerializeField]
     PGC_GameManager gameManager;
@@ -74,7 +74,7 @@ public class PGC_BattleManager : MonoBehaviour
         }
     }
 
-    //ÀüÅõ½ÇÇà, 2¹è¼Ó °í·Á
+    //ì „íˆ¬ì‹¤í–‰, 2ë°°ì† ê³ ë ¤
     public void FightStart()
     {
         SpeedCheck();
@@ -91,14 +91,14 @@ public class PGC_BattleManager : MonoBehaviour
         }
         else
         {
-            //ÀÚµ¿ÀüÅõ °í·Á ¶Ç´Â ´Ù½Ã 
+            //ìë™ì „íˆ¬ ê³ ë ¤ ë˜ëŠ” ë‹¤ì‹œ 
         }
     }
 
 
     public void SpeedCheck()
     {       
-        //°ø¼Ó ºñ±³
+        //ê³µì† ë¹„êµ
         for (int i = 0; i < p1TeamCount; i++)
         {
             if (p1InputValue[i] != p2InputValue[i])
@@ -126,7 +126,7 @@ public class PGC_BattleManager : MonoBehaviour
 
     void AddSequenceByHalfChance(int order)
     {
-        // µ¿ÀÏÇÑ °æ¿ì 50% Ã³¸®
+        // ë™ì¼í•œ ê²½ìš° 50% ì²˜ë¦¬
         bool halfATK = Dods_ChanceMaker.GetThisChanceResult_Percentage(50);
         if (halfATK)
         {
@@ -138,7 +138,7 @@ public class PGC_BattleManager : MonoBehaviour
         }
     }
 
-    //¸®½ºÆ® ¼ø¼­´ë·Î ½ÇÇà (¿¬¼Ó°ø°İ °í·Á)
+    //ë¦¬ìŠ¤íŠ¸ ìˆœì„œëŒ€ë¡œ ì‹¤í–‰ (ì—°ì†ê³µê²© ê³ ë ¤)
     public void SkillSeqencePlay() 
     {      
 
@@ -152,14 +152,14 @@ public class PGC_BattleManager : MonoBehaviour
                 int num1 = 1;
                 if(p1AtkSpeed[i] < p2AtkSpeed[i] * 2)
                 {
-                    Debug.Log(i + "¹øÂ° Àû±ºÀÌ ‹š¸²");
+                    Debug.Log(i + "ë²ˆì§¸ ì êµ°ì´ ë–„ë¦¼");
                     i++;
                     continue;
                 }
 
                 for (int j = 0; j < Mathf.Abs(p2AtkSpeed[i] - (p1AtkSpeed[i] * num1)); j++)
                 {
-                    Debug.Log(i + "¹øÂ° ¾Æ±ºÀÌ ‹š¸²");
+                    Debug.Log(i + "ë²ˆì§¸ ì•„êµ°ì´ ë–„ë¦¼");
                     num1++;
                 }
 
@@ -167,7 +167,7 @@ public class PGC_BattleManager : MonoBehaviour
             else if (isFasterThanP2 && p1AtkSpeed[i] < p2AtkSpeed[i] * 2)
             {
                 print("isFasterThanEnemy : else if");
-                Debug.Log(i + "¹øÂ° Àû±ºÀÌ ‹š¸²");
+                Debug.Log(i + "ë²ˆì§¸ ì êµ°ì´ ë–„ë¦¼");
             }
             else
             {
@@ -178,12 +178,12 @@ public class PGC_BattleManager : MonoBehaviour
 
                     for (int j = 0; j < Mathf.Abs(p1AtkSpeed[i] - (p2AtkSpeed[i] * num2)); j++) 
                     { 
-                        Debug.Log(i + "¹øÂ° Àû±ºÀÌ ‹š¸²");
+                        Debug.Log(i + "ë²ˆì§¸ ì êµ°ì´ ë–„ë¦¼");
                     }
                 }
                 else
                 {
-                    Debug.Log(i + "¹øÂ° ¾Æ±ºÀÌ ‹š¸²");
+                    Debug.Log(i + "ë²ˆì§¸ ì•„êµ°ì´ ë–„ë¦¼");
                 }
             }
 
@@ -196,7 +196,7 @@ public class PGC_BattleManager : MonoBehaviour
         FightEnd();
     }
 
-    //¶§¸± ‹š °ø½Ä, ¼ö½Ä °è»êÇÏ±â
+    //ë•Œë¦´ ë–„ ê³µì‹, ìˆ˜ì‹ ê³„ì‚°í•˜ê¸°
 
 }
 
