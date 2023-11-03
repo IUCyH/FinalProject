@@ -2633,11 +2633,12 @@ MonoBehaviour:
   p1Team: {fileID: 1240323715}
   p2Team: {fileID: 905654744}
   p1InputValue: 
-  p2InputValue: 
+  p2InputValue: 01000000020000000300000004000000
   p1AtkSpeed: 
   p2AtkSpeed: 
   p1TeamCount: 0
   p2TeamCount: 0
+  gameManager: {fileID: 986736422}
 --- !u!114 &986736421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2667,6 +2668,7 @@ MonoBehaviour:
   - {fileID: 905654744}
   _p1UnitList: []
   _p2UnitList: []
+  battleManager: {fileID: 986736420}
 --- !u!1 &1045446384
 GameObject:
   m_ObjectHideFlags: 0
@@ -4537,11 +4539,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -4848233346130369334, guid: c3ba85406b88076488e54ef26836907a, type: 3}
       propertyPath: ATKSpeed
-      value: 60
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: -4848233346130369334, guid: c3ba85406b88076488e54ef26836907a, type: 3}
       propertyPath: UnitCode
-      value: 60
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 2327847460816656599, guid: c3ba85406b88076488e54ef26836907a, type: 3}
       propertyPath: m_Pivot.x
@@ -5353,11 +5355,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -4848233346130369334, guid: 3cb462d7e1c379943aeca4dad6d05657, type: 3}
       propertyPath: ATKSpeed
-      value: 60
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: -4848233346130369334, guid: 3cb462d7e1c379943aeca4dad6d05657, type: 3}
       propertyPath: UnitCode
-      value: 60
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 2327847460816656599, guid: 3cb462d7e1c379943aeca4dad6d05657, type: 3}
       propertyPath: m_Pivot.x

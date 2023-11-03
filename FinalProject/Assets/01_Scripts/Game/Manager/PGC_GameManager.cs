@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PGC_GameManager : MonoBehaviour
+public class PGC_GameManager : Singleton<PGC_GameManager>
 {
     public List<RectTransform> _unitPool = new List<RectTransform> ();
 
@@ -10,15 +10,18 @@ public class PGC_GameManager : MonoBehaviour
 
     public List<PGC_Unit> _p2UnitList = new List<PGC_Unit>();
 
-
     void Awake()
     {
         //DataManager.Instance.Manager = this;
     }
 
+    [SerializeField]
+    PGC_BattleManager battleManager;
+
     void Start()
     {
         SetUnitList();
+        battleManager.GetUnitSpeed();
     }
 
     void SetUnitList()
@@ -44,6 +47,8 @@ public class PGC_GameManager : MonoBehaviour
             }
         }
     }
+
+    
 
     public PGC_Unit GetTarget(PGC_Unit unit)
     {

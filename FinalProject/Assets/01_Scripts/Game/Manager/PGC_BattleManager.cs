@@ -33,11 +33,13 @@ public class PGC_BattleManager : MonoBehaviour
     int p2TeamCount;
     #endregion
 
+
+
     void Start() //전투 시작 시 오브젝트 자식에 생성하기 또는 이동 
     {
         p1TeamCount = p1Team.childCount;
         p2TeamCount = p2Team.childCount;
-
+     
     }
 
     public void GetInputSeqeunce(List<int> myInputSkillNum)
@@ -45,9 +47,31 @@ public class PGC_BattleManager : MonoBehaviour
         p1InputValue = myInputSkillNum;
     } //순서대로 받아옴
 
-    public void GetATKSpeed(List<int> myPlayerSpeed) //순서대로 받아옴
+    [SerializeField]
+    PGC_GameManager gameManager;
+
+    public void GetUnitSpeed()
     {
-        p1AtkSpeed = myPlayerSpeed;
+        var list1 = gameManager._p1UnitList;
+        var list2 = gameManager._p2UnitList;
+
+        for (int i = 0; i < list1.Count; i++)
+        {
+            GameObject p1Obj = list1[i].gameObject;
+
+            var p1Information = p1Obj.GetComponent<PGC_Unit>();
+
+            p1AtkSpeed.Add(p1Information.ATKSpeed);
+        }
+
+        for (int i = 0; i < list2.Count; i++)
+        {
+            GameObject p2Obj = list2[i].gameObject;
+
+            var p2Information = p2Obj.GetComponent<PGC_Unit>();
+
+            p2AtkSpeed.Add(p2Information.ATKSpeed);
+        }
     }
 
     //전투실행, 2배속 고려
@@ -86,9 +110,6 @@ public class PGC_BattleManager : MonoBehaviour
                 AddSequenceByHalfChance(i);
             }
         }
-    
-        //p1AtkSpeed.Sort(); // 속도 정보 정렬
-        //p2AtkSpeed.Sort();
     }
 
     void AddSequenceBySkillNumber(int order)
@@ -121,11 +142,11 @@ public class PGC_BattleManager : MonoBehaviour
     public void SkillSeqencePlay() 
     {      
 
-        for (int i = 0; i < finalSequence.Count; i++)
+        for (int i = 0; i < finalSequence.Count; i++) //
         {
-            bool isFasterThanEnemy = p1AtkSpeed[i] > p2AtkSpeed[i];
+            bool isFasterThanP2 = p1AtkSpeed[i] > p2AtkSpeed[i];
 
-            if (isFasterThanEnemy)
+            if (isFasterThanP2)
             {
                 print("isFasterThanEnemy : true");
                 int num1 = 1;
@@ -143,14 +164,14 @@ public class PGC_BattleManager : MonoBehaviour
                 }
 
             }
-            else if (isFasterThanEnemy && p1AtkSpeed[i] < p2AtkSpeed[i] * 2)
+            else if (isFasterThanP2 && p1AtkSpeed[i] < p2AtkSpeed[i] * 2)
             {
                 print("isFasterThanEnemy : else if");
                 Debug.Log(i + "번째 적군이 떄림");
             }
             else
             {
-                print("isFasterThanEnemy : false");
+                print("isFasterThanEnemy : false"); 
                 if (p2AtkSpeed[i] > p1AtkSpeed[i] * 2)
                 {
                     float num2 = 1.5f;

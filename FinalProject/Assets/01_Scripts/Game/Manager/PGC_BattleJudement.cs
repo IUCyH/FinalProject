@@ -12,7 +12,8 @@ public enum GAMESTATE
 enum TRUNSTATE
 {
     Start,
-    Processing,
+    P1trun,
+    P2trun,
     End
 }
 
