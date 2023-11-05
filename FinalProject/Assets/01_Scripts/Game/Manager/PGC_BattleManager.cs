@@ -37,6 +37,8 @@ public class PGC_BattleManager : MonoBehaviour
     [SerializeField]
     int p2TeamCount;
 
+    
+
     void Update() 
     {
         p1TeamCount = p1Team.childCount;
@@ -102,7 +104,7 @@ public class PGC_BattleManager : MonoBehaviour
         }
     }
 
-    bool ArePositionsEqual(List<int> list1, List<int> list2, int valueToCompare)
+    bool ArePositionsEqual(List<int> list1, List<int> list2, int valueToCompare) //리스트의 인덱스 같은 값 체크
     {
         int indexInList1 = list1.IndexOf(valueToCompare);
         int indexInList2 = list2.IndexOf(valueToCompare);
@@ -114,130 +116,140 @@ public class PGC_BattleManager : MonoBehaviour
     {
         for (int i = 0; i < 4; i++) //수정필요
         {
-            bool result = ArePositionsEqual(p1InputValue, p2InputValue, i); 
+            bool result = ArePositionsEqual(p1InputValue, p2InputValue, i + 1); //1부터 같은지 체크
        
-            if (result) //스킬순서가 같다면 실행
+            if (result) //스킬순서가 같다면 속도 비교 실행
             {
-                SameSkillSequence(i);               
+                SameSkillSequence(i); //AtkSpeed는 인풋 순서대로니깐 걱정마세요               
             }
-            else //스킬순서가 다르다면 실행
+            else //스킬순서가 다르다면 둘 중 랜덤 실행
             {
-                AnotherSkillSequence(i);
+                RandomSkillSequence(i); //AtkSpeed는 인풋 순서대로니깐 걱정마세요
             }
-        }
-        //Debug.Log("i의 위치가 두 리스트에서 똑같은가? " + result); 
+            Debug.Log("i의 위치가 두 리스트에서 똑같은가? " + result);
+        }      
     }
 
     void SameSkillSequence(int order) //스킬 사용 순서가 같으면 속도가 높은 것 실행 후 2번째 것 실행
     {
         if (p1AtkSpeed[order] > p2AtkSpeed[order]) 
         {
-            print("먼저 때린 유닛 : p1");
-            p1AtkCount[order]++;
-            ATKTest(order);
-            p2AtkCount[order]++;
-            ATKTest(order);
+            float threshold = p1AtkSpeed[order] * 0.05f;
+            if (threshold > p1AtkSpeed[order] - p2AtkSpeed[order]) //동속전
+            {
+                //동속전 이펙트 실행 포함
+                RandomSkillSequence(order); 
+            }
+            else //그냥 실행
+            {
+                print("먼저 때린 유닛 : p1");
+                p1SkillTest(order);
+                p2SkillTest(order);
+            }
         }
         else
         {
-            print("먼저 때린 유닛 : p2");
-            p2AtkCount[order]++;
-            ATKTest(order);
-            p1AtkCount[order]++;
-            ATKTest(order);
+            float threshold = p2AtkSpeed[order] * 0.05f;
+            if (threshold > p1AtkSpeed[order] - p2AtkSpeed[order]) //동속전
+            {
+                //동속전 이펙트 실행 포함
+                RandomSkillSequence(order);
+            }
+            else //그냥 실행
+            {
+                print("먼저 때린 유닛 : p2");
+                p1SkillTest(order);
+                p1SkillTest(order);
+            }
         }
     }
 
-    void AnotherSkillSequence(int order) //스킬 사용 순서가 다르면 둘 중 랜덤 실행 
+    void RandomSkillSequence(int order)
     {
-        // 동일한 경우 50% 처리
+        //50% 처리
         bool halfATK = Dods_ChanceMaker.GetThisChanceResult_Percentage(50);
         if (halfATK)
         {
             print("먼저 때린 유닛 : p1");
-            p1AtkCount[order]++;
-            ATKTest(order);
-            p2AtkCount[order]++;
-            ATKTest(order);
+            p1SkillTest(order);
+            p2SkillTest(order);
         }
         else
         {
             print("먼저 때린 유닛 : p2");
-            p2AtkCount[order]++;
-            ATKTest(order);
-            p1AtkCount[order]++;
-            ATKTest(order);
-        }      
+            p2SkillTest(order);
+            p1SkillTest(order);
+        }
     }
 
-    
 
-    //int testNum = 20;
+    public void SkillSeqencePlay()
+    {
 
-    //연속공격 고려
-    //public void SkillSeqencePlay() 
-    //{      
+        for (int i = 0; i < 4; i++)
+        {
+            bool isFasterThanP2 = p1AtkSpeed[i] > p2AtkSpeed[i];
 
-    //    for (int i = 0; i < testNum; i++) //
-    //    {
-    //        bool isFasterThanP2 = p1AtkSpeed[i] > p2AtkSpeed[i];
+            if (isFasterThanP2)
+            {
+                print("isFasterThanEnemy : true");
+                int num1 = 1;
+                if (p1AtkSpeed[i] > p2AtkSpeed[i] * 2)
+                {
+                    Debug.Log(i + "번째 적군이 떄림");
+                    i++;
+                    continue;
+                }
 
-    //        if (isFasterThanP2)
-    //        {
-    //            print("isFasterThanEnemy : true");
-    //            int num1 = 1;
-    //            if(p1AtkSpeed[i] < p2AtkSpeed[i] * 2)
-    //            {
-    //                Debug.Log(i + "번째 적군이 떄림");
-    //                i++;
-    //                continue;
-    //            }
+                for (int j = 0; j < Mathf.Abs(p2AtkSpeed[i] - (p1AtkSpeed[i] * num1)); j++)
+                {
+                    Debug.Log(i + "번째 아군이 떄림");
+                    num1++;
+                }
 
-    //            for (int j = 0; j < Mathf.Abs(p2AtkSpeed[i] - (p1AtkSpeed[i] * num1)); j++)
-    //            {
-    //                Debug.Log(i + "번째 아군이 떄림");
-    //                num1++;
-    //            }
+            }
+            else if (isFasterThanP2 && p1AtkSpeed[i] < p2AtkSpeed[i] * 2)
+            {
+                print("isFasterThanEnemy : else if");
+                Debug.Log(i + "번째 적군이 떄림");
+            }
+            else
+            {
+                print("isFasterThanEnemy : false");
+                if (p2AtkSpeed[i] > p1AtkSpeed[i] * 2)
+                {
+                    float num2 = 1.5f;
 
-    //        }
-    //        else if (isFasterThanP2 && p1AtkSpeed[i] < p2AtkSpeed[i] * 2)
-    //        {
-    //            print("isFasterThanEnemy : else if");
-    //            Debug.Log(i + "번째 적군이 떄림");
-    //        }
-    //        else
-    //        {
-    //            print("isFasterThanEnemy : false"); 
-    //            if (p2AtkSpeed[i] > p1AtkSpeed[i] * 2)
-    //            {
-    //                float num2 = 1.5f;
+                    for (int j = 0; j < Mathf.Abs(p1AtkSpeed[i] - (p2AtkSpeed[i] * num2)); j++)
+                    {
+                        Debug.Log(i + "번째 적군이 떄림");
+                    }
+                }
+                else
+                {
+                    Debug.Log(i + "번째 아군이 떄림");
+                }
+            }
 
-    //                for (int j = 0; j < Mathf.Abs(p1AtkSpeed[i] - (p2AtkSpeed[i] * num2)); j++) 
-    //                { 
-    //                    Debug.Log(i + "번째 적군이 떄림");
-    //                }
-    //            }
-    //            else
-    //            {
-    //                Debug.Log(i + "번째 아군이 떄림");
-    //            }
-    //        }
-
-    //        i++;
-    //    }
+            i++;
+        }
 
 
-    //    FightEnd();
-    //}
+        FightEnd();
+    }
 
     //때릴 떄 공식, 수식 계산하기
-    void ATKTest(int whatP)
+    void p1SkillTest(int order)
     {
-        //print("먼저 때린 유닛 :" + whatP);
-        
+        p1AtkCount[order]++;
+
     }
 
+    void p2SkillTest(int order)
+    {
+        p2AtkCount[order]++;
 
+    }
 }
 
 
