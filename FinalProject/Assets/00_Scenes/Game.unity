@@ -2636,6 +2636,8 @@ MonoBehaviour:
   p2InputValue: 01000000020000000300000004000000
   p1AtkSpeed: 
   p2AtkSpeed: 
+  p1AtkCount: 00000000000000000000000000000000
+  p2AtkCount: 00000000000000000000000000000000
   p1TeamCount: 0
   p2TeamCount: 0
   gameManager: {fileID: 986736422}

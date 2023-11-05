@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class PGC_BattleManager : MonoBehaviour 
 {
-    #region ValueList
     //부모
     [SerializeField]
     Transform p1Team;
     [SerializeField]
     Transform p2Team;
 
-    List<int> finalSequence = new List<int>();
 
     //입력값
     [SerializeField]
@@ -26,26 +24,28 @@ public class PGC_BattleManager : MonoBehaviour
     [SerializeField]
     List<int> p2AtkSpeed = new List<int>();
 
+    [SerializeField]
+    List<int> p1AtkCount = new List<int>(); //4명의 공격 횟수
+
+    [SerializeField]
+    List<int> p2AtkCount = new List<int>(); //4명의 공격 횟수
+
     //개체 수 카운트
     [SerializeField]
     int p1TeamCount;
     [SerializeField]
     int p2TeamCount;
-    #endregion
 
-
-
-    void Start() //���� ���� �� ������Ʈ �ڽĿ� �����ϱ� �Ǵ� �̵� 
+    void Update() 
     {
         p1TeamCount = p1Team.childCount;
-        p2TeamCount = p2Team.childCount;
-     
+        p2TeamCount = p2Team.childCount;   
     }
 
     public void GetInputSeqeunce(List<int> myInputSkillNum)
     {
         p1InputValue = myInputSkillNum;
-    } //순서대로 받아옴
+    } 
 
     [SerializeField]
     PGC_GameManager gameManager;
@@ -84,6 +84,10 @@ public class PGC_BattleManager : MonoBehaviour
     void FightEnd()
     {
         Debug.Log("FightEnd");
+        //p1InputValue.Clear();
+        //p2InputValue.Clear();
+        //PGC_BattleButton.sequenceValue.Clear();
+        //PGC_BattleButton.sequencePlayer.Clear();
 
         if (p1TeamCount + p2TeamCount < 1)
         {
@@ -99,7 +103,7 @@ public class PGC_BattleManager : MonoBehaviour
     public void SpeedCheck()
     {       
         //공속 비교
-        for (int i = 0; i < p1TeamCount; i++)
+        for (int i = 0; i < p1TeamCount; i++) //p1TeamCount수정필요
         {
             if (p1InputValue[i] != p2InputValue[i])
             {
@@ -114,35 +118,49 @@ public class PGC_BattleManager : MonoBehaviour
 
     void AddSequenceBySkillNumber(int order)
     {
-        if (p1InputValue[order] > p2InputValue[order])
+        if (p1InputValue[order] < p2InputValue[order]) //이게 p1이 순서가 큰거임
         {
-            finalSequence.Add(p1InputValue[order]);
+            p1AtkCount[order]++;
+            ATKTest(1);
+            p2AtkCount[order]++;
+            ATKTest(2);
         }
         else
         {
-            finalSequence.Add(p2InputValue[order]);
+            p2AtkCount[order]++;
+            ATKTest(2);
+            p1AtkCount[order]++;
+            ATKTest(2);
         }
     }
 
-    void AddSequenceByHalfChance(int order)
+    void AddSequenceByHalfChance(int order) //스킬 사용 순서가 다르면 둘 중 하나 먼저 실행 후 2번째 것 실행
     {
         // 동일한 경우 50% 처리
         bool halfATK = Dods_ChanceMaker.GetThisChanceResult_Percentage(50);
         if (halfATK)
         {
-            finalSequence.Add(p1InputValue[order]);
+            p1AtkCount[order]++;
+            ATKTest(1);
+            p2AtkCount[order]++;
+            ATKTest(2);
         }
         else
         {
-            finalSequence.Add(p2InputValue[order]);
+            p2AtkCount[order]++;
+            ATKTest(2);
+            p1AtkCount[order]++;
+            ATKTest(1);
         }
     }
 
-    //리스트 순서대로 실행 (연속공격 고려)
+    int testNum = 20;
+
+    //연속공격 고려
     public void SkillSeqencePlay() 
     {      
 
-        for (int i = 0; i < finalSequence.Count; i++) //
+        for (int i = 0; i < testNum; i++) //
         {
             bool isFasterThanP2 = p1AtkSpeed[i] > p2AtkSpeed[i];
 
@@ -190,14 +208,23 @@ public class PGC_BattleManager : MonoBehaviour
             i++;
         }
 
-        
-
 
         FightEnd();
     }
 
     //때릴 떄 공식, 수식 계산하기
-
+    IEnumerator ATKTest(int whatP)
+    {
+        if (whatP == 1)
+        {
+            print("1");
+        }
+        else if (whatP == 2)
+        {
+            print("2");
+        }
+        yield return new WaitForSeconds(3f);
+    }
 }
 
 
