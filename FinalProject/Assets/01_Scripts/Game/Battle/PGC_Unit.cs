@@ -79,7 +79,7 @@ public class PGC_Unit : MonoBehaviour
     public int DamageReduction;
 
     [Header("IndividualType ")]
-    public int ATKSpeed;
+    public float ATKSpeed;
     public int Evasion;
     public int BasicATKDamageReflected;
     public int SkillATKDamageReflected;
