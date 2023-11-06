@@ -53,7 +53,8 @@ namespace AttackType
     public enum ATKType
     {
         Basic,
-        Skill //heal도 포함
+        ATKSkill,
+        Heal
     }
 }
 
@@ -106,15 +107,28 @@ public class PGC_Unit : MonoBehaviour
         {
             case ATKType.Basic:
                 break;
-            case ATKType.Skill:
+            case ATKType.ATKSkill:
+                break;
+            case ATKType.Heal:
                 break;
             default:
                 break;
         }
     }
 
-    void FindTarget()
+    //때릴 떄 대상 체크 및 공식, 수식 계산하기
+    public void FindTarget(ATKType aTKType)
     {
-        //DataManager.Instance.GetTarget(this);
+        
+    }
+
+    void IsDamaged()
+    {
+
+    }
+
+    void IsDead()
+    {
+
     }
 }

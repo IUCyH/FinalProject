@@ -10,11 +10,6 @@ public class PGC_GameManager : Singleton<PGC_GameManager>
 
     public List<PGC_Unit> _p2UnitList = new List<PGC_Unit>();
 
-    void Awake()
-    {
-        //DataManager.Instance.Manager = this;
-    }
-
     [SerializeField]
     PGC_BattleManager battleManager;
 
@@ -22,6 +17,8 @@ public class PGC_GameManager : Singleton<PGC_GameManager>
     {
         SetUnitList();
         battleManager.GetUnitSpeed();
+
+
     }
 
     void SetUnitList()
