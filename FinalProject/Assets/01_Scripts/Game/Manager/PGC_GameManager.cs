@@ -16,9 +16,8 @@ public class PGC_GameManager : Singleton<PGC_GameManager>
     void Start()
     {
         SetUnitList();
-        battleManager.GetUnitSpeed();
 
-        MatchingManager.Instance.Match();
+        //MatchingManager.Instance.Match();
     }
 
     void SetUnitList()

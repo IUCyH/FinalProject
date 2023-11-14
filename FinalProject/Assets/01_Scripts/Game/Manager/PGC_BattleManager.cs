@@ -48,7 +48,10 @@ public class PGC_BattleManager : MonoBehaviour
     void Update() 
     {
         p1TeamCount = p1Team.childCount;
-        p2TeamCount = p2Team.childCount;   
+        p2TeamCount = p2Team.childCount;
+
+        Debug.Log("p1AtkSpeed.Count" + p1AtkSpeed.Count);
+        Debug.Log("p2AtkSpeed.Count" + p2AtkSpeed.Count);
     }
 
     public void GetInputSeqeunce(List<int> myInputSkillNum)
@@ -71,6 +74,8 @@ public class PGC_BattleManager : MonoBehaviour
             var p1Information = p1Obj.GetComponent<PGC_Unit>();
 
             p1AtkSpeed.Add(p1Information.ATKSpeed);
+            Debug.Log(p1Information.ATKSpeed);
+            Debug.Log(p1AtkSpeed.Count);
         }
 
         for (int i = 0; i < list2.Count; i++)
@@ -80,13 +85,16 @@ public class PGC_BattleManager : MonoBehaviour
             var p2Information = p2Obj.GetComponent<PGC_Unit>();
 
             p2AtkSpeed.Add(p2Information.ATKSpeed);
+            Debug.Log(p2Information.ATKSpeed);
+            Debug.Log(p2AtkSpeed.Count);
         }
     }
 
     //전투실행, 2배속 고려
     public void FightStart()
     {
-        Check();
+        GetUnitSpeed();
+        StartCoroutine(StartSkillATK());
         StartBasicATK();
         FightEnd();
     }
@@ -117,41 +125,41 @@ public class PGC_BattleManager : MonoBehaviour
         return indexInList1 == indexInList2 && indexInList1 != -1;
     }
 
-    void Check()
+    IEnumerator StartSkillATK()
     {
         for (int i = 0; i < 4; i++) //수정필요
         {
             bool result = ArePositionsEqual(p1InputValue, p2InputValue, i + 1); //1부터 같은지 체크
        
             if (result) //스킬순서가 같다면 속도 비교 실행
-            {
-                SameSkillSequence(i); //AtkSpeed는 인풋 순서대로니깐 걱정마세요               
+            {                
+                yield return StartCoroutine(SameSkillSequence(i));
             }
             else //스킬순서가 다르다면 둘 중 랜덤 실행
             {
-                RandomSkillSequence(i); //AtkSpeed는 인풋 순서대로니깐 걱정마세요
+                yield return StartCoroutine(RandomSkillSequence(i));
             }
             //Debug.Log("i의 위치가 두 리스트에서 똑같은가? " + result);
-        }
-
-        
+        }      
     }
 
-    void SameSkillSequence(int order) //스킬 사용 순서가 같으면 속도가 높은 것 실행 후 2번째 것 실행
+    IEnumerator SameSkillSequence(int order) //스킬 사용 순서가 같으면 속도가 높은 것 실행 후 2번째 것 실행
     {
+        Debug.Log(order);
+
         if (p1AtkSpeed[order] > p2AtkSpeed[order]) 
-        {
+        {            
             float threshold = p1AtkSpeed[order] * 0.05f;
             if (threshold > p1AtkSpeed[order] - p2AtkSpeed[order]) //동속전
             {
                 //동속전 이펙트 실행 포함
-                RandomSkillSequence(order); 
+                yield return StartCoroutine(RandomSkillSequence(order)); 
             }
             else //그냥 실행
             {
-                //print("먼저 때린 유닛 : p1");
-                p1SkillTest(order);
-                p2SkillTest(order);
+                print("먼저 때린 유닛 : p1, Same");
+                yield return StartCoroutine(P1SkillTest(order));
+               
             }
         }
         else
@@ -160,32 +168,32 @@ public class PGC_BattleManager : MonoBehaviour
             if (threshold > p2AtkSpeed[order] - p1AtkSpeed[order]) //동속전
             {
                 //동속전 이펙트 실행 포함
-                RandomSkillSequence(order);
+                yield return StartCoroutine(RandomSkillSequence(order));              
             }
             else //그냥 실행
             {
-                //print("먼저 때린 유닛 : p2");
-                p2SkillTest(order);
-                p1SkillTest(order);
+                print("먼저 때린 유닛 : p2, Same");
+                yield return StartCoroutine(P2SkillTest(order));
+                yield return StartCoroutine(P1SkillTest(order));
             }
         }
     }
 
-    void RandomSkillSequence(int order)
+    IEnumerator RandomSkillSequence(int order)
     {
         //50% 처리
         bool halfATK = Dods_ChanceMaker.GetThisChanceResult_Percentage(50);
         if (halfATK)
         {
-            //print("먼저 때린 유닛 : p1");
-            p1SkillTest(order);
-            p2SkillTest(order);
+            print("먼저 때린 유닛 : p1, Random");
+            yield return StartCoroutine(P1SkillTest(order));
+            yield return StartCoroutine(P2SkillTest(order));
         }
         else
         {
-            //print("먼저 때린 유닛 : p2");
-            p2SkillTest(order);
-            p1SkillTest(order);
+            print("먼저 때린 유닛 : p2, Random");
+            yield return StartCoroutine(P2SkillTest(order));
+            yield return StartCoroutine(P1SkillTest(order));
         }
     }
 
@@ -202,13 +210,13 @@ public class PGC_BattleManager : MonoBehaviour
             if (maxSpeedP1 > maxSpeedP2)
             {
                 print("가장 높은 속도: P1" + maxSpeedP1);
-                p1ATKTest(indexP1);
+                P1ATKTest(indexP1);
                 p1AtkSpeed.Remove(maxSpeedP1);
             }
             else if (maxSpeedP2 > maxSpeedP1)
             {
                 print("가장 높은 속도: P2" + maxSpeedP2);
-                p2ATKTest(indexP2);
+                P2ATKTest(indexP2);
                 p2AtkSpeed.Remove(maxSpeedP2);
             }
             else
@@ -221,27 +229,27 @@ public class PGC_BattleManager : MonoBehaviour
                     bool halfATK = Dods_ChanceMaker.GetThisChanceResult_Percentage(50);
                     if (halfATK)
                     {
-                        print("가장 높은 속도: P1" + maxSpeedP1);
-                        p1ATKTest(indexP1);
+                        //print("가장 높은 속도: P1" + maxSpeedP1);
+                        P1ATKTest(indexP1);
                         p1AtkSpeed.Remove(maxSpeedP1);
                     }
                     else
                     {
-                        print("가장 높은 속도: P2" + maxSpeedP2);
-                        p2ATKTest(indexP2);
+                        //print("가장 높은 속도: P2" + maxSpeedP2);
+                        P2ATKTest(indexP2);
                         p2AtkSpeed.Remove(maxSpeedP2);
                     }
                 }
                 else if (maxSpeedP1 == maxSpeed)
                 {
-                    print("가장 높은 속도: P1" + maxSpeedP1);
-                    p1ATKTest(indexP1);
+                    //print("가장 높은 속도: P1" + maxSpeedP1);
+                    P1ATKTest(indexP1);
                     p1AtkSpeed.Remove(maxSpeedP1);
                 }
                 else if (maxSpeedP2 == maxSpeed)
                 {
-                    print("가장 높은 속도: P2" + maxSpeedP2);
-                    p2ATKTest(indexP2);
+                    //print("가장 높은 속도: P2" + maxSpeedP2);
+                    P2ATKTest(indexP2);
                     p2AtkSpeed.Remove(maxSpeedP2);
                 }
             }
@@ -253,35 +261,59 @@ public class PGC_BattleManager : MonoBehaviour
     ATKType aTKType;
 
     
-    void p1SkillTest(int order)
-    {     
+    IEnumerator P1SkillTest(int order)
+    {
         p1SkillCount[order]++;
         var list1 = gameManager._p1UnitList;
         GameObject p1Obj = list1[order].gameObject;
         var p1Unit = p1Obj.GetComponent<PGC_Unit>();
 
-        p1Unit.FindTarget(ATKType.ATKSkill);
 
+        p1Unit.P1FindTarget(ATKType.ATKSkill);
+
+        Debug.Log("p1SkillTest");
+
+        float elapsedTime = 0f;
+        while (elapsedTime < 6f)
+        {
+            // 기다리는 동안의 추가 로직이 있다면 여기에 추가할 수 있습니다.
+
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
     }
 
-    void p2SkillTest(int order)
+    IEnumerator P2SkillTest(int order)
     {
         p2SkillCount[order]++;
+        var list2 = gameManager._p2UnitList;
+        GameObject p2Obj = list2[order].gameObject;
+        var p2Unit = p2Obj.GetComponent<PGC_Unit>();
 
+
+        p2Unit.P2FindTarget(ATKType.ATKSkill);
+
+        float elapsedTime = 0f;
+        while (elapsedTime < 6f)
+        {
+            // 기다리는 동안의 추가 로직이 있다면 여기에 추가할 수 있습니다.
+
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
     }
 
-    void p1ATKTest(int order)
+    void P1ATKTest(int order)
     {
         p1ATKCount[order]++;
 
     }
 
-    void p2ATKTest(int order)
+    void P2ATKTest(int order)
     {
         p2ATKCount[order]++;
 
     }
-
 }
 
 

@@ -1,7 +1,10 @@
 using AttackType;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using Unity.Mathematics;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 #region Set List
 //##필수
@@ -116,10 +119,79 @@ public class PGC_Unit : MonoBehaviour
         }
     }
 
-    //때릴 떄 대상 체크 및 공식, 수식 계산하기
-    public void FindTarget(ATKType aTKType)
+    int tagetNum;
+    bool isMove;
+    [SerializeField]
+    Transform myTrans;
+    [SerializeField]
+    Transform target;
+
+    void Update()
     {
-        
+        if (isMove)
+        {
+            transform.position = Vector3.Lerp(myTrans.position, target.transform.position, 0.05f);
+        }
+    }
+
+    void FrontCheck(List<PGC_Unit> pList)
+    {     
+        bool ishalfATK = Dods_ChanceMaker.GetThisChanceResult_Percentage(50);     
+        if (pList[0].gameObject.activeSelf || pList[1].gameObject.activeSelf)
+        {
+            if (ishalfATK)
+            {
+                tagetNum = 0;
+            }
+            else
+            {
+                tagetNum = 1;
+            }
+        }
+        else if (pList[2].gameObject.activeSelf || pList[3].gameObject.activeSelf)
+        {
+            if (ishalfATK)
+            {
+                tagetNum = 2;
+            }
+            else
+            {
+                tagetNum = 3;
+            }
+        }
+
+    }
+
+
+    //때릴 떄 대상 체크 및 공식, 수식 계산하기
+    public void P1FindTarget(ATKType aTKType)
+    {
+        FrontCheck(PGC_GameManager.Instance._p2UnitList);
+        StartCoroutine(ATKMoveTest(PGC_GameManager.Instance._p2UnitList[tagetNum].gameObject.transform));
+    }
+
+    public void P2FindTarget(ATKType aTKType)
+    {
+        FrontCheck(PGC_GameManager.Instance._p1UnitList);
+        StartCoroutine(ATKMoveTest(PGC_GameManager.Instance._p1UnitList[tagetNum].gameObject.transform));
+    }
+
+    IEnumerator ATKMoveTest(Transform target1)
+    {
+        Debug.Log("ATKMoveTest");
+
+        myTrans = GetComponent<Transform>();
+        target = target1;
+
+        var mypos = myTrans.position;
+        isMove = true;
+
+        yield return new WaitForSeconds(3f);
+        target.position = myTrans.position;
+        yield return new WaitForSeconds(3f);
+        myTrans.position = mypos;
+
+        isMove = false;
     }
 
     void IsDamaged()
