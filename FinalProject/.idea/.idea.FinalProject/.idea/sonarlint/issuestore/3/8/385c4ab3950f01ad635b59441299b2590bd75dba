@@ -1,7 +1,11 @@
 
-‡csharpsquid:S101"fRename class 'PGC_BattleManager' to match pascal case naming rules, consider using 'PgcBattleManager'.(øá—®ùÿÿÿÿ
-Ecsharpsquid:S3903"(Move 'GAMESTATE' into a named namespace.(å¶Şí
-Ecsharpsquid:S3903"(Move 'TRUNSTATE' into a named namespace.(ø·ŸÑ
-Rcsharpsquid:S3903"0Move 'PGC_BattleManager' into a named namespace.(øá—®ùÿÿÿÿ
-|csharpsquid:S2342"_Rename this enumeration to match the regular expression: '^([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$'.(å¶Şí
-|csharpsquid:S2342"_Rename this enumeration to match the regular expression: '^([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$'.(ø·ŸÑ
+csharpsquid:S3923\"[Remove this conditional structure or edit its code blocks so that they're not all the same.(Ø§¤î8Â¡ºû¹1
+csharpsquid:S101"fRename class 'PGC_BattleManager' to match pascal case naming rules, consider using 'PgcBattleManager'.(ÍÍ˜Ÿúÿÿÿÿ8Ã¡ºû¹1
+|csharpsquid:S3776 "RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(âÂÅÂûÿÿÿÿ8Ã¡ºû¹1
+Ycsharpsquid:S3903"0Move 'PGC_BattleManager' into a named namespace.(ÍÍ˜Ÿúÿÿÿÿ8Ã¡ºû¹1
+?csharpsquid:S2933"Make 'testNum' 'readonly'.(‘œêú8Ã¡ºû¹1
+‹csharpsquid:S2583¹"fChange this condition so that it does not always evaluate to 'False'. Some code paths are unreachable.(ö›­õ8Ã¡ºû¹1
+ocsharpsquid:S3241Ø"JChange return type to 'void'; not a single caller uses the returned value.(óœ–ä8Ã¡ºû¹1
+Gcsharpsquid:S125W"Remove this commented out code.(’ãÛøÿÿÿÿ8Ã¡ºû¹1
+Bcsharpsquid:S125^"Remove this commented out code.(Í£’Ó8Ã¡ºû¹1
+=csharpsquid:S4663£"Remove this empty comment(¥°çv8Ã¡ºû¹1

@@ -1,0 +1,8 @@
+
+ƒcsharpsquid:S101"bRename class 'PGC_GameManager' to match pascal case naming rules, consider using 'PgcGameManager'.(ÔŞ–âşÿÿÿÿ
+Pcsharpsquid:S3903".Move 'PGC_GameManager' into a named namespace.(ÔŞ–âşÿÿÿÿ
+acsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(í¿¯Ë
+acsharpsquid:S1104	"DMake this field 'private' and encapsulate it in a 'public' property.(ù£„ô
+`csharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(¡¡2
+fcsharpsquid:S2589*"DChange this condition so that it does not always evaluate to 'True'.(ªëÅŞúÿÿÿÿ
+@csharpsquid:S125"Remove this commented out code.(Ş§‡¹ıÿÿÿÿ

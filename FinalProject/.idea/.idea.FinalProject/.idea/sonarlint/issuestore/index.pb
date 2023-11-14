@@ -121,3 +121,5 @@ e
 5Assets/01_Scripts/UI/Lobby/MainMenu/EditGardenMenu.cs,c\8\c8f5368e77a9207c8b3abac180e50f9ad6b64ba6
 E
 Assets/ButtonTest1.cs,e\d\ed328f0769a3c678376db7765eb747c4fd6bda74
+a
+1Assets/01_Scripts/Game/Manager/PGC_GameManager.cs,7\6\765c16feadf84d0d048275f0e72b443dfcd8d650
